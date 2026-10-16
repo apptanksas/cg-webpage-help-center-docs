@@ -1,0 +1,35 @@
+name: Build & Publish Help Center to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Build & Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install MkDocs dependencies
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin
+
+      - name: Build and Deploy to GitHub Pages branch
+        run: |
+          # mkdocs gh-deploy compila el sitio y lo empuja automáticamente a la rama gh-pages
+          mkdocs gh-deploy --force --clean

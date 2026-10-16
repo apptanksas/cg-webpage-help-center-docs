@@ -1,0 +1,45 @@
+site_name: "Centro de Ayuda Control Ganadero"
+site_description: "Portal oficial de ayuda, soporte y procedimientos operativos de Control Ganadero."
+site_author: "Control Ganadero Team"
+site_url: "https://apptanksas.github.io/cg-webpage-help-center-docs/"
+
+# Directorio donde se almacenan las categorías y documentos Markdown
+docs_dir: docs
+
+theme:
+  name: material
+  language: es
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: es
+  - awesome-pages
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - attr_list
