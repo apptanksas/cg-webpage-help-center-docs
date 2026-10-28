@@ -25,20 +25,20 @@ Pantalla de consulta y seguimiento zootécnico que consolida en formato de tabla
 
 ### Reglas de Negocio y Restricciones
 - **Filtrado individual por hembra:**
-  - La tabla exhibe exclusivamente las evaluaciones y diagnósticos veterinarios vinculados a la hembra en consulta, abarcando tanto chequeos recientes como los de ciclos zootécnicos pasados.
+    - La tabla exhibe exclusivamente las evaluaciones y diagnósticos veterinarios vinculados a la hembra en consulta, abarcando tanto chequeos recientes como los de ciclos zootécnicos pasados.
 - **Estados de diagnóstico admitidos:**
-  - Cada registro refleja uno de los dos estados zootécnicos oficiales: **Preñada** (gestación confirmada) o **No preñada** (hembra vacía o abierta).
+    - Cada registro refleja uno de los dos estados zootécnicos oficiales: **Preñada** (gestación confirmada) o **No preñada** (hembra vacía o abierta).
 - **Notas y observaciones clínicas:**
-  - La tabla presenta el texto literal de las notas consignadas en cada examen (por ejemplo, método empleado como palpación rectal o ecografía, condición ovárica, tono uterino o recomendaciones terapéuticas). Si no se ingresaron notas en el formulario, el campo permanece en blanco.
+    - La tabla presenta el texto literal de las notas consignadas en cada examen (por ejemplo, método empleado como palpación rectal o ecografía, condición ovárica, tono uterino o recomendaciones terapéuticas). Si no se ingresaron notas en el formulario, el campo permanece en blanco.
 - **Permisos requeridos para registro y modificación:**
-  - Para incorporar un nuevo diagnóstico mediante el botón flotante (+), el usuario requiere contar con el permiso de creación de chequeos de preñez en la finca activa.
-  - Para actualizar un registro existente pulsando una fila de la tabla, se requiere el permiso de edición correspondiente. Los usuarios con perfil colaborador sin estos permisos no podrán guardar cambios en el formulario.
+    - Para incorporar un nuevo diagnóstico mediante el botón flotante (+), el usuario requiere contar con el permiso de creación de chequeos de preñez en la finca activa.
+    - Para actualizar un registro existente pulsando una fila de la tabla, se requiere el permiso de edición correspondiente. Los usuarios con perfil colaborador sin estos permisos no podrán guardar cambios en el formulario.
 - **Impacto zootécnico en la hoja de vida del ejemplar:**
-  - Al asentar un diagnóstico como **Preñada**, el sistema actualiza el estado reproductivo general de la hembra y proyecta las métricas de gestación y fecha estimada de parto (incluso solicitando los días estimados de preñez para generar la fecundación correspondiente si no existe un servicio previo registrado). Si se asienta como **No preñada**, el estado de la vaca pasa a reflejar que se encuentra vacía o disponible para un nuevo servicio.
+    - Al asentar un diagnóstico como **Preñada**, el sistema actualiza el estado reproductivo general de la hembra y proyecta las métricas de gestación y fecha estimada de parto (incluso solicitando los días estimados de preñez para generar la fecundación correspondiente si no existe un servicio previo registrado). Si se asienta como **No preñada**, el estado de la vaca pasa a reflejar que se encuentra vacía o disponible para un nuevo servicio.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - En la barra inferior de navegación, toque **Animales** > Seleccione a la hembra en el listado > En la cuadrícula de módulos, toque **Reproducción** > Desplácese hasta la sección **Chequeo** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
+    - En la barra inferior de navegación, toque **Animales** > Seleccione a la hembra en el listado > En la cuadrícula de módulos, toque **Reproducción** > Desplácese hasta la sección **Chequeo** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación superior:** Exhibe el título oficial **Chequeo** alineado a la izquierda sobre el color de fondo institucional. Incorpora únicamente el botón de retroceso (flecha hacia la izquierda) para cerrar la tabla y regresar al resumen reproductivo de la hembra, sin botones de acción secundarios.
@@ -47,6 +47,7 @@ Pantalla de consulta y seguimiento zootécnico que consolida en formato de tabla
 
 #### Estructura y Columnas de la Tabla
 La información se presenta ordenada en una tabla con diseño cuadrado y tres columnas zootécnicas:
+
 1. **Fecha:** Exhibe el día, mes y año en que se efectuó la palpación o ecografía, formateada según la zona horaria del usuario.
 2. **Estado:** Indica el dictamen de preñez obtenido en el examen (**Preñada** o **No preñada**).
 3. **Notas:** Muestra las notas, observaciones clínicas o detalles técnicos consignados por el evaluador o veterinario.
@@ -57,7 +58,7 @@ La información se presenta ordenada en una tabla con diseño cuadrado y tres co
 - **Regresar a la pantalla previa:** Presione la flecha de retroceso ubicada en la barra superior.
 
 - **Pantalla de llegada tras salir:**
-  - Al pulsar la flecha de retroceso de la barra superior, la aplicación retorna de inmediato a la pantalla de resumen reproductivo de la hembra.
+    - Al pulsar la flecha de retroceso de la barra superior, la aplicación retorna de inmediato a la pantalla de resumen reproductivo de la hembra.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

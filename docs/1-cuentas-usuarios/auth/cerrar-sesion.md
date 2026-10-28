@@ -26,7 +26,7 @@ Permite a los usuarios finalizar de forma segura su sesión activa en el disposi
 ### Reglas de Negocio y Restricciones
 - Al solicitar el cierre de sesión, el sistema muestra el diálogo de confirmación: *"¿Estás seguro de cerrar tu sesión?"*.
 - **Salvaguarda de Datos No Sincronizados:** Si existen eventos (pesajes, tratamientos, partos) guardados en la memoria local del teléfono que aún no se han subido al servidor:
-  - La aplicación muestra una advertencia de seguridad: *"¿Estás seguro de cerrar tu sesión sin sincronizar los datos? Si cierra sesión sin sincronizar los datos, perderá la información que no haya sido guardada y que no se haya sincronizado con el servidor."*
+   - La aplicación muestra una advertencia de seguridad: *"¿Estás seguro de cerrar tu sesión sin sincronizar los datos? Si cierra sesión sin sincronizar los datos, perderá la información que no haya sido guardada y que no se haya sincronizado con el servidor."*
 - Si el usuario decide continuar y confirma la salida sin sincronizar, se eliminan las credenciales locales de la cuenta y los registros locales no enviados no podrán recuperarse.
 - Una vez completado el cierre de sesión, se revoca el acceso a las fincas y el usuario es redirigido a la pantalla inicial de bienvenida.
 
@@ -34,13 +34,14 @@ Permite a los usuarios finalizar de forma segura su sesión activa en el disposi
 - **Ruta de acceso en la aplicación:** Menú lateral de la aplicación > Opción **Cerrar sesión**.
 1. En el menú de navegación de la aplicación, presione la opción **Cerrar sesión**.
 2. Si todos sus datos están al día con la nube:
-   - Aparecerá el diálogo: *"¿Estás seguro de cerrar tu sesión?"*.
-   - Presione el botón **Cerrar sesión** para confirmar.
+      - Aparecerá el diálogo: *"¿Estás seguro de cerrar tu sesión?"*.
+     - Presione el botón **Cerrar sesión** para confirmar.
 3. Si tiene registros recopilados sin internet pendientes de sincronizar:
-   - Aparecerá el aviso de advertencia: *"¿Estás seguro de cerrar tu sesión sin sincronizar los datos?"*.
-   - **Recomendación prioritaria:** Presione **Cancelar**, conéctese a una red Wi-Fi o señal móvil y sincronice sus datos antes de salir.
-   - Si de todas formas desea salir bajo su responsabilidad, presione el botón **Cerrar sesión**.
-- **Pantalla de llegada tras guardar:** Pantalla inicial de **Bienvenida** (con las opciones de Iniciar Sesión y Registrarse).
+      - Aparecerá el aviso de advertencia: *"¿Estás seguro de cerrar tu sesión sin sincronizar los datos?"*.
+     - **Recomendación prioritaria:** Presione **Cancelar**, conéctese a una red Wi-Fi o señal móvil y sincronice sus datos antes de salir.
+     - Si de todas formas desea salir bajo su responsabilidad, presione el botón **Cerrar sesión**.
+
+**Pantalla de llegada tras guardar:** Pantalla inicial de **Bienvenida** (con las opciones de Iniciar Sesión y Registrarse).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

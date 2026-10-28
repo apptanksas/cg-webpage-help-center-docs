@@ -30,41 +30,40 @@ Módulo de captura individual que permite asentar, actualizar o eliminar las med
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - Registro de nuevo pesaje: Requiere el permiso de creación de registros de ordeño en la finca ganadera activa.
-  - Modificación de pesaje existente: Requiere el permiso de edición de registros de ordeño.
-  - Eliminación de pesaje: Requiere el permiso de eliminación de registros de ordeño.
-  - Si el usuario carece del permiso correspondiente, el sistema detiene el proceso y muestra la notificación: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
+    - Registro de nuevo pesaje: Requiere el permiso de creación de registros de ordeño en la finca ganadera activa.
+    - Modificación de pesaje existente: Requiere el permiso de edición de registros de ordeño.
+    - Eliminación de pesaje: Requiere el permiso de eliminación de registros de ordeño.
+    - Si el usuario carece del permiso correspondiente, el sistema detiene el proceso y muestra la notificación: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
 - **Restricción estricta por estado del animal:**
-  - El animal debe encontrarse activo y presente en la finca ganadera. Si el ejemplar está registrado como muerto, vendido o trasladado fuera del predio, la pantalla deniega el acceso y regresa automáticamente a la vista previa.
+    - El animal debe encontrarse activo y presente en la finca ganadera. Si el ejemplar está registrado como muerto, vendido o trasladado fuera del predio, la pantalla deniega el acceso y regresa automáticamente a la vista previa.
 - **Validaciones de fecha:**
-  - El selector "Fecha" restringe la selección según la vida productiva del ejemplar: no es posible elegir fechas futuras posteriores al día de hoy ni fechas anteriores al nacimiento o fecha de ingreso del animal a la finca.
+    - El selector "Fecha" restringe la selección según la vida productiva del ejemplar: no es posible elegir fechas futuras posteriores al día de hoy ni fechas anteriores al nacimiento o fecha de ingreso del animal a la finca.
 - **Turnos y períodos del día:**
-  - Selector "Periodo del día" con tres opciones oficiales: "Mañana", "Tarde", y "Mañana y Tarde".
-  - Al seleccionar "Mañana y Tarde", el formulario despliega de forma dinámica dos secciones independientes bajo "Datos de producción", permitiendo ingresar las cantidades de cada jornada por separado.
-  - **Bloqueo del período en modo edición:** Al consultar un pesaje existente para modificarlo ("Editar Leche"), el selector "Periodo del día" permanece deshabilitado para resguardar la consistencia cronológica del turno originalmente evaluado.
+    - Selector "Periodo del día" con tres opciones oficiales: "Mañana", "Tarde", y "Mañana y Tarde".
+    - Al seleccionar "Mañana y Tarde", el formulario despliega de forma dinámica dos secciones independientes bajo "Datos de producción", permitiendo ingresar las cantidades de cada jornada por separado.
+    - **Bloqueo del período en modo edición:** Al consultar un pesaje existente para modificarlo ("Editar Leche"), el selector "Periodo del día" permanece deshabilitado para resguardar la consistencia cronológica del turno originalmente evaluado.
 - **Prevención de registros duplicados:**
-  - No se permite asentar más de una medición para un mismo animal en la misma fecha y turno. Si ya existe un registro previo para el período seleccionado, el sistema bloquea el guardado y emite la alerta: "Ya existe un registro de producción de leche para este animal en la fecha seleccionada con el periodo del día seleccionado."
+    - No se permite asentar más de una medición para un mismo animal en la misma fecha y turno. Si ya existe un registro previo para el período seleccionado, el sistema bloquea el guardado y emite la alerta: "Ya existe un registro de producción de leche para este animal en la fecha seleccionada con el periodo del día seleccionado."
 - **Validación de cantidades numéricas y unidades de medida:**
-  - Los campos "Concentrado" y "Leche" requieren números decimales positivos válidos.
-  - La unidad de medida de volumen o peso para "Leche" (litros, kilogramos o galones) y de masa para "Concentrado" (kilogramos o libras) se toma automáticamente de la configuración oficial de la finca ganadera activa y se exhibe en el sufijo del campo.
+    - Los campos "Concentrado" y "Leche" requieren números decimales positivos válidos.
+    - La unidad de medida de volumen o peso para "Leche" (litros, kilogramos o galones) y de masa para "Concentrado" (kilogramos o libras) se toma automáticamente de la configuración oficial de la finca ganadera activa y se exhibe en el sufijo del campo.
 - **Datos complementarios (Opcionales):**
-  - "Hato de ordeño" y "Potrero" son selectores opcionales para asociar la ubicación zootécnica de la vaca durante el ordeño.
+    - "Hato de ordeño" y "Potrero" son selectores opcionales para asociar la ubicación zootécnica de la vaca durante el ordeño.
 - **Reglas de eliminación de registros:**
-  - La opción de borrado solo está habilitada al acceder en modo de edición ("Editar Leche").
-  - Al presionar eliminar, el sistema solicita confirmación del usuario para proceder.
+    - La opción de borrado solo está habilitada al acceder en modo de edición ("Editar Leche").
+    - Al presionar eliminar, el sistema solicita confirmación del usuario para proceder.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Desde el resumen individual del animal):** Menú inferior "Animales" > Seleccionar la hembra > Pestaña o sección "Producción" > "Evolución de leche" > Presionar "Registrar Leche" (o tocar un registro de la lista para editarlo).
-  - **Ruta 2 (Desde la tabla de pesajes de leche):** Pantalla de "Evolución de leche" > "Vista de tabla" > Presionar el botón flotante de adición (+) para crear, o tocar una fila específica para editarla.
-  - **Ruta 3 (Desde la gráfica de evolución de leche):** Pantalla de "Evolución de leche" > "Vista gráfica" > Presionar el botón flotante con ícono de recipiente de leche.
-  - **Ruta 4 (Desde las estadísticas generales de leche de la finca):** Menú principal > "Producción de leche" > Pestaña "Producción" > Tocar una vaca en el listado para registrarle ordeño individual.
-  - **Ruta 5 (Desde la tabla general de pesajes de la finca):** Pantalla de estadísticas de leche > "Vista de tabla" > Seleccionar un registro para visualizar o modificar el pesaje individual.
+    - **Ruta 1 (Desde el módulo de animales):** Menú inferior "Animales" > Seleccionar la hembra > Pestaña o sección "Producción" > "Evolución de leche" > Presionar el botón "AGREGAR LECHE".
+    - **Ruta 2 (Desde la pantalla de producción):** selecciona la flecha en la sección "Producción de leche" > Presionar el botón flotante de adición (+) para crear, o tocar una fila específica para editarla.
+    - **Ruta 3 (Desde la gráfica de evolución de leche):** Pantalla de "producción" > "Vista gráfica" > Presionar el botón flotante con ícono de recipiente de leche.
+    - **Ruta 4 (Desde las estadísticas generales de leche de la finca):** Menú inferior > "Producción" > Pestaña "Producción de leche" > ve al boton flotante con el icono de botella de leche y icono "+" selecciona la hembra.
 
 #### 1. Verificación del Encabezado e Identificación
 1. En la barra superior confirme el título:
-   - "Registrar Leche" si va a ingresar una nueva medición.
-   - "Editar Leche" si va a modificar un registro previo.
+    - "Registrar Leche" si va a ingresar una nueva medición.
+    - "Editar Leche" si va a modificar un registro previo.
 2. En la parte superior de la pantalla se exhibe la tarjeta con los datos y el código identificador de la hembra.
 
 #### 2. Selección de Fecha y Turno
@@ -73,13 +72,13 @@ Módulo de captura individual que permite asentar, actualizar o eliminar las med
 
 #### 3. Ingreso de Datos de Producción
 1. Bajo el encabezado "Datos de producción", para el turno o turnos seleccionados:
-   - En el campo "Concentrado", digite la cantidad de suplemento consumido en la unidad configurada para la finca.
-   - En el campo "Leche", digite el volumen o peso de leche obtenido en el ordeño.
+    - En el campo "Concentrado", digite la cantidad de suplemento consumido en la unidad configurada para la finca.
+    - En el campo "Leche", digite el volumen o peso de leche obtenido en el ordeño.
 
 #### 4. Datos Complementarios (Opcionales)
 1. Bajo el encabezado "Datos complementarios":
-   - En "Hato de ordeño", seleccione el grupo o lote correspondiente si aplica.
-   - En "Potrero", seleccione el potrero en el que se encontraba la hembra.
+    - En "Hato de ordeño", seleccione el grupo o lote correspondiente si aplica.
+    - En "Potrero", seleccione el potrero en el que se encontraba la hembra.
 
 #### 5. Guardado, Modificación o Eliminación
 1. **Para guardar un nuevo pesaje:** Presione el botón "Registrar". El sistema valida los datos, emite la confirmación "Ordeño registrado exitosamente" y regresa a la pantalla previa.

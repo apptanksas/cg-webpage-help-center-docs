@@ -27,14 +27,14 @@ Permite realizar jornadas de conteo físico y verificación presencial de animal
 
 ### Reglas de Negocio y Restricciones
 - **Permisos de acceso y roles en la finca:**
-  - El usuario debe contar con el permiso de creación de inventario animal habilitado en la finca activa.
-  - Si el usuario es invitado o colaborador en una finca compartida y el propietario no le ha concedido los permisos correspondientes, el sistema bloqueará el ingreso con un aviso indicando que su perfil no cuenta con autorización.
+    - El usuario debe contar con el permiso de creación de inventario animal habilitado en la finca activa.
+    - Si el usuario es invitado o colaborador en una finca compartida y el propietario no le ha concedido los permisos correspondientes, el sistema bloqueará el ingreso con un aviso indicando que su perfil no cuenta con autorización.
 - **Límites de plan y membresía (Versión Gratuita vs Membresía):**
-  - **Prueba limitada:** En la versión gratuita de Control Ganadero, el usuario puede realizar el primer inventario de animales como prueba de la funcionalidad (al ingresar por primera vez se le informa que tiene una prueba única disponible).
-  - **Bloqueo por cuota superada:** Una vez completado y finalizado el inventario gratuito, el acceso a la pantalla quedará bloqueado por restricción de membresía. Al intentar entrar de nuevo, el sistema mostrará una pantalla de aviso indicando que ha alcanzado el límite de inventarios permitidos y que se requiere una membresía activa para continuar.
-  - **Sesión en curso:** Si el usuario ya tiene un inventario iniciado y pendiente por finalizar, se le permite ingresar y reanudar la sesión sin restricción para completarla o descartarla.
+    - **Prueba limitada:** En la versión gratuita de Control Ganadero, el usuario puede realizar el primer inventario de animales como prueba de la funcionalidad (al ingresar por primera vez se le informa que tiene una prueba única disponible).
+    - **Bloqueo por cuota superada:** Una vez completado y finalizado el inventario gratuito, el acceso a la pantalla quedará bloqueado por restricción de membresía. Al intentar entrar de nuevo, el sistema mostrará una pantalla de aviso indicando que ha alcanzado el límite de inventarios permitidos y que se requiere una membresía activa para continuar.
+    - **Sesión en curso:** Si el usuario ya tiene un inventario iniciado y pendiente por finalizar, se le permite ingresar y reanudar la sesión sin restricción para completarla o descartarla.
 - **Compatibilidad de métodos de verificación:**
-  - Al cargar los animales según el filtro seleccionado, el sistema excluye automáticamente aquellos ejemplares que no tengan registrado el identificador correspondiente al método elegido (por ejemplo, animales sin chip en lecturas Bluetooth).
+    - Al cargar los animales según el filtro seleccionado, el sistema excluye automáticamente aquellos ejemplares que no tengan registrado el identificador correspondiente al método elegido (por ejemplo, animales sin chip en lecturas Bluetooth).
 
 ### Métodos de Verificación Disponibles
 Al configurar la sesión de conteo, el usuario elige el método de captura:
@@ -48,9 +48,9 @@ Al configurar la sesión de conteo, el usuario elige el método de captura:
 #### 1. Barra Superior (TopBar)
 - Título oficial: *"Inventario de animales"*.
 - Acciones rápidas según el método de verificación seleccionado:
-  - Si es QR o Código de barras: botón de escáner de cámara.
-  - Si es NFC: botón de lectura NFC que despliega la ventana de proximidad.
-  - Si es Chip: botón de estado de conexión del lector Bluetooth para vincular el bastón y recibir lecturas.
+    - Si es QR o Código de barras: botón de escáner de cámara.
+    - Si es NFC: botón de lectura NFC que despliega la ventana de proximidad.
+    - Si es Chip: botón de estado de conexión del lector Bluetooth para vincular el bastón y recibir lecturas.
 
 #### 2. Configuración Inicial del Conteo (Antes de Iniciar)
 Muestra tres selectores obligatorios:

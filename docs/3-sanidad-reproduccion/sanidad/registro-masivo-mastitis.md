@@ -30,37 +30,37 @@ Pantalla de captura sanitaria que permite registrar diagnósticos de mastitis y 
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - **Creación de registro:** Se requiere el permiso de creación de mastitis en la finca. Si se activa la opción de tratamiento médico, también se requiere el permiso de creación de tratamientos.
-  - **Modificación de registro:** Al seleccionar una fila de la tabla para editar, se requiere el permiso de actualización de mastitis y, de aplicar tratamiento, el permiso de actualización de tratamientos.
-  - **Eliminación de registro:** Al presionar el botón de eliminar una fila seleccionada, se requiere el permiso de eliminación de mastitis y, si tenía tratamiento vinculado, el permiso de eliminación de tratamientos.
-  - Si el usuario carece de los permisos correspondientes, el sistema bloquea la operación mostrando el mensaje: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
+    - **Creación de registro:** Se requiere el permiso de creación de mastitis en la finca. Si se activa la opción de tratamiento médico, también se requiere el permiso de creación de tratamientos.
+    - **Modificación de registro:** Al seleccionar una fila de la tabla para editar, se requiere el permiso de actualización de mastitis y, de aplicar tratamiento, el permiso de actualización de tratamientos.
+    - **Eliminación de registro:** Al presionar el botón de eliminar una fila seleccionada, se requiere el permiso de eliminación de mastitis y, si tenía tratamiento vinculado, el permiso de eliminación de tratamientos.
+    - Si el usuario carece de los permisos correspondientes, el sistema bloquea la operación mostrando el mensaje: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
 - **Población de animales elegible en el selector:**
-  - El selector filtra exclusivamente hembras (sexo hembra).
-  - La hembra debe pertenecer a la etapa productiva adulta o senior según los parámetros zootécnicos de su especie.
-  - El animal debe estar vivo y físicamente presente en la finca activa (excluye vendidos, fallecidos, trasladados o ausentes).
-  - Se excluyen estrictamente los animales de especie equina.
+    - El selector filtra exclusivamente hembras (sexo hembra).
+    - La hembra debe pertenecer a la etapa productiva adulta o senior según los parámetros zootécnicos de su especie.
+    - El animal debe estar vivo y físicamente presente en la finca activa (excluye vendidos, fallecidos, trasladados o ausentes).
+    - Se excluyen estrictamente los animales de especie equina.
 - **Validaciones zootécnicas y de formulario:**
   - **Fecha del control:** Por defecto sugiere el día actual. No admite fechas posteriores al día de hoy ni anteriores a la fecha de nacimiento del animal.
   - **Severidad por pezón o cuarto mamario:** Es posible evaluar de 1 a 4 cuartos mamarios de manera independiente. Cada pezón admite los siguientes niveles de severidad:
-    - "Oculta (Subclínica)"
-    - "Leve"
-    - "Moderada"
-    - "Grave"
-    - "Extrema (Gangrenosa)"
-    - "Destruida y Perdida"
-    - Los pezones sanos o no afectados pueden permanecer sin selección (valor nulo).
+      - "Oculta (Subclínica)"
+      - "Leve"
+      - "Moderada"
+      - "Grave"
+      - "Extrema (Gangrenosa)"
+      - "Destruida y Perdida"
+      - Los pezones sanos o no afectados pueden permanecer sin selección (valor nulo).
   - **Tratamiento médico:**
-    - La opción "Poner en tratamiento" es opcional.
-    - Si se activa la casilla, los campos "Días de tratamiento" y "Descripción del tratamiento" son obligatorios. Si alguno se deja vacío, el sistema bloquea el guardado alertando: "Datos de tratamiento requeridos".
-    - El número de días de tratamiento debe ser un número entero válido entre 1 y 365 días.
-    - Al guardarse el tratamiento, el sistema genera automáticamente un registro vinculado en el historial de tratamientos del animal con fecha de fin calculada a partir de los días indicados.
+      - La opción "Poner en tratamiento" es opcional.
+      - Si se activa la casilla, los campos "Días de tratamiento" y "Descripción del tratamiento" son obligatorios. Si alguno se deja vacío, el sistema bloquea el guardado alertando: "Datos de tratamiento requeridos".
+      - El número de días de tratamiento debe ser un número entero válido entre 1 y 365 días.
+      - Al guardarse el tratamiento, el sistema genera automáticamente un registro vinculado en el historial de tratamientos del animal con fecha de fin calculada a partir de los días indicados.
 - **Comportamiento del flujo en lote:**
-  - Tras presionar "Guardar", el sistema persiste el registro, limpia el formulario y deselecciona el animal para permitir el registro ágil de la siguiente hembra.
-  - La tabla inferior se actualiza de inmediato mediante el bus de eventos de la aplicación, mostrando el código del animal, fecha, cuartos afectados y días de tratamiento.
+    - Tras presionar "Guardar", el sistema persiste el registro, limpia el formulario y deselecciona el animal para permitir el registro ágil de la siguiente hembra.
+    - La tabla inferior se actualiza de inmediato mediante el bus de eventos de la aplicación, mostrando el código del animal, fecha, cuartos afectados y días de tratamiento.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta principal (Desde el menú contextual de acciones rápidas):** En la pantalla principal de la finca, presione el botón flotante central (+) > En el menú "¿Qué quieres hacer hoy?", seleccione "Mastitis masivo".
+    - **Ruta principal (Desde el menú contextual de acciones rápidas):** En la pantalla principal de la finca, presione el botón flotante central (+) > En el menú "¿Qué quieres hacer hoy?", seleccione "Mastitis masivo".
 
 #### 1. Encabezado y Selección del Animal
 1. En la barra superior visualizará el título "Control de mastitis" y la flecha de navegación para regresar a la pantalla anterior.

@@ -25,29 +25,31 @@ Pantalla de consulta zootécnica que consolida en formato de tabla el historial 
 
 ### Reglas de Negocio y Restricciones
 - **Consolidación y orden cronológico de eventos:**
-  - La tabla reúne los datos provenientes de tres fuentes zootécnicas: crías registradas asociadas a la madre, eventos de abortos guardados y hechos de partos asentados en el sistema.
-  - Los registros se ordenan de manera automática en sentido cronológico descendente (los eventos más recientes en la parte superior).
-  - El sistema aplica una regla de deduplicación automática de eventos de parto para evitar registros repetidos que coincidan en la misma fecha calendario.
+    - La tabla reúne los datos provenientes de tres fuentes zootécnicas: crías registradas asociadas a la madre, eventos de abortos guardados y hechos de partos asentados en el sistema.
+    - Los registros se ordenan de manera automática en sentido cronológico descendente (los eventos más recientes en la parte superior).
+    - El sistema aplica una regla de deduplicación automática de eventos de parto para evitar registros repetidos que coincidan en la misma fecha calendario.
 - **Acceso a la hoja de vida de la cría:**
-  - En los eventos de tipo Parto que cuenten con una cría vinculada, al pulsar sobre la fila se abre la hoja de vida completa del ternero o cría nacida.
-  - Si el parto no tiene un animal hijo vinculado en el inventario o la cría fue transferida sin registro individual activo, la fila no abrirá una hoja de vida.
+    - En los eventos de tipo Parto que cuenten con una cría vinculada, al pulsar sobre la fila se abre la hoja de vida completa del ternero o cría nacida.
+    - Si el parto no tiene un animal hijo vinculado en el inventario o la cría fue transferida sin registro individual activo, la fila no abrirá una hoja de vida.
 - **Edición de abortos:**
-  - En los eventos clasificados como Aborto, al pulsar sobre la fila el sistema abre directamente la pantalla de edición del aborto con sus datos precargados (sexo del feto, fecha y observaciones).
-  - Para guardar modificaciones en el registro del aborto, el usuario debe poseer el permiso de actualización de abortos en la finca activa.
+    - En los eventos clasificados como Aborto, al pulsar sobre la fila el sistema abre directamente la pantalla de edición del aborto con sus datos precargados (sexo del feto, fecha y observaciones).
+    - Para guardar modificaciones en el registro del aborto, el usuario debe poseer el permiso de actualización de abortos en la finca activa.
 - **Registro rápido de cría con madre preasignada:**
-  - Al presionar el botón flotante con el icono de más (**+**), la aplicación abre el formulario de creación de animales estableciendo a la hembra activa como madre obligatoria del nuevo ejemplar.
-  - Si la cuenta de la finca ha alcanzado el límite máximo de animales permitidos por su plan o membresía, el sistema bloqueará la creación del nuevo ejemplar.
+    - Al presionar el botón flotante con el icono de más (**+**), la aplicación abre el formulario de creación de animales estableciendo a la hembra activa como madre obligatoria del nuevo ejemplar.
+    - Si la cuenta de la finca ha alcanzado el límite máximo de animales permitidos por su plan o membresía, el sistema bloqueará la creación del nuevo ejemplar.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - En la barra inferior de navegación, toque **Animales** > Seleccione en el listado a la vaca o novilla > Presione el módulo **Reproducción** > Desplácese hasta la sección **Partos/Abortos** > Presione la flecha ubicada a la derecha del título de la sección para desplegar la tabla completa.
+    - En la barra inferior de navegación, toque **Animales** > Seleccione en el listado a la vaca o novilla > Presione el módulo **Reproducción** > Desplácese hasta la sección **Partos/Abortos** > Presione la flecha ubicada a la derecha del título de la sección para desplegar la tabla completa.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación superior:** Presenta el título **Partos/Abortos** alineado a la izquierda sobre el color de fondo institucional. Incorpora únicamente el botón de retroceso (flecha hacia la izquierda) para descartar la vista y volver a la pantalla de resumen reproductivo de la hembra (sin botones de menú o acciones adicionales a la derecha).
 - **Cinta de identidad del animal:** Franja horizontal centrada con fondo gris claro, ubicada inmediatamente debajo de la barra superior, que exhibe el icono del género de la hembra y su identificación compuesta (nombre y código de arete visual entre paréntesis) en una sola línea, manteniendo visible la trazabilidad zootécnica de la consulta en todo momento.
 
 #### Estructura y Columnas de la Tabla
+
 La tabla presenta la información organizada en cuatro columnas principales:
+
 1. **Fecha:** Muestra la fecha en que ocurrió el parto o el aborto en formato local (día, mes y año).
 2. **Tipo:** Indica la naturaleza del evento zootécnico: **Parto** o **Aborto**.
 3. **Género:** Exhibe el sexo de la cría nacida o del feto abortado (**Macho** o **Hembra**).
@@ -55,12 +57,12 @@ La tabla presenta la información organizada en cuatro columnas principales:
 
 #### Acciones Interactivas y Navegación
 - **Ver detalle o editar registro:** Al presionar sobre una fila de la tabla:
-  - Si la fila corresponde a un **Parto** con cría asociada, el sistema abre la pantalla de resumen zootécnico y productivo del hijo.
-  - Si la fila corresponde a un **Aborto**, el sistema redirige al formulario de edición de aborto para modificar o consultar los detalles del evento.
+    - Si la fila corresponde a un **Parto** con cría asociada, el sistema abre la pantalla de resumen zootécnico y productivo del hijo.
+    - Si la fila corresponde a un **Aborto**, el sistema redirige al formulario de edición de aborto para modificar o consultar los detalles del evento.
 - **Registrar nueva cría de esta hembra:** Presione el botón flotante circular con el icono de más (**+**) ubicado en la esquina inferior de la pantalla para abrir la pantalla de creación de animales con la madre preasignada.
 
 - **Pantalla de llegada tras salir:**
-  - Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo de la hembra.
+    - Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo de la hembra.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

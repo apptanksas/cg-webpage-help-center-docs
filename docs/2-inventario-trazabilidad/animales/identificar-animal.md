@@ -26,45 +26,45 @@ Pantalla centralizada de captura e identificación de ganado en campo que permit
 
 ### Reglas de Negocio y Restricciones
 - **Validación de contexto de finca activa:**
-  - **Con finca seleccionada:** El sistema busca prioritariamente el ejemplar en el inventario local de la finca. Si existe, redirige de inmediato a la ficha técnica del animal. Si no existe en el inventario local, muestra una alerta indicando que no se encontró el ejemplar y habilita la opción de consultar su información pública en línea.
-  - **Sin finca seleccionada (Acceso inicial):** Al escanear o ingresar un código, la aplicación no consulta la base de datos privada sino que abre directamente la consulta en el portal web público de Control Ganadero.
+    - **Con finca seleccionada:** El sistema busca prioritariamente el ejemplar en el inventario local de la finca. Si existe, redirige de inmediato a la ficha técnica del animal. Si no existe en el inventario local, muestra una alerta indicando que no se encontró el ejemplar y habilita la opción de consultar su información pública en línea.
+    - **Sin finca seleccionada (Acceso inicial):** Al escanear o ingresar un código, la aplicación no consulta la base de datos privada sino que abre directamente la consulta en el portal web público de Control Ganadero.
 - **Georreferenciación y permisos de ubicación:**
-  - Si el rastreo de ubicación de animales está activo en la aplicación, el sistema solicita los permisos de ubicación del teléfono y requiere que el GPS esté encendido para registrar la coordenada geográfica exacta donde fue identificado el animal.
+    - Si el rastreo de ubicación de animales está activo en la aplicación, el sistema solicita los permisos de ubicación del teléfono y requiere que el GPS esté encendido para registrar la coordenada geográfica exacta donde fue identificado el animal.
 - **Restricciones de hardware y sensores móviles:**
-  - **Sensor NFC:** Si el teléfono no cuenta con hardware NFC integrado, la aplicación notifica que el dispositivo no soporta esta tecnología. Si el dispositivo cuenta con el sensor pero está apagado en los ajustes del sistema, el sistema lo detecta como deshabilitado y solicita encenderlo antes de iniciar la lectura.
-  - **Lector Bluetooth:** Requiere que el teléfono tenga encendido el Bluetooth y otorgados los permisos de dispositivos cercanos. Permite alternar entre el estado desconectado y conectado para capturar lecturas continuas sin intervención manual.
-  - **Cámara:** Requiere conceder el permiso de cámara del dispositivo móvil para activar el visor de captura de códigos QR y códigos de barras.
+    - **Sensor NFC:** Si el teléfono no cuenta con hardware NFC integrado, la aplicación notifica que el dispositivo no soporta esta tecnología. Si el dispositivo cuenta con el sensor pero está apagado en los ajustes del sistema, el sistema lo detecta como deshabilitado y solicita encenderlo antes de iniciar la lectura.
+    - **Lector Bluetooth:** Requiere que el teléfono tenga encendido el Bluetooth y otorgados los permisos de dispositivos cercanos. Permite alternar entre el estado desconectado y conectado para capturar lecturas continuas sin intervención manual.
+    - **Cámara:** Requiere conceder el permiso de cámara del dispositivo móvil para activar el visor de captura de códigos QR y códigos de barras.
 - **Validación de formato de código:**
-  - En la búsqueda manual, el campo exige ingresar un código válido antes de permitir presionar el botón de búsqueda.
+    - En la búsqueda manual, el campo exige ingresar un código válido antes de permitir presionar el botón de búsqueda.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Desde la finca activa - Menú de acciones rápidas):** En el panel principal de la finca, presione el botón flotante central (+) en la barra inferior > En la cuadrícula de opciones, seleccione **ID animal Conectividad**.
-  - **Ruta 2 (Desde la pantalla inicial de bienvenida):** Pantalla de bienvenida (cuando no hay fincas vinculadas a la sesión) > Sección inferior > Botón **Identificar animal**.
+    - **Ruta 1 (Desde la finca activa - Menú de acciones rápidas):** En el panel principal de la finca, presione el botón flotante central (+) en la barra inferior > En la cuadrícula de opciones, seleccione **ID animal Conectividad**.
+    - **Ruta 2 (Desde la pantalla inicial de bienvenida):** Pantalla de bienvenida (cuando no hay fincas vinculadas a la sesión) > Sección inferior > Botón **Identificar animal**.
 
 #### Opciones de Identificación Disponibles en Pantalla
 1. **Buscar animal por código:**
-   - Presione la tarjeta con icono de lupa.
-   - En la ventana emergente, ingrese el número o identificador en la casilla **Código de animal**.
-   - Presione el botón **Buscar**.
+    - Presione la tarjeta con icono de lupa.
+     - En la ventana emergente, ingrese el número o identificador en la casilla **Código de animal**.
+     - Presione el botón **Buscar**.
 2. **Conectar lector de chip / Lector conectado (Bluetooth):**
-   - Si no hay un bastón lector vinculado, la tarjeta muestra **Conectar lector de chip**. Presiónela para abrir la ventana de emparejamiento Bluetooth.
-   - Una vez enlazado, la tarjeta cambia a **Lector conectado**. Al aproximar el bastón al ejemplar, el código del microchip se transfiere e identifica automáticamente.
+    - Si no hay un bastón lector vinculado, la tarjeta muestra **Conectar lector de chip**. Presiónela para abrir la ventana de emparejamiento Bluetooth.
+     - Una vez enlazado, la tarjeta cambia a **Lector conectado**. Al aproximar el bastón al ejemplar, el código del microchip se transfiere e identifica automáticamente.
 3. **Leer tag NFC:**
-   - Presione la tarjeta con icono de NFC.
-   - Si el sensor está listo, la aplicación abre el diálogo **Leer tag NFC** indicando: *"Acerca el dispositivo al tag NFC para leer el código de identificación del animal."*
-   - Aproxime la parte posterior del teléfono al arete o tag electrónico hasta que se confirme la lectura.
+    - Presione la tarjeta con icono de NFC.
+     - Si el sensor está listo, la aplicación abre el diálogo **Leer tag NFC** indicando: *"Acerca el dispositivo al tag NFC para leer el código de identificación del animal."*
+     - Aproxime la parte posterior del teléfono al arete o tag electrónico hasta que se confirme la lectura.
 4. **Leer código QR / Código de barras:**
-   - Presione la tarjeta con icono de escáner.
-   - Se abrirá la cámara con marco de enfoque. Apunte directamente al código impreso en la chapeta o arete del animal para capturarlo al instante.
+    - Presione la tarjeta con icono de escáner.
+     - Se abrirá la cámara con marco de enfoque. Apunte directamente al código impreso en la chapeta o arete del animal para capturarlo al instante.
 
 #### Botón de Salida Contextual
 - Si el usuario tiene una finca activa: se muestra el botón **Salir** para volver al panel principal.
 - Si el usuario ingresó desde el acceso inicial: se muestra el botón **Acceder a una finca** para regresar a la pantalla de bienvenida.
 
 - **Pantalla de llegada tras guardar:**
-  - Si el animal pertenece a la finca activa, la aplicación abre automáticamente la **Ficha Técnica del Animal**.
-  - Si no pertenece a la finca o se consultó sin finca, se muestra el aviso *"Cargando información del animal..."* y se despliega la información en el navegador web.
+    - Si el animal pertenece a la finca activa, la aplicación abre automáticamente la **Ficha Técnica del Animal**.
+    - Si no pertenece a la finca o se consultó sin finca, se muestra el aviso *"Cargando información del animal..."* y se despliega la información en el navegador web.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

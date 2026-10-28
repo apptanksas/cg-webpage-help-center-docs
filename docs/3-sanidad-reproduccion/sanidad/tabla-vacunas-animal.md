@@ -25,36 +25,36 @@ Proporciona la vista cronológica completa de todas las dosis de vacunas y biol�
 
 ### Reglas de Negocio y Restricciones
 - **Cinta identificadora del animal:**
-  - En la parte superior de la pantalla se muestra la cinta con el nombre y sexo seleccionado.
+    - En la parte superior de la pantalla se muestra la cinta con el nombre y sexo seleccionado.
 - **Columnas de la tabla de vacunación:**
-  - **Fecha:** Muestra el día en que se administró la dosis biológica, adaptada a la zona horaria del usuario.
-  - **Vacuna:** Presenta el nombre oficial del biológico sanitario administrado (según el catálogo estándar veterinario: Fiebre Aftosa, Brucelosis, Rabia, IBR, DVB, Carbón/Clostridium, etc.).
-  - **Notas:** Muestra las observaciones, número de lote, laboratorio o vía de inoculación registrados. Si no se registraron observaciones, la columna muestra un guion indicativo de ausencia de información.
+    - **Fecha:** Muestra el día en que se administró la dosis biológica, adaptada a la zona horaria del usuario.
+    - **Vacuna:** Presenta el nombre oficial del biológico sanitario administrado (según el catálogo estándar veterinario: Fiebre Aftosa, Brucelosis, Rabia, IBR, DVB, Carbón/Clostridium, etc.).
+    - **Notas:** Muestra las observaciones, número de lote, laboratorio o vía de inoculación registrados. Si no se registraron observaciones, la columna muestra un guion indicativo de ausencia de información.
 - **Interacción y edición de vacunas:**
-  - Al presionar cualquier fila dentro de la tabla, el sistema abre la pantalla de edición del registro de vacunación correspondiente, cargando los datos guardados para su ajuste o consulta detallada.
+    - Al presionar cualquier fila dentro de la tabla, el sistema abre la pantalla de edición del registro de vacunación correspondiente, cargando los datos guardados para su ajuste o consulta detallada.
 - **Botón flotante para nueva vacuna:**
-  - La pantalla incluye un botón flotante circular con el signo más (**+**) que permite navegar directamente al formulario de registro de vacuna para añadir una nueva dosis sin abandonar el flujo del animal.
+    - La pantalla incluye un botón flotante circular con el signo más (**+**) que permite navegar directamente al formulario de registro de vacuna para añadir una nueva dosis sin abandonar el flujo del animal.
 - **Permisos requeridos:**
-  - Para consultar el historial se requiere acceso a la finca y a los datos sanitarios del animal.
-  - Para modificar una dosis o registrar una nueva desde esta vista se requieren los permisos de actualización o creación de vacunas en la finca.
+    - Para consultar el historial se requiere acceso a la finca y a los datos sanitarios del animal.
+    - Para modificar una dosis o registrar una nueva desde esta vista se requieren los permisos de actualización o creación de vacunas en la finca.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Menú inferior **Animales** > Seleccionar el animal > **Sanidad** (o **Datos veterinarios**) > En la sección **Vacunación**, presionar la flecha orientada a la derecha ubicada al lado del título.
 
 1. **Identificación de la pantalla y del animal:**
-   - En la barra superior confirme el título **Vacunación**.
-   - En la parte superior verifique la cinta identificadora del animal con su identificación, nombre y datos generales.
+    - En la barra superior confirme el título **Vacunación**.
+    - En la parte superior verifique la cinta identificadora del animal con su identificación, nombre y datos generales.
 2. **Exploración del historial de vacunación:**
-   - Deslice verticalmente para revisar la lista cronológica de vacunas aplicadas al ejemplar.
-   - Consulte la información en las columnas: **Fecha**, **Vacuna** y **Notas**.
+    - Deslice verticalmente para revisar la lista cronológica de vacunas aplicadas al ejemplar.
+    - Consulte la información en las columnas: **Fecha**, **Vacuna** y **Notas**.
 3. **Edición o consulta detallada de una vacuna:**
-   - Presione directamente sobre la fila correspondiente a la dosis que desea consultar o corregir.
-   - El sistema abrirá la pantalla de edición con los campos previamente diligenciados.
-   - Aplique los cambios requeridos y presione el botón **Registrar** para guardar las actualizaciones.
+    - Presione directamente sobre la fila correspondiente a la dosis que desea consultar o corregir.
+    - El sistema abrirá la pantalla de edición con los campos previamente diligenciados.
+    - Aplique los cambios requeridos y presione el botón **Registrar** para guardar las actualizaciones.
 4. **Registro de una nueva vacuna desde la tabla:**
-   - Presione el botón flotante circular con el signo más (**+**) ubicado en la pantalla.
-   - Se abrirá el formulario para registrar una nueva aplicación de biológico para el animal.
-- **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen de **Datos veterinarios** (Sanidad) del animal.
+    - Presione el botón flotante circular con el signo más (**+**) ubicado en la pantalla.
+    - Se abrirá el formulario para registrar una nueva aplicación de biológico para el animal.
+    - **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen de **Datos veterinarios** (Sanidad) del animal.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

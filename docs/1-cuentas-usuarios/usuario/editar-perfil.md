@@ -25,33 +25,35 @@ Permite a los usuarios actualizar sus datos básicos de identificación (nombre 
 
 ### Reglas de Negocio y Restricciones
 - La pantalla contiene única y exclusivamente tres campos editables:
-  - **Nombre:** Obligatorio.
-  - **Apellidos:** Obligatorio.
-  - **Email:** Obligatorio y con formato de correo electrónico válido.
+    - **Nombre:** Obligatorio.
+    - **Apellidos:** Obligatorio.
+    - **Email:** Obligatorio y con formato de correo electrónico válido.
 - **Confirmación Obligatoria de Identidad:**
-  - Al presionar **Guardar**, la aplicación abre siempre el diálogo de seguridad: *"Confirmar Identidad - Ingresa tu contraseña actual para guardar los cambios"*.
-  - El usuario debe digitar su clave actual; si no es correcta, el sistema muestra el aviso: *"Contraseña incorrecta - Por favor, verifica que los caracteres sean correctos e intenta ingresar de nuevo."*
+    - Al presionar **Guardar**, la aplicación abre siempre el diálogo de seguridad: *"Confirmar Identidad - Ingresa tu contraseña actual para guardar los cambios"*.
+    - El usuario debe digitar su clave actual; si no es correcta, el sistema muestra el aviso: *"Contraseña incorrecta - Por favor, verifica que los caracteres sean correctos e intenta ingresar de nuevo."*
 - **Protocolo de Modificación de Correo Electrónico:**
-  - Si el usuario modifica el campo **Email**: al ingresar su contraseña, el sistema envía un correo de confirmación a la nueva dirección y muestra el mensaje: *"Correo de confirmación enviado - Hemos enviado un correo de confirmación a [nuevo_correo]. Por favor, verifícalo en los próximos 30 minutos para activar tu cuenta."*
-  - Mientras el usuario no verifique el enlace recibido en su bandeja de entrada, la aplicación mantendrá un aviso en la pantalla de su cuenta: *"Correo pendiente de confirmar. Si ya completaste el proceso, tu información se actualizará automáticamente en tu próxima visita."*
+    - Si el usuario modifica el campo **Email**: al ingresar su contraseña, el sistema envía un correo de confirmación a la nueva dirección y muestra el mensaje: *"Correo de confirmación enviado - Hemos enviado un correo de confirmación a [nuevo_correo]. Por favor, verifícalo en los próximos 30 minutos para activar tu cuenta."*
+    - Mientras el usuario no verifique el enlace recibido en su bandeja de entrada, la aplicación mantendrá un aviso en la pantalla de su cuenta: *"Correo pendiente de confirmar. Si ya completaste el proceso, tu información se actualizará automáticamente en tu próxima visita."*
 - **Actualización de Nombre y Apellidos (Sin cambio de correo):**
-  - Si no se modificó el correo electrónico, una vez confirmada la contraseña actual, el sistema actualiza los datos y muestra el diálogo: *"Perfil actualizado - Tus datos han sido actualizados correctamente."*
+    - Si no se modificó el correo electrónico, una vez confirmada la contraseña actual, el sistema actualiza los datos y muestra el diálogo: *"Perfil actualizado - Tus datos han sido actualizados correctamente."*
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Menú lateral principal > **Mi cuenta** > Sección Preferencias de cuenta > Opción **Editar perfil**.
+**Ruta de acceso en la aplicación:** Menú lateral principal > **Mi cuenta** > Sección Preferencias de cuenta > Opción **Editar perfil**.
+
 1. En la pantalla principal de su finca, abra el menú lateral de navegación y presione la opción **Mi cuenta**.
 2. En la pantalla de su cuenta, localice la sección de acciones y presione la opción **Editar perfil**.
 3. En el formulario, modifique los campos que requiera:
-   - **Nombre:** Escriba su nombre de pila.
-   - **Apellidos:** Escriba sus apellidos.
-   - **Email:** Ingrese su nueva dirección de correo electrónico (si desea cambiarla).
+    - **Nombre:** Escriba su nombre de pila.
+     - **Apellidos:** Escriba sus apellidos.
+     - **Email:** Ingrese su nueva dirección de correo electrónico (si desea cambiarla).
 4. Presione el botón **Guardar**.
 5. En el cuadro de diálogo **Confirmar Identidad**, escriba su contraseña actual en la casilla correspondiente.
 6. Presione **Confirmar**.
 7. Verifique el resultado según los datos modificados:
-   - Si cambió su nombre o apellido: verá el mensaje *"Perfil actualizado"*. Presione **Aceptar** para regresar a su cuenta.
-   - Si cambió su correo electrónico: verá el mensaje *"Correo de confirmación enviado"*. Presione **Aceptar**, abra su bandeja de entrada de correo (o carpeta de spam) antes de 30 minutos y presione el enlace recibido para confirmar el cambio.
-- **Pantalla de llegada tras guardar:** Pantalla de **Mi cuenta** (regresa a la vista general de la cuenta al presionar Aceptar en el diálogo final).
+    - Si cambió su nombre o apellido: verá el mensaje *"Perfil actualizado"*. Presione **Aceptar** para regresar a su cuenta.
+     - Si cambió su correo electrónico: verá el mensaje *"Correo de confirmación enviado"*. Presione **Aceptar**, abra su bandeja de entrada de correo (o carpeta de spam) antes de 30 minutos y presione el enlace recibido para confirmar el cambio.
+   
+**Pantalla de llegada tras guardar:** Pantalla de **Mi cuenta** (regresa a la vista general de la cuenta al presionar Aceptar en el diálogo final).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

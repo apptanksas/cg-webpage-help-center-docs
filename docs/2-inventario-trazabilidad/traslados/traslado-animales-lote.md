@@ -27,8 +27,8 @@ Permite reasignar y transferir uno o múltiples animales de la finca hacia un nu
 - **Permisos requeridos:** El usuario debe contar con permisos de edición de animales en la finca asignada. Si no dispone de este permiso, el sistema impedirá completar la reasignación.
 - **Lote de destino obligatorio:** Es indispensable seleccionar el lote al cual se van a trasladar los animales antes de confirmar la operación.
 - **Lote de origen opcional:**
-  - Si selecciona un lote de origen, el selector de animales se filtrará automáticamente mostrando únicamente los animales que se encuentren registrados en dicho lote.
-  - Si no selecciona un lote de origen, el selector mostrará todos los animales activos de la finca, permitiendo mover animales incluso si actualmente no tienen un lote asignado.
+    - Si selecciona un lote de origen, el selector de animales se filtrará automáticamente mostrando únicamente los animales que se encuentren registrados en dicho lote.
+    - Si no selecciona un lote de origen, el selector mostrará todos los animales activos de la finca, permitiendo mover animales incluso si actualmente no tienen un lote asignado.
 - **Estado de los animales:** Solo se pueden trasladar animales vivos y que se encuentren físicamente registrados dentro de la finca actual. No se muestran animales dados de baja, muertos ni vendidos.
 - **Selección mínima:** Es obligatorio seleccionar al menos un animal en la lista antes de presionar el botón de traslado.
 - **Evitar duplicados en selección:** El selector evita agregar dos veces el mismo animal a la tabla de traslado.
@@ -42,14 +42,15 @@ Permite reasignar y transferir uno o múltiples animales de la finca hacia un nu
 2. **(Opcional) Seleccionar lote de origen:** Presione el campo **Seleccionar lote de origen** si desea filtrar la búsqueda para ver únicamente los animales que pertenecen a un lote determinado. Si desea ver todos los animales de la finca, deje este campo vacío.
 3. **Seleccionar lote de destino:** Presione el campo obligatorio **Seleccionar lote de destino** y elija de la lista el lote al cual desea mover los animales.
 4. **Agregar animales:** Presione el botón **Seleccionar animales** (con ícono de suma). Se desplegará la lista de animales disponibles:
-   - Marque las casillas de los animales que desea cambiar de lote.
-   - Si desea retirar un animal ya seleccionado, puede desmarcarlo en el selector o presionar el ícono de eliminar (papelera o cruz) que aparece en su fila dentro de la tabla de la pantalla principal.
-   - En la tabla de resumen podrá comprobar el **Código** de cada animal y su **Lote actual** (o la indicación **Ninguno** si no tenía lote previo).
+    - Marque las casillas de los animales que desea cambiar de lote.
+     - Si desea retirar un animal ya seleccionado, puede desmarcarlo en el selector o presionar el ícono de eliminar (papelera o cruz) que aparece en su fila dentro de la tabla de la pantalla principal.
+     - En la tabla de resumen podrá comprobar el **Código** de cada animal y su **Lote actual** (o la indicación **Ninguno** si no tenía lote previo).
 5. **Comprobar la dirección del traslado:** Debajo de la tabla observará una flecha indicadora y el nombre del lote de destino hacia el cual se moverá el grupo de ganado.
 6. **Guardar y confirmar:**
-   - Presione el botón **Trasladar animales**.
-   - En el cuadro de diálogo de confirmación que pregunta *"¿Estas seguro de trasladar los animales seleccionados al lote [Nombre del Lote]?"*, presione **Confirmar** para procesar la reasignación.
-- **Pantalla de llegada tras guardar:** Tras procesar el movimiento, el sistema muestra el mensaje emergente de éxito *"Animales transferidos exitosamente"* y redirige al usuario automáticamente a la pantalla anterior.
+    - Presione el botón **Trasladar animales**.
+     - En el cuadro de diálogo de confirmación que pregunta *"¿Estas seguro de trasladar los animales seleccionados al lote [Nombre del Lote]?"*, presione **Confirmar** para procesar la reasignación.
+
+**Pantalla de llegada tras guardar:** Tras procesar el movimiento, el sistema muestra el mensaje emergente de éxito *"Animales transferidos exitosamente"* y redirige al usuario automáticamente a la pantalla anterior.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

@@ -27,29 +27,29 @@ Al seleccionar una finca, todo el contexto operativo de la aplicación (inventar
 
 ### Reglas de Negocio y Restricciones
 - **Permisos de visualización y acceso:**
-  - Cualquier usuario registrado con una o más fincas asignadas puede abrir la pantalla de selección para alternar entre sus predios.
-  - Para iniciar la creación de un nuevo predio desde esta pantalla (tarjeta con ícono de suma), el usuario debe poseer el permiso de creación de fincas. Si su perfil o rol actual no lo permite, el sistema bloqueará el avance mostrando la advertencia de permisos insuficientes.
+    - Cualquier usuario registrado con una o más fincas asignadas puede abrir la pantalla de selección para alternar entre sus predios.
+    - Para iniciar la creación de un nuevo predio desde esta pantalla (tarjeta con ícono de suma), el usuario debe poseer el permiso de creación de fincas. Si su perfil o rol actual no lo permite, el sistema bloqueará el avance mostrando la advertencia de permisos insuficientes.
 - **Comportamiento en el menú lateral según el número de fincas registradas:**
-  - *Caso 1: Usuario con una sola finca registrada:* En la parte superior del menú lateral se muestra la tarjeta de la finca actual junto a un botón directo para registrar una nueva explotación pecuaria (**Nueva finca**). En este caso, **no aparece el botón con la flecha desplegable**, ya que no existen predios adicionales para alternar en el dispositivo. Si el usuario desea conmutar entre fincas, primero debe registrar una segunda finca mediante dicho botón de alta.
-  - *Caso 2: Usuario con 2 o más fincas registradas:* En la parte superior del menú lateral se muestran hasta 2 tarjetas de fincas en acceso rápido y, a la derecha de las mismas, aparece un botón circular con una **flecha desplegable hacia abajo**. Al presionar este botón, se abre la pantalla completa del selector general de fincas.
-  - *Caso 3: Usuario sin finca seleccionada o activa:* El menú lateral muestra un botón prominente titulado **Seleccionar finca** para acceder directamente a la pantalla de selección y definir el predio de trabajo.
+    - *Caso 1: Usuario con una sola finca registrada:* En la parte superior del menú lateral se muestra la tarjeta de la finca actual junto a un botón directo para registrar una nueva explotación pecuaria (**Nueva finca**). En este caso, **no aparece el botón con la flecha desplegable**, ya que no existen predios adicionales para alternar en el dispositivo. Si el usuario desea conmutar entre fincas, primero debe registrar una segunda finca mediante dicho botón de alta.
+    - *Caso 2: Usuario con 2 o más fincas registradas:* En la parte superior del menú lateral se muestran hasta 2 tarjetas de fincas en acceso rápido y, a la derecha de las mismas, aparece un botón circular con una **flecha desplegable hacia abajo**. Al presionar este botón, se abre la pantalla completa del selector general de fincas.
+    - *Caso 3: Usuario sin finca seleccionada o activa:* El menú lateral muestra un botón prominente titulado **Seleccionar finca** para acceder directamente a la pantalla de selección y definir el predio de trabajo.
 - **Contador y balance de fincas en cabecera:**
-  - En la barra superior, a la derecha del título, se despliega una fracción numérica que indica el estado de la cuota: el primer número representa la cantidad de fincas propias registradas por el usuario, y el segundo número el límite máximo de fincas permitidas según el plan o complementos contratados (por ejemplo, 1/1, 2/3).
-  - Las fincas en las que el usuario colabora como invitado o empleado no descuentan de su cuota de fincas propias de suscripción, pero sí se muestran en la cuadrícula para su consulta y gestión.
+    - En la barra superior, a la derecha del título, se despliega una fracción numérica que indica el estado de la cuota: el primer número representa la cantidad de fincas propias registradas por el usuario, y el segundo número el límite máximo de fincas permitidas según el plan o complementos contratados (por ejemplo, 1/1, 2/3).
+    - Las fincas en las que el usuario colabora como invitado o empleado no descuentan de su cuota de fincas propias de suscripción, pero sí se muestran en la cuadrícula para su consulta y gestión.
 - **Ordenamiento y distintivos en la cuadrícula:**
-  - Las fincas se presentan en una cuadrícula adaptable (3 columnas en teléfonos y 5 columnas en tabletas).
-  - La primera posición de la cuadrícula siempre está reservada para la opción de registrar un nuevo predio.
-  - Las fincas en las que el usuario es propietario se ordenan con prioridad al inicio de la lista y exhiben una insignia distintiva en la esquina superior de su tarjeta con el texto **Propietario**.
-  - Si la finca cuenta con fotografía registrada, se despliega en su tarjeta; de lo contrario, se presenta la ilustración estándar de la plataforma.
+    - Las fincas se presentan en una cuadrícula adaptable (3 columnas en teléfonos y 5 columnas en tabletas).
+    - La primera posición de la cuadrícula siempre está reservada para la opción de registrar un nuevo predio.
+    - Las fincas en las que el usuario es propietario se ordenan con prioridad al inicio de la lista y exhiben una insignia distintiva en la esquina superior de su tarjeta con el texto **Propietario**.
+    - Si la finca cuenta con fotografía registrada, se despliega en su tarjeta; de lo contrario, se presenta la ilustración estándar de la plataforma.
 - **Restricción por suscripción o fincas deshabilitadas:**
-  - Si una finca se encuentra deshabilitada debido al vencimiento de la suscripción o por exceder el número de fincas adicionales activas en la cuenta, su imagen se muestra atenuada en escala de grises y con un ícono de bloqueo en el centro.
-  - Al presionar una finca deshabilitada, el sistema impide el acceso a sus registros y despliega un cuadro de diálogo informativo indicando que se debe renovar o actualizar la suscripción para reactivarla.
+    - Si una finca se encuentra deshabilitada debido al vencimiento de la suscripción o por exceder el número de fincas adicionales activas en la cuenta, su imagen se muestra atenuada en escala de grises y con un ícono de bloqueo en el centro.
+    - Al presionar una finca deshabilitada, el sistema impide el acceso a sus registros y despliega un cuadro de diálogo informativo indicando que se debe renovar o actualizar la suscripción para reactivarla.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - *Ruta 1 (Desde el Menú Lateral con 2 o más fincas):* Menú lateral principal (ícono de tres líneas horizontales en la esquina superior izquierda) > En la sección superior donde se visualizan las tarjetas de fincas, pulsar el botón circular con la flecha desplegable hacia abajo situado a la derecha.
-  - *Ruta 2 (Desde el Menú Lateral si no hay finca seleccionada):* Menú lateral principal > Pulsar el botón central **Seleccionar finca**.
-  - *Nota sobre cuentas con una sola finca:* Si el usuario tiene una única finca registrada, la flecha desplegable no se muestra en el menú lateral; en su lugar, se visualiza la tarjeta de la finca activa junto al botón **Nueva finca** para permitirle registrar un segundo predio.
+    - *Ruta 1 (Desde el Menú Lateral con 2 o más fincas):* Menú lateral principal (ícono de tres líneas horizontales en la esquina superior izquierda) > En la sección superior donde se visualizan las tarjetas de fincas, pulsar el botón circular con la flecha desplegable hacia abajo situado a la derecha.
+    - *Ruta 2 (Desde el Menú Lateral si no hay finca seleccionada):* Menú lateral principal > Pulsar el botón central **Seleccionar finca**.
+    - *Nota sobre cuentas con una sola finca:* Si el usuario tiene una única finca registrada, la flecha desplegable no se muestra en el menú lateral; en su lugar, se visualiza la tarjeta de la finca activa junto al botón **Nueva finca** para permitirle registrar un segundo predio.
 
 #### 1. Exploración de Predios y Estado de la Cuenta
 - En la barra superior se visualiza el título **Fincas**, el botón de cierre para volver a la pantalla anterior sin cambiar de predio, y el contador de fincas propias frente al cupo máximo contratado.

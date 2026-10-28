@@ -41,8 +41,8 @@ Muestra el estado contractual de la cuenta:
 - **Fecha de inicio** y **Fecha de finalización** (o **Vitalicia** si aplica).
 - **Días restantes** para la renovación o vencimiento.
 - **Botón de acción contextual:**
-  - Si la suscripción está vencida: botón **Renovar suscripción**.
-  - Si la suscripción está vigente: botón **Cancelar suscripción** (abre el cliente de correo con el asunto predeterminado para gestionar la baja comercial).
+    - Si la suscripción está vencida: botón **Renovar suscripción**.
+    - Si la suscripción está vigente: botón **Cancelar suscripción** (abre el cliente de correo con el asunto predeterminado para gestionar la baja comercial).
 
 #### 4. Acciones de Cuenta
 Botones de navegación directa:
@@ -63,7 +63,8 @@ Interruptores de configuración operativa:
 - **Preferencias Locales:** Permite al usuario forzar el **Modo sin conexión** para trabajar sin interrupciones en potrero y gestionar los permisos del sistema operativo.
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Menú lateral principal > Opción **Mi cuenta**.
+**Ruta de acceso en la aplicación:** Menú lateral principal > Opción **Mi cuenta**.
+
 1. En la pantalla principal de su finca, abra el menú lateral de navegación y presione la opción **Mi cuenta**.
 2. Revise su información personal y el estado de su membresía en las tarjetas correspondientes.
 3. Para modificar sus datos o su clave, presione **Editar Perfil** o **Cambiar contraseña** en la sección de acciones.

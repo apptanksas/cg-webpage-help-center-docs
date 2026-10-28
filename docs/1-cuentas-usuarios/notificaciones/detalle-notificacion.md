@@ -24,28 +24,28 @@ Permite visualizar en detalle la información completa de un aviso o notificaci�
 
 ### Reglas de Negocio y Restricciones
 - **Identificador de notificación obligatorio:**
-  - La pantalla requiere el identificador único de la notificación para cargar su contenido. Si se intenta acceder mediante un enlace con un identificador inexistente, dañado o no encontrado en el dispositivo, el sistema cerrará la pantalla de forma automática y regresará a la vista anterior.
+    - La pantalla requiere el identificador único de la notificación para cargar su contenido. Si se intenta acceder mediante un enlace con un identificador inexistente, dañado o no encontrado en el dispositivo, el sistema cerrará la pantalla de forma automática y regresará a la vista anterior.
 - **Visualización del contenido:**
-  - **Título:** Encabezado principal del comunicado, alerta o aviso pecuario.
-  - **Mensaje:** Descripción detallada del suceso o instrucción para el usuario.
+    - **Título:** Encabezado principal del comunicado, alerta o aviso pecuario.
+    - **Mensaje:** Descripción detallada del suceso o instrucción para el usuario.
 - **Acciones y botones disponibles:**
-  - Si la notificación cuenta con acciones asociadas, se muestra el encabezado correspondiente junto con la lista de botones de acción.
-  - Al presionar cualquiera de los botones de acción, el sistema procesa el enlace interno o externo correspondiente, abriendo de forma fluida la pantalla de destino en la aplicación o el navegador del teléfono móvil.
-  - Si la notificación no cuenta con acciones interactivas adicionales, se presenta únicamente como un comunicado informativo con su título y mensaje.
+    - Si la notificación cuenta con acciones asociadas, se muestra el encabezado correspondiente junto con la lista de botones de acción.
+    - Al presionar cualquiera de los botones de acción, el sistema procesa el enlace interno o externo correspondiente, abriendo de forma fluida la pantalla de destino en la aplicación o el navegador del teléfono móvil.
+    - Si la notificación no cuenta con acciones interactivas adicionales, se presenta únicamente como un comunicado informativo con su título y mensaje.
 - **Independencia de autenticación directa en la ruta:**
-  - La pantalla puede invocarse desde enlaces directos externos o avisos del sistema del teléfono; sin embargo, para navegar a secciones protegidas de la finca tras presionar un botón de acción, el usuario debe tener su sesión iniciada en la aplicación.
+    - La pantalla puede invocarse desde enlaces directos externos o avisos del sistema del teléfono; sin embargo, para navegar a secciones protegidas de la finca tras presionar un botón de acción, el usuario debe tener su sesión iniciada en la aplicación.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Opción 1 (Desde notificaciones del teléfono móvil o avisos emergentes):** Toque la notificación emergente recibida en la barra de notificaciones del dispositivo o el aviso en pantalla.
-  - **Opción 2 (Desde enlaces directos o canales de mensajería):** Presione un enlace directo o comunicado oficial que apunte específicamente al identificador de una notificación en Control Ganadero.
-  - **Opción 3 (Desde la bandeja de alertas en el menú inferior):** En la barra de navegación inferior, presione la opción **Alertas** (icono de campana) para consultar la lista general de notificaciones de la finca y acceder a los avisos pendientes.
+    - **Opción 1 (Desde notificaciones del teléfono móvil o avisos emergentes):** Toque la notificación emergente recibida en la barra de notificaciones del dispositivo o el aviso en pantalla.
+    - **Opción 2 (Desde enlaces directos o canales de mensajería):** Presione un enlace directo o comunicado oficial que apunte específicamente al identificador de una notificación en Control Ganadero.
+    - **Opción 3 (Desde la bandeja de alertas en el menú inferior):** En la barra de navegación inferior, presione la opción **Alertas** (icono de campana) para consultar la lista general de notificaciones de la finca y acceder a los avisos pendientes.
 
 #### 1. Lectura de la notificación
 1. En la barra superior de la pantalla observará el encabezado **Notificación**, el cual cuenta permanentemente con un botón de flecha hacia atrás en la esquina superior izquierda.
 2. En el área central de la pantalla se despliega una tarjeta con:
-   - El título principal del comunicado en texto destacado.
-   - El mensaje descriptivo con el detalle completo del aviso o alerta pecuaria.
+    - El título principal del comunicado en texto destacado.
+     - El mensaje descriptivo con el detalle completo del aviso o alerta pecuaria.
 
 #### 2. Ejecución de acciones disponibles (si aplica)
 1. Si el comunicado incluye opciones interactivas, se mostrará el título **Acciones disponibles**.

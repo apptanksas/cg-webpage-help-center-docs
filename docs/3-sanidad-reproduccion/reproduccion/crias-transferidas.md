@@ -25,25 +25,27 @@ Pantalla de consulta y auditoría zootécnica que consolida en formato de tabla 
 
 ### Reglas de Negocio y Restricciones
 - **Criterio de filtrado de biotecnología embrionaria:**
-  - La pantalla lista exclusivamente aquellos animales que tienen una relación biológica confirmada de maternidad con la hembra en consulta y que, de forma obligatoria, cuentan con una madre receptora o sustituta registrada en su árbol genealógico.
-  - Las crías nacidas por parto natural convencional (donde la madre biológica gestó y parió a su propio ternero sin receptora) no se muestran en esta vista; se consultan en la tabla general de partos o hijos.
+    - La pantalla lista exclusivamente aquellos animales que tienen una relación biológica confirmada de maternidad con la hembra en consulta y que, de forma obligatoria, cuentan con una madre receptora o sustituta registrada en su árbol genealógico.
+    - Las crías nacidas por parto natural convencional (donde la madre biológica gestó y parió a su propio ternero sin receptora) no se muestran en esta vista; se consultan en la tabla general de partos o hijos.
 - **Asociación obligatoria de la receptora:**
-  - Cada cría en este listado debe tener asignada una hembra receptora válida en la base de datos de la finca. En la tabla se muestra el código identificador visual o nombre de dicha madre sustituta.
+    - Cada cría en este listado debe tener asignada una hembra receptora válida en la base de datos de la finca. En la tabla se muestra el código identificador visual o nombre de dicha madre sustituta.
 - **Navegación interactiva hacia la hoja de vida:**
-  - Al presionar cualquier fila de la tabla, la aplicación redirige de manera automática al resumen zootécnico y productivo del hijo seleccionado.
+    - Al presionar cualquier fila de la tabla, la aplicación redirige de manera automática al resumen zootécnico y productivo del hijo seleccionado.
 - **Naturaleza de auditoría especializada:**
-  - Esta pantalla está destinada a la consulta y trazabilidad genética de embriones nacidos; no incluye botones de creación directa o edición manual, ya que los datos se alimentan desde el registro de partos y genealogías en la aplicación.
+    - Esta pantalla está destinada a la consulta y trazabilidad genética de embriones nacidos; no incluye botones de creación directa o edición manual, ya que los datos se alimentan desde el registro de partos y genealogías en la aplicación.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - En la barra inferior de navegación, toque **Animales** > Seleccione a la hembra donante en el listado > Presione el módulo **Reproducción** > Desplácese hasta la sección **Hijos transferidos** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
+    - En la barra inferior de navegación, toque **Animales** > Seleccione a la hembra donante en el listado > Presione el módulo **Reproducción** > Desplácese hasta la sección **Hijos transferidos** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación superior:** Exhibe el título **Hijos transferidos** alineado a la izquierda sobre el color de fondo institucional. Incorpora únicamente el botón de retroceso (flecha hacia la izquierda) para cerrar la tabla y volver al resumen reproductivo de la hembra donante (sin menús adicionales ni botones de acción secundarios).
 - **Cinta de identidad del animal:** Franja horizontal centrada con fondo gris claro, ubicada inmediatamente debajo de la barra superior, que exhibe el icono del género de la hembra y su identificación compuesta (nombre y código de arete visual entre paréntesis) en una sola línea, garantizando la trazabilidad zootécnica durante la consulta.
 
 #### Estructura y Columnas de la Tabla
+
 La información se presenta ordenada en cuatro columnas zootécnicas:
+
 1. **Fecha:** Exhibe la fecha de nacimiento del ternero o cría nacida por transferencia embrionaria, expresada en el formato local de fecha de la finca.
 2. **Madre sustituta:** Muestra el código de arete visual o nombre de la vaca receptora que llevó a cabo la gestación y el parto.
 3. **Género:** Indica el sexo biológico de la cría (**Macho** o **Hembra**).

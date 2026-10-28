@@ -25,23 +25,23 @@ Permite a los ganaderos y propietarios de fincas consultar la oferta de planes c
 
 ### Reglas de Negocio y Restricciones
 - **Conexión a internet obligatoria:**
-  - El sistema exige conectividad continua para acceder a la pantalla. Si el dispositivo no tiene acceso a internet, no se desplegará la oferta comercial de suscripciones.
+    - El sistema exige conectividad continua para acceder a la pantalla. Si el dispositivo no tiene acceso a internet, no se desplegará la oferta comercial de suscripciones.
 - **Tienda de aplicaciones vinculada:**
-  - Las transacciones monetarias se efectúan de forma segura a través del método de pago oficial vinculado a la cuenta del usuario en su dispositivo (Google Play en Android o App Store en iOS).
+    - Las transacciones monetarias se efectúan de forma segura a través del método de pago oficial vinculado a la cuenta del usuario en su dispositivo (Google Play en Android o App Store en iOS).
 - **Procesamiento y confirmación de la compra:**
-  - Durante el proceso de pago con la tienda, la aplicación muestra una pantalla de espera mientras se procesa la solicitud con el banco o tienda de aplicaciones.
-  - Si el usuario cancela voluntariamente el flujo de compra desde el cuadro de diálogo de la tienda de aplicaciones, la pantalla de espera se retira de inmediato, permitiéndole permanecer en la pantalla de planes o salir.
-  - Al completarse exitosamente la compra en la tienda, el sistema procesa la validación del recibo digital, actualiza internamente el estado de la cuenta a membresía activa y despliega la confirmación visual de activación exitosa.
+    - Durante el proceso de pago con la tienda, la aplicación muestra una pantalla de espera mientras se procesa la solicitud con el banco o tienda de aplicaciones.
+    - Si el usuario cancela voluntariamente el flujo de compra desde el cuadro de diálogo de la tienda de aplicaciones, la pantalla de espera se retira de inmediato, permitiéndole permanecer en la pantalla de planes o salir.
+    - Al completarse exitosamente la compra en la tienda, el sistema procesa la validación del recibo digital, actualiza internamente el estado de la cuenta a membresía activa y despliega la confirmación visual de activación exitosa.
 - **Protección de salida durante procesos críticos:**
-  - El botón o gesto para volver atrás se encuentra temporalmente bloqueado mientras exista un proceso de pago o verificación en curso, o una vez que la pantalla de confirmación exitosa está en primer plano (en esta última se debe presionar el botón de confirmación correspondiente para concluir el flujo de forma segura).
+    - El botón o gesto para volver atrás se encuentra temporalmente bloqueado mientras exista un proceso de pago o verificación en curso, o una vez que la pantalla de confirmación exitosa está en primer plano (en esta última se debe presionar el botón de confirmación correspondiente para concluir el flujo de forma segura).
 - **Propagación global en la aplicación:**
-  - La activación de la membresía emite una actualización global en la aplicación que refresca de inmediato las restricciones de la finca activa, ocultando los avisos publicitarios de límite de animales y habilitando el registro continuo de nuevos ejemplares.
+    - La activación de la membresía emite una actualización global en la aplicación que refresca de inmediato las restricciones de la finca activa, ocultando los avisos publicitarios de límite de animales y habilitando el registro continuo de nuevos ejemplares.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Opción 1 (Desde el menú lateral principal):** Toque el icono de menú de tres líneas en la esquina superior izquierda > En la parte inferior del menú lateral, presione el banner promocional de **Control Ganadero Pro** o el aviso de límite de animales.
-  - **Opción 2 (Al alcanzar el límite de animales de la finca):** Al intentar registrar un nuevo animal habiendo alcanzado el cupo máximo de su plan, en el aviso emergente presione el botón **ACTUALIZAR MI PLAN**.
-  - **Opción 3 (Desde la administración de su cuenta de usuario):** Menú lateral > **Mi Cuenta** > Sección **Sobre tu suscripción** > Presione el botón **Renovar suscripción** (disponible cuando la suscripción previa ha caducado o requiere renovación).
+    - **Opción 1 (Desde el menú lateral principal):** Toque el icono de menú de tres líneas en la esquina superior izquierda > En la parte inferior del menú lateral, presione el banner promocional de **Control Ganadero Pro** o el aviso de límite de animales.
+    - **Opción 2 (Al alcanzar el límite de animales de la finca):** Al intentar registrar un nuevo animal habiendo alcanzado el cupo máximo de su plan, en el aviso emergente presione el botón **ACTUALIZAR MI PLAN**.
+    - **Opción 3 (Desde la administración de su cuenta de usuario):** Menú lateral > **Mi Cuenta** > Sección **Sobre tu suscripción** > Presione el botón **Renovar suscripción** (disponible cuando la suscripción previa ha caducado o requiere renovación).
 
 #### 1. Consulta de planes y selección de suscripción
 1. Al abrir la pantalla de planes, se presenta el catálogo oficial de suscripciones de Control Ganadero con el detalle de beneficios, periodicidad de facturación (mensual o anual) y tarifas vigentes en su moneda local según la tienda de aplicaciones.
@@ -57,7 +57,8 @@ Permite a los ganaderos y propietarios de fincas consultar la oferta de planes c
 1. Una vez confirmada la transacción por la tienda de aplicaciones, la aplicación mostrará una pantalla con el icono distintivo de la marca y el título **¡Membresia activada!**.
 2. Lea el mensaje de bienvenida y agradecimiento: *"Tu suscripción a la membresia de Control Ganadero ha sido activada exitosamente."*
 3. Presione el botón **Entendido** para finalizar el proceso.
-- **Pantalla de llegada tras guardar:** El sistema cierra la pantalla de suscripción y retorna a la pantalla anterior (su finca activa o el formulario de registro de animales), con todos los beneficios y nuevos cupos habilitados.
+
+**Pantalla de llegada tras guardar:** El sistema cierra la pantalla de suscripción y retorna a la pantalla anterior (su finca activa o el formulario de registro de animales), con todos los beneficios y nuevos cupos habilitados.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

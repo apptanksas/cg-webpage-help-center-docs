@@ -4,7 +4,7 @@ modulo_id: "auth-login-usuario"
 nombre_funcionalidad: "Inicio de Sesión y Acceso a la Cuenta"
 categoria: "cuentas-usuarios"
 submodulo: "auth"
-version_minima_app: "2.4"
+version_minima_app: "2026.10.1"
 fecha_actualizacion: "2026-09-25"
 intenciones_y_sinonimos:
   - "no puedo ingresar a mi cuenta"
@@ -31,14 +31,19 @@ Permite a los productores, administradores de finca y colaboradores ingresar de 
 - Si las credenciales son revocadas o la sesión expira en el servidor, la aplicación cerrará el acceso de forma segura y solicitará ingresar nuevamente los datos.
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Pantalla de Bienvenida inicial > Botón **Iniciar Sesión**
-1. Abra la aplicación Control Ganadero en su teléfono o dispositivo móvil.
-2. En la pantalla principal de bienvenida, presione la opción **Iniciar Sesión**.
-3. Escriba su **Correo electrónico** registrado en la casilla superior.
-4. Escriba su **Contraseña** en la casilla correspondiente.
-5. Presione el botón verde **Ingresar**.
-6. Espere unos segundos mientras la barra de progreso autentica su cuenta y lo dirige al panel principal de su finca.
-- **Pantalla de llegada tras guardar:** Panel Principal de la Finca Activa (ingreso directo al resumen y gestión del predio).
+**Ruta de acceso en la aplicación:** Pantalla de Bienvenida inicial > Botón **Iniciar Sesión**.
+
+1. En la pantalla inicial de bienvenida, presione la opción **Iniciar Sesión**.
+2. En la casilla **Email**, escriba su dirección de correo electrónico registrada.
+3. En la casilla **Contraseña**, escriba su clave personal de acceso.
+4. Presione el botón **Ingresar**.
+5. Observe la barra de porcentaje mientras la aplicación autentica sus datos y descarga la información actualizada de su finca.
+
+**Pantalla de llegada tras guardar:** Panel principal de la finca activa (**Inicio**). Si el usuario no tiene fincas registradas o asignadas, la aplicación lo redirige a la pantalla de **Acceso a la Finca**.
+
+### Secciones Complementarias en la Pantalla
+- **¿Olvidó su clave?:** Sobre el botón de ingreso se encuentra la opción **Olvidé mi contraseña**, que da acceso directo a la recuperación de clave por correo electrónico.
+- **¿No tiene cuenta o es nuevo trabajador?:** En la parte inferior, la sección de ayuda responde a la pregunta *"¿No tienes cuenta o eres un trabajador de una finca?"* y ofrece el botón **Registrarme** y el enlace a **Más información**.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

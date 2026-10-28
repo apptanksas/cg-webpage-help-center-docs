@@ -47,28 +47,28 @@ Permite registrar y gestionar de manera individual la aplicación de vacunas y b
     - Vacuna Bacteriana
     - Otra Vacuna
 - **Campos opcionales:**
-  - **Notas y observaciones:** Espacio de texto multilínea para consignar datos complementarios, tales como el laboratorio fabricante, número de lote de la vacuna, vía de inoculación (subcutánea, intramuscular) o dosis en mililitros.
+    - **Notas y observaciones:** Espacio de texto multilínea para consignar datos complementarios, tales como el laboratorio fabricante, número de lote de la vacuna, vía de inoculación (subcutánea, intramuscular) o dosis en mililitros.
 - **Permisos de usuario requeridos:**
-  - Para registrar una nueva dosis se requiere el permiso de creación de vacunas.
-  - Para modificar una dosis previa se requiere el permiso de actualización de vacunas.
-  - Para remover una dosis registrada se requiere el permiso de eliminación de vacunas. Si el usuario no tiene los privilegios asignados en la finca, el sistema restringe el guardado.
+    - Para registrar una nueva dosis se requiere el permiso de creación de vacunas.
+    - Para modificar una dosis previa se requiere el permiso de actualización de vacunas.
+    - Para remover una dosis registrada se requiere el permiso de eliminación de vacunas. Si el usuario no tiene los privilegios asignados en la finca, el sistema restringe el guardado.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Acceso directo desde sanidad):** Menú inferior **Animales** > Seleccionar el animal > **Datos Veterinarios** > Botón flotante circular con el signo más (**+**) > **Vacunación**.
-  - **Ruta 2 (Desde el historial de vacunas):** Menú inferior **Animales** > Seleccionar el animal > **Datos Veterinarios** > En la sección **Vacunación**, presionar la flecha orientada a la derecha > Presionar el botón flotante circular con el signo más (**+**) para crear o tocar un registro previo en la tabla para editar.
+    - **Ruta 1 (Acceso directo desde sanidad):** Menú inferior **Animales** > Seleccionar el animal > **Datos Veterinarios** > Botón flotante circular con el signo más (**+**) > **Vacunación**.
+    - **Ruta 2 (Desde el historial de vacunas):** Menú inferior **Animales** > Seleccionar el animal > **Datos Veterinarios** > En la sección **Vacunación**, presionar la flecha orientada a la derecha > Presionar el botón flotante circular con el signo más (**+**) para crear o tocar un registro previo en la tabla para editar.
 
 1. **Identificación de la pantalla y del animal:**
-   - En la barra superior confirme el título **Agregar Vacuna** (o **Editar Vacuna** si está modificando un registro existente).
-   - En la parte superior verifique la cinta identificadora del animal con su nombre y sexo.
+    - En la barra superior confirme el título **Agregar Vacuna** (o **Editar Vacuna** si está modificando un registro existente).
+    - En la parte superior verifique la cinta identificadora del animal con su nombre y sexo.
 2. **Diligenciamiento del formulario de vacunación:**
-   - **Fecha:** Toque el selector de fecha para ajustar el día de inoculación. Por defecto el campo sugiere la fecha de hoy.
-   - **Vacuna:** Toque el campo para abrir la lista de biológicos y seleccione la vacuna administrada (por ejemplo, Fiebre Aftosa, Brucelosis, Rabia o Complejo Respiratorio).
-   - **Notas y observaciones:** Escriba el número de lote, laboratorio o detalles de la aplicación si dispone de ellos (campo opcional).
+    - **Fecha:** Toque el selector de fecha para ajustar el día de inoculación. Por defecto el campo sugiere la fecha de hoy.
+    - **Vacuna:** Toque el campo para abrir la lista de biológicos y seleccione la vacuna administrada (por ejemplo, Fiebre Aftosa, Brucelosis, Rabia o Complejo Respiratorio).
+    - **Notas y observaciones:** Escriba el número de lote, laboratorio o detalles de la aplicación si dispone de ellos (campo opcional).
 3. **Guardado del registro:**
-   - Presione el botón **Registrar**.
-   - El sistema valida la información y muestra un mensaje de confirmación (**Vacuna creado exitosamente** o **Vacuna actualizado exitosamente**).
-- **Pantalla de llegada tras guardar:** Al guardarse la información con éxito o al presionar la equis (**X**) de cierre en la barra superior, la aplicación retorna a la pantalla anterior (el resumen de sanidad o la tabla de historial de vacunas del animal).
+    - Presione el botón **Registrar**.
+    - El sistema valida la información y muestra un mensaje de confirmación (**Vacuna creado exitosamente** o **Vacuna actualizado exitosamente**).
+    - **Pantalla de llegada tras guardar:** Al guardarse la información con éxito o al presionar la equis (**X**) de cierre en la barra superior, la aplicación retorna a la pantalla anterior (el resumen de sanidad o la tabla de historial de vacunas del animal).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

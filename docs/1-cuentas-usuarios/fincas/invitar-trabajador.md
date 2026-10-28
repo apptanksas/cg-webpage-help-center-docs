@@ -25,20 +25,20 @@ Permite al propietario de la finca ganadera (o usuarios autorizados) enviar invi
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos en la plataforma:**
-  - El usuario debe contar con el permiso de creación e invitación de colaboradores en la finca activa. Si un usuario sin este permiso intenta acceder o enviar el formulario, el sistema bloquea la operación y presenta el aviso: *"No tienes permisos para realizar esta acción."*
+    - El usuario debe contar con el permiso de creación e invitación de colaboradores en la finca activa. Si un usuario sin este permiso intenta acceder o enviar el formulario, el sistema bloquea la operación y presenta el aviso: *"No tienes permisos para realizar esta acción."*
 - **Campos obligatorios del formulario:**
-  - **Nombre:** Obligatorio. Debe corresponder al nombre personal o identificador del colaborador.
-  - **Correo electrónico:** Obligatorio. Debe cumplir con un formato válido de dirección de correo electrónico (ejemplo: `nombre@correo.com`).
-  - **Tipo de perfil:** Selección obligatoria entre los perfiles disponibles en el sistema.
+    - **Nombre:** Obligatorio. Debe corresponder al nombre personal o identificador del colaborador.
+    - **Correo electrónico:** Obligatorio. Debe cumplir con un formato válido de dirección de correo electrónico (ejemplo: `nombre@correo.com`).
+    - **Tipo de perfil:** Selección obligatoria entre los perfiles disponibles en el sistema.
 - **Perfiles predeterminados y niveles de acceso:**
-  - **Empleado (seleccionado por defecto):** Responsable del registro diario de actividades pecuarias de campo (pesajes, tareas, eventos). Cuenta con permisos para leer registros autorizados y registrar eventos, pero no puede editar ni eliminar configuraciones generales de la finca.
-  - **Administrador:** Encargado de supervisar y administrar la finca. Cuenta con permisos completos para leer, crear, editar y eliminar registros de la explotación ganadera, pero no puede administrar ni invitar a otros colaboradores.
-  - **Veterinario:** Responsable del seguimiento sanitario y reproductivo del hato. Puede leer registros de la finca y gestionar planes de vacunación, tratamientos, partos, celos e inseminaciones, pero no puede eliminar registros generales de la finca.
-  - **Visitante:** Usuario con acceso de solo consulta y lectura. No puede crear, editar ni eliminar información en la finca.
+    - **Empleado (seleccionado por defecto):** Responsable del registro diario de actividades pecuarias de campo (pesajes, tareas, eventos). Cuenta con permisos para leer registros autorizados y registrar eventos, pero no puede editar ni eliminar configuraciones generales de la finca.
+    - **Administrador:** Encargado de supervisar y administrar la finca. Cuenta con permisos completos para leer, crear, editar y eliminar registros de la explotación ganadera, pero no puede administrar ni invitar a otros colaboradores.
+    - **Veterinario:** Responsable del seguimiento sanitario y reproductivo del hato. Puede leer registros de la finca y gestionar planes de vacunación, tratamientos, partos, celos e inseminaciones, pero no puede eliminar registros generales de la finca.
+    - **Visitante:** Usuario con acceso de solo consulta y lectura. No puede crear, editar ni eliminar información en la finca.
 - **Tarjeta explicativa dinámica del rol:**
-  - Al cambiar la selección en el campo **Tipo de perfil**, la parte inferior del formulario actualiza de inmediato una tarjeta explicativa que detalla el título del perfil seleccionado, su descripción funcional y el desglose literal de permisos y restricciones.
+    - Al cambiar la selección en el campo **Tipo de perfil**, la parte inferior del formulario actualiza de inmediato una tarjeta explicativa que detalla el título del perfil seleccionado, su descripción funcional y el desglose literal de permisos y restricciones.
 - **Reinicio del formulario tras el envío:**
-  - Al completar con éxito la invitación, el sistema muestra el aviso *"Invitación enviada"* y restablece automáticamente los campos a sus valores iniciales (formulario limpio y perfil en **Empleado**), permitiendo invitar a otro usuario consecutivamente si se requiere.
+    - Al completar con éxito la invitación, el sistema muestra el aviso *"Invitación enviada"* y restablece automáticamente los campos a sus valores iniciales (formulario limpio y perfil en **Empleado**), permitiendo invitar a otro usuario consecutivamente si se requiere.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Menú lateral principal (ícono de tres líneas en la esquina superior izquierda) > **Trabajadores** > Presione el botón flotante con el ícono de agregar persona (+).
@@ -48,10 +48,10 @@ Permite al propietario de la finca ganadera (o usuarios autorizados) enviar invi
 2. En el campo **Nombre**, escriba el nombre completo del colaborador o empleado que desea vincular.
 3. En el campo **Correo electrónico**, ingrese la cuenta de correo electrónico exacta con la que el trabajador se registrará o iniciará sesión en la aplicación.
 4. En el campo desplegable **Tipo de perfil**, pulse para abrir la lista de roles y seleccione el que corresponda a las funciones del usuario:
-   - **Administrador**
-   - **Veterinario**
-   - **Empleado**
-   - **Visitante**
+    - **Administrador**
+     - **Veterinario**
+     - **Empleado**
+     - **Visitante**
 
 #### 2. Revisión de permisos asignados
 1. Debajo del botón de envío, consulte la tarjeta descriptiva de color gris claro.

@@ -27,24 +27,24 @@ Asimismo, la pantalla sirve como punto de partida para solicitar nuevos reportes
 
 ### Reglas de Negocio y Restricciones
 - **Filtrado por especie pecuaria:**
-  - Si la finca cuenta con más de una especie animal registrada y configurada, la aplicación habilita un selector en la barra superior identificado con la silueta de la especie activa.
-  - Al presionar dicho icono, se despliega el menú de selección con las especies disponibles. Al cambiar de especie, el historial se reinicia y muestra exclusivamente los reportes vinculados a ese tipo de animal.
-  - Si la explotación solo gestiona una especie, el sistema la selecciona de manera predeterminada y oculta el selector para simplificar la vista.
+    - Si la finca cuenta con más de una especie animal registrada y configurada, la aplicación habilita un selector en la barra superior identificado con la silueta de la especie activa.
+    - Al presionar dicho icono, se despliega el menú de selección con las especies disponibles. Al cambiar de especie, el historial se reinicia y muestra exclusivamente los reportes vinculados a ese tipo de animal.
+    - Si la explotación solo gestiona una especie, el sistema la selecciona de manera predeterminada y oculta el selector para simplificar la vista.
 - **Acceso a la creación de nuevos informes:**
-  - En la parte superior de la vista se ubica la tarjeta permanente **Generar nuevo informe**, la cual muestra la fecha del último informe solicitado en la finca.
-  - El botón **Iniciar** y el toque sobre la tarjeta requieren conexión a internet activa. Si el dispositivo no tiene red, el botón se muestra en gris deshabilitado y restringe el ingreso al asistente de creación.
+    - En la parte superior de la vista se ubica la tarjeta permanente **Generar nuevo informe**, la cual muestra la fecha del último informe solicitado en la finca.
+    - El botón **Iniciar** y el toque sobre la tarjeta requieren conexión a internet activa. Si el dispositivo no tiene red, el botón se muestra en gris deshabilitado y restringe el ingreso al asistente de creación.
 - **Estados de procesamiento de un informe:**
-  - **Generando... (Azul oscuro / En proceso):** El servidor central se encuentra procesando los algoritmos y compilando los datos zootécnicos solicitados. El icono de estado realiza una animación vertical continua. Mientras la pantalla permanezca abierta con conexión a internet, la aplicación verifica el avance cada 10 segundos. Si el reporte finaliza mientras el usuario observa la lista, se abre automáticamente la pantalla de resultados.
-  - **Completado (Verde oscuro / Exitoso):** El informe culminó su procesamiento y sus datos están consolidados. Se muestra el botón **Ver** habilitado en verde. Al pulsar la tarjeta o el botón **Ver**, el usuario accede a la pantalla de detalle, gráficos y exportación.
-  - **Error (Rojo / Fallido):** Ocurrió una interrupción durante el cómputo en el servidor o los parámetros generaron un conflicto irrecuperable. El botón **Ver** aparece deshabilitado en gris claro y no es posible abrir el reporte, requiriendo generar una nueva solicitud.
+    - **Generando... (Azul oscuro / En proceso):** El servidor central se encuentra procesando los algoritmos y compilando los datos zootécnicos solicitados. El icono de estado realiza una animación vertical continua. Mientras la pantalla permanezca abierta con conexión a internet, la aplicación verifica el avance cada 10 segundos. Si el reporte finaliza mientras el usuario observa la lista, se abre automáticamente la pantalla de resultados.
+    - **Completado (Verde oscuro / Exitoso):** El informe culminó su procesamiento y sus datos están consolidados. Se muestra el botón **Ver** habilitado en verde. Al pulsar la tarjeta o el botón **Ver**, el usuario accede a la pantalla de detalle, gráficos y exportación.
+    - **Error (Rojo / Fallido):** Ocurrió una interrupción durante el cómputo en el servidor o los parámetros generaron un conflicto irrecuperable. El botón **Ver** aparece deshabilitado en gris claro y no es posible abrir el reporte, requiriendo generar una nueva solicitud.
 - **Paginación y carga continua:**
-  - El historial expone en su encabezado la cantidad total de informes registrados entre corchetes (por ejemplo: `[15]`).
-  - La lista carga los reportes de manera progresiva a medida que el usuario se desplaza hacia abajo en la pantalla (scroll infinito). La paginación hacia bloques antiguos se suspende si el teléfono pierde la conexión a internet.
+    - El historial expone en su encabezado la cantidad total de informes registrados entre corchetes (por ejemplo: `[15]`).
+    - La lista carga los reportes de manera progresiva a medida que el usuario se desplaza hacia abajo en la pantalla (scroll infinito). La paginación hacia bloques antiguos se suspende si el teléfono pierde la conexión a internet.
 - **Pantalla vacía sin registros:**
-  - Si la finca no tiene ningún informe generado para la especie seleccionada, la pantalla presenta la ilustración representativa y el mensaje *"No hay informes generados"*.
+    - Si la finca no tiene ningún informe generado para la especie seleccionada, la pantalla presenta la ilustración representativa y el mensaje *"No hay informes generados"*.
 - **Indicadores de carga y progreso:**
-  - *Carga inicial:* Al ingresar a la pantalla, mientras se consulta por primera vez la lista de informes al servidor, se presenta un indicador de carga a pantalla completa.
-  - *Carga durante paginación (scroll infinito):* Al desplazarse hacia el final del listado para obtener reportes más antiguos, aparece un indicador de carga en la parte inferior de la lista mientras se reciben los nuevos registros.
+    - *Carga inicial:* Al ingresar a la pantalla, mientras se consulta por primera vez la lista de informes al servidor, se presenta un indicador de carga a pantalla completa.
+    - *Carga durante paginación (scroll infinito):* Al desplazarse hacia el final del listado para obtener reportes más antiguos, aparece un indicador de carga en la parte inferior de la lista mientras se reciben los nuevos registros.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Pantalla principal (**Inicio**) > Deslizar hasta la sección de accesos directos > Pulsar sobre la tarjeta **Informes** > Pantalla de historial de informes.

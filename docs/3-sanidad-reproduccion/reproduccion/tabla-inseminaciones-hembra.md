@@ -18,6 +18,7 @@ intenciones_y_sinonimos:
 # Tabla de Fecundaciones e Inseminaciones en Hembras
 
 ### Resumen y Alcance Funcional
+
 Pantalla de consulta y gestión zootécnica que presenta en formato de tabla el historial cronológico completo de servicios reproductivos, montas e inseminaciones recibidas por una hembra activa en la finca. Permite al ganadero auditar la fecha exacta de cada servicio, la modalidad empleada (Monta natural, Inseminación artificial, Transferencia de embriones u Otros), la identificación del toro o material seminal utilizado y, en casos de transferencia embrionaria, la madre genética donante del embrión. Asimismo, facilita el acceso directo a la edición de cualquier servicio previo y la adición rápida de nuevas fecundaciones mediante un botón flotante dedicado.
 
 - **¿Funciona sin conexión a internet (Modo Offline)?:** Sí, la consulta, ordenamiento y navegación de la tabla operan de forma local en el teléfono sin necesidad de conexión a internet.
@@ -25,21 +26,21 @@ Pantalla de consulta y gestión zootécnica que presenta en formato de tabla el 
 
 ### Reglas de Negocio y Restricciones
 - **Filtrado individual por hembra:**
-  - La tabla exhibe exclusivamente los registros de servicio reproductivo asociados a la hembra en consulta, mostrando tanto los servicios recientes como los de ciclos zootécnicos previos.
+    - La tabla exhibe exclusivamente los registros de servicio reproductivo asociados a la hembra en consulta, mostrando tanto los servicios recientes como los de ciclos zootécnicos previos.
 - **Tipos de fecundación admitidos:**
-  - Los eventos listados corresponden a cuatro modalidades estandarizadas: **Monta** (servicio natural), **Inseminación artificial** (pajilla o semen procesado), **Transferencia de embriones** (implante de embrión de vaca donante) u **Otros**.
+    - Los eventos listados corresponden a cuatro modalidades estandarizadas: **Monta** (servicio natural), **Inseminación artificial** (pajilla o semen procesado), **Transferencia de embriones** (implante de embrión de vaca donante) u **Otros**.
 - **Información de parentesco y material genético:**
-  - **Columna Padre / Macho:** Refleja el nombre o código de arete visual del reproductor asignado al servicio. Si el toro ya no está en el inventario o se empleó semen de catálogo externo sin ficha activa, se visualiza el código identificador asentado al registrar el evento.
-  - **Columna Madre / Donante:** Se completa de manera exclusiva cuando el tipo de fecundación corresponde a **Transferencia de embriones**, mostrando el nombre o código de arete de la hembra donante del óvulo/embrión. En montas e inseminaciones artificiales regulares, este campo permanece vacío.
+    - **Columna Padre / Macho:** Refleja el nombre o código de arete visual del reproductor asignado al servicio. Si el toro ya no está en el inventario o se empleó semen de catálogo externo sin ficha activa, se visualiza el código identificador asentado al registrar el evento.
+    - **Columna Madre / Donante:** Se completa de manera exclusiva cuando el tipo de fecundación corresponde a **Transferencia de embriones**, mostrando el nombre o código de arete de la hembra donante del óvulo/embrión. En montas e inseminaciones artificiales regulares, este campo permanece vacío.
 - **Permisos de usuario para edición y registro:**
-  - Para agregar un nuevo servicio mediante el botón flotante (+), el usuario requiere contar con el permiso de creación de inseminaciones en la finca activa.
-  - Para modificar un registro existente tocando una fila de la tabla, se requiere el permiso de actualización correspondiente. Colaboradores sin estos permisos no podrán guardar cambios en el formulario de servicio.
+    - Para agregar un nuevo servicio mediante el botón flotante (+), el usuario requiere contar con el permiso de creación de inseminaciones en la finca activa.
+    - Para modificar un registro existente tocando una fila de la tabla, se requiere el permiso de actualización correspondiente. Colaboradores sin estos permisos no podrán guardar cambios en el formulario de servicio.
 - **Bloqueo por estado del animal:**
-  - Si la hembra se encuentra registrada como vendida o fallecida, el acceso para crear nuevos servicios queda inhabilitado para preservar la consistencia histórica.
+    - Si la hembra se encuentra registrada como vendida o fallecida, el acceso para crear nuevos servicios queda inhabilitado para preservar la consistencia histórica.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - En la barra inferior de navegación, toque **Animales** > Seleccione a la hembra en la lista > En la cuadrícula de módulos, toque **Reproducción** > Desplácese hasta la sección **Fecundaciones** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
+    - En la barra inferior de navegación, toque **Animales** > Seleccione a la hembra en la lista > En la cuadrícula de módulos, toque **Reproducción** > Desplácese hasta la sección **Fecundaciones** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación superior:** Exhibe el título **Fecundaciones** alineado a la izquierda sobre el color de fondo institucional. Incorpora únicamente el botón de retroceso (flecha hacia la izquierda) para cerrar la tabla y regresar al resumen reproductivo de la hembra, sin menús adicionales ni botones de acción secundarios.
@@ -47,7 +48,9 @@ Pantalla de consulta y gestión zootécnica que presenta en formato de tabla el 
 - **Botón flotante de acción rápida (+):** Botón circular con icono de suma ubicado sobre la esquina inferior de la pantalla, que permite abrir de inmediato el formulario para registrar un nuevo servicio o inseminación para esta vaca.
 
 #### Estructura y Columnas de la Tabla
+
 La información se organiza en una tabla cuadrada con cuatro columnas zootécnicas:
+
 1. **Fecha:** Muestra el día, mes y año en que se efectuó la inseminación o monta, ajustado a la zona horaria del usuario.
 2. **Tipo:** Indica la técnica reproductiva utilizada (**Monta**, **Inseminación artificial**, **Transferencia de embriones** u **Otros**).
 3. **Padre:** Muestra el código de arete visual o nombre del reproductor o toro donante del semen.
@@ -59,7 +62,7 @@ La información se organiza en una tabla cuadrada con cuatro columnas zootécnic
 - **Regresar a la pantalla previa:** Presione la flecha de retroceso ubicada en la barra superior.
 
 - **Pantalla de llegada tras salir:**
-  - Al presionar la flecha de retroceso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo de la hembra.
+    - Al presionar la flecha de retroceso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo de la hembra.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

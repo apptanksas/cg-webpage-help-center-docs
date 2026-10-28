@@ -27,23 +27,23 @@ En los casos en que se dictamina que la hembra está **Preñada** pero no existe
 
 ### Reglas de Negocio y Restricciones
 - **Exclusividad de género zootécnico:**
-  - El registro de chequeos de preñez aplica exclusivamente a animales de género hembra.
+    - El registro de chequeos de preñez aplica exclusivamente a animales de género hembra.
 - **Fecha del examen:**
-  - El campo de fecha se inicializa por defecto con la fecha actual del sistema ajustada a la zona horaria del usuario. La fecha no puede ser anterior al nacimiento de la hembra.
+    - El campo de fecha se inicializa por defecto con la fecha actual del sistema ajustada a la zona horaria del usuario. La fecha no puede ser anterior al nacimiento de la hembra.
 - **Dictamen reproductivo:**
-  - El resultado es de selección obligatoria y admite únicamente dos estados zootécnicos: **Preñada** (gestación positiva confirmada) o **No preñada** (vaca vacía o abierta). Por defecto, al abrir un formulario nuevo, el valor inicial es **No preñada**.
+    - El resultado es de selección obligatoria y admite únicamente dos estados zootécnicos: **Preñada** (gestación positiva confirmada) o **No preñada** (vaca vacía o abierta). Por defecto, al abrir un formulario nuevo, el valor inicial es **No preñada**.
 - **Detección inteligente de fecundación y días estimados de gestación:**
-  - Si la hembra no se encuentra previamente marcada como preñada y se selecciona el resultado **Preñada**, el sistema evalúa si existe un servicio o inseminación previa registrada dentro del periodo máximo biológico de gestación de la especie (por ejemplo, hasta 283-290 días según la especie bovina).
-  - Si no existe un servicio reciente dentro de ese rango de días o la diferencia supera el límite biológico de la especie, el sistema despliega automáticamente una alerta informativa y habilita la casilla numérica obligatoria **Días estimados de gestación**.
-  - El rango permitido para este campo va desde 1 hasta el tiempo máximo de gestación en días configurado para la especie del animal (por ejemplo, hasta los días biológicos de preñez de la especie o 999 días).
-  - Al guardar con este dato, el sistema genera de forma automática un evento de fecundación por monta con fecha calculada retroactivamente (fecha del chequeo menos los días estimados de gestación) y la observación clínica oficial: *"Registro creado automáticamente de inseminación al marcar el animal como preñada."*
+    - Si la hembra no se encuentra previamente marcada como preñada y se selecciona el resultado **Preñada**, el sistema evalúa si existe un servicio o inseminación previa registrada dentro del periodo máximo biológico de gestación de la especie (por ejemplo, hasta 283-290 días según la especie bovina).
+    - Si no existe un servicio reciente dentro de ese rango de días o la diferencia supera el límite biológico de la especie, el sistema despliega automáticamente una alerta informativa y habilita la casilla numérica obligatoria **Días estimados de gestación**.
+    - El rango permitido para este campo va desde 1 hasta el tiempo máximo de gestación en días configurado para la especie del animal (por ejemplo, hasta los días biológicos de preñez de la especie o 999 días).
+    - Al guardar con este dato, el sistema genera de forma automática un evento de fecundación por monta con fecha calculada retroactivamente (fecha del chequeo menos los días estimados de gestación) y la observación clínica oficial: *"Registro creado automáticamente de inseminación al marcar el animal como preñada."*
 - **Notas y observaciones clínicas:**
-  - Campo de texto multilínea opcional para documentar hallazgos clínicos (por ejemplo, método diagnóstico empleado, tono uterino, presencia de cuerpo lúteo o recomendaciones veterinarias).
+    - Campo de texto multilínea opcional para documentar hallazgos clínicos (por ejemplo, método diagnóstico empleado, tono uterino, presencia de cuerpo lúteo o recomendaciones veterinarias).
 - **Permisos requeridos en la finca:**
-  - Para crear un nuevo chequeo se requiere el permiso de creación de chequeos de preñez.
-  - Para actualizar un chequeo existente se requiere el permiso de actualización correspondiente.
-  - Para eliminar un chequeo se requiere el permiso de eliminación correspondiente.
-  - Si el usuario colaborador no posee los permisos asignados por el administrador de la finca, la acción es denegada por seguridad.
+    - Para crear un nuevo chequeo se requiere el permiso de creación de chequeos de preñez.
+    - Para actualizar un chequeo existente se requiere el permiso de actualización correspondiente.
+    - Para eliminar un chequeo se requiere el permiso de eliminación correspondiente.
+    - Si el usuario colaborador no posee los permisos asignados por el administrador de la finca, la acción es denegada por seguridad.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
@@ -57,17 +57,17 @@ En los casos en que se dictamina que la hembra está **Preñada** pero no existe
 #### Diligenciamiento del Formulario
 1. **Fecha:** Toque el selector de fecha para abrir el calendario interactivo y confirme el día en que se realizó la palpación o ecografía (por defecto muestra la fecha de hoy).
 2. **Resultado:** Toque el menú desplegable y seleccione el dictamen clínico:
-   - **Preñada:** Confirma la gestación activa.
-   - **No preñada:** Asienta que la hembra está abierta o vacía.
+    - **Preñada:** Confirma la gestación activa.
+    - **No preñada:** Asienta que la hembra está abierta o vacía.
 3. **Notas / Observación:** Casilla de texto multilínea opcional para escribir detalles del examen o diagnósticos adicionales.
 4. **Días estimados de gestación (Aparición condicional):**
-   - Si seleccionó **Preñada** y el sistema detecta que no hay servicio reciente registrado, aparecerá una alerta amarilla con el mensaje: *"Hemos detectado que no hay un registro de fecundación reciente para este animal. Indicanos la cantidad de días estimados de gestación para realizar el registro de fecundación automáticamente."*
-   - Ingrese el número de días calculados por el veterinario o palpador (por ejemplo, 60, 90 o 120 días).
+    - Si seleccionó **Preñada** y el sistema detecta que no hay servicio reciente registrado, aparecerá una alerta amarilla con el mensaje: *"Hemos detectado que no hay un registro de fecundación reciente para este animal. Indicanos la cantidad de días estimados de gestación para realizar el registro de fecundación automáticamente."*
+    - Ingrese el número de días calculados por el veterinario o palpador (por ejemplo, 60, 90 o 120 días).
 5. **Guardar el registro:**
-   - Presione el botón principal **Registrar** ubicado al final del formulario. Mientras se procesa la información, el botón mostrará un indicador de carga.
+    - Presione el botón principal **Registrar** ubicado al final del formulario. Mientras se procesa la información, el botón mostrará un indicador de carga.
 
 - **Pantalla de llegada tras guardar:**
-  - Tras procesar exitosamente la solicitud, la aplicación muestra una notificación de confirmación (*"Chequeo creado exitosamente"* o *"Chequeo actualizado exitosamente"*) y retorna automáticamente a la pantalla anterior (la tabla de chequeos o el resumen reproductivo).
+    - Tras procesar exitosamente la solicitud, la aplicación muestra una notificación de confirmación (*"Chequeo creado exitosamente"* o *"Chequeo actualizado exitosamente"*) y retorna automáticamente a la pantalla anterior (la tabla de chequeos o el resumen reproductivo).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

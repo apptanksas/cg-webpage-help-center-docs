@@ -39,27 +39,30 @@ Pantalla de bienvenida y presentación interactiva que se visualiza al abrir la 
 El tutorial cuenta con un carrusel deslizable con indicador de puntos interactivo que resume las capacidades del sistema:
 
 1. **Bienvenido a Control Ganadero:**
-   - *Subtítulo:* "Controla tus fincas desde un solo lugar"
-   - *Detalle:* Visualiza resúmenes generales de inventario, producción, reproducción y eventos clave de cada una de tus propiedades ganaderas de manera centralizada.
+      - *Subtítulo:* "Controla tus fincas desde un solo lugar"
+     - *Detalle:* Visualiza resúmenes generales de inventario, producción, reproducción y eventos clave de cada una de tus propiedades ganaderas de manera centralizada.
 2. **Información detallada de cada animal:**
-   - *Subtítulo:* "Accede fácilmente a la ficha técnica de cada ejemplar"
-   - *Detalle:* Consulta datos generales, historial veterinario, pesajes, genealogía y estado reproductivo de cada animal desde tu teléfono móvil.
+      - *Subtítulo:* "Accede fácilmente a la ficha técnica de cada ejemplar"
+     - *Detalle:* Consulta datos generales, historial veterinario, pesajes, genealogía y estado reproductivo de cada animal desde tu teléfono móvil.
 3. **Optimiza la producción y reproducción:**
-   - *Subtítulo:* "Monitorea gráficos de rendimiento de leche y pesajes"
-   - *Detalle:* Lleva un control total de partos, inseminaciones, pesajes de leche y evolución de peso para tomar mejores decisiones en tu finca.
+      - *Subtítulo:* "Monitorea gráficos de rendimiento de leche y pesajes"
+     - *Detalle:* Lleva un control total de partos, inseminaciones, pesajes de leche y evolución de peso para tomar mejores decisiones en tu finca.
 4. **Organiza las tareas de tu equipo:**
-   - *Subtítulo:* "Programa eventos en el calendario integrado"
-   - *Detalle:* Asigna actividades diarias como chequeos veterinarios, vacunaciones y rotación de potreros para mantener a tu equipo sincronizado.
+      - *Subtítulo:* "Programa eventos en el calendario integrado"
+     - *Detalle:* Asigna actividades diarias como chequeos veterinarios, vacunaciones y rotación de potreros para mantener a tu equipo sincronizado.
 5. **Trabaja sin internet y sin preocupaciones:**
-   - *Subtítulo:* "Registra datos directamente en el potrero, incluso sin cobertura"
-   - *Detalle:* Tu información se mantendrá segura en tu teléfono y se sincronizará automáticamente tan pronto recuperes conexión a internet.
+      - *Subtítulo:* "Registra datos directamente en el potrero, incluso sin cobertura"
+     - *Detalle:* Tu información se mantendrá segura en tu teléfono y se sincronizará automáticamente tan pronto recuperes conexión a internet.
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Se muestra automáticamente tras la pantalla de carga cuando el usuario abre la aplicación por primera vez en el dispositivo o no tiene una sesión guardada.
+
+**Ruta de acceso en la aplicación:** Se muestra automáticamente tras la pantalla de carga cuando el usuario abre la aplicación por primera vez en el dispositivo o no tiene una sesión guardada.
+
 1. Deslice la pantalla hacia la izquierda o presione los puntos circulares inferiores para avanzar entre las 5 diapositivas informativas.
 2. Si ya dispone de una cuenta registrada: presione el botón "INICIAR SESIÓN" en la parte inferior.
 3. Si es un usuario nuevo: presione el botón "REGISTRARME" en la parte inferior.
-- **Pantalla de llegada tras guardar:** Pantalla de **Inicio de Sesión** (al presionar "INICIAR SESIÓN") o pantalla de **Registro de Usuario** (al presionar "REGISTRARME").
+
+**Pantalla de llegada tras guardar:** Pantalla de **Inicio de Sesión** (al presionar "INICIAR SESIÓN") o pantalla de **Registro de Usuario** (al presionar "REGISTRARME").
 
 #### Etiquetas de la interfaz en otros idiomas
 - "INICIAR SESIÓN" → Inglés: "LOG IN" → Portugués: "INICIAR SESSÃO"

@@ -30,44 +30,44 @@ Pantalla de captura lechera asistida por pasos que permite registrar la producci
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - El usuario debe contar con el permiso de creación de ordeño en la finca activa, tanto para añadir registros individuales a la lista como para guardar y finalizar la sesión masiva.
-  - Si el colaborador carece de dicho permiso, el sistema bloquea la acción mostrando la alerta: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
+    - El usuario debe contar con el permiso de creación de ordeño en la finca activa, tanto para añadir registros individuales a la lista como para guardar y finalizar la sesión masiva.
+    - Si el colaborador carece de dicho permiso, el sistema bloquea la acción mostrando la alerta: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
 - **Población de animales elegible en el selector:**
-  - **Sexo:** Únicamente hembras (sexo hembra).
-  - **Especie:** Restringido a especies lecheras compatibles: bovinos, bufalinos y caprinos.
-  - **Etapa productiva:** Solo hembras en etapas "Adulto" o "Senior".
-  - **Propósito productivo:** Exclusivamente animales cuyo propósito sea "Leche" o "Doble propósito".
-  - **Estado y presencia:** El animal debe estar vivo (excluye fallecidos) y físicamente presente en la finca actual (excluye vendidos, trasladados o ausentes).
-  - **Exclusión por pesaje previo en la sesión:** Si una hembra ya fue agregada a la lista de la sesión en curso, se excluye automáticamente del selector para evitar duplicar su pesaje en la misma fecha.
+    - **Sexo:** Únicamente hembras (sexo hembra).
+    - **Especie:** Restringido a especies lecheras compatibles: bovinos, bufalinos y caprinos.
+    - **Etapa productiva:** Solo hembras en etapas "Adulto" o "Senior".
+    - **Propósito productivo:** Exclusivamente animales cuyo propósito sea "Leche" o "Doble propósito".
+    - **Estado y presencia:** El animal debe estar vivo (excluye fallecidos) y físicamente presente en la finca actual (excluye vendidos, trasladados o ausentes).
+    - **Exclusión por pesaje previo en la sesión:** Si una hembra ya fue agregada a la lista de la sesión en curso, se excluye automáticamente del selector para evitar duplicar su pesaje en la misma fecha.
 - **Identificación electrónica mediante lector Bluetooth:**
-  - Es posible escanear el microchip o arete electrónico de la hembra utilizando un bastón o lector inalámbrico vinculado.
-  - Si el chip leído corresponde a un animal macho, una cría joven, o un ejemplar de aptitud no lechera (como carne exclusiva o especie no lechera), la aplicación rechaza la lectura alertando: "El animal no es compatible para ser ordeñado".
-  - Si el código de chip no existe en los registros de la finca, la app alerta: "No se encontró ningún animal con el código %1$s".
+    - Es posible escanear el microchip o arete electrónico de la hembra utilizando un bastón o lector inalámbrico vinculado.
+    - Si el chip leído corresponde a un animal macho, una cría joven, o un ejemplar de aptitud no lechera (como carne exclusiva o especie no lechera), la aplicación rechaza la lectura alertando: "El animal no es compatible para ser ordeñado".
+    - Si el código de chip no existe en los registros de la finca, la app alerta: "No se encontró ningún animal con el código %1$s".
 - **Protección de sesión activa en progreso:**
-  - Mientras existan animales pesados en la lista temporal de la sesión, los selectores generales de "Fecha", "Hato" y "Potrero" quedan deshabilitados en el Paso 1, mostrándose la advertencia: "Hay una sesión de registro en progreso; continúa el proceso o finalízalo."
-  - Esto garantiza que todos los pesajes consolidados en la tabla compartan exactamente la misma fecha y ubicación de pastoreo.
+    - Mientras existan animales pesados en la lista temporal de la sesión, los selectores generales de "Fecha", "Hato" y "Potrero" quedan deshabilitados en el Paso 1, mostrándose la advertencia: "Hay una sesión de registro en progreso; continúa el proceso o finalízalo."
+    - Esto garantiza que todos los pesajes consolidados en la tabla compartan exactamente la misma fecha y ubicación de pastoreo.
 - **Validaciones zootécnicas y de formulario:**
-  - **Fecha del control:** Por defecto sugiere el día actual. Admite fechas pasadas (hasta el rango máximo configurado en la app), pero no admite fechas futuras.
-  - **Período del día:** Admite turnos simples ("Mañana" o "Tarde") o turnos compuestos ("Mañana y Tarde"). Al elegir turnos compuestos, el formulario despliega subsecciones independientes de pesaje para cada horario.
-  - **Cantidades numéricas:** Los campos de "Concentrado" y "Leche" admiten valores numéricos decimales mayores o iguales a cero, acompañados de las unidades de medida oficiales configuradas en la finca (litros para leche; kilogramos o libras para concentrado). Ambos campos son obligatorios al momento de presionar "Agregar".
+    - **Fecha del control:** Por defecto sugiere el día actual. Admite fechas pasadas (hasta el rango máximo configurado en la app), pero no admite fechas futuras.
+    - **Período del día:** Admite turnos simples ("Mañana" o "Tarde") o turnos compuestos ("Mañana y Tarde"). Al elegir turnos compuestos, el formulario despliega subsecciones independientes de pesaje para cada horario.
+    - **Cantidades numéricas:** Los campos de "Concentrado" y "Leche" admiten valores numéricos decimales mayores o iguales a cero, acompañados de las unidades de medida oficiales configuradas en la finca (litros para leche; kilogramos o libras para concentrado). Ambos campos son obligatorios al momento de presionar "Agregar".
 - **Acumulados y tabla en lote:**
-  - Cada animal agregado actualiza automáticamente los contadores de "Cantidad de animales", total de "Concentrado" y "Total de leche".
-  - La tabla inferior muestra las columnas "Animal", "Período del día", "Concentrado" y "Total de leche". Cada fila cuenta con un icono de retiro que permite eliminar el pesaje del lote de inmediato.
+    - Cada animal agregado actualiza automáticamente los contadores de "Cantidad de animales", total de "Concentrado" y "Total de leche".
+    - La tabla inferior muestra las columnas "Animal", "Período del día", "Concentrado" y "Total de leche". Cada fila cuenta con un icono de retiro que permite eliminar el pesaje del lote de inmediato.
 - **Confirmación de finalización:**
-  - Al presionar "Finalizar", el sistema solicita confirmación mediante el diálogo: "¿Quieres finalizar el proceso de registro de ordeño?". Al confirmar, se guardan los pesajes en el historial individual de cada hembra y se crea el seguimiento del lote, mostrando el mensaje "Registro masivo creado exitosamente".
+    - Al presionar "Finalizar", el sistema solicita confirmación mediante el diálogo: "¿Quieres finalizar el proceso de registro de ordeño?". Al confirmar, se guardan los pesajes en el historial individual de cada hembra y se crea el seguimiento del lote, mostrando el mensaje "Registro masivo creado exitosamente".
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta principal (Desde el menú contextual de acciones rápidas):** En la pantalla principal de la finca, presione el botón flotante central (+) > En el menú "¿Qué quieres hacer hoy?", seleccione "Registro masivo de leche".
+    - **Ruta principal (Desde el menú contextual de acciones rápidas):** En la pantalla principal de la finca, presione el botón flotante central (+) > En el menú "¿Qué quieres hacer hoy?", seleccione "Registro masivo de leche".
 
 #### Paso 1: Configurar los datos generales de la sesión
 1. En la barra superior visualizará el título "Registro masivo" y la flecha de navegación para volver a la pantalla anterior.
 2. Si dispone de un bastón o lector de microchip Bluetooth, puede verificar el botón con icono de antena en la barra superior para comprobar la vinculación del dispositivo lector.
 3. En la primera vista del asistente configure:
-   - **"Fecha":** Confirme la fecha de la jornada de pesaje. Sugiere la fecha de hoy; si asienta un control anterior, presione el campo para desplegar el selector de fecha.
-   - **"Período del día":** Seleccione en el menú desplegable el turno del pesaje: "Mañana", "Tarde" o "Mañana y Tarde".
-   - **"Hato" (Opcional):** Si agrupa sus animales por lotes lecheros, presione el campo para seleccionar el hato correspondiente.
-   - **"Potrero" (Opcional):** Si desea registrar la pradera donde pastaron las vacas antes del ordeño, seleccione el potrero correspondiente.
+    - **"Fecha":** Confirme la fecha de la jornada de pesaje. Sugiere la fecha de hoy; si asienta un control anterior, presione el campo para desplegar el selector de fecha.
+     - **"Período del día":** Seleccione en el menú desplegable el turno del pesaje: "Mañana", "Tarde" o "Mañana y Tarde".
+     - **"Hato" (Opcional):** Si agrupa sus animales por lotes lecheros, presione el campo para seleccionar el hato correspondiente.
+     - **"Potrero" (Opcional):** Si desea registrar la pradera donde pastaron las vacas antes del ordeño, seleccione el potrero correspondiente.
 4. Deslice la pantalla hacia la izquierda o avance para ingresar a la vista de pesaje individual de animales.
 
 #### Paso 2: Registrar la producción individual de las hembras
@@ -75,13 +75,13 @@ Pantalla de captura lechera asistida por pasos que permite registrar la producci
    - **Selección manual:** Presione el campo "Seleccionar animal". Se abrirá el selector con las hembras lecheras adultas activas que aún no han sido pesadas en la sesión. Busque y elija el animal por arete o nombre.
    - **Lectura por bastón electrónico:** Acerque el lector Bluetooth al arete electrónico o microchip del animal. El sistema reconocerá automáticamente a la hembra y la seleccionará en el formulario.
 2. Debajo del animal seleccionado, complete los campos para cada período configurado:
-   - **"Concentrado":** Ingrese la cantidad de alimento balanceado suministrado en el comedero (acompañado de la unidad de peso de la finca).
-   - **"Leche":** Ingrese la producción de leche obtenida del ordeño (acompañada de la unidad de volumen de la finca).
+    - **"Concentrado":** Ingrese la cantidad de alimento balanceado suministrado en el comedero (acompañado de la unidad de peso de la finca).
+    - **"Leche":** Ingrese la producción de leche obtenida del ordeño (acompañada de la unidad de volumen de la finca).
 3. Presione el botón "Agregar".
 4. El animal se añadirá a la tabla inferior, el formulario de animal se limpiará automáticamente, y los resúmenes en pantalla se actualizarán:
-   - **"Cantidad de animales":** Número total de hembras registradas en la jornada.
-   - **"Concentrado":** Total acumulado de alimento balanceado consumido por el grupo.
-   - **"Total de leche":** Total acumulado de leche producida en la sesión.
+    - **"Cantidad de animales":** Número total de hembras registradas en la jornada.
+     - **"Concentrado":** Total acumulado de alimento balanceado consumido por el grupo.
+     - **"Total de leche":** Total acumulado de leche producida en la sesión.
 5. Continúe seleccionando o escaneando las siguientes hembras y presionando "Agregar" consecutivamente.
 
 #### Paso 3: Revisión y Retiro de Registros en la Tabla
@@ -92,7 +92,7 @@ Pantalla de captura lechera asistida por pasos que permite registrar la producci
 1. Una vez concluido el pesaje de todo el lote de ordeño, presione el botón "Finalizar" ubicado en la barra de control inferior.
 2. Aparecerá la ventana de confirmación: "¿Quieres finalizar el proceso de registro de ordeño?".
 3. Presione la opción de confirmar. El sistema almacenará definitivamente todos los pesajes, mostrará la notificación emergente "Registro masivo creado exitosamente" y regresará a la pantalla previa.
-- **Pantalla de llegada tras guardar:** El usuario regresa a la pantalla principal o menú previo de la aplicación con la sesión completada y respaldada en la memoria del dispositivo.
+    - **Pantalla de llegada tras guardar:** El usuario regresa a la pantalla principal o menú previo de la aplicación con la sesión completada y respaldada en la memoria del dispositivo.
 
 #### Variaciones por especie
 - **Especies admitidas en ordeño:** El sistema filtra exclusivamente hembras pertenecientes a bovinos (vacas), bufalinos (búfalas) y caprinos (cabras).

@@ -30,39 +30,39 @@ Módulo visual de análisis lechero individual que permite consultar de forma gr
 
 ### Reglas de Negocio y Restricciones
 - **Mínimo de registros requeridos para graficar:**
-  - Se requiere un mínimo de 2 registros de pesaje de leche en fechas distintas para trazar la curva en el gráfico.
-  - Si el animal cuenta con menos de 2 fechas de pesajes (0 o 1 medición), el botón "Vista gráfica" no se muestra en la pantalla de evolución del animal.
-  - Si se intenta ingresar directamente a la pantalla con menos de 2 pesajes registrados, la aplicación protege la interfaz y regresa de inmediato a la vista previa sin mostrar un gráfico vacío.
+    - Se requiere un mínimo de 2 registros de pesaje de leche en fechas distintas para trazar la curva en el gráfico.
+    - Si el animal cuenta con menos de 2 fechas de pesajes (0 o 1 medición), el botón "Vista gráfica" no se muestra en la pantalla de evolución del animal.
+    - Si se intenta ingresar directamente a la pantalla con menos de 2 pesajes registrados, la aplicación protege la interfaz y regresa de inmediato a la vista previa sin mostrar un gráfico vacío.
 - **Consolidación diaria de pesajes:**
-  - Si en una misma fecha existen pesajes en turnos divididos (por ejemplo, mañana y tarde), el sistema suma automáticamente las cantidades de ambos turnos para presentar la producción total correspondiente a ese día como un único punto en la gráfica.
+    - Si en una misma fecha existen pesajes en turnos divididos (por ejemplo, mañana y tarde), el sistema suma automáticamente las cantidades de ambos turnos para presentar la producción total correspondiente a ese día como un único punto en la gráfica.
 - **Segmentación por períodos de lactancia:**
-  - El sistema calcula los períodos de lactancia considerando las fechas de parto de las crías de la hembra y los tratamientos de secado registrados en su historial sanitario.
-  - Cuando la hembra registra más de un ciclo de lactancia, la pantalla presenta gráficos independientes identificados con el encabezado de cada período (por ejemplo, "Lactancia 1", "Lactancia 2", etc.).
-  - Si la hembra tiene un único ciclo productivo o no registra eventos de secado ni nuevos partos, se despliega una sola gráfica general.
+    - El sistema calcula los períodos de lactancia considerando las fechas de parto de las crías de la hembra y los tratamientos de secado registrados en su historial sanitario.
+    - Cuando la hembra registra más de un ciclo de lactancia, la pantalla presenta gráficos independientes identificados con el encabezado de cada período (por ejemplo, "Lactancia 1", "Lactancia 2", etc.).
+    - Si la hembra tiene un único ciclo productivo o no registra eventos de secado ni nuevos partos, se despliega una sola gráfica general.
 - **Indicadores estadísticos del encabezado:**
-  - **"Promedio diario":** Media aritmética de la cantidad de leche producida por día con registro en el animal.
-  - **"Producción máxima":** Medición diaria más alta alcanzada por el animal en todo su historial lechero registrado.
-  - **"Producción total":** Suma acumulada total de toda la leche registrada para el animal en la finca.
+    - **"Promedio diario":** Media aritmética de la cantidad de leche producida por día con registro en el animal.
+    - **"Producción máxima":** Medición diaria más alta alcanzada por el animal en todo su historial lechero registrado.
+    - **"Producción total":** Suma acumulada total de toda la leche registrada para el animal en la finca.
 - **Unidad de medida:**
-  - Las cantidades en el eje vertical (eje Y) y en las estadísticas se muestran de forma automática con la unidad oficial configurada para la leche en la finca ganadera (litros, galones o kilogramos).
+    - Las cantidades en el eje vertical (eje Y) y en las estadísticas se muestran de forma automática con la unidad oficial configurada para la leche en la finca ganadera (litros, galones o kilogramos).
 - **Acceso rápido al registro de pesaje:**
-  - Si el animal se encuentra activo en la finca (no dado de baja, ni vendido, ni fallecido), la pantalla exhibe un botón flotante con el icono de recipiente de leche para acceder directamente al formulario de registro individual de pesaje.
+    - Si el animal se encuentra activo en la finca (no dado de baja, ni vendido, ni fallecido), la pantalla exhibe un botón flotante con el icono de recipiente de leche para acceder directamente al formulario de registro individual de pesaje.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta principal (Desde el resumen del animal):** Menú inferior "Animales" > Seleccionar la hembra > Pestaña o sección "Producción" > Presionar "Ver detalles de producción" (o la tarjeta de producción) > En el bloque "Producción de leche", ubicar la sección del promedio y presionar el botón "Vista gráfica".
+    - **Ruta principal (Desde el resumen del animal):** Menú inferior "Animales" > Seleccionar la hembra > Pestaña o sección "Producción" > Presionar "Ver detalles de producción" (o la tarjeta de producción) > En el bloque "Producción de leche", ubicar la sección del promedio y presionar el botón "Vista gráfica".
 
 #### 1. Verificación de Encabezado y Datos del Animal
 1. En la barra superior confirme la identificación del animal (arete y nombre) en la tarjeta informativa derecha.
 2. En la parte superior visualice el encabezado "Producción de leche" con los tres indicadores globales de la hembra:
-   - **"Promedio diario":** Rendimiento medio por día de ordeño registrado.
-   - **"Producción máxima":** Pico máximo diario de leche alcanzado.
-   - **"Producción total":** Volumen acumulado total en la historia del animal.
+    - **"Promedio diario":** Rendimiento medio por día de ordeño registrado.
+    - **"Producción máxima":** Pico máximo diario de leche alcanzado.
+    - **"Producción total":** Volumen acumulado total en la historia del animal.
 
 #### 2. Interpretación de la Curva de Producción
 1. Deslice verticalmente para visualizar la evolución temporal:
-   - **Eje horizontal (eje X):** Cronología con las fechas de los pesajes.
-   - **Eje vertical (eje Y):** Volumen de producción rotulado con la unidad de medida oficial de la finca.
+    - **Eje horizontal (eje X):** Cronología con las fechas de los pesajes.
+    - **Eje vertical (eje Y):** Volumen de producción rotulado con la unidad de medida oficial de la finca.
 2. **Si el animal cuenta con múltiples lactancias:** Cada período se presenta con su título respectivo ("Lactancia 1", "Lactancia 2", etc.) y su gráfico delimitado entre el parto y la fecha de secado.
 3. **Si el animal tiene un solo período:** Se muestra una sola gráfica que abarca el historial completo de pesajes disponibles.
 

@@ -28,8 +28,8 @@ Pantalla de acceso inicial que se presenta a los usuarios autenticados que aún 
 - El usuario propietario puede presionar **Crear Finca** para abrir el asistente de configuración de su predio.
 - El trabajador o colaborador no puede crear fincas por sí mismo; debe esperar a que el propietario de la finca le envíe una invitación formal a su correo electrónico.
 - Al presionar **Verificar acceso**, la aplicación realiza una sincronización con el servidor:
-  - Si encuentra una finca vinculada, la selecciona automáticamente e ingresa de inmediato a la pantalla principal.
-  - Si no encuentra ninguna finca, muestra en pantalla el mensaje: *"No se encontraron fincas para acceder."*
+    - Si encuentra una finca vinculada, la selecciona automáticamente e ingresa de inmediato a la pantalla principal.
+    - Si no encuentra ninguna finca, muestra en pantalla el mensaje: *"No se encontraron fincas para acceder."*
 - El botón de salida en la barra superior permite cerrar la sesión activa para cambiar de usuario.
 
 ### Flujo Paso a Paso para el Usuario
@@ -37,18 +37,21 @@ Pantalla de acceso inicial que se presenta a los usuarios autenticados que aún 
 
 #### Si es propietario de una finca:
 1. En la tarjeta **¿Tienes una finca?**, presione el botón **Crear mi finca**.
-- **Pantalla de llegada tras guardar:** Pantalla de creación de finca (**Crea tu finca**).
+
+**Pantalla de llegada tras guardar:** Pantalla de creación de finca (**Crea tu finca**).
 
 #### Si es trabajador de una finca:
 1. En la tarjeta **¿Eres un trabajador de una finca?**, revise el texto informativo: *"Si tu finca no te ha invitado, debes esperar a que el propietario lo haga. Cuando el sistema reconozca tu correo, tendrás acceso. Puedes comprobarlo haciendo clic en 'verificar acceso'."*
 2. Si requiere orientación sobre el proceso de invitación, presione la opción **Más información**.
 3. Presione el botón **Verificar acceso**.
 4. Si el proceso está en curso, se desplegará una barra de porcentaje mostrando el avance de la sincronización de datos.
-- **Pantalla de llegada tras guardar:** Si el acceso es confirmado, ingresa automáticamente a la pantalla principal de la finca (**Inicio**); de lo contrario, permanece en la pantalla mostrando el mensaje de alerta correspondiente.
+
+**Pantalla de llegada tras guardar:** Si el acceso es confirmado, ingresa automáticamente a la pantalla principal de la finca (**Inicio**); de lo contrario, permanece en la pantalla mostrando el mensaje de alerta correspondiente.
 
 #### Si desea identificar animales:
 1. En la sección de identificación de ganado, presione el botón **Identificar animal**.
-- **Pantalla de llegada tras guardar:** Pantalla de identificación de animales.
+
+**Pantalla de llegada tras guardar:** Pantalla de identificación de animales.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

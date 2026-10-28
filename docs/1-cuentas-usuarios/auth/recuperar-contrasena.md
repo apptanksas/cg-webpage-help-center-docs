@@ -4,7 +4,7 @@ modulo_id: "auth-recuperar-contrasena"
 nombre_funcionalidad: "Recuperación de Contraseña de Acceso"
 categoria: "cuentas-usuarios"
 submodulo: "auth"
-version_minima_app: "2.4"
+version_minima_app: "2026.10.1"
 fecha_actualizacion: "2026-09-25"
 intenciones_y_sinonimos:
   - "olvide mi clave de control ganadero"
@@ -30,15 +30,17 @@ Permite a los usuarios que han olvidado o extraviado su clave de acceso solicita
 - El proceso no muestra la contraseña anterior ni la cambia automáticamente dentro de la app móvil; el restablecimiento seguro se realiza a través de las instrucciones enviadas al email.
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Pantalla de Bienvenida inicial > **Iniciar Sesión** > Enlace **Olvidé mi contraseña** (debajo de la casilla de contraseña).
-1. En la pantalla de inicio de sesión, presione el texto azul **Olvidé mi contraseña**.
-2. Lea las instrucciones en pantalla: *"Introduzca su email y siga los pasos para recuperarla."*
-3. En la casilla **Email**, escriba la dirección de correo electrónico asociada a su cuenta.
-4. Presione el botón verde **Enviar**.
-5. La pantalla mostrará una confirmación visual con el icono de correo: *"Se le ha enviado un correo electrónico con las instrucciones para recuperar la contraseña."*
-6. Presione el botón **Aceptar** para regresar a la pantalla de inicio de sesión.
-7. Abra la bandeja de entrada de su correo electrónico (revise también la carpeta de correo no deseado o spam) y siga los pasos indicados para definir su nueva clave.
-- **Pantalla de llegada tras guardar:** Pantalla de **Inicio de Sesión** (al presionar "Aceptar" en la confirmación de envío).
+
+**Ruta de acceso en la aplicación:** Pantalla de Bienvenida inicial > **Iniciar Sesión** > Enlace **Olvidé mi contraseña**.
+
+1. En la pantalla de inicio de sesión, presione la opción **Olvidé mi contraseña**.
+2. En la casilla **Email**, escriba la dirección de correo electrónico asociada a su cuenta.
+3. Presione el botón **Enviar**.
+4. Al enviarse la solicitud, la pantalla mostrará el mensaje de confirmación: *"Se le ha enviado un correo electrónico con las instrucciones para recuperar la contraseña."*
+5. Presione el botón **Aceptar** para volver a la pantalla de inicio de sesión.
+6. Revise la bandeja de entrada de su correo electrónico (incluyendo la carpeta de spam o correo no deseado) y siga las instrucciones del mensaje recibido para definir su nueva clave.
+
+**Pantalla de llegada tras guardar:** Pantalla de **Inicio de Sesión** (al presionar el botón "Aceptar" en la confirmación de envío).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

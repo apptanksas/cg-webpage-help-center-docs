@@ -30,24 +30,24 @@ Herramienta visual que grafica la curva de crecimiento y evolución de peso corp
 
 ### Reglas de Negocio y Restricciones
 - **Mínimo estricto de pesajes requeridos (Verificado con tests):**
-  - Se requiere un mínimo de **2 registros de pesaje corporal** en el historial del animal para poder generar y trazar la curva de evolución.
-  - Si el animal tiene menos de 2 pesajes registrados, el botón "Vista gráfica" no se muestra en la sección "Evolución de peso" del resumen de producción.
-  - Si por alguna eventualidad se intenta abrir la pantalla con menos de 2 pesajes (por ejemplo, tras eliminar registros), el sistema interrumpe la carga y redirige automáticamente hacia la pantalla anterior para resguardar la experiencia visual.
+    - Se requiere un mínimo de **2 registros de pesaje corporal** en el historial del animal para poder generar y trazar la curva de evolución.
+    - Si el animal tiene menos de 2 pesajes registrados, el botón "Vista gráfica" no se muestra en la sección "Evolución de peso" del resumen de producción.
+    - Si por alguna eventualidad se intenta abrir la pantalla con menos de 2 pesajes (por ejemplo, tras eliminar registros), el sistema interrumpe la carga y redirige automáticamente hacia la pantalla anterior para resguardar la experiencia visual.
 - **Indicadores del encabezado superior:**
-  - **Peso actual ("Actual %1$s"):** Muestra el valor del último pesaje corporal registrado para el animal junto a su unidad de medida (kilogramos o libras). Si no hay datos, muestra el símbolo "---".
-  - **Ganancia diaria de peso ("Ganancia diaria"):** Promedio ponderado de ganancia diaria calculado a partir del histórico de pesajes y el lapso entre mediciones.
-  - **Régimen nutricional ("Dieta"):** Muestra el tipo de alimentación asignado en la última medición ("Pastoreo", "Pastoreo + Concentrado", "Heno", "Ensilage", "Concentrado", "Suplementos", "Forraje", "Raciones mezcladas", "Estabulación" u "Otros"). Si la última pesada no tiene dieta especificada, se exhibe el indicador de ausencia de datos "---".
+    - **Peso actual ("Actual %1$s"):** Muestra el valor del último pesaje corporal registrado para el animal junto a su unidad de medida (kilogramos o libras). Si no hay datos, muestra el símbolo "---".
+    - **Ganancia diaria de peso ("Ganancia diaria"):** Promedio ponderado de ganancia diaria calculado a partir del histórico de pesajes y el lapso entre mediciones.
+    - **Régimen nutricional ("Dieta"):** Muestra el tipo de alimentación asignado en la última medición ("Pastoreo", "Pastoreo + Concentrado", "Heno", "Ensilage", "Concentrado", "Suplementos", "Forraje", "Raciones mezcladas", "Estabulación" u "Otros"). Si la última pesada no tiene dieta especificada, se exhibe el indicador de ausencia de datos "---".
 - **Comportamiento y escala del gráfico:**
-  - Curva de líneas continuas que proyecta visualmente la tendencia del peso del animal hasta la fecha actual.
-  - El eje vertical (eje Y) y los valores de los puntos se adaptan automáticamente a la unidad de medida oficial de peso configurada en la finca ganadera activa (kilogramos o libras).
-  - La leyenda y los valores de cada pesaje se presentan formateados a un decimal.
+    - Curva de líneas continuas que proyecta visualmente la tendencia del peso del animal hasta la fecha actual.
+    - El eje vertical (eje Y) y los valores de los puntos se adaptan automáticamente a la unidad de medida oficial de peso configurada en la finca ganadera activa (kilogramos o libras).
+    - La leyenda y los valores de cada pesaje se presentan formateados a un decimal.
 - **Botón de acción rápida para registrar peso:**
-  - Si el ejemplar se encuentra activo y no bloqueado en la finca (no figura como vendido, fallecido ni trasladado), se exhibe en la esquina inferior derecha un botón flotante con el icono de báscula para registrar rápidamente un nuevo pesaje individual.
-  - Si el animal está bloqueado o dado de baja, el botón flotante se oculta automáticamente.
+    - Si el ejemplar se encuentra activo y no bloqueado en la finca (no figura como vendido, fallecido ni trasladado), se exhibe en la esquina inferior derecha un botón flotante con el icono de báscula para registrar rápidamente un nuevo pesaje individual.
+    - Si el animal está bloqueado o dado de baja, el botón flotante se oculta automáticamente.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta principal:** Menú inferior "Animales" > Seleccionar el animal de la lista > Tarjeta "Producción" > Sección "Evolución de peso" > Presionar el botón "Vista gráfica".
+    - **Ruta principal:** Menú inferior "Animales" > Seleccionar el animal de la lista > Tarjeta "Producción" > Sección "Evolución de peso" > Presionar el botón "Vista gráfica".
 
 #### 1. Acceso y Verificación de Requisitos
 1. Ingrese a la ficha del animal desde el listado general en "Animales".

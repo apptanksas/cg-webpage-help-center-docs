@@ -27,15 +27,15 @@ Permite a los usuarios consultar el estado de los permisos del sistema operativo
 La pantalla lista individualmente cada permiso con su estado actual (**Permiso otorgado** o **Permiso denegado**):
 
 1. **Notificaciones Push:**
-   - Permite recibir alertas en tiempo real sobre tareas pendientes, recordatorios de vacunación, fechas estimadas de partos, celos y avisos del sistema.
+      - Permite recibir alertas en tiempo real sobre tareas pendientes, recordatorios de vacunación, fechas estimadas de partos, celos y avisos del sistema.
 2. **Estado del teléfono:**
-   - Permite verificar el identificador del dispositivo para garantizar la seguridad de la sesión y la sincronización correcta de los datos de la finca.
+      - Permite verificar el identificador del dispositivo para garantizar la seguridad de la sesión y la sincronización correcta de los datos de la finca.
 3. **Ubicación:**
-   - Necesaria para georreferenciar la finca, delimitar potreros y permitir la búsqueda y vinculación de dispositivos Bluetooth cercanos en versiones compatibles del sistema operativo.
+      - Necesaria para georreferenciar la finca, delimitar potreros y permitir la búsqueda y vinculación de dispositivos Bluetooth cercanos en versiones compatibles del sistema operativo.
 4. **Bluetooth:**
-   - Indispensable para la conexión inalámbrica y lectura en vivo de básculas ganaderas electrónicas y bastones lectores de chips/aretes RFID.
+      - Indispensable para la conexión inalámbrica y lectura en vivo de básculas ganaderas electrónicas y bastones lectores de chips/aretes RFID.
 5. **Cámara:**
-   - Necesaria para fotografiar bovinos en su registro individual o ficha técnica y escanear códigos visuales en campo.
+      - Necesaria para fotografiar bovinos en su registro individual o ficha técnica y escanear códigos visuales en campo.
 
 ### Reglas de Negocio y Restricciones
 - Al ingresar a la pantalla, la aplicación consulta automáticamente el estado en tiempo real de cada uno de los 5 permisos en el teléfono.
@@ -44,7 +44,9 @@ La pantalla lista individualmente cada permiso con su estado actual (**Permiso o
 - Al presionar **Otorgar permiso**, el sistema operativo del teléfono desplegará la ventana nativa de autorización para que el usuario acepte el acceso.
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Menú lateral principal > **Mi cuenta** > Sección Preferencias > Opción **Permisos de la app**.
+
+**Ruta de acceso en la aplicación:** Menú lateral principal > **Mi cuenta** > Sección Preferencias > Opción **Permisos de la app**.
+
 1. En la pantalla principal de su finca, abra el menú lateral de navegación y presione la opción **Mi cuenta**.
 2. Desplácese hasta la sección **Preferencias** y presione la opción **Permisos de la app**.
 3. En la lista de permisos, identifique cuál de ellos se encuentra con el estado **Permiso denegado**.

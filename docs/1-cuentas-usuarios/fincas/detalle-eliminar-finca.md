@@ -30,25 +30,25 @@ Desde esta vista, el usuario puede invocar la edición completa de los parámetr
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos en la plataforma:**
-  - *Para consultar la información de la finca:* Cualquier usuario con acceso a la finca activa puede visualizar la ficha técnica.
-  - *Para editar la finca:* El botón de edición (ícono de lápiz en la barra superior) redirige al formulario de actualización de finca y requiere permisos de actualización sobre la propiedad (reservado para el propietario y administradores autorizados).
-  - *Para eliminar la finca:* Se exige de forma estricta el permiso de eliminación de fincas. Si un usuario sin este permiso intenta realizar la acción, el sistema denegará la solicitud con una alerta de permisos insuficientes.
+    - *Para consultar la información de la finca:* Cualquier usuario con acceso a la finca activa puede visualizar la ficha técnica.
+    - *Para editar la finca:* El botón de edición (ícono de lápiz en la barra superior) redirige al formulario de actualización de finca y requiere permisos de actualización sobre la propiedad (reservado para el propietario y administradores autorizados).
+    - *Para eliminar la finca:* Se exige de forma estricta el permiso de eliminación de fincas. Si un usuario sin este permiso intenta realizar la acción, el sistema denegará la solicitud con una alerta de permisos insuficientes.
 - **Visualización y Precarga de Atributos:**
-  - **Imagen de cabecera:** Si la finca cuenta con fotografía registrada, se despliega en la parte superior; en caso contrario, se muestra la ilustración estándar representativa del predio.
-  - **Propósito productivo:** Exhibe la orientación zootécnica de la explotación pecuaria junto con su ícono característico (*Doble propósito*, *Producción de carne*, *Producción de leche*, *Cría*, *Levante* o *Bravura*).
-  - **Métricas territoriales:** Desglosa en tarjetas comparativas el *Área total* del terreno y el *Área de ganado* con sus respectivas unidades de medida configuradas.
-  - **Ubicación:** Despliega el resumen geográfico compuesto por municipio/ciudad, departamento/región y país. Si no se cuenta con registro territorial completo, se exhibe el indicador de valor no disponible.
+    - **Imagen de cabecera:** Si la finca cuenta con fotografía registrada, se despliega en la parte superior; en caso contrario, se muestra la ilustración estándar representativa del predio.
+    - **Propósito productivo:** Exhibe la orientación zootécnica de la explotación pecuaria junto con su ícono característico (*Doble propósito*, *Producción de carne*, *Producción de leche*, *Cría*, *Levante* o *Bravura*).
+    - **Métricas territoriales:** Desglosa en tarjetas comparativas el *Área total* del terreno y el *Área de ganado* con sus respectivas unidades de medida configuradas.
+    - **Ubicación:** Despliega el resumen geográfico compuesto por municipio/ciudad, departamento/región y país. Si no se cuenta con registro territorial completo, se exhibe el indicador de valor no disponible.
 - **Reglas del Proceso de Eliminación de Finca:**
-  - **Mecanismo de seguridad por confirmación escrita:** Para prevenir eliminaciones accidentales de predios con información productiva crítica, el sistema no admite confirmación con un simple toque. El usuario está obligado a transcribir exactamente el nombre de la finca tal como aparece registrado en la aplicación.
-  - **Sensibilidad al nombre ingresado:** Si el texto ingresado no coincide de manera exacta con el nombre de la finca, el sistema bloqueará la operación y mostrará el mensaje de error: *"El nombre de la finca ingresado no es correcto"*.
-  - **Eliminación en cascada irreversible:** Al confirmarse la eliminación, el sistema borra de forma secuencial y definitiva todos los registros vinculados a la finca: eventos del calendario, tareas programadas, registros de ventas de leche, ventas de animales, compras de animales y todo el inventario de animales (tanto los que se encontraban activos dentro de la finca como aquellos marcados fuera de ella).
-  - **Comportamiento posterior a la eliminación:**
-    - Si el usuario dispone de otras fincas registradas en su cuenta, el sistema selecciona automáticamente la siguiente finca disponible y redirige al panel de inicio principal.
-    - Si la finca eliminada era la única explotación asociada a la cuenta del usuario, la aplicación lo redirige a la pantalla de bienvenida inicial para que pueda registrar un nuevo predio.
+    - **Mecanismo de seguridad por confirmación escrita:** Para prevenir eliminaciones accidentales de predios con información productiva crítica, el sistema no admite confirmación con un simple toque. El usuario está obligado a transcribir exactamente el nombre de la finca tal como aparece registrado en la aplicación.
+    - **Sensibilidad al nombre ingresado:** Si el texto ingresado no coincide de manera exacta con el nombre de la finca, el sistema bloqueará la operación y mostrará el mensaje de error: *"El nombre de la finca ingresado no es correcto"*.
+    - **Eliminación en cascada irreversible:** Al confirmarse la eliminación, el sistema borra de forma secuencial y definitiva todos los registros vinculados a la finca: eventos del calendario, tareas programadas, registros de ventas de leche, ventas de animales, compras de animales y todo el inventario de animales (tanto los que se encontraban activos dentro de la finca como aquellos marcados fuera de ella).
+    - **Comportamiento posterior a la eliminación:**
+      - Si el usuario dispone de otras fincas registradas en su cuenta, el sistema selecciona automáticamente la siguiente finca disponible y redirige al panel de inicio principal.
+      - Si la finca eliminada era la única explotación asociada a la cuenta del usuario, la aplicación lo redirige a la pantalla de bienvenida inicial para que pueda registrar un nuevo predio.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - *Ruta 1 (Desde el panel de inicio):* Pantalla de inicio de la finca (**Inicio**) > Tocar la tarjeta superior con el nombre e información de la finca.
+    - *Ruta 1 (Desde el panel de inicio):* Pantalla de inicio de la finca (**Inicio**) > Tocar la tarjeta superior con el nombre e información de la finca.
 
 #### 1. Consulta de la Ficha Técnica de la Finca
 - En la cabecera superior se visualiza la fotografía de la finca o la ilustración predeterminada del sistema.

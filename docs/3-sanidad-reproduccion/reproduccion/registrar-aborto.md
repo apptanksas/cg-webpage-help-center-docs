@@ -25,19 +25,19 @@ Módulo reproductivo especializado que permite asentar la interrupción involunt
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - **Creación de aborto:** Se requiere contar con el permiso de creación de abortos en la finca activa. Si el colaborador no tiene este rol asignado, el sistema denegará la acción e impedirá guardar el formulario.
-  - **Edición y actualización:** Para modificar la fecha, sexo del feto u observaciones de un aborto existente se requiere el permiso de actualización de abortos.
-  - **Eliminación del registro:** Para dar de baja un evento de aborto guardado se requiere el permiso de eliminación de abortos.
+    - **Creación de aborto:** Se requiere contar con el permiso de creación de abortos en la finca activa. Si el colaborador no tiene este rol asignado, el sistema denegará la acción e impedirá guardar el formulario.
+    - **Edición y actualización:** Para modificar la fecha, sexo del feto u observaciones de un aborto existente se requiere el permiso de actualización de abortos.
+    - **Eliminación del registro:** Para dar de baja un evento de aborto guardado se requiere el permiso de eliminación de abortos.
 - **Validaciones zootécnicas y de calendario:**
-  - **Fecha del evento:** Es obligatoria y se establece por defecto en la fecha actual del sistema. El selector de fecha restringe la selección impidiendo ingresar fechas futuras o fechas anteriores al nacimiento de la hembra.
-  - **Sexo del feto:** Es un campo obligatorio para la estadística zootécnica de pérdidas perinatales; el sistema selecciona Macho por defecto y permite alternar a Hembra.
-  - **Notas y observaciones:** Campo de texto multilínea opcional para documentar posibles causas zootécnicas o patológicas (ej. traumas físicos, sospechas de brucelosis, condiciones climáticas o tratamientos previos).
+    - **Fecha del evento:** Es obligatoria y se establece por defecto en la fecha actual del sistema. El selector de fecha restringe la selección impidiendo ingresar fechas futuras o fechas anteriores al nacimiento de la hembra.
+    - **Sexo del feto:** Es un campo obligatorio para la estadística zootécnica de pérdidas perinatales; el sistema selecciona Macho por defecto y permite alternar a Hembra.
+    - **Notas y observaciones:** Campo de texto multilínea opcional para documentar posibles causas zootécnicas o patológicas (ej. traumas físicos, sospechas de brucelosis, condiciones climáticas o tratamientos previos).
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Registro desde el resumen reproductivo):** En la barra inferior de navegación, toque **Animales** > Seleccione a la vaca o novilla en el listado > Presione el módulo **Reproducción** > En la parte inferior, presione el botón flotante circular con el icono de más (**+**) > En el menú de opciones **Chequeo reproductivo**, seleccione **Aborto** (identificado con icono de hembra en tono marrón).
-  - **Ruta 2 (Edición desde la tabla de partos y abortos):** En la barra inferior, toque **Animales** > Seleccione a la hembra > Presione **Reproducción** > Desplácese a la sección **Partos/Abortos** > Toque directamente sobre la fila del aborto registrado que necesita corregir.
-  - **Ruta 3 (Edición desde la tabla completa de eventos de cría):** En el resumen de **Reproducción** de la hembra > En la sección **Partos/Abortos**, presione el icono de flecha hacia la derecha para abrir la tabla completa > Localice el registro y presione el botón de edición.
+    - **Ruta 1 (Registro desde el resumen reproductivo):** En la barra inferior de navegación, toque **Animales** > Seleccione a la vaca o novilla en el listado > Presione el módulo **Reproducción** > En la parte inferior, presione el botón flotante circular con el icono de más (**+**) > En el menú de opciones **Chequeo reproductivo**, seleccione **Aborto** (identificado con icono de hembra en tono marrón).
+    - **Ruta 2 (Edición desde la tabla de partos y abortos):** En la barra inferior, toque **Animales** > Seleccione a la hembra > Presione **Reproducción** > Desplácese a la sección **Partos/Abortos** > Toque directamente sobre la fila del aborto registrado que necesita corregir.
+    - **Ruta 3 (Edición desde la tabla completa de eventos de cría):** En el resumen de **Reproducción** de la hembra > En la sección **Partos/Abortos**, presione el icono de flecha hacia la derecha para abrir la tabla completa > Localice el registro y presione el botón de edición.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación:** Exhibe el título contextual de la acción: **Nuevo Aborto** al registrar por primera vez, o **Editar Aborto** cuando se modifican los datos de un evento existente. Incluye un botón de cierre (**X**) a la izquierda que descarta los cambios no guardados y regresa a la vista previa.

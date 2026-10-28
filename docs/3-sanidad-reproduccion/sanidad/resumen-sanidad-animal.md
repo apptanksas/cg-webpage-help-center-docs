@@ -25,47 +25,48 @@ Proporciona una vista centralizada del historial clínico y sanitario del animal
 
 ### Reglas de Negocio y Restricciones
 - **Validación de estado del animal (Bloqueo o baja):**
-  - Si el animal se encuentra bloqueado o dado de baja en la finca ganadera (registrado como fallecido, vendido o descartado), el sistema restringe el acceso al resumen sanitario y regresa de forma automática a la pantalla anterior para proteger la integridad de los datos.
+    - Si el animal se encuentra bloqueado o dado de baja en la finca ganadera (registrado como fallecido, vendido o descartado), el sistema restringe el acceso al resumen sanitario y regresa de forma automática a la pantalla anterior para proteger la integridad de los datos.
 - **Color y estado del encabezado:**
-  - El encabezado superior muestra el título **Datos veterinarios** junto al estado sanitario actual del animal.
-  - Si el animal no se encuentra bajo tratamiento médico activo, el encabezado se muestra en el color principal de la aplicación.
-  - Si el animal tiene un tratamiento médico o proceso clínico activo, el encabezado cambia automáticamente a color rojo de advertencia visual para alertar al operario.
+    - El encabezado superior muestra el título **Datos veterinarios** junto al estado sanitario actual del animal.
+    - Si el animal no se encuentra bajo tratamiento médico activo, el encabezado se muestra en el color principal de la aplicación.
+    - Si el animal tiene un tratamiento médico o proceso clínico activo, el encabezado cambia automáticamente a color rojo de advertencia visual para alertar al operario.
 - **Tarjeta de alerta de tratamiento o periodo de secado activo:**
-  - Cuando el estado sanitario del animal indica que está en tratamiento, se despliega una tarjeta de alerta destacada debajo del encabezado que muestra:
-    - **Tipo de alerta:** Identifica si se trata de un **Tratamiento** general o si la vaca se encuentra **En periodo de secado**, acompañado del ícono correspondiente.
-    - **Medicamento o nombre:** Indica el nombre del tratamiento o el fármaco prescrito.
-    - **Duración y fecha límite:** Muestra la cantidad total de días del tratamiento y la fecha estimada de finalización según la zona horaria del usuario.
-  - Al presionar dicha tarjeta, el sistema abre directamente el formulario de edición o detalle del tratamiento activo.
+    - Cuando el estado sanitario del animal indica que está en tratamiento, se despliega una tarjeta de alerta destacada debajo del encabezado que muestra:
+      - **Tipo de alerta:** Identifica si se trata de un **Tratamiento** general o si la vaca se encuentra **En periodo de secado**, acompañado del ícono correspondiente.
+      - **Medicamento o nombre:** Indica el nombre del tratamiento o el fármaco prescrito.
+      - **Duración y fecha límite:** Muestra la cantidad total de días del tratamiento y la fecha estimada de finalización según la zona horaria del usuario.
+      - Al presionar dicha tarjeta, el sistema abre directamente el formulario de edición o detalle del tratamiento activo.
 - **Tablas de historial y límite de filas en el resumen:**
-  - Las secciones del resumen (**Tratamiento**, **Registro de secado**, **Vacunación**, **Mastitis** y **Eventos y tareas**) muestran únicamente las **5 filas más recientes** para garantizar una navegación ágil.
-  - Para consultar el historial completo de cualquiera de estas categorías, se debe presionar la flecha ubicada a la derecha del título de cada sección.
-  - Al presionar sobre cualquier fila de las tablas de tratamientos, secados, vacunas o mastitis, se abre el formulario de edición correspondiente. Al presionar sobre un evento o tarea, se abre la pantalla con el detalle de dicha actividad.
+    - Las secciones del resumen (**Tratamiento**, **Registro de secado**, **Vacunación**, **Mastitis** y **Eventos y tareas**) muestran únicamente las **5 filas más recientes** para garantizar una navegación ágil.
+    - Para consultar el historial completo de cualquiera de estas categorías, se debe presionar la flecha ubicada a la derecha del título de cada sección.
+    - Al presionar sobre cualquier fila de las tablas de tratamientos, secados, vacunas o mastitis, se abre el formulario de edición correspondiente. Al presionar sobre un evento o tarea, se abre la pantalla con el detalle de dicha actividad.
 - **Estado vacío:**
-  - Si el animal no cuenta con ningún registro histórico de tratamientos, secados, vacunas, mastitis ni tareas pendientes, la pantalla muestra una vista limpia con el indicador de estado sin información.
+    - Si el animal no cuenta con ningún registro histórico de tratamientos, secados, vacunas, mastitis ni tareas pendientes, la pantalla muestra una vista limpia con el indicador de estado sin información.
 - **Botón flotante de acciones rápidas (+):**
-  - La pantalla incluye un botón flotante circular con el signo más (**+**) que despliega el menú de acciones sanitarias para registrar rápidamente nuevos tratamientos, vacunas, diagnósticos de mastitis o periodos de secado.
+    - La pantalla incluye un botón flotante circular con el signo más (**+**) que despliega el menú de acciones sanitarias para registrar rápidamente nuevos tratamientos, vacunas, diagnósticos de mastitis o periodos de secado.
 
 ### Flujo Paso a Paso para el Usuario
+
 - **Ruta de acceso en la aplicación:** Menú inferior **Animales** > Seleccionar el animal > En la ficha del animal, presionar la tarjeta o acceso **Sanidad** (o **Datos veterinarios**).
 
 1. **Revisión del encabezado y estado sanitario:**
-   - Observe la parte superior de la pantalla: verifique el estado sanitario del animal mostrado debajo de **Datos veterinarios** (por ejemplo, Sano o En tratamiento).
-   - Si el encabezado se torna de color rojo, preste atención a la alerta clínica activa.
+    - Observe la parte superior de la pantalla: verifique el estado sanitario del animal mostrado debajo de **Datos veterinarios** (por ejemplo, Sano o En tratamiento).
+    - Si el encabezado se torna de color rojo, preste atención a la alerta clínica activa.
 2. **Consulta de alerta de tratamiento activo (si aplica):**
-   - Si el animal está bajo medicación o secado, revise la tarjeta de alerta para verificar el medicamento aplicado, los días de duración y la fecha en que concluye el tratamiento. Presione sobre la tarjeta si necesita editar o actualizar los datos del tratamiento.
+    - Si el animal está bajo medicación o secado, revise la tarjeta de alerta para verificar el medicamento aplicado, los días de duración y la fecha en que concluye el tratamiento. Presione sobre la tarjeta si necesita editar o actualizar los datos del tratamiento.
 3. **Exploración de tablas del historial clínico:**
-   - Deslice hacia abajo para revisar las distintas secciones de salud:
-     - **Tratamiento:** Muestra los tratamientos médicos generales aplicados recientemente.
-     - **Vacunación:** Detalla las últimas vacunas administradas junto con su fecha.
-     - **Mastitis:** En hembras lecheras, presenta los diagnósticos recientes de mastitis y el cuarto mamario afectado.
-     - **Registro de secado:** Presenta los registros de secado y tratamientos intramamarios de secado.
-     - **Eventos y tareas:** Lista las próximas actividades sanitarias programadas (recordatorios de revacunación, revisiones periódicas o tareas pendientes).
+    - Deslice hacia abajo para revisar las distintas secciones de salud:
+        - **Tratamiento:** Muestra los tratamientos médicos generales aplicados recientemente.
+        - **Vacunación:** Detalla las últimas vacunas administradas junto con su fecha.
+        - **Mastitis:** En hembras lecheras, presenta los diagnósticos recientes de mastitis y el cuarto mamario afectado.
+        - **Registro de secado:** Presenta los registros de secado y tratamientos intramamarios de secado.
+        - **Eventos y tareas:** Lista las próximas actividades sanitarias programadas (recordatorios de revacunación, revisiones periódicas o tareas pendientes).
 4. **Acceso al historial completo o edición:**
-   - Para ver todas las filas históricas de un área específica, presione la flecha orientada a la derecha junto al título de la sección deseada.
-   - Para modificar un registro previo, presione directamente sobre la fila correspondiente en la tabla.
+    - Para ver todas las filas históricas de un área específica, presione la flecha orientada a la derecha junto al título de la sección deseada.
+    - Para modificar un registro previo, presione directamente sobre la fila correspondiente en la tabla.
 5. **Registro de un nuevo evento de sanidad:**
-   - Presione el botón flotante circular con el ícono (**+**) para abrir el menú de sanidad y seleccionar si desea registrar un tratamiento, una vacuna, un control de mastitis o un secado.
-- **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la ficha principal del animal.
+    - Presione el botón flotante circular con el ícono (**+**) para abrir el menú de sanidad y seleccionar si desea registrar un tratamiento, una vacuna, un control de mastitis o un secado.
+    - **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la ficha principal del animal.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

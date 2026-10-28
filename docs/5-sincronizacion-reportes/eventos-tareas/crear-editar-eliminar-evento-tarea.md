@@ -28,33 +28,33 @@ Desde este módulo es posible definir nombres, descripciones detalladas, program
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos:**
-  - Para registrar nuevas actividades se requiere el permiso de creación de eventos y tareas en la finca.
-  - Para modificar una actividad existente se requiere el permiso de actualización de eventos y tareas.
-  - Para suprimir una actividad o serie se requiere el permiso de eliminación de eventos y tareas.
-  - Si el usuario carece del permiso correspondiente, el sistema no permitirá guardar, actualizar ni eliminar la información.
+    - Para registrar nuevas actividades se requiere el permiso de creación de eventos y tareas en la finca.
+    - Para modificar una actividad existente se requiere el permiso de actualización de eventos y tareas.
+    - Para suprimir una actividad o serie se requiere el permiso de eliminación de eventos y tareas.
+    - Si el usuario carece del permiso correspondiente, el sistema no permitirá guardar, actualizar ni eliminar la información.
 - **Diferenciación entre Evento y Tarea al crear:**
-  - **Evento:** Suceso o hito informativo de fecha fija. No exige marcarse como completado en el sistema y no posee estados operativos.
-  - **Tarea:** Compromiso de campo que debe ejecutarse y marcarse formalmente como completada en la aplicación una vez concluida la labor.
-  - El interruptor para alternar entre evento y tarea **solo está disponible durante la creación**. Una vez que la actividad ha sido guardada en la base de datos, su naturaleza (evento o tarea) queda bloqueada de forma permanente y no puede ser modificada en el formulario de edición.
+    - **Evento:** Suceso o hito informativo de fecha fija. No exige marcarse como completado en el sistema y no posee estados operativos.
+    - **Tarea:** Compromiso de campo que debe ejecutarse y marcarse formalmente como completada en la aplicación una vez concluida la labor.
+    - El interruptor para alternar entre evento y tarea **solo está disponible durante la creación**. Una vez que la actividad ha sido guardada en la base de datos, su naturaleza (evento o tarea) queda bloqueada de forma permanente y no puede ser modificada en el formulario de edición.
 - **Restricciones de fecha de ejecución:**
-  - La fecha programada no puede ser anterior al día de hoy; solo se admiten fechas desde el día actual hasta un máximo de diez años en el futuro.
+    - La fecha programada no puede ser anterior al día de hoy; solo se admiten fechas desde el día actual hasta un máximo de diez años en el futuro.
 - **Validación del nombre de la actividad:**
-  - El campo de nombre es de carácter obligatorio. No es posible guardar el formulario sin asignar un título a la labor.
+    - El campo de nombre es de carácter obligatorio. No es posible guardar el formulario sin asignar un título a la labor.
 - **Descripción de la actividad:**
-  - El campo de descripción es opcional y admite texto multilínea para detallar instrucciones específicas, productos requeridos o dosis de campo.
+    - El campo de descripción es opcional y admite texto multilínea para detallar instrucciones específicas, productos requeridos o dosis de campo.
 - **Reglas de periodicidad y repetición:**
-  - La actividad puede configurarse sin repetición o con frecuencia periódica según la fecha base programada (repetición diaria, semanal, mensual o anual).
-  - Al activar una frecuencia de repetición, se habilita la opción de definir una fecha límite de finalización de la serie (con un horizonte de hasta diez años). Si se deja vacía la fecha de culminación, la periodicidad se proyectará indefinidamente según el calendario.
+    - La actividad puede configurarse sin repetición o con frecuencia periódica según la fecha base programada (repetición diaria, semanal, mensual o anual).
+    - Al activar una frecuencia de repetición, se habilita la opción de definir una fecha límite de finalización de la serie (con un horizonte de hasta diez años). Si se deja vacía la fecha de culminación, la periodicidad se proyectará indefinidamente según el calendario.
 - **Filtro de visibilidad por perfiles:**
-  - Permite limitar qué tipos de colaboradores pueden consultar la actividad en su calendario (por ejemplo, restringir para administradores, veterinarios o vaqueros). Por defecto se encuentra seleccionada la opción para todos los miembros de la finca. Los perfiles con rol de visitante quedan automáticamente excluidos de la lista de asignación.
+    - Permite limitar qué tipos de colaboradores pueden consultar la actividad en su calendario (por ejemplo, restringir para administradores, veterinarios o vaqueros). Por defecto se encuentra seleccionada la opción para todos los miembros de la finca. Los perfiles con rol de visitante quedan automáticamente excluidos de la lista de asignación.
 - **Asignación personalizada y a animales:**
-  - **Asignación a colaborador:** Permite delegar la actividad a un miembro registrado de la finca o autoasignársela directamente.
-  - **Asignación a animal:** Permite vincular la actividad a un ejemplar específico de la finca ganadera. El selector filtra y presenta únicamente animales vivos que se encuentren registrados físicamente en la finca en ese momento. Al asignar un ejemplar, su cinta identificadora se exhibe en la parte superior del formulario.
+    - **Asignación a colaborador:** Permite delegar la actividad a un miembro registrado de la finca o autoasignársela directamente.
+    - **Asignación a animal:** Permite vincular la actividad a un ejemplar específico de la finca ganadera. El selector filtra y presenta únicamente animales vivos que se encuentren registrados físicamente en la finca en ese momento. Al asignar un ejemplar, su cinta identificadora se exhibe en la parte superior del formulario.
 - **Reglas de eliminación de actividades periódicas:**
-  - Si una actividad no tiene repeticiones (es única), se elimina directamente tras presionar el botón de supresión.
-  - Si la actividad forma parte de una serie recurrente con más de una ocurrencia registrada, el sistema despliega un diálogo de confirmación que permite al usuario elegir entre:
-    1. **Solo este evento / Solo esta tarea:** Suprime únicamente la fecha seleccionada, manteniendo intactas las demás actividades de la serie.
-    2. **Todos los eventos de la serie / Todas las tareas de la serie:** Elimina de manera definitiva la actividad actual y todas las demás ocurrencias vinculadas a la misma configuración.
+    - Si una actividad no tiene repeticiones (es única), se elimina directamente tras presionar el botón de supresión.
+    - Si la actividad forma parte de una serie recurrente con más de una ocurrencia registrada, el sistema despliega un diálogo de confirmación que permite al usuario elegir entre:
+      1. **Solo este evento / Solo esta tarea:** Suprime únicamente la fecha seleccionada, manteniendo intactas las demás actividades de la serie.
+      2. **Todos los eventos de la serie / Todas las tareas de la serie:** Elimina de manera definitiva la actividad actual y todas las demás ocurrencias vinculadas a la misma configuración.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
@@ -78,8 +78,8 @@ Desde este módulo es posible definir nombres, descripciones detalladas, program
 #### 3. Configuración de Repetición (Frecuencia)
 - En el bloque de frecuencia, toque la opción **Repetir** para desplegar el menú inferior de periodicidades disponibles calculadas para esa fecha (sin repetición, cada día, cada semana, cada mes o cada año).
 - Si selecciona una periodicidad distinta a ninguna, se desplegará el campo **Repetir hasta**:
-  - Pulse el selector de fecha si desea definir un día exacto de culminación de la serie.
-  - Deje el campo vacío si desea que la actividad se repita de manera continua sin límite de tiempo.
+    - Pulse el selector de fecha si desea definir un día exacto de culminación de la serie.
+    - Deje el campo vacío si desea que la actividad se repita de manera continua sin límite de tiempo.
 
 #### 4. Designación a Usuarios y Animales
 - **Asignar a un usuario específico:** Despliegue el listado para seleccionar al miembro de la finca que se hará responsable de la labor. Si desea asignársela a sí mismo, elija la opción correspondiente a su nombre de cuenta. Si no desea asignarla a nadie en particular, conserve la opción en blanco.
@@ -89,14 +89,14 @@ Desde este módulo es posible definir nombres, descripciones detalladas, program
 - **Crear actividad:** En un registro nuevo, presione el botón **Crear** al final de la pantalla. La aplicación validará que el nombre esté completo, almacenará la actividad en el teléfono y regresará automáticamente al calendario o pantalla previa mostrando un mensaje de confirmación (*"El evento ha sido creado exitosamente"* o *"La tarea ha sido creada exitosamente"*).
 - **Actualizar actividad:** En modo edición, tras modificar los campos deseados, presione el botón de guardado. Los cambios se actualizarán de inmediato mostrando el aviso de confirmación.
 - **Eliminar actividad (Paso a paso para suprimir un evento o tarea):**
-  1. Localice la actividad en el calendario o panel de inicio y púlsela para abrir su pantalla de **Detalle**.
-  2. En la barra superior del detalle, presione el botón de edición (ícono de lápiz) para ingresar a este formulario en modo de edición.
-  3. Deslícese hasta el final del formulario y presione el botón rojo **Eliminar**.
-  4. Si la actividad es única (sin repeticiones), se suprimirá de inmediato.
-  5. Si la actividad forma parte de una serie recurrente con múltiples fechas, el sistema desplegará una ventana de confirmación:
-     - Presione **Solo este evento** / **Solo esta tarea** para borrar únicamente la fecha seleccionada.
-     - Presione **Todos los eventos de la serie** / **Todas las tareas de la serie** para eliminar toda la secuencia programada.
-     - Presione **Cancelar** si prefiere conservar la actividad sin cambios.
+    1. Localice la actividad en el calendario o panel de inicio y púlsela para abrir su pantalla de **Detalle**.
+     2. En la barra superior del detalle, presione el botón de edición (ícono de lápiz) para ingresar a este formulario en modo de edición.
+     3. Deslícese hasta el final del formulario y presione el botón rojo **Eliminar**.
+     4. Si la actividad es única (sin repeticiones), se suprimirá de inmediato.
+     5. Si la actividad forma parte de una serie recurrente con múltiples fechas, el sistema desplegará una ventana de confirmación:
+        - Presione **Solo este evento** / **Solo esta tarea** para borrar únicamente la fecha seleccionada.
+        - Presione **Todos los eventos de la serie** / **Todas las tareas de la serie** para eliminar toda la secuencia programada.
+        - Presione **Cancelar** si prefiere conservar la actividad sin cambios.
 
 - **Pantalla de llegada tras guardar o eliminar:** La aplicación cierra el formulario y redirige al usuario a la pantalla anterior (habitualmente el calendario mensual o el panel de inicio de la finca), actualizando al instante el listado de actividades programadas.
 

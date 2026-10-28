@@ -30,46 +30,46 @@ Pantalla de captura y gestión clínica individual que permite registrar, editar
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - **Creación:** Se requiere el permiso de creación de tratamientos en la finca activa.
-  - **Actualización:** Se requiere el permiso de modificación de tratamientos para guardar cambios sobre una terapia previamente existente.
-  - **Eliminación:** Se requiere el permiso de eliminación de tratamientos para retirar registros médicos veterinarios del historial del animal.
-  - Si el usuario carece del permiso respectivo, la aplicación bloquea la operación y notifica la alerta: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
+    - **Creación:** Se requiere el permiso de creación de tratamientos en la finca activa.
+    - **Actualización:** Se requiere el permiso de modificación de tratamientos para guardar cambios sobre una terapia previamente existente.
+    - **Eliminación:** Se requiere el permiso de eliminación de tratamientos para retirar registros médicos veterinarios del historial del animal.
+    - Si el usuario carece del permiso respectivo, la aplicación bloquea la operación y notifica la alerta: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
 - **Campos obligatorios del formulario:**
-  - **"Fecha":** Fecha de inicio de la terapia médica. Por defecto sugiere el día actual. Está vinculada a la fecha de nacimiento del ejemplar: no se permite seleccionar una fecha anterior al nacimiento del animal.
-  - **"Días de tratamiento":** Duración de la medicación en días enteros. El sistema restringe el valor a un rango estricto de 1 a 365 días.
-  - **"Tipo de tratamiento":** Clasificación terapéutica obligatoria seleccionable mediante menú desplegable (que incluye secado, desparasitaciones, tratamientos hormonales, antibióticos, antiinflamatorios, agentes de diagnóstico y suplementos nutricionales).
-  - **"Medicamento":** Nombre comercial o principio activo del producto veterinario aplicado.
+    - **"Fecha":** Fecha de inicio de la terapia médica. Por defecto sugiere el día actual. Está vinculada a la fecha de nacimiento del ejemplar: no se permite seleccionar una fecha anterior al nacimiento del animal.
+    - **"Días de tratamiento":** Duración de la medicación en días enteros. El sistema restringe el valor a un rango estricto de 1 a 365 días.
+    - **"Tipo de tratamiento":** Clasificación terapéutica obligatoria seleccionable mediante menú desplegable (que incluye secado, desparasitaciones, tratamientos hormonales, antibióticos, antiinflamatorios, agentes de diagnóstico y suplementos nutricionales).
+    - **"Medicamento":** Nombre comercial o principio activo del producto veterinario aplicado.
 - **Campos opcionales:**
-  - **"Nombre del tratamiento":** Título descriptivo o identificador personalizado para la terapia.
-  - **"Enfermedad":** Selección opcional del catálogo de patologías registradas en el sistema (por ejemplo, fiebre aftosa, mastitis, anaplasmosis, neumonía, timpanismo, entre otras).
-  - **"Diagnóstico":** Descripción clínica o motivo médico por el cual se prescribe la medicación.
-  - **"Notas / Observación":** Campo multilínea para consignar vías de administración, dosificación, intervalos o recomendaciones veterinarias.
+    - **"Nombre del tratamiento":** Título descriptivo o identificador personalizado para la terapia.
+    - **"Enfermedad":** Selección opcional del catálogo de patologías registradas en el sistema (por ejemplo, fiebre aftosa, mastitis, anaplasmosis, neumonía, timpanismo, entre otras).
+    - **"Diagnóstico":** Descripción clínica o motivo médico por el cual se prescribe la medicación.
+    - **"Notas / Observación":** Campo multilínea para consignar vías de administración, dosificación, intervalos o recomendaciones veterinarias.
 - **Cálculo automático de fecha de finalización:**
-  - A partir de la fecha de inicio y la cantidad indicada en "Días de tratamiento", la aplicación calcula de forma automática la fecha estimada en la que concluye la medicación (sumando los días de tratamiento a la fecha de inicio).
+    - A partir de la fecha de inicio y la cantidad indicada en "Días de tratamiento", la aplicación calcula de forma automática la fecha estimada en la que concluye la medicación (sumando los días de tratamiento a la fecha de inicio).
 - **Impacto en el estado sanitario y alertas del ejemplar:**
-  - Si el tratamiento se encuentra dentro de su período de vigencia (fecha actual comprendida entre la fecha de inicio y la fecha de finalización calculada), el estado sanitario del animal cambia automáticamente y se resalta en color rojo en la cabecera del resumen de sanidad, mostrando además una tarjeta de alerta activa con el medicamento y los días restantes.
+    - Si el tratamiento se encuentra dentro de su período de vigencia (fecha actual comprendida entre la fecha de inicio y la fecha de finalización calculada), el estado sanitario del animal cambia automáticamente y se resalta en color rojo en la cabecera del resumen de sanidad, mostrando además una tarjeta de alerta activa con el medicamento y los días restantes.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Desde el Menú de Sanidad del animal):** Pantalla principal > "Animales" > Seleccionar el ejemplar > Toque en "Datos Veterinarios" > Botón flotante central (+) > Seleccionar "Tratamiento".
-  - **Ruta 2 (Desde la Tabla de Historial de Tratamientos):** Resumen de Sanidad del animal > Toque en la sección "Tratamiento" (o "Ver todo") para abrir la tabla > Presionar el botón flotante (+) para crear un nuevo registro, o presionar directamente sobre una fila de la tabla para editar un tratamiento existente.
-  - **Ruta 3 (Desde la Tarjeta de Alerta de Tratamiento Activo):** Resumen de Sanidad del animal > Presionar sobre la tarjeta de alerta de tratamiento activo en la parte superior > Abre directamente la vista de edición del tratamiento.
+    - **Ruta 1 (Desde el Menú de Sanidad del animal):** Pantalla principal > "Animales" > Seleccionar el ejemplar > Toque en "Datos Veterinarios" > Botón flotante central (+) > Seleccionar "Tratamiento".
+    - **Ruta 2 (Desde la Tabla de Historial de Tratamientos):** Resumen de Sanidad del animal > Toque en la sección "Tratamiento" (o "Ver todo") para abrir la tabla > Presionar el botón flotante (+) para crear un nuevo registro, o presionar directamente sobre una fila de la tabla para editar un tratamiento existente.
+    - **Ruta 3 (Desde la Tarjeta de Alerta de Tratamiento Activo):** Resumen de Sanidad del animal > Presionar sobre la tarjeta de alerta de tratamiento activo en la parte superior > Abre directamente la vista de edición del tratamiento.
 
 #### Diligenciamiento y Guardado del Tratamiento
 1. En la barra superior visualizará el título "Nuevo tratamiento" (o "Editar tratamiento" si está modificando un registro previo) junto con el botón con icono de cruz (X) para cancelar y volver atrás.
 2. Debajo de la barra superior observará la cinta identificadora del animal con su código de arete, nombre y detalles clave.
 3. Complete los campos del formulario:
-   - **"Nombre del tratamiento" (Opcional):** Ingrese un nombre identificador para la terapia médica.
-   - **"Fecha":** Confirme la fecha de inicio del tratamiento. Si requiere cambiarla, toque el campo para desplegar el calendario (no admite fechas anteriores al nacimiento del animal).
-   - **"Días de tratamiento":** Digite el número entero de días de duración de la medicación (valor obligatorio entre 1 y 365).
-   - **"Tipo de tratamiento":** Toque el campo para abrir la lista desplegable inferior y seleccione la categoría médica correspondiente (por ejemplo: "Secado", "Desparacitación", "Antibiótico de amplio espectro", "Antiinflamatorio no esteroideo", "Otros", etc.).
-   - **"Enfermedad" (Opcional):** Si cuenta con un diagnóstico específico, presione el campo para seleccionar la afección del listado zootécnico.
-   - **"Diagnóstico" (Opcional):** Ingrese el cuadro clínico o sintomatología valorada por el médico veterinario.
-   - **"Medicamento":** Digite el nombre del fármaco, antibiótico, vacuna o producto aplicado (campo obligatorio).
-   - **"Notas / Observación" (Opcional):** Escriba dosis, vía de administración o recomendaciones en el recuadro multilínea.
+    - **"Nombre del tratamiento" (Opcional):** Ingrese un nombre identificador para la terapia médica.
+    - **"Fecha":** Confirme la fecha de inicio del tratamiento. Si requiere cambiarla, toque el campo para desplegar el calendario (no admite fechas anteriores al nacimiento del animal).
+    - **"Días de tratamiento":** Digite el número entero de días de duración de la medicación (valor obligatorio entre 1 y 365).
+    - **"Tipo de tratamiento":** Toque el campo para abrir la lista desplegable inferior y seleccione la categoría médica correspondiente (por ejemplo: "Secado", "Desparacitación", "Antibiótico de amplio espectro", "Antiinflamatorio no esteroideo", "Otros", etc.).
+    - **"Enfermedad" (Opcional):** Si cuenta con un diagnóstico específico, presione el campo para seleccionar la afección del listado zootécnico.
+    - **"Diagnóstico" (Opcional):** Ingrese el cuadro clínico o sintomatología valorada por el médico veterinario.
+    - **"Medicamento":** Digite el nombre del fármaco, antibiótico, vacuna o producto aplicado (campo obligatorio).
+    - **"Notas / Observación" (Opcional):** Escriba dosis, vía de administración o recomendaciones en el recuadro multilínea.
 4. Presione el botón "Registrar" ubicado en la parte inferior de la pantalla.
 5. Al completarse el guardado, la aplicación muestra la notificación de éxito ("Tratamiento creado exitosamente" o "Tratamiento actualizado exitosamente") y retorna automáticamente a la pantalla anterior.
-- **Pantalla de llegada tras guardar:** El usuario regresa al resumen sanitario o a la tabla de historial de tratamientos del animal, donde el registro y el estado clínico ya se encuentran actualizados.
+    - **Pantalla de llegada tras guardar:** El usuario regresa al resumen sanitario o a la tabla de historial de tratamientos del animal, donde el registro y el estado clínico ya se encuentran actualizados.
 
 #### Variaciones por especie
 - **Cobertura universal de especies:** La funcionalidad opera de forma idéntica en bovinos, bufalinos, equinos, caprinos, ovinos y porcinos. No restringe el ingreso de tratamientos por sexo, especie ni edad biológica.

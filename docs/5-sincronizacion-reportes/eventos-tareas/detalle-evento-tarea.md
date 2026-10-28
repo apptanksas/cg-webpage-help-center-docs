@@ -29,40 +29,42 @@ La experiencia visual y operativa se adapta automáticamente según el tipo de a
 
 ### Reglas de Negocio y Restricciones
 - **Diferenciación estructural entre Eventos y Tareas:**
-  - **Evento:** Representa un recordatorio o suceso informativo de fecha fija. No cuenta con un estado operativo (**Pendiente**, **En progreso** o **Completada**), no muestra la fila de estado en la ficha de detalles, no incluye sección de culminación y no dispone de botones de acción para completar o cambiar estado en la parte inferior.
-  - **Tarea:** Representa una labor de manejo que exige ejecución en campo. Dispone de un ciclo de vida con tres estados posibles (**Pendiente**, **En progreso** y **Completada**) y permite registrar notas y auditoría de finalización.
+    - **Evento:** Representa un recordatorio o suceso informativo de fecha fija. No cuenta con un estado operativo (**Pendiente**, **En progreso** o **Completada**), no muestra la fila de estado en la ficha de detalles, no incluye sección de culminación y no dispone de botones de acción para completar o cambiar estado en la parte inferior.
+    - **Tarea:** Representa una labor de manejo que exige ejecución en campo. Dispone de un ciclo de vida con tres estados posibles (**Pendiente**, **En progreso** y **Completada**) y permite registrar notas y auditoría de finalización.
 - **Código visual de la cabecera:**
-  - En un **Evento**, la cabecera superior y la barra de navegación utilizan el color principal institucional de la aplicación.
-  - En una **Tarea**, el fondo de la cabecera adopta dinámicamente el color asociado a su estado operativo actual: azul oscuro para **Pendiente**, naranja para **En progreso** y verde oscuro para **Completada**.
+    - En un **Evento**, la cabecera superior y la barra de navegación utilizan el color principal institucional de la aplicación.
+    - En una **Tarea**, el fondo de la cabecera adopta dinámicamente el color asociado a su estado operativo actual: azul oscuro para **Pendiente**, naranja para **En progreso** y verde oscuro para **Completada**.
 - **Permisos de usuario para completar tareas:** La actualización del estado de una labor (marcar como pendiente, en progreso o completada) exige que el usuario disponga del permiso de gestión y cumplimiento de tareas en la finca ganadera.
 - **Restricción de tareas pasadas (Fecha vencida):** Los botones de acción para cambiar el estado de una tarea no se muestran si la fecha programada de la labor es anterior al día actual.
 - **Comportamiento ante Proyecciones Futuras:**
-  - Si la actividad visualizada corresponde a una ocurrencia proyectada por recurrencia en el futuro (y no a una entrada creada o editada individualmente), se muestra un mensaje informativo de advertencia contextual:
-    - Para eventos: *"Este es un evento proyectado en el futuro..."*.
-    - Para tareas: *"Esta es una tarea proyectada en el futuro..."*.
-  - Las ocurrencias proyectadas (sean eventos o tareas) no presentan el botón circular de edición con ícono de lápiz en la cabecera para preservar la integridad de la serie recurrente original.
-  - En tareas proyectadas a futuro, los botones de acción de cambio de estado se ocultan por completo hasta que llegue la fecha o se individualice la labor.
+    - Si la actividad visualizada corresponde a una ocurrencia proyectada por recurrencia en el futuro (y no a una entrada creada o editada individualmente), se muestra un mensaje informativo de advertencia contextual:
+      - Para eventos: *"Este es un evento proyectado en el futuro..."*.
+      - Para tareas: *"Esta es una tarea proyectada en el futuro..."*.
+      - Las ocurrencias proyectadas (sean eventos o tareas) no presentan el botón circular de edición con ícono de lápiz en la cabecera para preservar la integridad de la serie recurrente original.
+      - En tareas proyectadas a futuro, los botones de acción de cambio de estado se ocultan por completo hasta que llegue la fecha o se individualice la labor.
 - **Registro de auditoría al completar:** Al marcar una tarea como completada, el sistema captura automáticamente la fecha exacta del día y asocia el nombre del usuario que realizó la acción, mostrando además el título con formato tachado para denotar visualmente su culminación.
 - **Enlace directo al animal:** Si el evento o la tarea está asociado a un bovino específico de la finca, su código o nombre se presenta como un enlace interactivo para navegar de inmediato a su ficha individual.
 - **Independencia del Centro de Notificaciones:** Los eventos y tareas creados en el calendario de la finca no generan registros locales automáticos en la pestaña de notificaciones de la aplicación. Su consulta y seguimiento se efectúan directamente a través de las rutas oficiales de acceso.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - *Ruta 1 (Desde el Menú Lateral):* Menú lateral principal > Opción **Eventos y Tareas** > Seleccionar una actividad del calendario o lista.
-  - *Ruta 2 (Desde el Panel Principal de la Finca):* Pantalla de inicio de la finca > Bloque de calendario de eventos y tareas > Pulsar sobre la actividad deseada.
-  - *Ruta 3 (Desde Datos veterinarios del animal):* Menu inferior animal > **Datos veterinarios** > Tabla de eventos y tareas > Pulsar sobre el registro de interés.
+    - *Ruta 1 (Desde el Menú Lateral):* Menú lateral principal > Opción **Eventos y Tareas** > Seleccionar una actividad del calendario o lista.
+    - *Ruta 2 (Desde el Panel Principal de la Finca):* Pantalla de inicio de la finca > Bloque de calendario de eventos y tareas > Pulsar sobre la actividad deseada.
+    - *Ruta 3 (Desde Datos veterinarios del animal):* Menu inferior animal > **Datos veterinarios** > Tabla de eventos y tareas > Pulsar sobre el registro de interés.
 
 1. Al ingresar a la pantalla, identifique el tipo de actividad y su estado en la cabecera superior:
-   - **Color de cabecera:** Si consulta un evento, el fondo es del color corporativo principal de la aplicación. Si consulta una tarea, el color cambia según el estado (azul para pendiente, naranja para en progreso, verde para completada).
-   - **Título de la actividad:** Muestra el nombre asignado al evento o la tarea. Si se trata de una tarea completada, el título se mostrará con una línea tachada.
-   - **Fecha y tiempo relativo:** Se visualiza el ícono de calendario junto a la fecha completa en formato legible (día de la semana, día del mes, mes y año) y el cálculo de tiempo relativo (por ejemplo, *"hoy"*, *"en 3 días"* o *"hace 2 días"*).
+    - **Color de cabecera:** Si consulta un evento, el fondo es del color corporativo principal de la aplicación. Si consulta una tarea, el color cambia según el estado (azul para pendiente, naranja para en progreso, verde para completada).
+     - **Título de la actividad:** Muestra el nombre asignado al evento o la tarea. Si se trata de una tarea completada, el título se mostrará con una línea tachada.
+     - **Fecha y tiempo relativo:** Se visualiza el ícono de calendario junto a la fecha completa en formato legible (día de la semana, día del mes, mes y año) y el cálculo de tiempo relativo (por ejemplo, *"hoy"*, *"en 3 días"* o *"hace 2 días"*).
 
 #### 1. Modificación de la Actividad
 - Si la actividad no es una proyección recurrente futura, en la esquina inferior de la cabecera se ubica el botón circular de edición con el ícono de lápiz.
 - Al presionar este botón, la aplicación redirige al formulario de edición correspondiente (sea de evento o de tarea), donde podrá modificar el nombre, la descripción, la fecha, el animal vinculado, la frecuencia de repetición o los responsables.
 
 #### 2. Ficha de Detalles de la Actividad
+
 En el cuerpo central de la pantalla se despliegan los parámetros configurados según el tipo de actividad:
+
 - **Aviso de proyección futura (si aplica):** Si la actividad es proyectada por recurrencia, en la parte superior del contenido aparece un mensaje de advertencia específico: *"Este es un evento proyectado en el futuro..."* o *"Esta es una tarea proyectada en el futuro..."*.
 - **Descripción:** Detalle explicativo de las instrucciones o propósito de la actividad. Si no tiene texto adicional, se indica que no posee valor registrado.
 - **Repetir:** Frecuencia de repetición configurada (por ejemplo, diaria, semanal, mensual o ninguna).
@@ -74,21 +76,25 @@ En el cuerpo central de la pantalla se despliegan los parámetros configurados s
 - **Notas / Observación:** Comentarios complementarios o anotaciones de campo guardadas previamente.
 
 #### 3. Información de Culminación (Exclusiva para Tareas Completadas)
+
 Si la actividad es una tarea y ya ha sido finalizada, se incorpora una sección adicional delimitada por una línea divisoria:
+
 - **Completada por:** Nombre del colaborador que registró la finalización de la labor.
 - **Completada el:** Fecha en la que se llevó a cabo el registro de cumplimiento.
 *(Esta sección no se muestra en tareas pendientes o en progreso, ni en ningún evento informativo).*
 
 #### 4. Gestión del Estado de la Tarea (Exclusiva para Tareas Activas)
+
 En eventos informativos o en tareas proyectadas a futuro, esta sección no está presente. En tareas activas individuales cuya fecha programada sea igual o posterior al día actual, se habilitan los botones de acción operativa en la parte inferior:
+
 - **Marcar como pendiente:** Disponible si la tarea se encuentra en progreso o completada, para retornar la labor a la cola de pendientes.
 - **Marcar como en progreso:** Disponible si la tarea no se encuentra en curso (está pendiente o completada), para indicar que los trabajos de campo han iniciado.
 - **Marcar como completada:** Disponible si la tarea está pendiente o en progreso:
-  - Al pulsar este botón, se despliega una ventana modal titulada **Marcar como completada**.
-  - En el campo de texto multilínea **Notas / Observación**, el operario puede redactar opcionalmente cualquier apunte sobre el trabajo realizado (por ejemplo, dosis aplicada, novedad en el potrero o condición del animal).
-  - Para confirmar, presione el botón **Completar**. Si desea desistir, presione **Cancelar**.
+    - Al pulsar este botón, se despliega una ventana modal titulada **Marcar como completada**.
+    - En el campo de texto multilínea **Notas / Observación**, el operario puede redactar opcionalmente cualquier apunte sobre el trabajo realizado (por ejemplo, dosis aplicada, novedad en el potrero o condición del animal).
+    - Para confirmar, presione el botón **Completar**. Si desea desistir, presione **Cancelar**.
 
-- **Pantalla de llegada tras guardar o actualizar:** La pantalla se recarga de forma inmediata mostrando la tarea con el nuevo estado, los nuevos colores correspondientes y los datos de cumplimiento actualizados. Si se presiona el botón de regreso en la barra superior, el usuario vuelve a la pantalla de origen (calendario o ficha del animal).
+**Pantalla de llegada tras guardar o actualizar:** La pantalla se recarga de forma inmediata mostrando la tarea con el nuevo estado, los nuevos colores correspondientes y los datos de cumplimiento actualizados. Si se presiona el botón de regreso en la barra superior, el usuario vuelve a la pantalla de origen (calendario o ficha del animal).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

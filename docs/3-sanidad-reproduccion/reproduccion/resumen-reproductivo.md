@@ -25,33 +25,35 @@ Pantalla central de gestión y auditoría reproductiva individual que consolida 
 
 ### Reglas de Negocio y Restricciones
 - **Diferenciación automática por género:**
-  - **Hembras:** El sistema calcula y muestra la cabecera completa con métricas zootécnicas avanzadas (estado reproductivo, gestación, próximo parto, días abiertos e intervalo entre partos) y habilita hasta cuatro tablas de historial: **Partos/Abortos**, **Fecundaciones**, **Chequeo** e **Hijos transferidos** (si registra crías con madres receptoras).
-  - **Machos:** La cabecera zootécnica femenina no aplica; la pantalla presenta de manera directa las dos tablas correspondientes a la actividad del reproductor: **Hijos** (crías biológicas engendradas) y **Fecundaciones** (servicios de inseminación o montas asistidas).
+    - **Hembras:** El sistema calcula y muestra la cabecera completa con métricas zootécnicas avanzadas (estado reproductivo, gestación, próximo parto, días abiertos e intervalo entre partos) y habilita hasta cuatro tablas de historial: **Partos/Abortos**, **Fecundaciones**, **Chequeo** e **Hijos transferidos** (si registra crías con madres receptoras).
+    - **Machos:** La cabecera zootécnica femenina no aplica; la pantalla presenta de manera directa las dos tablas correspondientes a la actividad del reproductor: **Hijos** (crías biológicas engendradas) y **Fecundaciones** (servicios de inseminación o montas asistidas).
 - **Cálculo condicional de indicadores zootécnicos en hembras:**
-  - **Días de gestación y próximo parto:** Solo se calculan y muestran si el estado reproductivo actual de la vaca es confirmada como preñada. Si el parto se encuentra dentro de la fecha proyectada o la fecha ya fue rebasada sin confirmación de nacimiento, el sistema resalta el estado como parto inminente.
-  - **Días abiertos:** Únicamente se calculan y visualizan cuando la hembra se encuentra en estado no preñada o vacía, contabilizando el tiempo transcurrido desde el último parto sin una nueva preñez confirmada.
-  - **Intervalo entre partos:** Solo se calcula cuando la vaca tiene registrados dos o más partos en su historial, determinando el promedio de días entre alumbramientos sucesivos.
-  - **Último evento reproductivo:** Muestra dinámicamente si el último hecho asentado fue un parto o un aborto, reflejando su fecha respectiva.
+    - **Días de gestación y próximo parto:** Solo se calculan y muestran si el estado reproductivo actual de la vaca es confirmada como preñada. Si el parto se encuentra dentro de la fecha proyectada o la fecha ya fue rebasada sin confirmación de nacimiento, el sistema resalta el estado como parto inminente.
+    - **Días abiertos:** Únicamente se calculan y visualizan cuando la hembra se encuentra en estado no preñada o vacía, contabilizando el tiempo transcurrido desde el último parto sin una nueva preñez confirmada.
+    - **Intervalo entre partos:** Solo se calcula cuando la vaca tiene registrados dos o más partos en su historial, determinando el promedio de días entre alumbramientos sucesivos.
+    - **Último evento reproductivo:** Muestra dinámicamente si el último hecho asentado fue un parto o un aborto, reflejando su fecha respectiva.
 - **Acceso al menú de registro de eventos (Botón flotante +):**
-  - El botón flotante circular con icono (**+**) solo se visualiza en hembras y siempre que el animal no se encuentre bloqueado por defunción o venta. Al pulsarlo, abre la pantalla completa de opciones para registrar eventos reproductivos (Inseminación, Palpación/Chequeo de preñez, Parto o Aborto).
-  - En machos, el botón flotante no está disponible en esta pantalla; sus registros de monta o servicios se originan al asentar la inseminación o servicio sobre la hembra servida.
+    - El botón flotante circular con icono (**+**) solo se visualiza en hembras y siempre que el animal no se encuentre bloqueado por defunción o venta. Al pulsarlo, abre la pantalla completa de opciones para registrar eventos reproductivos (Inseminación, Palpación/Chequeo de preñez, Parto o Aborto).
+    - En machos, el botón flotante no está disponible en esta pantalla; sus registros de monta o servicios se originan al asentar la inseminación o servicio sobre la hembra servida.
 - **Límite de visualización en tablas resumen:**
-  - Cada tabla en esta vista resume únicamente los registros más recientes (hasta un máximo de 5 filas por tabla) para garantizar agilidad visual. Cada sección cuenta con una flecha hacia la derecha para ingresar a la tabla completa e ilimitada del historial.
+    - Cada tabla en esta vista resume únicamente los registros más recientes (hasta un máximo de 5 filas por tabla) para garantizar agilidad visual. Cada sección cuenta con una flecha hacia la derecha para ingresar a la tabla completa e ilimitada del historial.
 - **Navegación interactiva bidireccional:**
-  - Al pulsar sobre un registro de parto o aborto, inseminación o chequeo de preñez, el sistema abre la pantalla de edición del registro correspondiente.
-  - Al presionar sobre un animal hijo en las tablas de descendencia, la aplicación redirige de inmediato a la hoja de vida zootécnica de dicha cría.
+    - Al pulsar sobre un registro de parto o aborto, inseminación o chequeo de preñez, el sistema abre la pantalla de edición del registro correspondiente.
+    - Al presionar sobre un animal hijo en las tablas de descendencia, la aplicación redirige de inmediato a la hoja de vida zootécnica de dicha cría.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Desde la hoja de vida del animal):** En la barra inferior toque **Animales** > Seleccione al ejemplar en el listado > En la cuadrícula de módulos, presione el botón **Reproducción**.
-  - **Ruta 2 (Redirección desde crecimiento):** Si ingresa a **Reproducción** en un ejemplar joven que ya cuenta con al menos un antecedente reproductivo (palpación, servicio o cría), el sistema redirige automáticamente a este resumen reproductivo.
+    - **Ruta 1 (Desde la hoja de vida del animal):** En la barra inferior toque **Animales** > Seleccione al ejemplar en el listado > En la cuadrícula de módulos, presione el botón **Reproducción**.
+    - **Ruta 2 (Redirección desde crecimiento):** Si ingresa a **Reproducción** en un ejemplar joven que ya cuenta con al menos un antecedente reproductivo (palpación, servicio o cría), el sistema redirige automáticamente a este resumen reproductivo.
 
 #### Barra Superior y Datos del Animal
 - **Barra de navegación:** Con diseño de fondo institucional sobre la cabecera, incorpora el botón de retroceso (flecha hacia la izquierda) para retornar a la hoja de vida del ejemplar, en el lateral derecho exhibe la identificación compuesta del animal (nombre y código de arete visual entre paréntesis en texto blanco) junto al icono en color blanco representativo del género del ejemplar (macho o hembra).
 - **Botón flotante de acción rápida (+):** Presente únicamente en hembras activas y vivas (ubicado sobre la esquina inferior). Al presionarlo, despliega el menú de opciones para asentar un nuevo evento reproductivo (Inseminación, Chequeo de preñez, Parto o Aborto).
 
 #### Cabecera Informativa de Estado Reproductivo (En Hembras)
+
 Panel superior destacado con fondo primario institucional que contiene el título **Estado reproductivo** y las siguientes métricas según el historial del animal:
+
 - **Último parto / Último aborto:** Etiqueta dinámica que exhibe la fecha del hecho reproductivo más reciente.
 - **Próximo parto:** Muestra la fecha calculada para el alumbramiento junto con los días relativos faltantes entre corchetes, o bien la alerta de parto inminente.
 - **Estado:** Condición reproductiva actual de la vaca (ej. Vacía, Preñada, En servicio, Inseminada).
@@ -60,7 +62,9 @@ Panel superior destacado con fondo primario institucional que contiene el títul
 - **Días abiertos:** Cantidad de días transcurridos desde el último parto sin confirmación de una nueva gestación.
 
 #### Tablas Resumen en Hembras
+
 Si la vaca cuenta con registros, el cuerpo de la pantalla muestra hasta cuatro bloques con acceso a tablas detalladas:
+
 1. **Partos/Abortos:** Muestra las últimas crías nacidas o pérdidas gestacionales. Incluye botón de flecha para abrir la tabla completa. Al pulsar una fila de aborto se abre su edición, y al pulsar una cría se abre la hoja de vida del hijo.
 2. **Fecundaciones:** Lista los servicios o inseminaciones artificiales más recientes. Incluye botón de flecha para abrir la tabla completa de inseminaciones y permite editar el servicio pulsando sobre la fila.
 3. **Chequeo:** Presenta los diagnósticos de preñez y palpaciones veterinarias recientes. Incluye flecha de acceso a la tabla general de chequeos y permite editar un diagnóstico con un toque.

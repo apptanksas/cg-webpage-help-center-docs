@@ -28,36 +28,36 @@ Permite registrar y aplicar un mismo tratamiento veterinario o protocolo de medi
 - **Selección obligatoria de animales:** Es indispensable seleccionar al menos un animal mediante el filtro de animales antes de procesar el registro. Si la lista resultante está vacía, el sistema impedirá el guardado y mostrará un mensaje de advertencia.
 - **Tipo de animal:** Si la finca ganadera tiene configurada más de una especie animal (por ejemplo, bovinos, equinos o bufalinos), el selector de tipo de animal estará activo para elegir la especie correspondiente antes de aplicar el filtro. Si la finca maneja una sola especie, esta se selecciona automáticamente de forma predeterminada.
 - **Campos obligatorios del tratamiento:**
-  - **Fecha:** Fecha de inicio de la medicación (no se admiten fechas fuera del rango permitido ni años futuros no válidos).
-  - **Días de tratamiento:** Número entero obligatorio comprendido entre 1 y 365 días. La fecha de finalización se calcula sumando estos días a la fecha de inicio.
-  - **Tipo de tratamiento:** Clasificación obligatoria según el protocolo veterinario a aplicar.
-  - **Medicamento:** Nombre del fármaco, antibiótico o compuesto sanitario suministrado.
+    - **Fecha:** Fecha de inicio de la medicación (no se admiten fechas fuera del rango permitido ni años futuros no válidos).
+    - **Días de tratamiento:** Número entero obligatorio comprendido entre 1 y 365 días. La fecha de finalización se calcula sumando estos días a la fecha de inicio.
+    - **Tipo de tratamiento:** Clasificación obligatoria según el protocolo veterinario a aplicar.
+    - **Medicamento:** Nombre del fármaco, antibiótico o compuesto sanitario suministrado.
 - **Campos opcionales del tratamiento:**
-  - **Nombre del tratamiento:** Identificador o nombre personalizado del protocolo médico.
-  - **Enfermedad:** Patología o afección diagnosticada asociada al tratamiento.
-  - **Diagnóstico:** Detalle clínico o descripción médica del diagnóstico.
-  - **Notas u observaciones:** Comentarios adicionales, dosis específicas o instrucciones de seguimiento.
+    - **Nombre del tratamiento:** Identificador o nombre personalizado del protocolo médico.
+    - **Enfermedad:** Patología o afección diagnosticada asociada al tratamiento.
+    - **Diagnóstico:** Detalle clínico o descripción médica del diagnóstico.
+    - **Notas u observaciones:** Comentarios adicionales, dosis específicas o instrucciones de seguimiento.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Pantalla principal de la finca > Botón flotante central con ícono de casa y suma **(+)** > Menú de opciones rápidas > Opción **Tratamiento / Vacunación** > Opción **Tratamiento masivo**.
 
 1. **Verificar el tipo de animal:**
-   - En la parte superior del formulario, en el campo **Tipo de animal**, verifique la especie sobre la cual aplicará el tratamiento (disponible si su finca administra múltiples especies).
+    - En la parte superior del formulario, en el campo **Tipo de animal**, verifique la especie sobre la cual aplicará el tratamiento (disponible si su finca administra múltiples especies).
 2. **Definir el grupo de animales a tratar:**
-   - Presione el selector **Seleccionar animales**.
-   - Configure los criterios del filtro (por ejemplo, por lote, potrero, etapa productiva, sexo o selección manual) para agrupar los animales que recibirán la medicación.
-   - Al confirmar el filtro, el encabezado superior mostrará la cantidad en el indicador **Total de animales seleccionados**.
+    - Presione el selector **Seleccionar animales**.
+    - Configure los criterios del filtro (por ejemplo, por lote, potrero, etapa productiva, sexo o selección manual) para agrupar los animales que recibirán la medicación.
+    - Al confirmar el filtro, el encabezado superior mostrará la cantidad en el indicador **Total de animales seleccionados**.
 3. **Ingresar la información del tratamiento:**
-   - **Nombre del tratamiento (Opcional):** Digite un nombre de referencia para el tratamiento.
-   - **Fecha:** Seleccione la fecha de inicio de la aplicación en el calendario (por defecto sugiere el día de hoy).
-   - **Días de tratamiento:** Digite la cantidad de días que durará la medicación (valor entre 1 y 365).
-   - **Tipo de tratamiento:** Despliegue el selector y elija la categoría correspondiente.
-   - **Enfermedad (Opcional):** Elija la patología vinculada en caso de aplicar a una afección específica.
-   - **Diagnóstico (Opcional):** Escriba el diagnóstico veterinario de los animales.
-   - **Medicamento:** Ingrese el nombre comercial o principio activo del fármaco administrado.
-   - **Notas u observaciones (Opcional):** Redacte cualquier apunte clínico relevante sobre la aplicación.
+    - **Nombre del tratamiento (Opcional):** Digite un nombre de referencia para el tratamiento.
+    - **Fecha:** Seleccione la fecha de inicio de la aplicación en el calendario (por defecto sugiere el día de hoy).
+    - **Días de tratamiento:** Digite la cantidad de días que durará la medicación (valor entre 1 y 365).
+    - **Tipo de tratamiento:** Despliegue el selector y elija la categoría correspondiente.
+    - **Enfermedad (Opcional):** Elija la patología vinculada en caso de aplicar a una afección específica.
+    - **Diagnóstico (Opcional):** Escriba el diagnóstico veterinario de los animales.
+    - **Medicamento:** Ingrese el nombre comercial o principio activo del fármaco administrado.
+    - **Notas u observaciones (Opcional):** Redacte cualquier apunte clínico relevante sobre la aplicación.
 4. **Guardar el registro masivo:**
-   - Presione el botón **Registrar**.
+    - Presione el botón **Registrar**.
 - **Pantalla de llegada tras guardar:** El sistema procesa y almacena el lote de tratamientos, retornando de forma automática e inmediata a la pantalla previa.
 
 ### Matriz de Errores y Soluciones

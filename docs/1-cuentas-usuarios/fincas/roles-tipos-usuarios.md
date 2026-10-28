@@ -25,30 +25,30 @@ Proporciona al ganadero y propietario de la finca una guía informativa clara y 
 
 ### Reglas de Negocio y Restricciones
 - **Disponibilidad para consulta:**
-  - La pantalla informativa está accesible para cualquier usuario que consulte la sección de miembros del equipo de la finca, permitiendo conocer las funciones operativas de cada perfil.
+    - La pantalla informativa está accesible para cualquier usuario que consulte la sección de miembros del equipo de la finca, permitiendo conocer las funciones operativas de cada perfil.
 - **Perfiles predeterminados en la finca y desglose normativo:**
-  - **Propietario:**
-    - *Descripción:* Cuenta con acceso total a todas las funciones y registros de la aplicación.
-    - *Permisos:* Leer, crear, editar y eliminar cualquier registro de la aplicación; administrar animales y fincas; invitar, administrar y eliminar usuarios; compartir informes y hojas de vida de los animales; crear, editar y eliminar eventos o tareas; gestionar permisos y trabajadores.
-    - *Restricciones:* Ninguna.
-  - **Administrador:**
-    - *Descripción:* Encargado de supervisar y administrar la operación diaria de la finca.
-    - *Permisos:* Leer, crear, editar y eliminar registros de la aplicación; administrar información operativa y productiva; crear, editar y eliminar eventos o tareas.
-    - *Restricciones:* No puede administrar trabajadores de la finca.
-  - **Veterinario:**
-    - *Descripción:* Responsable del seguimiento sanitario y reproductivo de los animales. Puede registrar datos y actualizar datos.
-    - *Permisos:* Leer registros de la aplicación; crear y editar registros veterinarios y reproductivos; actualizar tratamientos, diagnósticos y estados de salud; crear eventos o tareas relacionadas con controles veterinarios.
-    - *Restricciones:* No puede eliminar registros ni administrar usuarios.
-  - **Empleado:**
-    - *Descripción:* Responsable del registro de actividades e información productiva. Solo puede registrar datos, pero no puede editar ni eliminar.
-    - *Permisos:* Leer registros autorizados de la aplicación; crear nuevos registros y actividades; crear eventos o tareas.
-    - *Restricciones:* No puede editar ni eliminar registros existentes; no puede administrar usuarios ni configuraciones.
-  - **Visitante:**
-    - *Descripción:* Usuario con acceso únicamente de consulta y lectura.
-    - *Permisos:* Solo puede leer la información de la finca.
-    - *Restricciones:* No puede crear, editar ni eliminar registros.
+    - **Propietario:**
+      - *Descripción:* Cuenta con acceso total a todas las funciones y registros de la aplicación.
+      - *Permisos:* Leer, crear, editar y eliminar cualquier registro de la aplicación; administrar animales y fincas; invitar, administrar y eliminar usuarios; compartir informes y hojas de vida de los animales; crear, editar y eliminar eventos o tareas; gestionar permisos y trabajadores.
+      - *Restricciones:* Ninguna.
+    - **Administrador:**
+      - *Descripción:* Encargado de supervisar y administrar la operación diaria de la finca.
+      - *Permisos:* Leer, crear, editar y eliminar registros de la aplicación; administrar información operativa y productiva; crear, editar y eliminar eventos o tareas.
+      - *Restricciones:* No puede administrar trabajadores de la finca.
+    - **Veterinario:**
+      - *Descripción:* Responsable del seguimiento sanitario y reproductivo de los animales. Puede registrar datos y actualizar datos.
+      - *Permisos:* Leer registros de la aplicación; crear y editar registros veterinarios y reproductivos; actualizar tratamientos, diagnósticos y estados de salud; crear eventos o tareas relacionadas con controles veterinarios.
+      - *Restricciones:* No puede eliminar registros ni administrar usuarios.
+    - **Empleado:**
+      - *Descripción:* Responsable del registro de actividades e información productiva. Solo puede registrar datos, pero no puede editar ni eliminar.
+      - *Permisos:* Leer registros autorizados de la aplicación; crear nuevos registros y actividades; crear eventos o tareas.
+      - *Restricciones:* No puede editar ni eliminar registros existentes; no puede administrar usuarios ni configuraciones.
+    - **Visitante:**
+      - *Descripción:* Usuario con acceso únicamente de consulta y lectura.
+      - *Permisos:* Solo puede leer la información de la finca.
+      - *Restricciones:* No puede crear, editar ni eliminar registros.
 - **Navegación e inmutabilidad:**
-  - La pantalla no contiene campos editables ni botones de confirmación que alteren la base de datos; su propósito es instruir sobre las políticas de seguridad y perfiles de la plataforma pecuaria.
+    - La pantalla no contiene campos editables ni botones de confirmación que alteren la base de datos; su propósito es instruir sobre las políticas de seguridad y perfiles de la plataforma pecuaria.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Menú lateral principal (ícono de tres líneas en la esquina superior izquierda) > **Trabajadores** > En la barra superior, presione el ícono de información (i) o **Más información**.
@@ -59,15 +59,16 @@ Proporciona al ganadero y propietario de la finca una guía informativa clara y 
 
 #### 2. Lectura y consulta de cada perfil
 1. Deslice la pantalla hacia abajo para explorar de manera secuencial los bloques de cada perfil, delimitados por una línea divisoria:
-   - **Propietario:** Lea la descripción de acceso total, el desglose de permisos amplios y la indicación de que no posee restricciones.
-   - **Administrador:** Consulte las facultades de supervisión de la operación diaria, sus permisos sobre datos productivos y la restricción específica de no poder gestionar colaboradores.
-   - **Veterinario:** Revise las atribuciones médicas y reproductivas, el registro de tratamientos y la imposibilidad de eliminar información o invitar a otros miembros.
-   - **Empleado:** Valide las facultades de captura de actividades de campo (pesajes, eventos) y sus restricciones de no editar ni borrar información preexistente.
-   - **Visitante:** Confirme el modo de solo lectura para auditorías o supervisores externos sin facultades de modificación.
+    - **Propietario:** Lea la descripción de acceso total, el desglose de permisos amplios y la indicación de que no posee restricciones.
+     - **Administrador:** Consulte las facultades de supervisión de la operación diaria, sus permisos sobre datos productivos y la restricción específica de no poder gestionar colaboradores.
+     - **Veterinario:** Revise las atribuciones médicas y reproductivas, el registro de tratamientos y la imposibilidad de eliminar información o invitar a otros miembros.
+     - **Empleado:** Valide las facultades de captura de actividades de campo (pesajes, eventos) y sus restricciones de no editar ni borrar información preexistente.
+     - **Visitante:** Confirme el modo de solo lectura para auditorías o supervisores externos sin facultades de modificación.
 
 #### 3. Salida o retorno
 1. Una vez revisada la información, presione el botón de flecha hacia atrás ubicado en la barra superior.
-- **Pantalla de llegada tras guardar o salir:** El usuario regresa a la pantalla **Trabajadores**, donde se visualiza el listado general de miembros e invitaciones de la finca activa.
+
+**Pantalla de llegada tras guardar o salir:** El usuario regresa a la pantalla **Trabajadores**, donde se visualiza el listado general de miembros e invitaciones de la finca activa.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

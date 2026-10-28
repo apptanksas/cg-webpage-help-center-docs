@@ -25,37 +25,37 @@ Proporciona la vista cronológica completa y detallada de todos los tratamientos
 
 ### Reglas de Negocio y Restricciones
 - **Filtro de exclusión de secados:**
-  - Esta pantalla lista exclusivamente tratamientos médicos generales (preventivos, curativos, sintomáticos u otros).
-  - Los tratamientos intramamarios o procedimientos de secado se gestionan en su propio módulo clínico y quedan excluidos de esta tabla.
+    - Esta pantalla lista exclusivamente tratamientos médicos generales (preventivos, curativos, sintomáticos u otros).
+    - Los tratamientos intramamarios o procedimientos de secado se gestionan en su propio módulo clínico y quedan excluidos de esta tabla.
 - **Cinta identificadora del animal:**
-  - En la parte superior de la vista, justo debajo de la barra de navegación, se muestra la cinta con el identificador visual, número de arete, nombre, sexo y estado del animal seleccionado.
+    - En la parte superior de la vista, justo debajo de la barra de navegación, se muestra la cinta con el identificador visual, número de arete, nombre, sexo y estado del animal seleccionado.
 - **Columnas de la tabla de tratamientos:**
-  - **Fecha:** Muestra la fecha de inicio del tratamiento médico adaptada a la zona horaria del usuario.
-  - **Medicamento:** Presenta el nombre comercial o principio activo del fármaco prescrito.
-  - **Enfermedad:** Muestra el nombre oficial de la enfermedad o diagnóstico registrado para la terapia. Si no se especificó patología, la columna queda en blanco.
-  - **Días de tratamiento:** Refleja el número total de días de duración prescritos para la terapia.
+    - **Fecha:** Muestra la fecha de inicio del tratamiento médico adaptada a la zona horaria del usuario.
+    - **Medicamento:** Presenta el nombre comercial o principio activo del fármaco prescrito.
+    - **Enfermedad:** Muestra el nombre oficial de la enfermedad o diagnóstico registrado para la terapia. Si no se especificó patología, la columna queda en blanco.
+    - **Días de tratamiento:** Refleja el número total de días de duración prescritos para la terapia.
 - **Interacción y edición de tratamientos:**
-  - Al presionar cualquier fila dentro de la tabla, el sistema abre directamente el formulario de registro y edición de tratamiento con los datos cargados para su consulta o modificación.
+    - Al presionar cualquier fila dentro de la tabla, el sistema abre directamente el formulario de registro y edición de tratamiento con los datos cargados para su consulta o modificación.
 - **Botón flotante para nuevo tratamiento:**
-  - La pantalla incluye un botón flotante circular con el signo más (**+**) que permite navegar directamente al formulario de creación para registrar una nueva terapia al animal sin salir de la tabla.
+    - La pantalla incluye un botón flotante circular con el signo más (**+**) que permite navegar directamente al formulario de creación para registrar una nueva terapia al animal sin salir de la tabla.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Menú inferior **Animales** > Seleccionar el animal > **Sanidad** (o **Datos veterinarios**) > En la sección **Tratamiento**, presionar la flecha orientada a la derecha ubicada al lado del título.
 
 1. **Identificación de la pantalla y del animal:**
-   - En la barra superior confirme el título **Tratamiento**.
-   - Justo debajo verifique la cinta identificadora del animal con su código, nombre y datos generales.
+    - En la barra superior confirme el título **Tratamiento**.
+    - Justo debajo verifique la cinta identificadora del animal con su código, nombre y datos generales.
 2. **Exploración del historial de tratamientos:**
-   - Deslice hacia abajo para revisar la lista completa de tratamientos médicos ordenados cronológicamente.
-   - Consulte la información en las columnas: **Fecha**, **Medicamento**, **Enfermedad** y **Días de tratamiento**.
+    - Deslice hacia abajo para revisar la lista completa de tratamientos médicos ordenados cronológicamente.
+    - Consulte la información en las columnas: **Fecha**, **Medicamento**, **Enfermedad** y **Días de tratamiento**.
 3. **Edición o modificación de un tratamiento previo:**
-   - Presione directamente sobre la fila correspondiente al tratamiento que desea revisar o corregir.
-   - El sistema abrirá la pantalla de edición con todos los datos previamente diligenciados.
-   - Aplique los cambios necesarios y presione el botón **Registrar** para guardar las actualizaciones.
+    - Presione directamente sobre la fila correspondiente al tratamiento que desea revisar o corregir.
+    - El sistema abrirá la pantalla de edición con todos los datos previamente diligenciados.
+    - Aplique los cambios necesarios y presione el botón **Registrar** para guardar las actualizaciones.
 4. **Registro de un nuevo tratamiento desde la tabla:**
-   - Presione el botón flotante circular con el signo más (**+**) ubicado en la pantalla.
-   - Se abrirá el formulario para registrar una nueva terapia médica para el animal.
-- **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen de **Datos veterinarios** (Sanidad) del animal.
+    - Presione el botón flotante circular con el signo más (**+**) ubicado en la pantalla.
+    - Se abrirá el formulario para registrar una nueva terapia médica para el animal.
+    - **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen de **Datos veterinarios** (Sanidad) del animal.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

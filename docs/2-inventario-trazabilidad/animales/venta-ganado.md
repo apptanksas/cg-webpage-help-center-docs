@@ -27,37 +27,37 @@ Adicionalmente, si el comprador también es usuario de Control Ganadero, la pant
 
 ### Reglas de Negocio y Restricciones
 - **Estructura en dos pasos (Asistente guiado):**
-  - **Paso 1 (Datos de la venta):** Recopila la fecha del acuerdo, fecha estimada de despacho, datos del comprador, ubicación de entrega, empresa y guía de transporte, chofer, especie de animal comercializado, moneda, precio base por unidad de peso (según la unidad configurada en la finca: kilogramos o libras) y observaciones generales. Asimismo, alberga la opción de traslado a otra cuenta.
-  - **Paso 2 (Animales vendidos):** Requiere la selección obligatoria de al menos un animal del inventario (`Debes agregar al menos un animal`).
+    - **Paso 1 (Datos de la venta):** Recopila la fecha del acuerdo, fecha estimada de despacho, datos del comprador, ubicación de entrega, empresa y guía de transporte, chofer, especie de animal comercializado, moneda, precio base por unidad de peso (según la unidad configurada en la finca: kilogramos o libras) y observaciones generales. Asimismo, alberga la opción de traslado a otra cuenta.
+    - **Paso 2 (Animales vendidos):** Requiere la selección obligatoria de al menos un animal del inventario (`Debes agregar al menos un animal`).
 - **Restricción de especie por venta:**
-  - Cada venta se efectúa para una única especie pecuaria (bovinos, bufalinos, equinos, etc.).
-  - En el selector de animales del paso 2, solo se muestran los animales que pertenezcan a la especie seleccionada en el paso 1, que se encuentren físicamente en la finca activa y cuyo estado no sea fallecido.
+    - Cada venta se efectúa para una única especie pecuaria (bovinos, bufalinos, equinos, etc.).
+    - En el selector de animales del paso 2, solo se muestran los animales que pertenezcan a la especie seleccionada en el paso 1, que se encuentren físicamente en la finca activa y cuyo estado no sea fallecido.
 - **Cálculo de importes y precios personalizados:**
-  - Por defecto, la aplicación toma el último peso registrado para cada ejemplar y multiplica dicho peso por el precio unitario por unidad de medida definido en el paso 1.
-  - Si un animal no posee un pesaje previo en su historial, su peso inicial se toma como cero en la tabla.
-  - El ganadero puede mantener presionado cualquier animal en la tabla para abrir la ventana modal **Precio personalizado** y fijar un monto manual directo, el cual sustituye el cálculo automático por peso.
+    - Por defecto, la aplicación toma el último peso registrado para cada ejemplar y multiplica dicho peso por el precio unitario por unidad de medida definido en el paso 1.
+    - Si un animal no posee un pesaje previo en su historial, su peso inicial se toma como cero en la tabla.
+    - El ganadero puede mantener presionado cualquier animal en la tabla para abrir la ventana modal **Precio personalizado** y fijar un monto manual directo, el cual sustituye el cálculo automático por peso.
 - **Traslado de animales a otro usuario de Control Ganadero:**
-  - El usuario puede activar la casilla de verificación con interruptor titulada *¿Quieres trasladar los animales a otro usuario de Control Ganadero?* (disponible si su rol cuenta con permisos para crear traslados).
-  - Al ingresar el correo electrónico del comprador, debe presionar el botón **Validar**. El sistema busca en el servidor las fincas asociadas a dicho usuario y las despliega en un menú de selección.
-  - **Restricción de auto-traslado:** Si el usuario intenta seleccionar una finca que pertenezca a su propia cuenta, el sistema bloquea la acción y emite el mensaje: *"Lo sentimos, no puedes vender animales a una finca vinculada a tu propia cuenta. Utiliza la opción de 'Trasladar animales' para hacer el traslado entre tus propias fincas."*
+    - El usuario puede activar la casilla de verificación con interruptor titulada *¿Quieres trasladar los animales a otro usuario de Control Ganadero?* (disponible si su rol cuenta con permisos para crear traslados).
+    - Al ingresar el correo electrónico del comprador, debe presionar el botón **Validar**. El sistema busca en el servidor las fincas asociadas a dicho usuario y las despliega en un menú de selección.
+    - **Restricción de auto-traslado:** Si el usuario intenta seleccionar una finca que pertenezca a su propia cuenta, el sistema bloquea la acción y emite el mensaje: *"Lo sentimos, no puedes vender animales a una finca vinculada a tu propia cuenta. Utiliza la opción de 'Trasladar animales' para hacer el traslado entre tus propias fincas."*
 - **Bloqueos en edición y eliminación:**
-  - Si una venta ya tiene un traslado relacionado hacia otro usuario de la plataforma, el sistema bloquea la eliminación o modificación de los animales de la lista en el paso 2.
-  - Del mismo modo, no se permite eliminar el registro de la venta completa si ya existe una transferencia vinculada en curso o aceptada, mostrando el mensaje: *"No se puede eliminar este registro de venta porque tiene una transferencia a otro usuario de Control Ganadero relacionada."*
+    - Si una venta ya tiene un traslado relacionado hacia otro usuario de la plataforma, el sistema bloquea la eliminación o modificación de los animales de la lista en el paso 2.
+    - Del mismo modo, no se permite eliminar el registro de la venta completa si ya existe una transferencia vinculada en curso o aceptada, mostrando el mensaje: *"No se puede eliminar este registro de venta porque tiene una transferencia a otro usuario de Control Ganadero relacionada."*
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - *Opción 1 (Menú central de acciones rápidas):* En la pantalla principal de finca > Pulsar el botón flotante con el icono de casa con el signo **(+)** > Pulsar sobre **Venta de ganado**.
-  - *Opción 2 (Desde estadísticas de carne):* Menú inferior de la pantalla presione producción > Producción de carne > Tabla de ventas de animales > Pulsar el botón flotante de **+** de nueva venta o seleccionar una venta existente para editar.
+    - *Opción 1 (Menú central de acciones rápidas):* En la pantalla principal de finca > Pulsar el botón flotante con el icono de casa con el signo **(+)** > Pulsar sobre **Venta de ganado**.
+    - *Opción 2 (Desde estadísticas de carne):* Menú inferior de la pantalla presione producción > Producción de carne > Tabla de ventas de animales > Pulsar el botón flotante de **+** de nueva venta o seleccionar una venta existente para editar.
 
 #### Paso 1: Diligenciamiento de Datos Comerciales y Logísticos
 1. En la barra superior, verifique el título **Venta de ganado** (o **Editar venta** si está modificando un registro previo).
 2. Configure las fechas iniciales:
-   - **Fecha de venta:** Día en que se pactó la transacción comercial.
-   - **Fecha de despacho:** Día programado para la entrega o salida física de los animales del predio.
+    - **Fecha de venta:** Día en que se pactó la transacción comercial.
+     - **Fecha de despacho:** Día programado para la entrega o salida física de los animales del predio.
 3. Despliegue las secciones colapsables opcionales según requiera registrar información detallada:
    - **Comprador:** Ingrese el **Nombre/Empresa** y el **Teléfono** de contacto.
-   - **Información de destino:** Seleccione el **País**, **Región / Departamento** y **Ciudad**, e ingrese la **Nombre finca/Dirección** de entrega.
-   - **Información de transporte:** Ingrese la **Empresa transportadora**, el **Número de transporte** (guía con un máximo de 50 caracteres), la **Placa del vehículo**, el **Nombre del chofer** y el **Teléfono del chofer**.
+     - **Información de destino:** Seleccione el **País**, **Región / Departamento** y **Ciudad**, e ingrese la **Nombre finca/Dirección** de entrega.
+     - **Información de transporte:** Ingrese la **Empresa transportadora**, el **Número de transporte** (guía con un máximo de 50 caracteres), la **Placa del vehículo**, el **Nombre del chofer** y el **Teléfono del chofer**.
 4. En el bloque **Datos generales**:
    - **Tipo de animal:** Seleccione la especie ganadera que comercializa (bovinos, equinos, etc.). Si está editando una venta previamente guardada, este campo no puede alterarse.
    - **Moneda:** Elija el tipo de divisa en que se liquida la venta.

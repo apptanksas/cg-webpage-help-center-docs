@@ -25,37 +25,37 @@ Permite registrar y gestionar de manera integral las salidas y comercialización
 
 ### Reglas de Negocio y Restricciones
 - **Permisos de usuario requeridos:**
-  - Para registrar una nueva venta: se requiere el permiso de creación de ventas de leche en la finca.
-  - Para modificar una venta existente: se requiere el permiso de actualización de ventas de leche en la finca.
-  - Para eliminar una venta: se requiere el permiso de eliminación de ventas de leche en la finca.
+    - Para registrar una nueva venta: se requiere el permiso de creación de ventas de leche en la finca.
+    - Para modificar una venta existente: se requiere el permiso de actualización de ventas de leche en la finca.
+    - Para eliminar una venta: se requiere el permiso de eliminación de ventas de leche en la finca.
 - **Fecha del registro:**
-  - Es obligatoria y se inicializa por defecto con la fecha actual del dispositivo según la zona horaria del usuario.
+    - Es obligatoria y se inicializa por defecto con la fecha actual del dispositivo según la zona horaria del usuario.
 - **Potrero de procedencia (Opcional):**
-  - Permite asociar la venta a un potrero específico de pastoreo de la finca, facilitando el análisis de rendimiento por área. Si no se desea discriminar potrero, puede dejarse sin seleccionar.
+    - Permite asociar la venta a un potrero específico de pastoreo de la finca, facilitando el análisis de rendimiento por área. Si no se desea discriminar potrero, puede dejarse sin seleccionar.
 - **Deducciones por consumos de leche:**
-  - **Consumo interno:** Cantidad de leche destinada al consumo doméstico, trabajadores o derivados lácteos elaborados en la propia finca. Debe ser un valor numérico positivo o cero.
-  - **Consumo animal:** Cantidad de leche suministrada para la alimentación de terneros u otros animales de la finca. Debe ser un valor numérico positivo o cero.
-  - La unidad de medida de volumen (litros, galones, etc.) se adopta automáticamente de la configuración general establecida para la finca.
+    - **Consumo interno:** Cantidad de leche destinada al consumo doméstico, trabajadores o derivados lácteos elaborados en la propia finca. Debe ser un valor numérico positivo o cero.
+    - **Consumo animal:** Cantidad de leche suministrada para la alimentación de terneros u otros animales de la finca. Debe ser un valor numérico positivo o cero.
+    - La unidad de medida de volumen (litros, galones, etc.) se adopta automáticamente de la configuración general establecida para la finca.
 - **Registro de compradores:**
-  - Debe existir al menos un comprador asignado en la venta.
-  - Se pueden añadir múltiples compradores mediante la opción de agregar comprador para registrar entregas divididas en una misma jornada.
-  - Cada comprador exige:
-    - **Comprador:** Selección obligatoria de un comprador predeterminado del sistema o un comprador personalizado registrado previamente en la finca.
-    - **Cantidad vendida:** Volumen de leche entregado a ese comprador. Debe ser un número mayor a cero expresado en la unidad de medida de la finca.
-    - **Precio por unidad:** Valor acordado por cada unidad de leche (litro, galón, etc.). Debe ser un valor numérico mayor a cero.
-    - **Moneda:** Divisa en la que se pacta la transacción con ese comprador (por ejemplo, pesos colombianos, dólares, pesos mexicanos, etc.). Se precargan las monedas asociadas al país de la finca o del usuario.
-    - **Subtotal por comprador:** Se calcula automáticamente multiplicando la cantidad vendida por el precio unitario en la moneda seleccionada.
-  - Si se añaden dos o más compradores, cada registro secundario cuenta con una opción para eliminarlo si fue agregado por error (el primer comprador no puede eliminarse para asegurar al menos una entrada comercial).
+    - Debe existir al menos un comprador asignado en la venta.
+    - Se pueden añadir múltiples compradores mediante la opción de agregar comprador para registrar entregas divididas en una misma jornada.
+    - Cada comprador exige:
+      - **Comprador:** Selección obligatoria de un comprador predeterminado del sistema o un comprador personalizado registrado previamente en la finca.
+      - **Cantidad vendida:** Volumen de leche entregado a ese comprador. Debe ser un número mayor a cero expresado en la unidad de medida de la finca.
+      - **Precio por unidad:** Valor acordado por cada unidad de leche (litro, galón, etc.). Debe ser un valor numérico mayor a cero.
+      - **Moneda:** Divisa en la que se pacta la transacción con ese comprador (por ejemplo, pesos colombianos, dólares, pesos mexicanos, etc.). Se precargan las monedas asociadas al país de la finca o del usuario.
+      - **Subtotal por comprador:** Se calcula automáticamente multiplicando la cantidad vendida por el precio unitario en la moneda seleccionada.
+    - Si se añaden dos o más compradores, cada registro secundario cuenta con una opción para eliminarlo si fue agregado por error (el primer comprador no puede eliminarse para asegurar al menos una entrada comercial).
 - **Consolidación y totales de la venta:**
-  - **Cantidad total vendida:** Suma matemática automática del volumen de leche asignado a todos los compradores.
-  - **Total recaudado:** Suma de los subtotales de todos los compradores. Si todos los compradores comparten la misma moneda, la aplicación muestra el valor total consolidado con el símbolo de la moneda correspondiente. Si existen compradores con diferentes monedas en la misma venta, el sistema muestra el valor consolidado indicando que existen múltiples divisas.
+    - **Cantidad total vendida:** Suma matemática automática del volumen de leche asignado a todos los compradores.
+    - **Total recaudado:** Suma de los subtotales de todos los compradores. Si todos los compradores comparten la misma moneda, la aplicación muestra el valor total consolidado con el símbolo de la moneda correspondiente. Si existen compradores con diferentes monedas en la misma venta, el sistema muestra el valor consolidado indicando que existen múltiples divisas.
 - **Cálculo automático de crías en inventario:**
-  - Al momento de crear una venta nueva, el sistema calcula internamente el balance de animales machos y hembras en etapa de cría o lactancia presentes en la finca en dicha fecha para enriquecer los informes de rendimiento. En caso de editar una venta previa, este balance histórico se preserva intacto para evitar distorsiones estadísticas.
+    - Al momento de crear una venta nueva, el sistema calcula internamente el balance de animales machos y hembras en etapa de cría o lactancia presentes en la finca en dicha fecha para enriquecer los informes de rendimiento. En caso de editar una venta previa, este balance histórico se preserva intacto para evitar distorsiones estadísticas.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Opción 1 (Acceso rápido):** botón flotante con el icono de casa y el signo de (+) en la pantalla principal de la finca > **Venta de leche**.
-  - **Opción 2 (Desde módulo de producción):** Menú inferior **Producción** > Tarjeta **Producción de Leche** > Sección de ventas de leche > Presionar el botón flotante (+) para registrar una nueva venta, o presionar sobre un registro existente de la lista para editarlo.
+    - **Opción 1 (desde la pantalla principal de la finca):** botón flotante con el icono de casa y el signo de (+) en la pantalla principal de la finca > **Venta de leche**.
+    - **Opción 2 (Desde módulo de producción):** Menú inferior **Producción** > Tarjeta **Producción de Leche** > Sección de ventas de leche > Presionar el botón flotante (+) para registrar una nueva venta, o presionar sobre un registro existente de la lista para editarlo.
 
 #### 1. Datos generales y consumos de la finca
 1. **Fecha:** Presione sobre el campo de fecha para abrir el selector de calendario si necesita registrar una venta de un día anterior.
@@ -65,23 +65,23 @@ Permite registrar y gestionar de manera integral las salidas y comercialización
 
 #### 2. Gestión de compradores y precios
 1. **Comprador principal:**
-   - En el campo **Comprador**, presione el selector para elegir de la lista a la empresa recolectora, quesería, intermediario o cliente particular que compró la leche.
-   - En **Cantidad vendida**, ingrese el volumen entregado a dicho comprador en la unidad de medida indicada.
-   - En **Precio por unidad**, digite el valor monetario acordado por cada litro o galón.
-   - En **Moneda**, confirme la divisa de la transacción (o cámbiela seleccionando otra opción del menú desplegable si la venta se pactó en otra moneda).
-   - Observe cómo el campo **Subtotal** se actualiza automáticamente con el monto correspondiente a este comprador.
+    - En el campo **Comprador**, presione el selector para elegir de la lista a la empresa recolectora, quesería, intermediario o cliente particular que compró la leche.
+     - En **Cantidad vendida**, ingrese el volumen entregado a dicho comprador en la unidad de medida indicada.
+     - En **Precio por unidad**, digite el valor monetario acordado por cada litro o galón.
+     - En **Moneda**, confirme la divisa de la transacción (o cámbiela seleccionando otra opción del menú desplegable si la venta se pactó en otra moneda).
+     - Observe cómo el campo **Subtotal** se actualiza automáticamente con el monto correspondiente a este comprador.
 2. **Agregar compradores adicionales (si aplica):**
-   - Si la leche de esa jornada se distribuyó entre varios compradores, presione el botón con el ícono (+) ubicado en el encabezado de la sección **Compradores**.
-   - Se desplegará un nuevo bloque de comprador. Seleccione el segundo comprador, indique su cantidad entregada, su precio por unidad y su moneda.
-   - Si agregó un comprador adicional por equivocación, presione el ícono de la equis (X) en la esquina superior del bloque para retirarlo.
+    - Si la leche de esa jornada se distribuyó entre varios compradores, presione el botón con el ícono (+) ubicado en el encabezado de la sección **Compradores**.
+     - Se desplegará un nuevo bloque de comprador. Seleccione el segundo comprador, indique su cantidad entregada, su precio por unidad y su moneda.
+     - Si agregó un comprador adicional por equivocación, presione el ícono de la equis (X) en la esquina superior del bloque para retirarlo.
 
 #### 3. Verificación de totales y guardado
 1. **Revisión de la información de venta:**
-   - En la sección **Información de la venta**, verifique la **Cantidad total** de leche comercializada y el valor monetario global recaudado.
+    - En la sección **Información de la venta**, verifique la **Cantidad total** de leche comercializada y el valor monetario global recaudado.
 2. **Guardar el registro:**
-   - Presione el botón **Registrar** (o **Actualizar** si se encuentra modificando una venta previa) ubicado al final de la pantalla.
-   - La aplicación mostrará una confirmación en pantalla ("Venta de leche creada correctamente" o "Venta de leche actualizada correctamente").
-- **Pantalla de llegada tras guardar:** El sistema cierra el formulario y regresa a la pantalla anterior (la tabla de ventas de leche o el panel principal de producción).
+    - Presione el botón **Registrar** (o **Actualizar** si se encuentra modificando una venta previa) ubicado al final de la pantalla.
+     - La aplicación mostrará una confirmación en pantalla ("Venta de leche creada correctamente" o "Venta de leche actualizada correctamente").
+     - **Pantalla de llegada tras guardar:** El sistema cierra el formulario y regresa a la pantalla anterior (la tabla de ventas de leche o el panel principal de producción).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

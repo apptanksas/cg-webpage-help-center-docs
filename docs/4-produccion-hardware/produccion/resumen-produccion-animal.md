@@ -30,30 +30,30 @@ Módulo de consulta y seguimiento que consolida en un panel único el desempeño
 
 ### Reglas de Negocio y Restricciones
 - **Indicadores y sección de peso corporal ("Evolución de peso"):**
-  - **Condición de visibilidad:** La sección se muestra cuando el animal cuenta con al menos un registro de peso en su historial.
-  - **"Actual":** Refleja la cantidad del pesaje corporal más reciente registrado para el animal, expresada en la unidad de medida oficial de la finca (kilogramos o libras).
-  - **"Ganancia diaria":** Calcula el promedio diario de ganancia de peso acumulado respecto a las mediciones registradas.
-  - **Condición para "Vista gráfica":** El botón con el icono de gráfica y la etiqueta "Vista gráfica" se activa exclusivamente si el animal registra 2 o más pesajes en fechas distintas.
-  - **Tabla preliminar de pesajes:** Presenta de manera cronológica descendente los últimos 5 pesajes de peso con las columnas "Fecha", "Peso", "Ganancia", "G.D." (ganancia diaria) y "Dieta".
-  - **Edición desde la tabla:** Al tocar una fila de la tabla preliminar, si el animal se encuentra activo (no bloqueado), la aplicación abre directamente el formulario para editar la medición de peso correspondiente.
-  - **Acceso a la tabla completa:** Al presionar el botón de flecha hacia la derecha ubicado junto al título "Evolución de peso", la aplicación navega a la tabla histórica completa de pesajes corporales del animal.
+    - **Condición de visibilidad:** La sección se muestra cuando el animal cuenta con al menos un registro de peso en su historial.
+    - **"Actual":** Refleja la cantidad del pesaje corporal más reciente registrado para el animal, expresada en la unidad de medida oficial de la finca (kilogramos o libras).
+    - **"Ganancia diaria":** Calcula el promedio diario de ganancia de peso acumulado respecto a las mediciones registradas.
+    - **Condición para "Vista gráfica":** El botón con el icono de gráfica y la etiqueta "Vista gráfica" se activa exclusivamente si el animal registra 2 o más pesajes en fechas distintas.
+    - **Tabla preliminar de pesajes:** Presenta de manera cronológica descendente los últimos 5 pesajes de peso con las columnas "Fecha", "Peso", "Ganancia", "G.D." (ganancia diaria) y "Dieta".
+    - **Edición desde la tabla:** Al tocar una fila de la tabla preliminar, si el animal se encuentra activo (no bloqueado), la aplicación abre directamente el formulario para editar la medición de peso correspondiente.
+    - **Acceso a la tabla completa:** Al presionar el botón de flecha hacia la derecha ubicado junto al título "Evolución de peso", la aplicación navega a la tabla histórica completa de pesajes corporales del animal.
 - **Indicadores y sección de producción lechera ("Producción de leche"):**
-  - **Condición de visibilidad:** La sección se presenta únicamente si el animal cuenta con registros de pesaje de leche en su historial.
-  - **"Promedio diario":** Media aritmética de la cantidad de leche obtenida por día de pesaje registrado.
-  - **Condición para "Vista gráfica":** El botón "Vista gráfica" en leche se activa únicamente si el animal cuenta con al menos 2 registros en fechas distintas.
-  - **Tabla preliminar de leche:** Muestra los últimos 5 registros de leche consolidados por fecha, indicando los turnos y la cantidad obtenida.
-  - **Detalle y edición de turnos de leche:** Al pulsar sobre una fila de la tabla preliminar de leche, el sistema despliega una ventana emergente ("Animal", "Fecha", "Periodo", "Total") detallando las mediciones de esa fecha. Si el animal está activo, al tocar un registro específico dentro de esa ventana se abre el formulario de edición de pesaje de leche.
-  - **Acceso a la tabla completa:** Al presionar el botón de flecha hacia la derecha junto al título "Producción de leche", el sistema abre la tabla completa de pesajes por períodos de lactancia.
+    - **Condición de visibilidad:** La sección se presenta únicamente si el animal cuenta con registros de pesaje de leche en su historial.
+    - **"Promedio diario":** Media aritmética de la cantidad de leche obtenida por día de pesaje registrado.
+    - **Condición para "Vista gráfica":** El botón "Vista gráfica" en leche se activa únicamente si el animal cuenta con al menos 2 registros en fechas distintas.
+    - **Tabla preliminar de leche:** Muestra los últimos 5 registros de leche consolidados por fecha, indicando los turnos y la cantidad obtenida.
+    - **Detalle y edición de turnos de leche:** Al pulsar sobre una fila de la tabla preliminar de leche, el sistema despliega una ventana emergente ("Animal", "Fecha", "Periodo", "Total") detallando las mediciones de esa fecha. Si el animal está activo, al tocar un registro específico dentro de esa ventana se abre el formulario de edición de pesaje de leche.
+    - **Acceso a la tabla completa:** Al presionar el botón de flecha hacia la derecha junto al título "Producción de leche", el sistema abre la tabla completa de pesajes por períodos de lactancia.
 - **Estado sin datos ("Sin datos"):**
-  - Si el animal no cuenta con pesajes de peso ni registros de leche, la pantalla muestra una ilustración acompañada del encabezado "Sin datos" y el mensaje "Registre el peso y la producción de leche para comenzar a controlarlo", manteniendo disponibles los botones para registrar el primer pesaje.
+    - Si el animal no cuenta con pesajes de peso ni registros de leche, la pantalla muestra una ilustración acompañada del encabezado "Sin datos" y el mensaje "Registre el peso y la producción de leche para comenzar a controlarlo", manteniendo disponibles los botones para registrar el primer pesaje.
 - **Habilitación de botones de acción rápida:**
-  - **"AGREGAR PESO":** Visible para cualquier animal activo de la finca. Se oculta si el animal está bloqueado (dado de baja, vendido, trasladado o registrado como fallecido).
-  - **"AGREGAR LECHE":** Requiere que el animal cumpla con aptitud lechera (hembra viva, de especie con control lechero como bovinos, bufalinos o caprinos) y que no se encuentre bloqueado. En machos, crías, especies sin aptitud lechera o animales inactivos, este botón permanece oculto.
+    - **"AGREGAR PESO":** Visible para cualquier animal activo de la finca. Se oculta si el animal está bloqueado (dado de baja, vendido, trasladado o registrado como fallecido).
+    - **"AGREGAR LECHE":** Requiere que el animal cumpla con aptitud lechera (hembra viva, de especie con control lechero como bovinos, bufalinos o caprinos) y que no se encuentre bloqueado. En machos, crías, especies sin aptitud lechera o animales inactivos, este botón permanece oculto.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta principal (Desde el resumen del animal):** Menú inferior "Animales" > Seleccionar el animal en la lista > En la ficha de resumen, presionar la tarjeta "Producción".
-  - **Ruta alterna (Desde compras):** Menú lateral o módulo de compras > Registrar o consultar la compra de un animal > En el detalle de compra, presionar el acceso al resumen de evolución de producción.
+    - **Ruta principal (Desde el resumen del animal):** Menú inferior "Animales" > Seleccionar el animal en la lista > En la ficha de resumen, presionar la tarjeta "Producción".
+    - **Ruta alterna (Desde compras):** Menú lateral o módulo de compras > Registrar o consultar la compra de un animal > En el detalle de compra, presionar el acceso al resumen de evolución de producción.
 
 #### 1. Verificación del Encabezado e Identificación
 1. En la barra superior confirme los datos del animal (arete/código y nombre) en la tarjeta informativa derecha.
@@ -65,24 +65,25 @@ Módulo de consulta y seguimiento que consolida en un panel único el desempeño
 3. **Para consultar la curva de lactancia:** Si el animal tiene 2 o más fechas registradas, presione el botón "Vista gráfica".
 4. **Para examinar el historial completo de lactancias:** Presione el icono de flecha hacia la derecha situado junto a "Producción de leche".
 5. **Para revisar o corregir un pesaje reciente:**
-   - Presione sobre la fila correspondiente en la tabla preliminar de los últimos 5 registros.
-   - En la ventana emergente, verifique los datos del turno ("Animal", "Fecha", "Periodo", "Total").
-   - Si requiere modificar la medición, toque sobre el turno específico dentro de la ventana para abrir el formulario de edición.
+    - Presione sobre la fila correspondiente en la tabla preliminar de los últimos 5 registros.
+     - En la ventana emergente, verifique los datos del turno ("Animal", "Fecha", "Periodo", "Total").
+     - Si requiere modificar la medición, toque sobre el turno específico dentro de la ventana para abrir el formulario de edición.
 
 #### 3. Consulta y Seguimiento del Peso Corporal
 1. Si el animal cuenta con pesajes registrados, visualice el bloque "Evolución de peso".
 2. Consulte los dos indicadores principales:
-   - **"Actual":** Peso más reciente capturado para el animal.
-   - **"Ganancia diaria":** Incremento o variación media de peso por jornada.
+    - **"Actual":** Peso más reciente capturado para el animal.
+     - **"Ganancia diaria":** Incremento o variación media de peso por jornada.
 3. **Para consultar la curva de ganancia de peso:** Si el animal tiene 2 o más mediciones en fechas distintas, presione el botón "Vista gráfica".
 4. **Para revisar la tabla completa de pesajes corporales:** Presione el icono de flecha hacia la derecha junto a "Evolución de peso".
 5. **Para editar una medición de peso reciente:** Presione sobre la fila deseada en la tabla preliminar para abrir el formulario de actualización.
 
 #### 4. Registro Rápido de Nuevos Pesajes
 1. En la parte inferior de la pantalla (o en el centro si la pantalla se encuentra sin datos), utilice los botones de acción rápida:
-   - Presione **"AGREGAR PESO"** para abrir el formulario y registrar un nuevo pesaje corporal.
-   - Presione **"AGREGAR LECHE"** (disponible en hembras lecheras activas) para abrir el formulario de pesaje de leche.
-- **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen del animal.
+    - Presione **"AGREGAR PESO"** para abrir el formulario y registrar un nuevo pesaje corporal.
+     - Presione **"AGREGAR LECHE"** (disponible en hembras lecheras activas) para abrir el formulario de pesaje de leche.
+
+**Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen del animal.
 
 #### Variaciones por especie
 - **Seguimiento de peso corporal:** Aplica de forma homogénea a todas las especies (bovinos, equinos, bufalinos, caprinos, ovinos y porcinos).

@@ -25,27 +25,29 @@ Pantalla de consulta y trazabilidad zootécnica que presenta en formato de tabla
 
 ### Reglas de Negocio y Restricciones
 - **Filtrado individual por reproductor macho:**
-  - La tabla exhibe exclusivamente aquellos registros de inseminación o monta donde el ejemplar consultado está asignado como padre o semental donante.
+    - La tabla exhibe exclusivamente aquellos registros de inseminación o monta donde el ejemplar consultado está asignado como padre o semental donante.
 - **Tipos de fecundación zootécnica admitidos:**
-  - Los eventos reflejan las modalidades registradas en el sistema: **Monta** (servicio natural en potrero o corral), **Inseminación artificial** (colecta o pajilla del reproductor), **Transferencia de embriones** u **Otros**.
+    - Los eventos reflejan las modalidades registradas en el sistema: **Monta** (servicio natural en potrero o corral), **Inseminación artificial** (colecta o pajilla del reproductor), **Transferencia de embriones** u **Otros**.
 - **Identificación de la hembra servida:**
-  - La columna **Madre** muestra el código de arete visual y nombre de la hembra que recibió el servicio. Si la vaca fue dada de baja o trasladada, se conserva el identificador registrado en el momento del evento para garantizar la trazabilidad histórica.
+    - La columna **Madre** muestra el código de arete visual y nombre de la hembra que recibió el servicio. Si la vaca fue dada de baja o trasladada, se conserva el identificador registrado en el momento del evento para garantizar la trazabilidad histórica.
 - **Ausencia de botón flotante de creación (+):**
-  - En esta pantalla no existe un botón flotante para registrar nuevos servicios. Conforme a las reglas zootécnicas del sistema, los servicios de fecundación se asientan sobre la hembra receptora (desde su respectiva ficha o menú reproductivo) seleccionando a este reproductor como padre.
+    - En esta pantalla no existe un botón flotante para registrar nuevos servicios. Conforme a las reglas zootécnicas del sistema, los servicios de fecundación se asientan sobre la hembra receptora (desde su respectiva ficha o menú reproductivo) seleccionando a este reproductor como padre.
 - **Navegación interactiva y permisos de edición:**
-  - Al presionar cualquier fila de la tabla, la aplicación redirige al formulario de edición del servicio de fecundación vinculado a la hembra correspondiente.
-  - Para guardar modificaciones en el servicio, el usuario requiere contar con permisos de actualización de eventos reproductivos en la finca activa; de lo contrario, el formulario operará en modo de solo lectura.
+    - Al presionar cualquier fila de la tabla, la aplicación redirige al formulario de edición del servicio de fecundación vinculado a la hembra correspondiente.
+    - Para guardar modificaciones en el servicio, el usuario requiere contar con permisos de actualización de eventos reproductivos en la finca activa; de lo contrario, el formulario operará en modo de solo lectura.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - En la barra inferior de navegación, toque **Animales** > Seleccione al toro o reproductor en la lista > En la cuadrícula de módulos, presione **Reproducción** > Desplácese hasta la sección **Fecundaciones** > Toque el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
+    - En la barra inferior de navegación, toque **Animales** > Seleccione al toro o reproductor en la lista > En la cuadrícula de módulos, presione **Reproducción** > Desplácese hasta la sección **Fecundaciones** > Toque el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación superior:** Exhibe el título **Fecundaciones** alineado a la izquierda sobre el color de fondo institucional. Incorpora únicamente el botón de retroceso (flecha hacia la izquierda) para volver al resumen reproductivo del macho, sin botones de acción secundarios ni botón flotante.
 - **Cinta de identidad del animal:** Franja horizontal centrada con fondo gris claro, ubicada inmediatamente debajo de la barra superior, que exhibe el icono del género del reproductor (macho) garantizando certeza sobre el ejemplar en consulta.
 
 #### Estructura y Columnas de la Tabla
+
 La información se presenta ordenada en una tabla con diseño cuadrado y tres columnas zootécnicas:
+
 1. **Fecha:** Exhibe la fecha en que se llevó a cabo el servicio o inseminación, adaptada a la zona horaria del usuario.
 2. **Tipo:** Indica la modalidad reproductiva empleada (**Monta**, **Inseminación artificial**, **Transferencia de embriones** u **Otros**).
 3. **Madre:** Muestra el código de arete visual o nombre de la hembra que recibió el servicio del reproductor.

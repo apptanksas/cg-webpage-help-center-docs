@@ -31,67 +31,74 @@ Pantalla de captura y registro zootécnico que permite dar de alta a un nuevo ej
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - **Creación de animal:** Para registrar un nuevo ejemplar se requiere el permiso de creación de animales en la finca activa. Si el usuario carece de esta autorización, el sistema bloquea el guardado mostrando el mensaje: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
-  - **Edición de animal:** Al ingresar en modo edición desde la ficha técnica o el resumen del animal, se requiere el permiso de actualización de animales.
+    - **Creación de animal:** Para registrar un nuevo ejemplar se requiere el permiso de creación de animales en la finca activa. Si el usuario carece de esta autorización, el sistema bloquea el guardado mostrando el mensaje: "Con tu perfil de [rol], NO tienes permisos para realizar esta acción." (por ejemplo: *"Con tu perfil de Vaquero, NO tienes permisos..."*).
+    - **Edición de animal:** Al ingresar en modo edición desde la ficha técnica o el resumen del animal, se requiere el permiso de actualización de animales.
 - **Capacidad y límites de la membresía (Límite de animales alcanzado):**
-  - El registro de nuevos ejemplares está sujeto al límite máximo de animales contratado en el plan de la finca. Si la cuenta alcanza o supera esta capacidad, el sistema detiene el proceso y muestra: "Tu cuenta excede la cantidad máxima de animales permitidos...".
+    - El registro de nuevos ejemplares está sujeto al límite máximo de animales contratado en el plan de la finca. Si la cuenta alcanza o supera esta capacidad, el sistema detiene el proceso y muestra: "Tu cuenta excede la cantidad máxima de animales permitidos...".
 - **Unicidad obligatoria de identificadores:**
-  - **Código de arete:** Es de carácter obligatorio. No puede existir otro animal en la misma finca con el mismo código. Si se ingresa uno duplicado, la aplicación alerta: "El código del animal %1$s ya existe".
-  - **Código de chip (Microchip):** Se captura en modo de solo lectura desde el lector Bluetooth. Si el código ya pertenece a otro ejemplar en el sistema, la app muestra: "El código de chip %1$s ya existe en otro animal".
-  - **Código Tag NFC:** Se captura mediante el sensor NFC del teléfono. Si el código ya está en uso por otro animal, el sistema alerta: "El código de tag NFC %1$s ya existe en otro animal".
-  - **Código QR / Barras:** Se escanea con la cámara del dispositivo. Si el identificador ya está asignado a otro animal, la app muestra: "El código QR o de barras %1$s ya existe en otro animal".
+    - **Código de arete:** Es de carácter obligatorio. No puede existir otro animal en la misma finca con el mismo código. Si se ingresa uno duplicado, la aplicación alerta: "El código del animal [código] ya existe" (por ejemplo: *"El código del animal 104 ya existe"*).
+    - **Código de chip (Microchip):** Se captura en modo de solo lectura desde el lector Bluetooth. Si el código ya pertenece a otro ejemplar en el sistema, la app muestra: "El código de chip [número de chip] ya existe en otro animal".
+    - **Código Tag NFC:** Se captura mediante el sensor NFC del teléfono. Si el código ya está en uso por otro animal, el sistema alerta: "El código de tag NFC [código NFC] ya existe en otro animal".
+    - **Código QR / Barras:** Se escanea con la cámara del dispositivo. Si el identificador ya está asignado a otro animal, la app muestra: "El código QR o de barras [código] ya existe en otro animal".
 - **Validaciones zootécnicas y de calendario:**
-  - **Fecha de nacimiento:** Solo admite fechas pasadas o el día actual (no permite seleccionar fechas futuras). Al seleccionar o modificar la fecha de nacimiento, el sistema calcula y actualiza automáticamente la etapa productiva del ejemplar según su especie y sexo.
-  - **Peso destete:** Se habilita exclusivamente si la etapa del animal calculada a partir de su edad y especie corresponde a destete o a una etapa superior.
-  - **Peso año:** Se habilita exclusivamente si la edad calculada a partir de la fecha de nacimiento es igual o superior a 12 meses (1 año).
-  - **Unidad de pesaje:** Los campos de peso muestran la unidad de medida oficial configurada para la finca (kg o lb).
+    - **Fecha de nacimiento:** Solo admite fechas pasadas o el día actual (no permite seleccionar fechas futuras). Al seleccionar o modificar la fecha de nacimiento, el sistema calcula y actualiza automáticamente la etapa productiva del ejemplar según su especie y sexo.
+    - **Peso destete:** Se habilita exclusivamente si la etapa del animal calculada a partir de su edad y especie corresponde a destete o a una etapa superior.
+    - **Peso año:** Se habilita exclusivamente si la edad calculada a partir de la fecha de nacimiento es igual o superior a 12 meses (1 año).
+    - **Unidad de pesaje:** Los campos de peso muestran la unidad de medida oficial configurada para la finca (kg o lb).
 - **Genealogía y filtros de reproductores:**
-  - **Padre:** El selector filtra exclusivamente machos adultos o reproductores de la misma especie registrados en la finca, excluyendo al propio animal si se encuentra en edición.
-  - **Madre:** El selector filtra exclusivamente hembras adultas o reproductoras de la misma especie registradas en la finca, excluyendo al propio animal si se encuentra en edición.
+    - **Padre:** El selector filtra exclusivamente machos adultos o reproductores de la misma especie registrados en la finca, excluyendo al propio animal si se encuentra en edición.
+    - **Madre:** El selector filtra exclusivamente hembras adultas o reproductoras de la misma especie registradas en la finca, excluyendo al propio animal si se encuentra en edición.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Desde la pantalla principal):** En la barra superior o sección de acciones rápidas presione el botón "+" o "Crear animal".
-  - **Ruta 2 (Desde el menú contextual inferior):** Toque el botón central flotante (+) > Seleccione "Crear animal".
-  - **Ruta 3 (Desde el listado de animales):** En la barra de navegación inferior presione "Animales" > Toque el botón de opciones (tres puntos) en la esquina superior derecha > Seleccione "Crear animal".
-  - **Ruta 4 (Desde la ficha técnica para edición):** En la barra inferior toque "Animales" > Seleccione un animal > Presione "Datos generales" > Toque el botón flotante con icono de lápiz sobre la foto de portada.
-  - **Ruta 5 (Desde el resumen del animal para edición):** En la barra inferior toque "Animales" > Seleccione un animal > Toque el botón de edición rápida (icono de lápiz) en el encabezado.
-  - **Ruta 6 (Desde partos y nacimientos):** Al registrar un parto múltiple o nacimiento con cría en las pantallas reproductivas, la aplicación permite enlazar directamente al formulario de creación precargando el tipo de animal, sexo, fecha de nacimiento y madre.
+    - **Ruta 1 (Desde la pantalla principal):** En la barra superior o sección de acciones rápidas presione el botón "+" o "Crear animal".
+    - **Ruta 2 (Desde el menú contextual inferior):** Toque el botón central flotante (+) > Seleccione "Crear animal".
+    - **Ruta 3 (Desde el listado de animales):** En la barra de navegación inferior presione "Animales" > Toque el botón de opciones (tres puntos) en la esquina superior derecha > Seleccione "Crear animal".
+    - **Ruta 4 (Desde la ficha técnica para edición):** En la barra inferior toque "Animales" > Seleccione un animal > Presione "Datos generales" > Toque el botón flotante con icono de lápiz sobre la foto de portada.
+    - **Ruta 5 (Desde el resumen del animal para edición):** En la barra inferior toque "Animales" > Seleccione un animal > Toque el botón de edición rápida (icono de lápiz) en el encabezado.
+    - **Ruta 6 (Desde partos y nacimientos):** Al registrar un parto múltiple o nacimiento con cría en las pantallas reproductivas, la aplicación permite enlazar directamente al formulario de creación precargando el tipo de animal, sexo, fecha de nacimiento y madre.
 
 #### 1. Barra Superior y Lectura Rápida de Identificadores
+
 En la barra superior encontrará el título dinámico ("Crear animal" o "Editar animal"), la flecha de regreso y tres accesos de captura automática:
+
 1. **Escáner QR / Código de barras (icono de escáner):** Toque el icono para abrir la cámara del teléfono. Al enfocar el código de barras o QR impreso en el arete, el valor se captura y se asigna al campo "Código QR/barras", expandiendo automáticamente la sección de identificación.
 2. **Lectura NFC (icono de NFC):** Si el teléfono cuenta con sensor NFC habilitado, toque el icono para abrir el diálogo "Leer tag NFC" y acerque el arete o botón electrónico a la parte trasera del dispositivo. El código capturado se asigna a "Código tag NFC".
 3. **Estado del Lector Bluetooth (icono de Bluetooth):** Muestra el estado de enlace con el bastón lector o báscula ganadera inalámbrica. Al recibir la lectura inalámbrica del microchip, el número se traslada automáticamente al campo "Código de chip".
 
 #### 2. Selección de Fotografía
+
 1. Toque el círculo central sobre la silueta del animal para abrir el selector de imagen.
 2. Elija tomar una foto con la cámara del dispositivo o seleccionar una imagen desde la galería de fotos.
 3. Si no adjunta ninguna fotografía, el sistema conservará la silueta ilustrada por defecto.
 
 #### 3. Clasificación y Código Principal
+
 1. **Sexo:** Seleccione entre "Macho" o "Hembra" mediante los botones de selección excluyente.
 2. **"Tipo de animal":** Si la finca maneja múltiples especies ganaderas, seleccione la especie correspondiente en el menú desplegable (bovino, equino, bufalino, caprino, ovino o porcino). Si la finca solo maneja una especie, vendrá seleccionada de forma predeterminada.
 3. **"Código":** Escriba el número de arete o identificador visual principal del animal (campo obligatorio y alfanumérico).
 
 #### 4. Sección Desplegable "Identificación"
+
 Presione la cabecera "Identificación" para desplegar los códigos complementarios:
+
 1. **"Código de raza":** Ingrese el código alfanumérico de registro genealógico si el ejemplar pertenece a una asociación de raza. Puede tocar el icono de ayuda (?) para consultar la descripción del campo.
 2. **"Código de chip":** Muestra el código de microchip inyectable o bolo ruminal capturado por el lector Bluetooth (campo protegido de solo lectura manual).
 3. **"Código tag NFC":** Muestra el identificador de proximidad leído por el sensor NFC del teléfono.
 4. **"Código QR/barras":** Muestra el código capturado mediante el escáner de la cámara.
 
 #### 5. Sección "Información"
+
 1. **"Nombre":** Ingrese el nombre asignado al animal (opcional).
 2. **"Fecha de nacimiento":** Toque el selector de calendario para indicar el día de nacimiento del animal (no admite fechas posteriores al día actual). Al seleccionarla, la app calcula automáticamente su etapa de desarrollo zootécnico.
 3. **"Propietario":** Seleccione en la lista al titular o dueño legal del ejemplar dentro de la finca.
 4. **"Lote":** Asigne el potrero, división o lote de manejo inicial del animal.
 5. **"Raza" y Cruces Raciales:**
-   - Para raza pura o predominante: Seleccione la raza en el menú desplegable "Raza".
-   - Para animales mestizos o cruzados: Presione el botón con icono de cruce racial ubicado junto al selector. Se abrirá la ventana "Seleccionar cruce de razas":
-     - Seleccione la primera raza en "Raza" e ingrese su porcentaje en "Porcentaje" (1 al 100%).
-     - Seleccione la segunda raza en "Cruce de razas". El sistema autocompleta el porcentaje restante para sumar 100%.
-     - Presione "Listo" para guardar la composición racial del ejemplar.
+    - Para raza pura o predominante: Seleccione la raza en el menú desplegable "Raza".
+     - Para animales mestizos o cruzados: Presione el botón con icono de cruce racial ubicado junto al selector. Se abrirá la ventana "Seleccionar cruce de razas":
+       - Seleccione la primera raza en "Raza" e ingrese su porcentaje en "Porcentaje" (1 al 100%).
+       - Seleccione la segunda raza en "Cruce de razas". El sistema autocompleta el porcentaje restante para sumar 100%.
+       - Presione "Listo" para guardar la composición racial del ejemplar.
 6. **"Propósito":** Seleccione la orientación productiva del animal en la finca ("Carne", "Leche", "Doble propósito" o "Trabajo").
 7. **"¿Está en la finca?":** Marque la casilla de verificación si el animal se encuentra físicamente en el predio o desmárquela si está en tránsito, pastoreo externo o préstamo.
 
@@ -159,12 +166,12 @@ Indica los pesos corporales según la unidad oficial de la finca (kg o lb):
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |
 | :--- | :--- | :--- | :--- |
-| "El código del animal %1$s ya existe" | Ya existe otro ejemplar registrado con el mismo código de arete en la finca activa | "El código de arete ingresado ya se encuentra registrado en su finca. Verifique el arete físico e ingrese una identificación que no esté en uso." | Si el usuario indica que el animal anterior fue dado de baja o vendido pero el código sigue bloqueado, transferir a soporte técnico. |
-| "El código de chip %1$s ya existe en otro animal" | El microchip capturado por Bluetooth ya está asignado a otro ejemplar en la base de datos | "El código de microchip detectado ya pertenece a otro animal registrado en el sistema. Asegúrese de que no se esté escaneando un ejemplar previamente ingresado." | Si se trata de un chip reutilizado tras una baja formal, escalar a soporte técnico. |
-| "El código de tag NFC %1$s ya existe en otro animal" | El arete o botón NFC leído por el sensor ya fue registrado en otro ejemplar | "El identificador NFC leído ya se encuentra asignado a otro animal en su cuenta. Verifique el arete electrónico antes de continuar." | Si el arete es nuevo y original de fábrica, transferir a soporte. |
-| "El código QR o de barras %1$s ya existe en otro animal" | El código de barras o QR escaneado con la cámara ya está en uso en la finca | "El código escaneado con la cámara ya pertenece a otro ejemplar en su finca. Revise el arete visual del lote." | Si se verifica que el arete no está duplicado, escalar a soporte. |
+| "El código del animal [código] ya existe" | Ya existe otro ejemplar registrado con el mismo código de arete en la finca activa | "El código de arete ingresado ya se encuentra registrado en su finca. Verifique el arete físico e ingrese una identificación que no esté en uso." | Si el usuario indica que el animal anterior fue dado de baja o vendido pero el código sigue bloqueado, transferir a soporte técnico. |
+| "El código de chip [número de chip] ya existe en otro animal" | El microchip capturado por Bluetooth ya está asignado a otro ejemplar en la base de datos | "El código de microchip detectado ya pertenece a otro animal registrado en el sistema. Asegúrese de que no se esté escaneando un ejemplar previamente ingresado." | Si se trata de un chip reutilizado tras una baja formal, escalar a soporte técnico. |
+| "El código de tag NFC [código NFC] ya existe en otro animal" | El arete o botón NFC leído por el sensor ya fue registrado en otro ejemplar | "El identificador NFC leído ya se encuentra asignado a otro animal en su cuenta. Verifique el arete electrónico antes de continuar." | Si el arete es nuevo y original de fábrica, transferir a soporte. |
+| "El código QR o de barras [código] ya existe en otro animal" | El código de barras o QR escaneado con la cámara ya está en uso en la finca | "El código escaneado con la cámara ya pertenece a otro ejemplar en su finca. Revise el arete visual del lote." | Si se verifica que el arete no está duplicado, escalar a soporte. |
 | "Tu cuenta excede la cantidad máxima de animales permitidos..." | Se alcanzó el cupo máximo de animales según la suscripción o plan activo de la finca | "Ha alcanzado el límite máximo de animales permitidos en su membresía actual. Para continuar registrando animales, amplíe o actualice su plan en la sección de suscripción." | Si el ganadero ya realizó el pago de una ampliación y aún no se refleja en su cuenta, transferir a facturación con el comprobante de pago. |
-| "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción." | El colaborador no cuenta con el permiso de creación o edición de animales en la finca activa | "Su usuario no tiene autorización para registrar o modificar animales en esta finca. Solicite al propietario o administrador de la finca que le otorgue los permisos correspondientes en la administración de colaboradores." | No escalar, restricción de permisos del predio configurada por el propietario. |
+| "Con tu perfil de [rol], NO tienes permisos para realizar esta acción." | El colaborador no cuenta con el permiso de creación o edición de animales en la finca activa | "Su usuario no tiene autorización para registrar o modificar animales en esta finca. Solicite al propietario o administrador de la finca que le otorgue los permisos correspondientes en la administración de colaboradores." | No escalar, restricción de permisos del predio configurada por el propietario. |
 | "Este dispositivo no soporta la lectura de tags NFC" | El teléfono móvil no cuenta con hardware de sensor NFC integrado | "Su teléfono no cuenta con sensor NFC para lectura de aretes de proximidad. Puede ingresar la identificación manualmente o utilizar el lector Bluetooth de microchips y el escáner de cámara." | No escalar, incompatibilidad física de hardware del dispositivo móvil. |
 | "Fallo en la lectura, inténtalo de nuevo." | Error de lectura por mal contacto o interferencia al aproximar el arete NFC | "No fue posible leer el arete NFC. Mantenga el arete firme contra la parte trasera del teléfono durante 2 a 3 segundos e inténtelo nuevamente." | Si persiste en múltiples aretes con NFC activado, verificar configuración de NFC del teléfono. |
 | Las casillas "Peso destete" o "Peso al año" aparecen deshabilitadas | La fecha de nacimiento o la etapa zootécnica no cumplen los requisitos biológicos mínimos | "Por consistencia zootécnica, el peso al destete solo se habilita para animales en etapa de destete o superior, y el peso al año requiere que el animal tenga al menos 12 meses cumplidos según su fecha de nacimiento." | No escalar, validación biológica y zootécnica esperada. |

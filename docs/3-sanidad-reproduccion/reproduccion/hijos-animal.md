@@ -25,27 +25,29 @@ Pantalla de consulta zootécnica que consolida en formato de tabla la descendenc
 
 ### Reglas de Negocio y Restricciones
 - **Filtro de relación parental directa:**
-  - El sistema muestra exclusivamente los animales que tienen una relación biológica parental directa confirmada como padre o madre con el ejemplar activo.
-  - Se excluyen automáticamente relaciones no biológicas o receptoras como madres sustitutas.
+    - El sistema muestra exclusivamente los animales que tienen una relación biológica parental directa confirmada como padre o madre con el ejemplar activo.
+    - Se excluyen automáticamente relaciones no biológicas o receptoras como madres sustitutas.
 - **Identificación de la madre en la descendencia:**
-  - Si el animal en consulta es el padre (macho reproductor), la columna correspondiente exhibe el código de arete visual de la madre de la cría.
-  - Si la madre no se encuentra registrada en el inventario de la finca o fue asignada sin un código identificador individual, el campo permanece en blanco.
-  - Cuando se consulta la descendencia desde una hembra, la columna de madre se mantiene vacía para evitar redundancias de información.
+    - Si el animal en consulta es el padre (macho reproductor), la columna correspondiente exhibe el código de arete visual de la madre de la cría.
+    - Si la madre no se encuentra registrada en el inventario de la finca o fue asignada sin un código identificador individual, el campo permanece en blanco.
+    - Cuando se consulta la descendencia desde una hembra, la columna de madre se mantiene vacía para evitar redundancias de información.
 - **Acceso interactivo a la hoja de vida:**
-  - Al pulsar sobre cualquiera de las filas de la tabla, la aplicación redirige de forma automática al resumen zootécnico y productivo del hijo seleccionado.
+    - Al pulsar sobre cualquiera de las filas de la tabla, la aplicación redirige de forma automática al resumen zootécnico y productivo del hijo seleccionado.
 - **Visualización de consulta zootécnica:**
-  - Esta pantalla está diseñada como una vista especializada de auditoría y trazabilidad genética; no cuenta con botón directo de creación o alta rápida de animales, por lo que los registros provienen de los partos y nacimientos dados de alta en el sistema.
+    - Esta pantalla está diseñada como una vista especializada de auditoría y trazabilidad genética; no cuenta con botón directo de creación o alta rápida de animales, por lo que los registros provienen de los partos y nacimientos dados de alta en el sistema.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - En la barra inferior de navegación, toque **Animales** > Seleccione al macho reproductor o toro en el listado > Presione el módulo **Reproducción** > Desplácese hasta la sección **Hijos** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
+    - En la barra inferior de navegación, toque **Animales** > Seleccione al macho reproductor o toro en el listado > Presione el módulo **Reproducción** > Desplácese hasta la sección **Hijos** > Presione el botón de flecha hacia la derecha ubicado junto al título de la sección para desplegar la tabla completa.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación superior:** Presenta el título **Hijos** alineado a la izquierda sobre el fondo institucional. Contiene únicamente el botón de retroceso (flecha hacia la izquierda) para descartar la vista y volver a la pantalla de resumen reproductivo del ejemplar (sin botones secundarios de menú ni acciones de edición).
 - **Cinta de identidad del animal:** Franja horizontal centrada con fondo gris claro, ubicada inmediatamente debajo de la barra superior, que exhibe el icono del género del reproductor y su identificación (nombre y código de arete visual entre paréntesis) en una sola línea, manteniendo visible la trazabilidad zootécnica de la consulta en todo momento.
 
 #### Estructura y Columnas de la Tabla
+
 La tabla presenta la lista de descendencia organizada en cuatro columnas principales:
+
 1. **Fecha:** Muestra la fecha exacta de nacimiento de la cría en formato local (día, mes y año).
 2. **Género:** Indica el sexo zootécnico de la cría (**Macho** o **Hembra**).
 3. **Madre:** Muestra el código de arete visual de la vaca madre con la que se concibió la cría.
@@ -56,7 +58,7 @@ La tabla presenta la lista de descendencia organizada en cuatro columnas princip
 - **Regresar al resumen reproductivo:** Toque la flecha de retroceso ubicada en la barra de navegación superior para retornar a la vista reproductiva del padre.
 
 - **Pantalla de llegada tras salir:**
-  - Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo del animal en consulta.
+    - Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo del animal en consulta.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

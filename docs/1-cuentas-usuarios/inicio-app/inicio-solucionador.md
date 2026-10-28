@@ -30,16 +30,18 @@ Es la primera pantalla visible al abrir Control Ganadero. Se encarga de iniciali
 ### Reglas de Negocio y Restricciones
 - **Inicialización obligatoria:** La pantalla de arranque es la compuerta técnica de entrada al sistema que inicializa la base de datos local, valida el token de autenticación y prepara el motor de sincronización antes de conceder acceso al usuario.
 - **Bifurcación de rutas post-arranque:**
-  - Si el usuario no tiene una sesión guardada: el sistema redirige automáticamente a la pantalla de bienvenida tutorial ("Guía de Bienvenida").
-  - Si el usuario tiene una sesión activa pero no posee fincas creadas ni asignadas: el sistema redirige a la pantalla de bienvenida y creación de finca.
-  - Si el usuario tiene sesión activa con al menos una finca ganadera registrada: el sistema selecciona automáticamente la finca activa por defecto y transiciona al panel principal ("Inicio").
+    - Si el usuario no tiene una sesión guardada: el sistema redirige automáticamente a la pantalla de bienvenida tutorial ("Guía de Bienvenida").
+    - Si el usuario tiene una sesión activa pero no posee fincas creadas ni asignadas: el sistema redirige a la pantalla de bienvenida y creación de finca.
+    - Si el usuario tiene sesión activa con al menos una finca ganadera registrada: el sistema selecciona automáticamente la finca activa por defecto y transiciona al panel principal ("Inicio").
 - **Tolerancia a modo sin conexión:** Cuando no hay acceso a internet pero el usuario ya inició sesión con anterioridad, el sistema no bloquea el ingreso y permite trabajar en modo offline con la base de datos almacenada en el teléfono.
 - **Activación automática del Solucionador de Problemas:** Si el proceso de inicialización se detiene por falla de red, error de almacenamiento local o problemas en el canal de sincronización, la pantalla sustituye el indicador de carga por una señal de alerta y habilita el botón "Solucionador de problemas".
 - **Diagnóstico modular independiente:** La herramienta evalúa 5 componentes del sistema (Conexión a internet, Servicio central, Autenticación, Almacenamiento local y Sincronización), permitiendo reparar fallas de manera individual sin reiniciar los demás componentes.
 - **Opción para forzar ingreso sin red:** El solucionador dispone de la casilla "Ignorar estado de red", la cual permite al usuario forzar la entrada directa a sus registros locales en zonas rurales donde la conectividad sea intermitente o nula.
 
 ### Etapas de Inicio y Estados Visibles
+
 Durante la carga normal, la pantalla muestra el logotipo de Control Ganadero, un indicador de progreso y el estado actual del proceso:
+
 1. "Iniciando Control Ganadero"
 2. "Autenticando cliente..."
 3. "Autenticando usuario..."
@@ -51,6 +53,7 @@ En la parte inferior de la pantalla se muestra siempre la versión instalada de 
 Si el proceso de inicio se detiene por falta de conexión o por un conflicto en los datos, la pantalla reemplaza el indicador de carga por un icono de alerta y habilita el botón "Solucionador de problemas".
 
 Al presionar este botón, se abre la ventana de diagnóstico "Solucionador de problemas", que audita paso a paso los 5 componentes vitales del sistema:
+
 1. **Conexión a internet:** Comprueba si el teléfono tiene acceso activo a la red. Incluye la opción para activar la casilla "Ignorar estado de red" si se requiere forzar el ingreso en zonas con conectividad intermitente.
 2. **Servicio central:** Comprueba la disponibilidad de los servidores en la nube.
 3. **Autenticación:** Comprueba la validez de las credenciales de la cuenta. Si se requiere revalidar, solicita la contraseña para reparar el acceso.
@@ -60,19 +63,22 @@ Al presionar este botón, se abre la ventana de diagnóstico "Solucionador de pr
 Cada comprobación muestra su estado ("Correcto" con icono verde o "Error" con icono de alerta) y ofrece el botón "Reparar" para solucionar automáticamente la falla identificada.
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Se ejecuta automáticamente cada vez que el usuario abre la aplicación Control Ganadero desde su teléfono móvil.
+
+**Ruta de acceso en la aplicación:** Se ejecuta automáticamente cada vez que el usuario abre la aplicación Control Ganadero desde su teléfono móvil.
+
 1. Abra la aplicación Control Ganadero en su dispositivo.
 2. Observe el avance de la barra de progreso mientras se ejecutan los pasos de inicio.
 3. Si el arranque es exitoso:
-   - Si ya tenía una sesión activa: ingresa directamente al panel principal de su finca (**Inicio**).
-   - Si no tenía sesión activa: ingresa a la pantalla de **Bienvenida inicial**.
+    - Si ya tenía una sesión activa: ingresa directamente al panel principal de su finca (**Inicio**).
+     - Si no tenía sesión activa: ingresa a la pantalla de **Bienvenida inicial**.
 4. Si se presenta un fallo de red o detención del arranque:
-   - Aparecerá un icono de advertencia y el mensaje correspondiente al paso fallido (por ejemplo: "No se puede conectar a internet").
-   - Presione el botón "Solucionador de problemas".
-   - En la lista de comprobaciones, ubique el componente que presenta error y presione "Reparar".
-   - Si el problema es de señal intermitente, active la opción "Ignorar estado de red".
-   - Al finalizar, presione "Cerrar" para que la aplicación reintente el inicio automáticamente.
-- **Pantalla de llegada tras guardar:** Panel principal de la finca (**Inicio**) o pantalla de **Bienvenida**.
+    - Aparecerá un icono de advertencia y el mensaje correspondiente al paso fallido (por ejemplo: "No se puede conectar a internet").
+     - Presione el botón "Solucionador de problemas".
+     - En la lista de comprobaciones, ubique el componente que presenta error y presione "Reparar".
+     - Si el problema es de señal intermitente, active la opción "Ignorar estado de red".
+     - Al finalizar, presione "Cerrar" para que la aplicación reintente el inicio automáticamente.
+
+**Pantalla de llegada tras guardar:** Panel principal de la finca (**Inicio**) o pantalla de **Bienvenida**.
 
 #### Etiquetas de la interfaz en otros idiomas
 - "Solucionador de problemas" → Inglés: "Troubleshooter" → Portugués: "Solucionador de problemas"

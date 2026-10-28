@@ -52,7 +52,9 @@ Pantalla de consulta y gestión donde el productor visualiza el historial de den
 3. A la derecha del encabezado, presione el botón "Crear nuevo reporte" si requiere registrar una nueva denuncia de sustracción de animales. El sistema abrirá inmediatamente el formulario de registro de reporte de robo.
 
 #### 2. Consulta de Reportes Registrados
+
 En el cuerpo de la pantalla se despliega el listado de tarjetas correspondientes a los reportes de robo registrados:
+
 1. **Fecha del incidente:** Junto al icono de calendario, visualice la fecha en la que se registró o sucedió el robo.
 2. **Coordenadas de ubicación:** Junto al icono de localización geográfica, observe las coordenadas de latitud y longitud donde ocurrió el suceso (formateadas con 4 decimales).
 3. **Insignia de animales reportados:** En el recuadro destacado a la derecha de la tarjeta, visualice:

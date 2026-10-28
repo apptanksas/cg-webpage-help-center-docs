@@ -30,46 +30,46 @@ Módulo de consulta detallada que presenta el registro cronológico de todas las
 
 ### Reglas de Negocio y Restricciones
 - **Indicadores estadísticos del encabezado:**
-  - **"Promedio diario":** Media aritmética de la cantidad de leche obtenida por día con registro en todo el historial del animal.
-  - **"Producción máxima":** Medición diaria más alta registrada para el animal en la finca.
-  - **"Producción total":** Suma acumulada de todos los pesajes de leche registrados en la historia del ejemplar.
-  - **"Días de lactancia":** Número total de jornadas en las que el animal registra mediciones de pesaje.
-  - **Métricas comparativas para múltiples lactancias:** Si el animal registra más de un ciclo productivo, el encabezado incorpora el total en "Periodo de lactancia" (conteo de ciclos registrados) y el "Promedio por lactancia" (volumen medio de leche obtenido por período).
+    - **"Promedio diario":** Media aritmética de la cantidad de leche obtenida por día con registro en todo el historial del animal.
+    - **"Producción máxima":** Medición diaria más alta registrada para el animal en la finca.
+    - **"Producción total":** Suma acumulada de todos los pesajes de leche registrados en la historia del ejemplar.
+    - **"Días de lactancia":** Número total de jornadas en las que el animal registra mediciones de pesaje.
+    - **Métricas comparativas para múltiples lactancias:** Si el animal registra más de un ciclo productivo, el encabezado incorpora el total en "Periodo de lactancia" (conteo de ciclos registrados) y el "Promedio por lactancia" (volumen medio de leche obtenido por período).
 - **Segmentación por períodos de lactancia:**
-  - El sistema calcula los períodos de lactancia considerando las fechas de parto y los tratamientos de secado registrados en el historial de la hembra.
-  - Si el animal registra dos o más ciclos de lactancia, se habilitan pestañas superiores rotuladas como "Lactancia 1", "Lactancia 2", etc., permitiendo alternar entre períodos tocando la pestaña o deslizando horizontalmente.
-  - Al pie de la tabla de cada período se despliega un bloque de resumen con el "Total" de leche del ciclo, los "Días de lactancia" acumulados, el "Promedio diario" y la "Producción máxima" propios de esa lactancia.
-  - Si la hembra no registra secados o cuenta con un único ciclo lechero, los datos se despliegan en una única tabla continua sin pestañas divisoras.
+    - El sistema calcula los períodos de lactancia considerando las fechas de parto y los tratamientos de secado registrados en el historial de la hembra.
+    - Si el animal registra dos o más ciclos de lactancia, se habilitan pestañas superiores rotuladas como "Lactancia 1", "Lactancia 2", etc., permitiendo alternar entre períodos tocando la pestaña o deslizando horizontalmente.
+    - Al pie de la tabla de cada período se despliega un bloque de resumen con el "Total" de leche del ciclo, los "Días de lactancia" acumulados, el "Promedio diario" y la "Producción máxima" propios de esa lactancia.
+    - Si la hembra no registra secados o cuenta con un único ciclo lechero, los datos se despliegan en una única tabla continua sin pestañas divisoras.
 - **Estructura de la tabla y detalle por turnos:**
-  - Las columnas desplegadas corresponden a "Fecha", "Concentrado", "Mañana", "Tarde" y "Total leche".
-  - Si en una misma fecha existen pesajes en turnos divididos (mañana y tarde), el sistema consolida el volumen total en la fila diaria.
-  - Al presionar una fila con un único pesaje en la fecha, la aplicación abre de forma directa el formulario de edición.
-  - Si la fecha contiene registros en más de un turno, la aplicación despliega una ventana emergente para que el usuario elija el turno específico que desea revisar o modificar.
+    - Las columnas desplegadas corresponden a "Fecha", "Concentrado", "Mañana", "Tarde" y "Total leche".
+    - Si en una misma fecha existen pesajes en turnos divididos (mañana y tarde), el sistema consolida el volumen total en la fila diaria.
+    - Al presionar una fila con un único pesaje en la fecha, la aplicación abre de forma directa el formulario de edición.
+    - Si la fecha contiene registros en más de un turno, la aplicación despliega una ventana emergente para que el usuario elija el turno específico que desea revisar o modificar.
 - **Unidad de medida:**
-  - Las cantidades de leche y alimento concentrado se presentan automáticamente en la unidad de medida oficial configurada para la producción en la finca ganadera (litros, galones o kilogramos).
+    - Las cantidades de leche y alimento concentrado se presentan automáticamente en la unidad de medida oficial configurada para la producción en la finca ganadera (litros, galones o kilogramos).
 - **Acceso rápido al registro de pesaje:**
-  - Si el animal se encuentra activo en la finca (no bloqueado por venta, muerte o traslado), se muestra un botón flotante con el icono de recipiente de leche para abrir el formulario de captura individual.
+    - Si el animal se encuentra activo en la finca (no bloqueado por venta, muerte o traslado), se muestra un botón flotante con el icono de recipiente de leche para abrir el formulario de captura individual.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - Menú inferior "Animales" > Seleccionar la hembra > Presionar la tarjeta "Producción" > En el bloque "Producción de leche", presionar el icono de flecha hacia la derecha.
+    - Menú inferior "Animales" > Seleccionar la hembra > Presionar la tarjeta "Producción" > En el bloque "Producción de leche", presionar el icono de flecha hacia la derecha.
 
 #### 1. Lectura del Encabezado e Indicadores Globales
 1. En la barra superior confirme la identificación del animal (arete y nombre).
 2. En el encabezado "Producción de leche", revise los indicadores consolidados de la hembra:
-   - **"Promedio diario":** Rendimiento medio por día de pesaje.
-   - **"Producción máxima":** Volumen máximo obtenido en un día.
-   - **"Producción total":** Acumulado global de leche del animal.
-   - **"Días de lactancia":** Total de días registrados con pesaje.
-   - *(Si registra múltiples ciclos)* Revise el conteo en "Periodo de lactancia" y el "Promedio por lactancia".
+    - **"Promedio diario":** Rendimiento medio por día de pesaje.
+     - **"Producción máxima":** Volumen máximo obtenido en un día.
+     - **"Producción total":** Acumulado global de leche del animal.
+     - **"Días de lactancia":** Total de días registrados con pesaje.
+     - *(Si registra múltiples ciclos)* Revise el conteo en "Periodo de lactancia" y el "Promedio por lactancia".
 
 #### 2. Consulta y Navegación por Períodos de Lactancia
 1. **Si el animal cuenta con más de una lactancia:**
-   - Toque la pestaña correspondiente ("Lactancia 1", "Lactancia 2", etc.) en la barra superior o deslice la pantalla horizontalmente para cambiar de período.
-   - Deslice verticalmente para explorar las mediciones del ciclo seleccionado.
-   - Al final de la tabla, consulte el resumen exclusivo de ese ciclo con el "Total", los "Días de lactancia", el "Promedio diario" y la "Producción máxima".
+    - Toque la pestaña correspondiente ("Lactancia 1", "Lactancia 2", etc.) en la barra superior o deslice la pantalla horizontalmente para cambiar de período.
+     - Deslice verticalmente para explorar las mediciones del ciclo seleccionado.
+     - Al final de la tabla, consulte el resumen exclusivo de ese ciclo con el "Total", los "Días de lactancia", el "Promedio diario" y la "Producción máxima".
 2. **Si el animal cuenta con una sola lactancia:**
-   - La tabla se presenta en una vista continua con la totalidad de fechas y mediciones registradas.
+    - La tabla se presenta en una vista continua con la totalidad de fechas y mediciones registradas.
 
 #### 3. Consulta y Edición de un Pesaje Registrado
 1. En la tabla, ubique la fecha correspondiente y presione sobre la fila:
@@ -81,7 +81,7 @@ Módulo de consulta detallada que presenta el registro cronológico de todas las
 #### 4. Registro Rápido de Nuevo Pesaje (Opcional)
 1. Para ingresar una nueva medición sin abandonar la consulta, presione el botón flotante circular con el icono de recipiente de leche ubicado en la esquina inferior.
 2. Complete los datos en el formulario de pesaje individual y guarde el registro.
-- **Pantalla de llegada tras salir:** Al pulsar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen de "Producción" del animal.
+    - **Pantalla de llegada tras salir:** Al pulsar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen de "Producción" del animal.
 
 #### Variaciones por especie
 - **Especies lecheras:** La tabla y las métricas de lactancia aplican a hembras de bovinos (vacas), bufalinos (búfalas) y caprinos (cabras).

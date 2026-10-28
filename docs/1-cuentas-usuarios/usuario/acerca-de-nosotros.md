@@ -30,32 +30,41 @@ Pantalla informativa e institucional de Control Ganadero que centraliza los cana
 - **Diagnóstico técnico unificado:** Los datos mostrados en la sección técnica se obtienen directamente de los parámetros de compilación y configuración del sistema local, asegurando exactitud al solicitar soporte técnico.
 
 ### Flujo Paso a Paso para el Usuario
-- **Ruta de acceso en la aplicación:** Menú lateral principal > Opción **Control Ganadero**.
+
+**Ruta de acceso en la aplicación:** Menú lateral principal > Opción **Control Ganadero**.
 
 1. En la pantalla principal de su finca, abra el menú lateral de navegación presionando el ícono de menú en la barra superior.
 2. Desplácese por la lista de opciones y presione **Control Ganadero** (identificada con el logotipo de la aplicación).
 3. En la pantalla **Acerca de nosotros**, explore las opciones disponibles según su necesidad:
 
 #### 1. Canales de Contacto Directo
+
 Tarjetas interactivas con acceso inmediato a los canales oficiales:
+
 - **Contáctanos:** Muestra la dirección oficial `info@controlganadero.app`. Al pulsar sobre la tarjeta, abre automáticamente la aplicación de correo predeterminada del teléfono con el destinatario listo para redactar una consulta.
 - **Sitio web:** Muestra la dirección `https://controlganadero.app`. Al pulsar, abre la página oficial en el navegador del teléfono.
 - **Servicio al cliente:** Identificado con el ícono y color característico de WhatsApp, muestra la línea de atención `(+57) 310 2 60 46 52`. Al pulsar, abre una conversación directa de WhatsApp con el equipo de soporte.
 
 #### 2. Nuestras Redes Sociales y Tutoriales
+
 Sección delimitada que agrupa los accesos a las comunidades oficiales y material formativo:
+
 - **Instagram:** Redirige al perfil oficial de Control Ganadero en Instagram (`@controlganadero`).
 - **TikTok:** Enlaza a la cuenta oficial en TikTok (`@controlganadero`) con videos explicativos y novedades del campo.
 - **Youtube - Tutoriales:** Enlace directo al canal oficial de YouTube con guías paso a paso, seminarios y tutoriales de uso de cada herramienta.
 - **Facebook:** Redirige a la página comunitaria oficial de Control Ganadero en Facebook.
 
 #### 3. Nuestras Políticas
+
 Accesos directos a los marcos normativos y de tratamiento de datos:
+
 - **Términos y condiciones:** Abre en el navegador las condiciones de uso de la plataforma.
 - **Política de privacidad:** Abre en el navegador las políticas de tratamiento y protección de datos personales.
 
 #### 4. Acerca de la Aplicación (Ficha Técnica)
+
 Tarjeta técnica con los parámetros de diagnóstico del aplicativo en el dispositivo:
+
 - **Version:** Muestra el número de versión instalada (por ejemplo, 2026.10.1). Dato indispensable al reportar incidencias técnicas.
 - **Platform:** Indica el sistema operativo del dispositivo móvil (Android o iOS).
 - **Locale:** Muestra el código de idioma y país activo en la aplicación (por ejemplo, es).

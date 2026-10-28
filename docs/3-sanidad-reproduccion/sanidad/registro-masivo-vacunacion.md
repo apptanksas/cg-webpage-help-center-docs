@@ -30,21 +30,21 @@ Herramienta de captura sanitaria colectiva que permite asentar la aplicación de
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - Se requiere el permiso de creación de vacunas en la finca ganadera activa.
-  - Si el colaborador carece de esta atribución, el sistema bloquea el procesamiento y despliega la notificación de control de acceso: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
+    - Se requiere el permiso de creación de vacunas en la finca ganadera activa.
+    - Si el colaborador carece de esta atribución, el sistema bloquea el procesamiento y despliega la notificación de control de acceso: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
 - **Selección y validación obligatoria de animales:**
-  - Es mandatorio que el filtro incluya al menos un animal activo.
-  - Si se intenta presionar el botón de registro con cero animales seleccionados, la aplicación detiene el envío y emite la advertencia: "No hay animales seleccionados".
+    - Es mandatorio que el filtro incluya al menos un animal activo.
+    - Si se intenta presionar el botón de registro con cero animales seleccionados, la aplicación detiene el envío y emite la advertencia: "No hay animales seleccionados".
 - **Comportamiento del selector "Tipo de animal":**
-  - Si la finca gestiona múltiples especies (por ejemplo, bovinos y equinos), el selector permanece habilitado para escoger la especie antes de definir el filtro.
-  - Si la finca cuenta con una sola especie configurada, el sistema la selecciona automáticamente por defecto y el campo queda deshabilitado para evitar confusiones.
+    - Si la finca gestiona múltiples especies (por ejemplo, bovinos y equinos), el selector permanece habilitado para escoger la especie antes de definir el filtro.
+    - Si la finca cuenta con una sola especie configurada, el sistema la selecciona automáticamente por defecto y el campo queda deshabilitado para evitar confusiones.
 - **Campos obligatorios del formulario:**
-  - **"Fecha":** Fecha de aplicación de la vacuna. Por defecto toma la fecha actual del dispositivo. No admite fechas futuras posteriores al día de hoy ni fechas que excedan el límite de años retroactivos permitido por el calendario de la aplicación.
-  - **"Vacuna":** Biológico sanitario seleccionado obligatoriamente del catálogo oficial (19 opciones que abarcan "Fiebre Aftosa", "Brucelosis", "Tuberculosis", "Leptospirosis", "Rinotraqueítis Infecciosa Bovina (IBR)", "Diarrea Viral Bovina (DVB)", "Pasteurelosis", "Clostridium", "Paratuberculosis", "Campilobacteriosis", "Rabia", "Complejo Clostridial", "Complejo Respiratorio", "Complejo Reproductivo", "PPCB", "Antiparasitario", "Vacuna Viral", "Vacuna Bacteriana" y "Otra Vacuna").
+    - **"Fecha":** Fecha de aplicación de la vacuna. Por defecto toma la fecha actual del dispositivo. No admite fechas futuras posteriores al día de hoy ni fechas que excedan el límite de años retroactivos permitido por el calendario de la aplicación.
+    - **"Vacuna":** Biológico sanitario seleccionado obligatoriamente del catálogo oficial (19 opciones que abarcan "Fiebre Aftosa", "Brucelosis", "Tuberculosis", "Leptospirosis", "Rinotraqueítis Infecciosa Bovina (IBR)", "Diarrea Viral Bovina (DVB)", "Pasteurelosis", "Clostridium", "Paratuberculosis", "Campilobacteriosis", "Rabia", "Complejo Clostridial", "Complejo Respiratorio", "Complejo Reproductivo", "PPCB", "Antiparasitario", "Vacuna Viral", "Vacuna Bacteriana" y "Otra Vacuna").
 - **Campos opcionales:**
-  - **"Notas / Observación":** Campo multilínea para consignar datos clave como número de lote comercial, laboratorio fabricante, vía de aplicación o recomendaciones sanitarias.
+    - **"Notas / Observación":** Campo multilínea para consignar datos clave como número de lote comercial, laboratorio fabricante, vía de aplicación o recomendaciones sanitarias.
 - **Impacto en el historial individual de los animales:**
-  - Al completar el guardado masivo, el sistema genera de forma atómica e independiente un registro individual de vacuna en la hoja de vida y en la tabla de vacunación de cada uno de los animales seleccionados en el lote.
+    - Al completar el guardado masivo, el sistema genera de forma atómica e independiente un registro individual de vacuna en la hoja de vida y en la tabla de vacunación de cada uno de los animales seleccionados en el lote.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
@@ -55,15 +55,15 @@ Herramienta de captura sanitaria colectiva que permite asentar la aplicación de
 2. En la parte superior observará el contador "Total de animales seleccionados", que refleja la cantidad de ejemplares incluidos según el filtro.
 3. Si la finca administra más de una especie, presione el selector "Tipo de animal" y elija la especie a vacunar (por ejemplo: bovinos, bufalinos, equinos, etc.).
 4. Toque el campo "Seleccionar animales" para abrir el configurador de filtros:
-   - Filtre según su necesidad operativa: por potrero, lote, sexo, etapa productiva o selección manual de ejemplares.
-   - Aplique el filtro para actualizar el contador "Total de animales seleccionados".
+    - Filtre según su necesidad operativa: por potrero, lote, sexo, etapa productiva o selección manual de ejemplares.
+    - Aplique el filtro para actualizar el contador "Total de animales seleccionados".
 5. Complete los datos sanitarios del lote:
-   - **"Fecha":** Confirme la fecha de aplicación en el calendario interactivo (no admite fechas futuras).
-   - **"Vacuna":** Toque el campo para desplegar el catálogo de biológicos y elija la vacuna correspondiente.
-   - **"Notas / Observación" (Opcional):** Digite el lote del frasco, laboratorio, dosis o comentarios pertinentes de la jornada.
+    - **"Fecha":** Confirme la fecha de aplicación en el calendario interactivo (no admite fechas futuras).
+    - **"Vacuna":** Toque el campo para desplegar el catálogo de biológicos y elija la vacuna correspondiente.
+    - **"Notas / Observación" (Opcional):** Digite el lote del frasco, laboratorio, dosis o comentarios pertinentes de la jornada.
 6. Presione el botón "Registrar" ubicado en la parte inferior.
 7. Al procesarse con éxito, el sistema muestra el mensaje de confirmación "Registro masivo creado exitosamente" y regresa automáticamente a la pantalla anterior.
-- **Pantalla de llegada tras guardar:** El usuario retorna a la pantalla previa de la aplicación, quedando el lote de vacunas asentado en el historial de cada animal.
+    - **Pantalla de llegada tras guardar:** El usuario retorna a la pantalla previa de la aplicación, quedando el lote de vacunas asentado en el historial de cada animal.
 
 #### Variaciones por especie
 - **Cobertura zootécnica integral:** Aplica a todas las especies zootécnicas configuradas en el predio (bovinos, bufalinos, equinos, caprinos, ovinos y porcinos).

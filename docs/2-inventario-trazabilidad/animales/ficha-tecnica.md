@@ -61,43 +61,60 @@ Pantalla de consulta exhaustiva y ficha biológica que reúne la información de
 3. Si el animal no está bloqueado, se muestra el botón circular de edición rápida con icono de lápiz sobre el extremo inferior de la foto de portada. Al presionarlo, conduce al formulario de edición de datos del animal.
 
 #### Pestaña "Información"
+
 Presenta de forma organizada los atributos estructurales del animal:
-1. **Identificadores y características biológicas:**
-   - "Nombre": Nombre asignado al ejemplar.
-   - "Código": Código de arete principal.
-   - "Código de chip": Número de microchip inyectable o electrónico (si aplica).
-   - "Código QR/barras": Identificador de código de barras o código QR (si aplica).
-   - "Código tag NFC": Identificador de arete o etiqueta NFC (si aplica).
-   - "Propósito": Orientación productiva del ejemplar (leche, carne, doble propósito o trabajo).
-   - "Etapa del animal": Clasificación zootécnica actual adaptada a la especie y sexo del animal.
-   - "Fecha de nacimiento": Fecha de parto registrada.
-   - "Edad": Tiempo de vida calculado en años y meses.
-   - "Raza": Composición racial del ejemplar (con icono de verificación si es raza pura).
-   - "Propietario": Titular registrado del animal.
-   - "Lote": Potrero o lote de manejo al que pertenece.
-   - "Fecha de registro": Fecha en que el animal fue creado en el sistema.
-   - "Notas y observaciones": Anotaciones o comentarios zootécnicos de campo.
-2. **Tarjeta "Información de compra":**
-   - Visible si el animal fue adquirido comercialmente. Despliega la "Fecha" y el "Valor" pagado por el ejemplar. Al tocar la tarjeta, se abre la tabla de compras de la finca correspondiente a la especie del animal.
-3. **Sección "Padres":**
-   - Visible si el animal tiene padre o madre registrados. Muestra el chip interactivo de cada progenitor con su identificación. Al tocar cualquiera de los dos chips, la aplicación navega directamente a la hoja de vida de dicho progenitor.
-4. **Sección "Últimas ubicaciones":**
-   - Muestra las últimas 5 lecturas de geolocalización satelital. Cada elemento contiene la fecha relativa de registro, las coordenadas geográficas, el colaborador responsable y el icono del método de verificación (báscula, bastón o lector de chip). Al pulsar sobre cualquier ubicación, se abre el mapa de Google Maps en el navegador o en la aplicación de mapas del dispositivo.
+
+**1. Identificadores y características biológicas:**
+
+* **Nombre:** Nombre asignado al ejemplar.
+* **Código:** Código de arete principal.
+* **Código de chip:** Número de microchip inyectable o electrónico (si aplica).
+* **Código QR/barras:** Identificador de código de barras o código QR (si aplica).
+* **Código tag NFC:** Identificador de arete o etiqueta NFC (si aplica).
+* **Propósito:** Orientación productiva del ejemplar (leche, carne, doble propósito o trabajo).
+* **Etapa del animal:** Clasificación zootécnica actual adaptada a la especie y sexo del animal.
+* **Fecha de nacimiento:** Fecha de parto registrada.
+* **Edad:** Tiempo de vida calculado en años y meses.
+* **Raza:** Composición racial del ejemplar (con icono de verificación si es raza pura).
+* **Propietario:** Titular registrado del animal.
+* **Lote:** Potrero o lote de manejo al que pertenece.
+* **Fecha de registro:** Fecha en que el animal fue creado en el sistema.
+* **Notas y observaciones:** Anotaciones o comentarios zootécnicos de campo.
+
+**2. Tarjeta "Información de compra":**
+
+* Visible si el animal fue adquirido comercialmente. Despliega la "Fecha" y el "Valor" pagado por el ejemplar. Al tocar la tarjeta, se abre la tabla de compras de la finca correspondiente a la especie del animal.
+
+**3. Sección "Padres":**
+
+* Visible si el animal tiene padre o madre registrados. Muestra el chip interactivo de cada progenitor con su identificación. Al tocar cualquiera de los dos chips, la aplicación navega directamente a la hoja de vida de dicho progenitor.
+
+**4. Sección "Últimas ubicaciones":**
+
+* Muestra las últimas 5 lecturas de geolocalización satelital. Cada elemento contiene la fecha relativa de registro, las coordenadas geográficas, el colaborador responsable y el icono del método de verificación (báscula, bastón o lector de chip). Al pulsar sobre cualquier ubicación, se abre el mapa de Google Maps en el navegador o en la aplicación de mapas del dispositivo.
 
 #### Pestaña "Documentos"
+
 Permite administrar los certificados y archivos asociados al animal:
-1. Presione la pestaña "Documentos".
-2. **Para agregar un nuevo archivo:**
-   - Toque el botón "Agregar documento" (disponible si tiene permisos de edición).
-   - En la ventana modal inferior, seleccione el tipo de documento ("Certificado de raza pura", "Certificado de propiedad", "Certificado sanitario", "Certificado de vacunación" o "Documento personalizado").
-   - Si el tipo lo admite, ingrese el nombre descriptivo en el campo "Nombre".
-   - Presione el selector de archivo para adjuntar el documento en formato PDF o imagen (PNG, JPG, JPEG) desde la memoria del teléfono.
-   - Toque "Subir archivo" para guardar el documento.
-3. **Para consultar o gestionar un documento existente:**
-   - Toque sobre el documento en la lista.
-   - Si el archivo aún está pendiente de carga ("Pendiente"), se abrirá nuevamente la ventana de subida para completar el archivo.
-   - Si el archivo ya está guardado, se abrirá el diálogo con las opciones "Ver documento" (para previsualizarlo o abrirlo en el visor de documentos) y "Eliminar" (para borrar el archivo).
-   - Si presiona "Eliminar", el sistema solicita confirmación mediante la alerta "¿Estas seguro de eliminar este documento?"; toque el botón de confirmación para eliminarlo definitivamente.
+
+**1. Acceso a la sección:**
+
+* Presione la pestaña "Documentos".
+
+**2. Para agregar un nuevo archivo:**
+
+* Toque el botón "Agregar documento" (disponible si tiene permisos de edición).
+* En la ventana modal inferior, seleccione el tipo de documento ("Certificado de raza pura", "Certificado de propiedad", "Certificado sanitario", "Certificado de vacunación" o "Documento personalizado").
+* Si el tipo lo admite, ingrese el nombre descriptivo en el campo "Nombre".
+* Presione el selector de archivo para adjuntar el documento en formato PDF o imagen (PNG, JPG, JPEG) desde la memoria del teléfono.
+* Toque "Subir archivo" para guardar el documento.
+
+**3. Para consultar o gestionar un documento existente:**
+
+* Toque sobre el documento en la lista.
+* Si el archivo aún está pendiente de carga ("Pendiente"), se abrirá nuevamente la ventana de subida para completar el archivo.
+* Si el archivo ya está guardado, se abrirá el diálogo con las opciones "Ver documento" (para previsualizarlo o abrirlo en el visor de documentos) y "Eliminar" (para borrar el archivo).
+* Si presiona "Eliminar", el sistema solicita confirmación mediante la alerta "¿Estas seguro de eliminar este documento?"; toque el botón de confirmación para eliminarlo definitivamente.
 
 - **Pantalla de llegada tras guardar o salir:**
   - Al presionar la flecha de regreso en la barra superior, retorna al resumen del animal.

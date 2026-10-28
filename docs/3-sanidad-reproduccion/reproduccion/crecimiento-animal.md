@@ -25,31 +25,33 @@ Pantalla de seguimiento zootécnico diseñada para visualizar la evolución del 
 
 ### Reglas de Negocio y Restricciones
 - **Redirección automática por registros reproductivos activos:**
-  - Al abrir este módulo, el sistema valida de manera inmediata si el ejemplar cuenta con algún registro o antecedente reproductivo previo (inseminaciones, chequeos de preñez/palpaciones, partos, abortos o crías registradas).
-  - Si el animal posee al menos un registro reproductivo activo, la aplicación omite la pantalla de crecimiento y redirige de forma automática a la pantalla completa de resumen reproductivo, ya que el ejemplar ha iniciado formalmente su vida reproductiva.
+    - Al abrir este módulo, el sistema valida de manera inmediata si el ejemplar cuenta con algún registro o antecedente reproductivo previo (inseminaciones, chequeos de preñez/palpaciones, partos, abortos o crías registradas).
+    - Si el animal posee al menos un registro reproductivo activo, la aplicación omite la pantalla de crecimiento y redirige de forma automática a la pantalla completa de resumen reproductivo, ya que el ejemplar ha iniciado formalmente su vida reproductiva.
 - **Cálculo dinámico de fechas de etapas zootécnicas:**
-  - Si existe un hecho zootécnico registrado en el historial del animal para una etapa específica (por ejemplo, fecha confirmada de destete), el sistema utiliza la fecha real asentada.
-  - Si no existe un registro manual, la aplicación calcula la fecha proyectada sumando a la fecha de nacimiento el umbral en días estipulado en la configuración de la especie para la finca (tiempo de destete configurado) o los umbrales estándar por defecto de la especie.
+    - Si existe un hecho zootécnico registrado en el historial del animal para una etapa específica (por ejemplo, fecha confirmada de destete), el sistema utiliza la fecha real asentada.
+    - Si no existe un registro manual, la aplicación calcula la fecha proyectada sumando a la fecha de nacimiento el umbral en días estipulado en la configuración de la especie para la finca (tiempo de destete configurado) o los umbrales estándar por defecto de la especie.
 - **Atenuación visual por etapa alcanzada:**
-  - Las tarjetas de etapas correspondientes a la fase actual y a las fases ya superadas por el animal se muestran con opacidad total y realce visual.
-  - Las etapas futuras o pendientes se muestran con un estilo atenuado para distinguir claramente la fase zootécnica en la que se encuentra el ejemplar.
+    - Las tarjetas de etapas correspondientes a la fase actual y a las fases ya superadas por el animal se muestran con opacidad total y realce visual.
+    - Las etapas futuras o pendientes se muestran con un estilo atenuado para distinguir claramente la fase zootécnica en la que se encuentra el ejemplar.
 - **Restricción de etapas en animales con defunción registrada:**
-  - Si el animal tiene registrada una defunción en el sistema, la pantalla oculta de manera automática todas aquellas etapas cuya fecha proyectada sea posterior a la fecha de muerte del ejemplar, evitando proyecciones biológicas sobre animales fallecidos.
+    - Si el animal tiene registrada una defunción en el sistema, la pantalla oculta de manera automática todas aquellas etapas cuya fecha proyectada sea posterior a la fecha de muerte del ejemplar, evitando proyecciones biológicas sobre animales fallecidos.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - En la barra inferior de navegación, toque **Animales** > Seleccione al animal en crecimiento (cría, ternero, novillo o novilla) en el listado > Presione el botón **Reproducción** (o **Crecimiento del animal** si el botón muestra la etapa joven del ejemplar).
+    - En la barra inferior de navegación, toque **Animales** > Seleccione al animal en crecimiento (cría, ternero, novillo o novilla) en el listado > Presione el botón **Reproducción** (o **Crecimiento del animal** si el botón muestra la etapa joven del ejemplar).
 
 #### Barra Superior y Datos de Identidad
 - **Barra de navegación superior:** Muestra el botón de retroceso (flecha hacia la izquierda) para volver a la hoja de vida del animal. A la derecha, exhibe el componente de identidad del ejemplar con su nombre, código de arete visual y foto de perfil.
 
 #### Cabecera Informativa de Destete
 - **Franja superior de cabecera:** Panel destacado sobre el fondo primario institucional que contiene:
-  - Título principal: **Crecimiento del animal**.
-  - Fila informativa de destete: Exhibe la etiqueta **Destetado** junto con la fecha proyectada o confirmada en que el ejemplar culmina la etapa de lactancia. Si el animal falleció antes de dicha fecha, el dato no se muestra.
+    - Título principal: **Crecimiento del animal**.
+    - Fila informativa de destete: Exhibe la etiqueta **Destetado** junto con la fecha proyectada o confirmada en que el ejemplar culmina la etapa de lactancia. Si el animal falleció antes de dicha fecha, el dato no se muestra.
 
 #### Cuadrícula de Etapas del Ciclo de Vida
+
 El cuerpo de la pantalla presenta cuatro tarjetas organizadas en pares según la edad del animal:
+
 1. **Cría / Infante (Etapa 1):** Muestra el icono de la cría (ternero o ternera según especie y sexo), el nombre zootécnico del estado y la fecha de nacimiento registrada.
 2. **Destetado (Etapa 2):** Exhibe el icono zootécnico de animal destetado, el nombre oficial de la etapa y la fecha en que cumplió o cumplirá el destete.
 3. **Crecimiento / Media edad (Etapa 3):** Muestra el icono de novillo, novilla o equivalente según especie, el nombre de la etapa y la fecha proyectada de transición a la juventud zootécnica.

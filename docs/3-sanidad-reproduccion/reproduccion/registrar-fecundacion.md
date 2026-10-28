@@ -25,24 +25,24 @@ Formulario especializado para asentar y modificar eventos de servicio reproducti
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol:**
-  - Para registrar una nueva fecundación se requiere el permiso de creación de inseminaciones en la finca activa.
-  - Para modificar un registro previo se requiere el permiso de edición de inseminaciones.
-  - Para suprimir un servicio se requiere el permiso de eliminación. Los colaboradores sin estos privilegios verán un mensaje de falta de autorización al intentar guardar cambios.
+    - Para registrar una nueva fecundación se requiere el permiso de creación de inseminaciones en la finca activa.
+    - Para modificar un registro previo se requiere el permiso de edición de inseminaciones.
+    - Para suprimir un servicio se requiere el permiso de eliminación. Los colaboradores sin estos privilegios verán un mensaje de falta de autorización al intentar guardar cambios.
 - **Validaciones zootécnicas de fecha:**
-  - La fecha del servicio no puede ser anterior a la fecha de nacimiento de la hembra receptora ni puede ser una fecha futura posterior al día actual.
+    - La fecha del servicio no puede ser anterior a la fecha de nacimiento de la hembra receptora ni puede ser una fecha futura posterior al día actual.
 - **Filtro zootécnico del reproductor macho (Padre):**
-  - El selector de semental filtra automáticamente toros de la misma especie que la hembra, que pertenezcan a etapas adultas o de vejez zootécnica (excluyendo crías o toretes no aptos). Permite seleccionar tanto machos activos en la finca como reproductores externos o históricos dados de alta en el catálogo.
+    - El selector de semental filtra automáticamente toros de la misma especie que la hembra, que pertenezcan a etapas adultas o de vejez zootécnica (excluyendo crías o toretes no aptos). Permite seleccionar tanto machos activos en la finca como reproductores externos o históricos dados de alta en el catálogo.
 - **Campos condicionales por modalidad reproductiva:**
-  - **Inseminación artificial:** Habilita de forma exclusiva el campo de texto para ingresar el **Número de pajilla** del material seminal. En esta modalidad no aplica la selección de madre donante.
-  - **Transferencia de embriones:** Habilita obligatoriamente la selección de la **Madre** (vaca donante del embrión). El selector muestra exclusivamente hembras adultas de la misma especie y excluye automáticamente a la misma vaca receptora que está recibiendo el servicio.
-  - **Monta / Otros:** No requiere número de pajilla ni madre donante; se enfoca en la asociación directa del semental y la fecha.
+    - **Inseminación artificial:** Habilita de forma exclusiva el campo de texto para ingresar el **Número de pajilla** del material seminal. En esta modalidad no aplica la selección de madre donante.
+    - **Transferencia de embriones:** Habilita obligatoriamente la selección de la **Madre** (vaca donante del embrión). El selector muestra exclusivamente hembras adultas de la misma especie y excluye automáticamente a la misma vaca receptora que está recibiendo el servicio.
+    - **Monta / Otros:** No requiere número de pajilla ni madre donante; se enfoca en la asociación directa del semental y la fecha.
 - **Efectos reproductivos colaterales:**
-  - Al asentar un servicio, el sistema actualiza el estado reproductivo de la vaca (ej. "En servicio" o "Inseminada") y establece la base cronológica para las proyecciones de retorno al celo y posterior confirmación de preñez veterinaria.
+    - Al asentar un servicio, el sistema actualiza el estado reproductivo de la vaca (ej. "En servicio" o "Inseminada") y establece la base cronológica para las proyecciones de retorno al celo y posterior confirmación de preñez veterinaria.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Desde el resumen reproductivo):** En la barra inferior toque **Animales** > Seleccione a la hembra > Ingrese a **Reproducción** > Presione el botón flotante circular con icono (**+**) > En la pantalla de opciones de chequeo reproductivo, pulse la tarjeta **Inseminación** (o Fecundación).
-  - **Ruta 2 (Desde la tabla de fecundaciones):** En la barra inferior toque **Animales** > Seleccione a la hembra > Toque **Reproducción** > Desplácese a **Fecundaciones** y toque la flecha a la derecha para ver la tabla completa > Presione el botón flotante circular (**+**) para crear, o toque directamente sobre un registro existente para editarlo.
+    - **Ruta 1 (Desde el resumen reproductivo):** En la barra inferior toque **Animales** > Seleccione a la hembra > Ingrese a **Reproducción** > Presione el botón flotante circular con icono (**+**) > En la pantalla de opciones de chequeo reproductivo, pulse la tarjeta **Inseminación** (o Fecundación).
+    - **Ruta 2 (Desde la tabla de fecundaciones):** En la barra inferior toque **Animales** > Seleccione a la hembra > Toque **Reproducción** > Desplácese a **Fecundaciones** y toque la flecha a la derecha para ver la tabla completa > Presione el botón flotante circular (**+**) para crear, o toque directamente sobre un registro existente para editarlo.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra superior de navegación:** Exhibe el título dinámico según la operación: **Nueva fecundación** cuando se crea un nuevo servicio o **Editar Fecundación** cuando se modifica un registro existente. En el lateral izquierdo o derecho incorpora el botón de cierre con icono (**X**) para cancelar la operación y descartar cambios sin guardar.
@@ -60,7 +60,7 @@ Formulario especializado para asentar y modificar eventos de servicio reproducti
 - **Botón Registrar / Actualizar:** Botón ubicado al final del formulario. Al presionarlo, valida los campos requeridos, guarda el servicio localmente, muestra una notificación de confirmación y retorna de inmediato a la pantalla anterior. Durante el procesamiento, el botón entra en estado de carga para impedir registros dobles involuntarios.
 
 - **Pantalla de llegada tras salir:**
-  - Tras guardar con éxito o al pulsar la (**X**) de cierre, la aplicación retorna a la pantalla previa (resumen reproductivo o tabla de fecundaciones).
+    - Tras guardar con éxito o al pulsar la (**X**) de cierre, la aplicación retorna a la pantalla previa (resumen reproductivo o tabla de fecundaciones).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

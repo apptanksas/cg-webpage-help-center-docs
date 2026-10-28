@@ -30,68 +30,69 @@ Herramienta de pesaje masivo y continuo diseñada para registrar el peso corpora
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - Requiere el permiso de creación de pesos en la finca ganadera activa.
-  - Para vincular la báscula ganadera electrónica por Bluetooth, el usuario requiere el permiso de conexión Bluetooth y otorgar los permisos de hardware solicitados por el sistema operativo del teléfono.
-  - Si el colaborador carece de los permisos correspondientes, la aplicación detiene la acción y despliega: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
+    - Requiere el permiso de creación de pesos en la finca ganadera activa.
+    - Para vincular la báscula ganadera electrónica por Bluetooth, el usuario requiere el permiso de conexión Bluetooth y otorgar los permisos de hardware solicitados por el sistema operativo del teléfono.
+    - Si el colaborador carece de los permisos correspondientes, la aplicación detiene la acción y despliega: "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción."
 - **Fecha de la jornada:**
-  - El campo "Fecha" toma de forma automática e invariable la fecha actual del dispositivo móvil.
-  - Se encuentra deshabilitado para edición manual con el fin de garantizar la veracidad cronológica del pesaje en manga.
-  - Si la báscula Bluetooth está conectada, el selector de fecha se oculta automáticamente para optimizar el espacio de trabajo en pantalla.
+    - El campo "Fecha" toma de forma automática e invariable la fecha actual del dispositivo móvil.
+    - Se encuentra deshabilitado para edición manual con el fin de garantizar la veracidad cronológica del pesaje en manga.
+    - Si la báscula Bluetooth está conectada, el selector de fecha se oculta automáticamente para optimizar el espacio de trabajo en pantalla.
 - **Dispositivos inalámbricos (Hardware opcional):**
-  - **"Lector de chip":** Permite conectar un bastón lector RFID por Bluetooth. Al escanear una orejera electrónica, la aplicación busca el animal en el inventario y lo selecciona en el formulario. Si el chip no existe en la finca, muestra la alerta: "No se encontró ningún animal con el código de chip %1$s."
-  - **"Báscula":** Permite emparejar un indicador de pesaje Bluetooth compatible. Al vincularse, el botón cambia su etiqueta a "Conectado" en color azul y muestra la notificación "Bascula conectada". El campo de texto de peso se sustituye por el visor digital ("DigitalWeightDisplay") con indicador de peso estabilizado. Si el dispositivo se apaga o pierde cobertura, el sistema avisa con el mensaje: "La bascula se ha desconectado".
+    - **"Lector de chip":** Permite conectar un bastón lector RFID por Bluetooth. Al escanear una orejera electrónica, la aplicación busca el animal en el inventario y lo selecciona en el formulario. Si el chip no existe en la finca, muestra la alerta: "No se encontró ningún animal con el código de chip %1$s."
+    - **"Báscula":** Permite emparejar un indicador de pesaje Bluetooth compatible. Al vincularse, el botón cambia su etiqueta a "Conectado" en color azul y muestra la notificación "Bascula conectada". El campo de texto de peso se sustituye por el visor digital ("DigitalWeightDisplay") con indicador de peso estabilizado. Si el dispositivo se apaga o pierde cobertura, el sistema avisa con el mensaje: "La bascula se ha desconectado".
 - **Tipo de alimentación del lote:**
-  - Selector desplegable con 10 regímenes nutricionales del catálogo: "Pastoreo", "Pastoreo + Concentrado", "Heno", "Ensilage", "Concentrado", "Suplementos", "Forraje", "Raciones mezcladas", "Estabulación" y "Otros".
-  - Por defecto, el sistema asigna "Pastoreo".
+    - Selector desplegable con 10 regímenes nutricionales del catálogo: "Pastoreo", "Pastoreo + Concentrado", "Heno", "Ensilage", "Concentrado", "Suplementos", "Forraje", "Raciones mezcladas", "Estabulación" y "Otros".
+    - Por defecto, el sistema asigna "Pastoreo".
 - **Filtro de animales elegibles:**
-  - Sección colapsable "Aplicar filtro de animales" para delimitar la búsqueda en lotes grandes.
-  - **"Tipo de animal":** Si la finca tiene configurada más de una especie, permite seleccionar la especie a filtrar; si la finca administra una única especie, el selector se bloquea en esa especie por defecto.
-  - **"Seleccionar filtro de animales":** Permite acotar por potrero, lote o categoría zootécnica.
-  - Solo se muestran animales vivos que se encuentren físicamente en la finca activa.
-  - **Prevención estricta de duplicados:** Un animal que ya haya sido pesado y añadido a la tabla de la sesión activa queda excluido automáticamente del selector de animales para evitar duplicidades en la misma jornada.
+    - Sección colapsable "Aplicar filtro de animales" para delimitar la búsqueda en lotes grandes.
+    - **"Tipo de animal":** Si la finca tiene configurada más de una especie, permite seleccionar la especie a filtrar; si la finca administra una única especie, el selector se bloquea en esa especie por defecto.
+    - **"Seleccionar filtro de animales":** Permite acotar por potrero, lote o categoría zootécnica.
+    - Solo se muestran animales vivos que se encuentren físicamente en la finca activa.
+    - **Prevención estricta de duplicados:** Un animal que ya haya sido pesado y añadido a la tabla de la sesión activa queda excluido automáticamente del selector de animales para evitar duplicidades en la misma jornada.
 - **Cálculo automático de ganancia de peso:**
-  - Al ingresar o capturar el peso de un animal, el sistema busca en su historial su pesaje inmediatamente anterior (con desplazamiento de un registro hacia atrás).
-  - La columna "Ganancia" muestra la diferencia matemática exacta (peso actual menos peso previo).
-  - Si el ejemplar no cuenta con pesajes anteriores registrados en la finca, se toma el peso actual como valor base inicial.
-  - En el panel de estadísticas, la "Ganancia de peso total" se resalta con signo positivo y color verde si la ganancia neta es superior a cero, o en color rojo si representa una pérdida de peso acumulada.
+    - Al ingresar o capturar el peso de un animal, el sistema busca en su historial su pesaje inmediatamente anterior (con desplazamiento de un registro hacia atrás).
+    - La columna "Ganancia" muestra la diferencia matemática exacta (peso actual menos peso previo).
+    - Si el ejemplar no cuenta con pesajes anteriores registrados en la finca, se toma el peso actual como valor base inicial.
+    - En el panel de estadísticas, la "Ganancia de peso total" se resalta con signo positivo y color verde si la ganancia neta es superior a cero, o en color rojo si representa una pérdida de peso acumulada.
 - **Gestión de la sesión y tabla de pesajes:**
-  - Cada animal pesado mediante el botón "Agregar" se inserta en la parte superior de la tabla y se notifica con el mensaje: "Peso registrado exitosamente".
-  - El usuario puede descartar o corregir un registro erróneo presionando el ícono de papelera ubicado en el extremo derecho de la fila en la tabla de datos, lo que reincorpora al animal al selector y recalcula los totales.
-  - Para finalizar la jornada mediante el botón "Finalizar", es requisito contar con al menos un pesaje en la tabla. Si la tabla está vacía, el sistema muestra: "No hay pesos para registrar. Por favor, agregue al menos un peso para continuar."
-  - Al presionar "Finalizar", la app solicita confirmación mediante el diálogo: "¿Quieres finalizar el proceso de registro pesos?". Tras confirmar, crea el seguimiento de lote, emite el mensaje "Registro masivo creado exitosamente" y regresa a la pantalla previa.
+    - Cada animal pesado mediante el botón "Agregar" se inserta en la parte superior de la tabla y se notifica con el mensaje: "Peso registrado exitosamente".
+    - El usuario puede descartar o corregir un registro erróneo presionando el ícono de papelera ubicado en el extremo derecho de la fila en la tabla de datos, lo que reincorpora al animal al selector y recalcula los totales.
+    - Para finalizar la jornada mediante el botón "Finalizar", es requisito contar con al menos un pesaje en la tabla. Si la tabla está vacía, el sistema muestra: "No hay pesos para registrar. Por favor, agregue al menos un peso para continuar."
+    - Al presionar "Finalizar", la app solicita confirmación mediante el diálogo: "¿Quieres finalizar el proceso de registro pesos?". Tras confirmar, crea el seguimiento de lote, emite el mensaje "Registro masivo creado exitosamente" y regresa a la pantalla previa.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - Pantalla principal de la finca > Botón flotante central con ícono de casa y suma (+) > Menú de opciones rápidas > Presionar "Pesaje con bascula".
+    - Pantalla principal de la finca > Botón flotante central con ícono de casa y suma (+) > Menú de opciones rápidas > Presionar "Pesaje con bascula".
 
 #### 1. Preparación de Dispositivos y Filtros de Lote
 1. En la barra superior confirme el título "Pesaje con bascula" junto al botón de flecha para volver.
 2. En la sección "Conectar dispositivos", vincule sus equipos inalámbricos (opcional):
-   - Presione "Lector de chip" para emparejar el bastón RFID por Bluetooth.
-   - Presione "Báscula" para conectar el indicador de peso electrónico. Al conectarse, observará la notificación "Bascula conectada" y la etiqueta cambiará a "Conectado".
+    - Presione "Lector de chip" para emparejar el bastón RFID por Bluetooth.
+     - Presione "Báscula" para conectar el indicador de peso electrónico. Al conectarse, observará la notificación "Bascula conectada" y la etiqueta cambiará a "Conectado".
 3. En el campo "Tipo de alimentación", seleccione el régimen alimenticio del lote si difiere de "Pastoreo".
 4. Si requiere trabajar con un subgrupo particular del ganado, despliegue "Aplicar filtro de animales":
-   - Seleccione el "Tipo de animal" (si la finca maneja múltiples especies).
-   - Presione "Seleccionar filtro de animales" y delimite por potrero, lote o categoría.
+    - Seleccione el "Tipo de animal" (si la finca maneja múltiples especies).
+     - Presione "Seleccionar filtro de animales" y delimite por potrero, lote o categoría.
 
 #### 2. Identificación del Animal y Captura del Peso
 1. En la sección "Registrar peso", identifique el ejemplar:
-   - Toque "Seleccionar animal" para escogerlo de la lista, o escanee su orejera electrónica con el bastón lector RFID conectado.
+    - Toque "Seleccionar animal" para escogerlo de la lista, o escanee su orejera electrónica con el bastón lector RFID conectado.
 2. Obtenga el peso corporal:
-   - Si la báscula Bluetooth está conectada, coloque al animal sobre la plataforma y espere a que el visor digital muestre la lectura estabilizada.
-   - Si realiza captura manual, digite el peso en el campo "Peso" (en la unidad configurada para la finca: kilogramos o libras).
+    - Si la báscula Bluetooth está conectada, coloque al animal sobre la plataforma y espere a que el visor digital muestre la lectura estabilizada.
+     - Si realiza captura manual, digite el peso en el campo "Peso" (en la unidad configurada para la finca: kilogramos o libras).
 3. Presione el botón "Agregar" (se habilita únicamente cuando hay un animal seleccionado y el peso es mayor a cero).
 4. El sistema emite la notificación "Peso registrado exitosamente", añade el registro a la tabla, actualiza los contadores acumulados y limpia el formulario para el siguiente animal.
 
 #### 3. Revisión de Totales y Cierre de la Sesión
 1. Debajo del botón de adición, revise los paneles de resumen:
-   - "Cantidad de animales": Número de animales procesados en la sesión.
-   - "Peso total": Sumatoria de kilos o libras registrados en el lote.
-   - "Ganancia de peso total": Balance neto de ganancia o pérdida respecto a los pesajes anteriores.
+    - "Cantidad de animales": Número de animales procesados en la sesión.
+     - "Peso total": Sumatoria de kilos o libras registrados en el lote.
+     - "Ganancia de peso total": Balance neto de ganancia o pérdida respecto a los pesajes anteriores.
 2. En la tabla de datos inferior verifique las columnas "Animal", "Peso" y "Ganancia". Si necesita retirar un pesaje equivocado, presione el ícono de eliminar fila en la tarjeta correspondiente.
 3. Al terminar de pesar a todos los animales, presione el botón "Finalizar".
 4. En la ventana emergente confirme la pregunta: "¿Quieres finalizar el proceso de registro pesos?".
-- **Pantalla de llegada tras guardar:** El sistema consolida el lote, muestra la confirmación "Registro masivo creado exitosamente" y redirige al usuario de vuelta a la pantalla previa.
+
+**Pantalla de llegada tras guardar:** El sistema consolida el lote, muestra la confirmación "Registro masivo creado exitosamente" y redirige al usuario de vuelta a la pantalla previa.
 
 #### Variaciones por especie
 - **Cobertura zootécnica universal:** Aplica a todas las especies administradas en la finca (bovinos, bufalinos, equinos, caprinos, ovinos y porcinos).
