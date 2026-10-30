@@ -108,4 +108,56 @@ Control Ganadero es una solución tecnológica diseñada para transformar la lib
 
 * **Búsqueda instantánea:** Presiona ++slash++ o haz clic en la barra superior para buscar temas como *"inseminación"*, *"pesaje masivo"*, *"registro de parto"* o cualquier mensaje de alerta.
 * **Menú lateral:** Explora la documentación clasificada por áreas operativas en el panel izquierdo.
-* **Soporte oficial:** Si tienes dudas sobre tu facturación, límites de animales o configuraciones avanzadas, contacta a nuestro equipo de soporte técnico a través de los canales autorizados.
+* **Soporte oficial:** Si tienes dudas sobre tu facturación, límites de animales o configuraciones avanzadas, contacta a nuestro equipo de soporte técnico a través de los canales autorizados detallados a continuación.
+
+---
+
+## 📞 Canales Oficiales de Soporte y Contacto
+
+Si requieres asistencia técnica personalizada, resolución de dudas operativas, acompañamiento en campo o consultas comerciales y de facturación, comunícate con nosotros a través de nuestros canales oficiales:
+
+<div class="grid cards" markdown>
+
+- :material-whatsapp:{ .lg .middle } __WhatsApp y Atención Telefónica__
+    ---
+    Atención directa de soporte técnico y servicio al cliente:  
+    **Línea:** `(+57) 310 260 4652`  
+    [:octicons-link-external-24: Chatear en WhatsApp](https://wa.me/+573102604652){ target="_blank" }
+
+- :material-email-outline:{ .lg .middle } __Correo Electrónico Oficial__
+    ---
+    Envío de solicitudes formales, facturación, soporte técnico y gestión de cuentas:  
+    **Correo:** `info@controlganadero.app`  
+    [:octicons-mail-24: Enviar Correo](mailto:info@controlganadero.app)
+
+- :material-web:{ .lg .middle } __Sitio Web y Plataforma Oficial__
+    ---
+    Información general, planes, novedades y términos legales:  
+    **Sitio:** `https://controlganadero.app`  
+    [:octicons-link-external-24: Visitar Sitio Web](https://controlganadero.app){ target="_blank" }
+
+- :material-youtube:{ .lg .middle } __YouTube (Video Tutoriales)__
+    ---
+    Guías en video paso a paso y demostraciones de uso de la aplicación:  
+    **Canal:** `@controlganadero`  
+    [:octicons-video-24: Ver Tutoriales en YouTube](https://www.youtube.com/@controlganadero){ target="_blank" }
+
+- :material-instagram:{ .lg .middle } __Instagram__
+    ---
+    Comunidad ganadera, actualizaciones de software y consejos de manejo en finca:  
+    **Perfil:** `@controlganadero`  
+    [:octicons-link-external-24: Seguir en Instagram](https://www.instagram.com/controlganadero){ target="_blank" }
+
+- :material-facebook:{ .lg .middle } __Facebook__
+    ---
+    Novedades, eventos ganaderos y comunidad pecuaria oficial:  
+    **Página:** `ControlGanadero`  
+    [:octicons-link-external-24: Seguir en Facebook](https://web.facebook.com/ControlGanadero/){ target="_blank" }
+
+- :material-music-note:{ .lg .middle } __TikTok__
+    ---
+    Tips rápidos de campo, uso de básculas/chips y demostraciones prácticas:  
+    **Perfil:** `@controlganadero`  
+    [:octicons-link-external-24: Seguir en TikTok](https://www.tiktok.com/@controlganadero){ target="_blank" }
+
+</div>
