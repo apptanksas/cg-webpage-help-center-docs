@@ -2,10 +2,13 @@
 title: "Panel Principal"
 modulo_id: "main-panel-principal"
 nombre_funcionalidad: "Panel Principal y Navegación de la Finca"
+tipo_documento: "guia-app"
 categoria: "cuentas-usuarios"
 submodulo: "inicio-app"
+especies_aplicables: ["todas"]
 version_minima_app: "2026.10.1"
-fecha_actualizacion: "2026-09-25"
+confianza_reglas: "verificada-con-tests"
+fecha_actualizacion: "2026-11-04"
 intenciones_y_sinonimos:
   - "como navegar en la pantalla principal de la finca"
   - "cuales son las secciones de la barra inferior"
@@ -18,15 +21,16 @@ intenciones_y_sinonimos:
 # Panel Principal y Navegación de la Finca
 
 ### Resumen y Alcance Funcional
-Es el centro de control operativo y pantalla principal de Control Ganadero tras seleccionar o autenticar una finca activa. Integra el menú lateral general, la barra de navegación inferior con las 4 áreas productivas esenciales, accesos directos flotantes para registro rápido de eventos, indicador en vivo del estado de conexión con básculas Bluetooth y acceso al menú de acciones avanzadas del propietario.
+Es el centro de control operativo y pantalla principal de Control Ganadero tras seleccionar o autenticar una finca activa. Integra el menú lateral general, la barra superior con el nombre de la finca activa, la barra de navegación inferior con las 4 áreas productivas esenciales, accesos directos flotantes para registro rápido de eventos, indicador en vivo del estado de conexión con básculas Bluetooth y acceso al menú de acciones avanzadas del propietario.
 
+- **Especies a las que aplica:** Aplica igual para todas las especies.
 - **¿Funciona sin conexión a internet (Modo Offline)?:** Sí.
 - **Comportamiento de sincronización:** Todo el panel principal opera de manera nativa con los datos almacenados localmente en el dispositivo. En la parte inferior se muestra de forma permanente una cinta con el estado de red actual del teléfono (conectado, sin conexión o sincronizando).
 
 ### Estructura de la Pantalla y Componentes de Navegación
 
 #### 1. Barra Superior (TopBar)
-- **Título dinámico:** Muestra el nombre de la sección activa según la pestaña seleccionada en la barra inferior (**Finca**, **Animales**, **Producción** o **Alertas**).
+- **Título dinámico y Nombre de la Finca:** Muestra el nombre de la sección activa según la pestaña seleccionada en la barra inferior ("Finca", "Animales", "Producción" o "Alertas") y el nombre oficial de la finca activa.
 - **Indicador de Inventario Pendiente:** Si existe una auditoría o conteo físico de animales sin finalizar, se muestra un icono de advertencia. Al presionarlo, abre directamente la pantalla de inventario de animales para completarlo.
 - **Estado de Conexión Bluetooth:** Muestra en tiempo real el icono de vinculación con la báscula ganadera o bastón lector RFID.
 - **Menú de Acciones Rápidas (Tres puntos):** Disponible para propietarios en la pestaña de Animales, con accesos directos para:
@@ -36,9 +40,7 @@ Es el centro de control operativo y pantalla principal de Control Ganadero tras 
     - **Reportes de hurto / abigeato:** Acceso al módulo oficial de denuncia de robo de ganado (si está habilitado en su país).
 
 #### 2. Barra de Navegación Inferior (BottomBar)
-
 Permite alternar entre los 4 módulos esenciales de la finca:
-
 1. **Finca:** Resumen general de la explotación, potreros, colaboradores y métricas clave.
 2. **Animales:** Listado completo del inventario ganadero, filtros por categoría/lote y hojas de vida.
 3. **Producción:** Registros de control lechero, pesajes de carne y evolución de peso.
@@ -47,9 +49,7 @@ Permite alternar entre los 4 módulos esenciales de la finca:
 Debajo de las pestañas se ubica la **Cinta de Estado de Red**, que informa visualmente si la app está operando en línea o en modo local.
 
 #### 3. Botón Flotante de Acción Rápida (FAB)
-
 En la esquina inferior se despliega un botón contextual que cambia según la pestaña activa:
-
 - Permite crear eventos, registrar pesajes o añadir animales rápidamente con un solo toque, validando previamente que el usuario cuente con los permisos de rol correspondientes en la finca.
 
 ### Reglas de Negocio y Restricciones de Estado
@@ -69,15 +69,15 @@ En la esquina inferior se despliega un botón contextual que cambia según la pe
       - **Recordar más tarde:** Pospone la invitación para no interrumpir las labores del ganadero en ese momento.
 
 ### Flujo Paso a Paso para el Usuario
-**Ruta de acceso en la aplicación:** Se accede automáticamente tras iniciar sesión con una finca activa o al seleccionar una finca desde la lista de predios.
+- **Ruta de acceso en la aplicación:** Se accede automáticamente tras iniciar sesión con una finca activa o al seleccionar una finca desde la lista de predios.
 
 1. Observe la barra inferior para ubicarse en el área de trabajo deseada: presione **Finca**, **Animales**, **Producción** o **Alertas**.
 2. Deslice horizontalmente la pantalla o toque las pestañas para cambiar de módulo con transición animada.
 3. Para registrar una actividad rápida (como un pesaje, tarea o animal), presione el **botón flotante** ubicado sobre la barra inferior.
-4. Si requiere cambiar de finca, gestionar su cuenta o ajustar la configuración, abra el **menú lateral de navegación** desde la esquina superior izquierda.
+4. Si requiere cambiar de finca, gestionar su cuenta, acceder a la "Tienda Online" o ajustar la configuración, abra el **menú lateral de navegación** desde la esquina superior izquierda.
 5. Verifique el estado de su báscula en el icono de Bluetooth de la barra superior antes de iniciar jornadas de pesaje.
 
-**Pantalla de llegada tras guardar:** Permanece en el **Panel Principal** actualizando los datos locales del módulo correspondiente.
+- **Pantalla de llegada tras guardar:** Permanece en el **Panel Principal** actualizando los datos locales del módulo correspondiente.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

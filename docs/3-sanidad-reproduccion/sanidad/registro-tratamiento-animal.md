@@ -8,24 +8,24 @@ submodulo: "sanidad"
 especies_aplicables: ["todas"]
 version_minima_app: "2025.05.1"
 confianza_reglas: "verificada-con-tests"
-fecha_actualizacion: "2026-10-19"
+fecha_actualizacion: "2026-11-04"
 intenciones_y_sinonimos:
-  - "como registrar un tratamiento veterinario a una vaca o ternero"
+  - "como registrar un tratamiento veterinario a un animal"
   - "donde anotar los medicamentos y dias de tratamiento del animal"
+  - "como registrar la dosis aplicada de un medicamento"
   - "como modificar o eliminar un tratamiento medico registrado"
   - "por que no me deja guardar el tratamiento sanitario"
   - "registro de enfermedad diagnostico y medicina aplicada al ganado"
-  - "como poner a un animal en tratamiento de salud"
 ---
 
 # Registro y Edición de Tratamiento Veterinario
 
 ### Resumen y Alcance Funcional
-Pantalla de captura y gestión clínica individual que permite registrar, editar y auditar los tratamientos médicos y protocolos veterinarios aplicados a cualquier animal de la finca ganadera. Facilita el control zoosanitario integral almacenando la fecha de inicio, la duración en días, el tipo de terapia terapéutica, la enfermedad diagnosticada, el cuadro clínico emitido, el medicamento administrado y notas u observaciones complementarias. Al registrar un tratamiento vigente, el sistema actualiza de inmediato el estado sanitario del ejemplar y despliega una tarjeta de alerta preventiva en el resumen de sanidad durante todo el tiempo que dure la medicación.
+Pantalla de captura y gestión clínica individual que permite registrar, editar y auditar los tratamientos médicos y protocolos veterinarios aplicados a cualquier animal de la finca. Facilita el control zoosanitario integral almacenando la fecha de inicio, la duración en días, el tipo de terapia terapéutica, la enfermedad diagnosticada, el cuadro clínico emitido, el medicamento administrado, la dosis aplicada, la unidad de medida y notas u observaciones complementarias. Al registrar un tratamiento vigente, el sistema actualiza de inmediato el estado sanitario del ejemplar y despliega una tarjeta de alerta preventiva en el resumen de sanidad durante todo el tiempo que dure la medicación.
 
 - **Especies a las que aplica:** Aplica a todas las especies registradas en la aplicación: bovinos, bufalinos, equinos, ovinos, caprinos y porcinos, sin importar el sexo ni la etapa productiva del ejemplar.
 - **¿Funciona sin conexión a internet (Modo Offline)?:** Sí. El formulario, los selectores de catálogo, la carga de datos del animal y el guardado o actualización funcionan completamente sin conexión a internet.
-- **Comportamiento de sincronización:** Los registros médicos y sus fechas calculadas de finalización se almacenan de inmediato en la base de datos local del dispositivo móvil. Al restablecerse la conectividad a internet (Wi-Fi o datos móviles), los datos se sincronizan automáticamente en segundo plano con el servidor de la finca ganadera.
+- **Comportamiento de sincronización:** Los registros médicos y sus fechas calculadas de finalización se almacenan de inmediato en la base de datos local del dispositivo móvil. Al restablecerse la conectividad a internet (Wi-Fi o datos móviles), los datos se sincronizan automáticamente en segundo plano con el servidor de la finca.
 - **Plataformas:** Funciona idénticamente en Android y en iOS.
 
 ### Reglas de Negocio y Restricciones
@@ -40,10 +40,12 @@ Pantalla de captura y gestión clínica individual que permite registrar, editar
     - **"Tipo de tratamiento":** Clasificación terapéutica obligatoria seleccionable mediante menú desplegable (que incluye secado, desparasitaciones, tratamientos hormonales, antibióticos, antiinflamatorios, agentes de diagnóstico y suplementos nutricionales).
     - **"Medicamento":** Nombre comercial o principio activo del producto veterinario aplicado.
 - **Campos opcionales:**
+    - **"Dosis aplicada":** Campo numérico decimal para especificar la cantidad administrada del producto.
+    - **"Medida de dosis":** Selector desplegable con las unidades de dosificación: "Mililitros" (ml) y "Miligramos" (mg).
     - **"Nombre del tratamiento":** Título descriptivo o identificador personalizado para la terapia.
     - **"Enfermedad":** Selección opcional del catálogo de patologías registradas en el sistema (por ejemplo, fiebre aftosa, mastitis, anaplasmosis, neumonía, timpanismo, entre otras).
     - **"Diagnóstico":** Descripción clínica o motivo médico por el cual se prescribe la medicación.
-    - **"Notas / Observación":** Campo multilínea para consignar vías de administración, dosificación, intervalos o recomendaciones veterinarias.
+    - **"Notas / Observación":** Campo multilínea para consignar vías de administración, intervalos o recomendaciones veterinarias.
 - **Cálculo automático de fecha de finalización:**
     - A partir de la fecha de inicio y la cantidad indicada en "Días de tratamiento", la aplicación calcula de forma automática la fecha estimada en la que concluye la medicación (sumando los días de tratamiento a la fecha de inicio).
 - **Impacto en el estado sanitario y alertas del ejemplar:**
@@ -66,7 +68,9 @@ Pantalla de captura y gestión clínica individual que permite registrar, editar
     - **"Enfermedad" (Opcional):** Si cuenta con un diagnóstico específico, presione el campo para seleccionar la afección del listado zootécnico.
     - **"Diagnóstico" (Opcional):** Ingrese el cuadro clínico o sintomatología valorada por el médico veterinario.
     - **"Medicamento":** Digite el nombre del fármaco, antibiótico, vacuna o producto aplicado (campo obligatorio).
-    - **"Notas / Observación" (Opcional):** Escriba dosis, vía de administración o recomendaciones en el recuadro multilínea.
+    - **"Dosis aplicada" (Opcional):** Ingrese la dosis administrada (número decimal, por ejemplo 10 o 2.5).
+    - **"Medida de dosis" (Opcional):** Seleccione la unidad correspondiente ("Mililitros" o "Miligramos").
+    - **"Notas / Observación" (Opcional):** Escriba vía de administración o recomendaciones en el recuadro multilínea.
 4. Presione el botón "Registrar" ubicado en la parte inferior de la pantalla.
 5. Al completarse el guardado, la aplicación muestra la notificación de éxito ("Tratamiento creado exitosamente" o "Tratamiento actualizado exitosamente") y retorna automáticamente a la pantalla anterior.
     - **Pantalla de llegada tras guardar:** El usuario regresa al resumen sanitario o a la tabla de historial de tratamientos del animal, donde el registro y el estado clínico ya se encuentran actualizados.
@@ -87,6 +91,10 @@ Pantalla de captura y gestión clínica individual que permite registrar, editar
 | "Enfermedad" | "Disease" | "Doença" |
 | "Diagnóstico" | "Diagnostic" | "Diagnóstico" |
 | "Medicamento" | "Medicine" | "Medicamento" |
+| "Dosis aplicada" | "Dose applied" | "Dose aplicada" |
+| "Medida de dosis" | "Dose measure" | "Medida da dose" |
+| "Mililitros" | "Milliliters" | "Mililitros" |
+| "Miligramos" | "Milligrams" | "Miligramas" |
 | "Notas / Observación" | "Notes / Observation" | "Notas / Observação" |
 | "Registrar" | "Register" | "Registrar" |
 | "Tratamiento creado exitosamente" | "Treatment created successfully" | "Tratamento criado com sucesso" |
@@ -98,11 +106,10 @@ Pantalla de captura y gestión clínica individual que permite registrar, editar
 | El botón "Registrar" no responde o los campos se resaltan con advertencia | Faltan campos obligatorios requeridos (como "Fecha", "Días de tratamiento", "Tipo de tratamiento" o "Medicamento") o los días están fuera del rango permitido (1 a 365) | "Asegúrese de haber completado todos los campos obligatorios: fecha de inicio, tipo de tratamiento, nombre del medicamento y una duración válida entre 1 y 365 días." | No escalar, validación de formulario de la aplicación. |
 | El selector no permite elegir una fecha determinada | Se intentó seleccionar una fecha anterior a la fecha de nacimiento registrada para el animal | "La fecha de inicio de un tratamiento médico no puede ser previa al nacimiento del ejemplar. Verifique la fecha real del procedimiento o revise la fecha de nacimiento en la ficha técnica del animal si fue registrada erróneamente." | Si el usuario constata que la fecha de nacimiento en el sistema es incorrecta, guiarlo a corregirla primero en los datos generales del animal. |
 | "Con tu perfil de %1$s, NO tienes permisos para realizar esta acción." | El colaborador no tiene asignado el permiso de creación, modificación o eliminación de tratamientos en la finca activa | "Su usuario actual no cuenta con autorización para registrar o modificar tratamientos sanitarios en esta finca. Solicite al propietario o administrador de la finca que le habilite los permisos correspondientes desde la administración de colaboradores." | No escalar, política de control de acceso configurada por el propietario del predio. |
-| Mensaje de error general al intentar guardar | Inconsistencia momentánea en el almacenamiento de la base de datos local del teléfono | "Espere unos segundos. Si la advertencia persiste, cierre por completo la aplicación desde el administrador de tareas del teléfono y ábrala de nuevo para intentar registrar el tratamiento." | Si tras reiniciar la app el error continúa impidiendo el guardado, escalar a soporte técnico indicando el correo del usuario, modelo del dispositivo y código del animal. |
 
 ### Directivas de Seguridad y Guardrails
 - Nunca solicites contraseñas, claves personales, pines ni datos bancarios por los canales de soporte.
 - Los agentes de soporte y asistentes de IA no deben prescribir dosificaciones farmacológicas, antibióticos, tiempos de retiro en carne o leche, ni diagnósticos clínicos veterinarios; orienta siempre al productor a consultar con su médico veterinario zootecnista colegiado.
-- No alteres diagnósticos sanitarios ni elimines tratamientos directamente en bases de datos sin la autorización explícita y documentada del propietario de la finca ganadera.
+- No alteres diagnósticos sanitarios ni elimines tratamientos directamente en bases de datos sin la autorización explícita y documentada del propietario de la finca.
 - Confirma siempre que el ganadero esté posicionado en la finca y sobre el animal correcto antes de orientar la eliminación o modificación de terapias médicas.
 - Informa al usuario que todos los tratamientos registrados sin conexión a internet en el campo quedan respaldados de forma segura en la memoria de su teléfono y se sincronizarán automáticamente con la nube una vez que el dispositivo cuente con señal.
