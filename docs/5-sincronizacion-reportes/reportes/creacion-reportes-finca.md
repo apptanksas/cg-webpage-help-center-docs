@@ -8,7 +8,7 @@ tipo_documento: "complemento-backend"
 doc_complementario_app: "crear-informe"
 proposito_soporte: "reglas-dinamicas-y-diagnostico"
 version_minima_app: "2026.10.1"
-fecha_actualizacion: "2026-10-22"
+fecha_actualizacion: "2026-11-05"
 intenciones_y_sinonimos:
   - "como sacar un reporte de produccion de leche de las vacas de los ultimos meses"
   - "guiame paso a paso para crear un reporte de leche o hembras lactantes"
@@ -91,7 +91,7 @@ Al seleccionar "Hembras" en la primera pregunta del asistente, el sistema despli
 4. **Raza:** Carga dinámicamente las razas registradas entre las hembras de la explotación. *(Condición de desbloqueo: Si la lista aparece vacía, es porque ningún animal femenino tiene raza asignada en su ficha individual).*
 5. **En Venta:** Relaciona a las hembras que están marcadas con bandera activa de comercialización en la explotación. Pasa inmediatamente al catálogo de variables seleccionables:
    - *Identificación y Biometría:* Nombre, chip electrónico, raza, código de raza, fecha de nacimiento, edad, fecha de registro.
-   - *Peso y Ganancia:* Último peso registrado, fecha del último peso, promedio de ganancia diaria de peso (GDP), peso al nacer, peso al destete.
+   - *Peso y Ganancia:* Peso de ingreso (primer pesaje histórico registrado), último peso registrado, fecha del último peso, promedio de ganancia diaria de peso (GDP), peso al nacer, peso al destete.
    - *Manejo y Dieta:* Lote o potrero actual, propietario/socio asignado, tipo de dieta/alimentación.
    - *Genealogía y Reproducción:* Estado reproductivo, fecha de último parto, total de partos, próximo parto estimado, días restantes para el parto, intervalo entre partos (IEP), fecha de última inseminación, días de gestación, días de lactancia, días promedio en ordeño, padre y madre del ejemplar.
 6. **Próximas a Parir / Mes de Parto:** Despliega una lista con los **12 meses futuros proyectados** en el calendario según la fecha estimada de parto calculada para la especie. Al elegir el mes, avanza a la selección de columnas.
@@ -120,7 +120,7 @@ Al seleccionar "Machos", el sistema habilita las siguientes **9 opciones de filt
 7. **En Venta:** Machos marcados como disponibles para comercialización.
 8. **Machos Vendidos:** Historial de machos transferidos o comercializados.
 9. **Machos Fallecidos:** Historial de bajas y mortalidad en ejemplares machos.
-- *Desencadenador Final de Machos:* Solicita de 2 a 5 columnas específicas de machos (hasta 11 con PRO), excluyendo automáticamente parámetros reproductivos femeninos y de producción lechera.
+- *Desencadenador Final de Machos:* Solicita de 2 a 5 columnas configurables (hasta 11 con PRO), excluyendo automáticamente parámetros reproductivos específicos de hembras (días de gestación, intervalo entre partos, etc.) y producción lechera. Los parámetros de base como el estado reproductivo se encuentran disponibles para selección general; si se incluyen en un reporte de machos, el sistema deja la casilla en blanco intencionalmente al tratarse de ejemplares sin condición ginecológica femenina.
 
 #### 3. Rama de Producción de Leche y Ordeño (Especies Lecheras)
 - **Condición Obligatoria de Visibilidad:** Solo visible si la finca tiene activa una especie lechera (*Bovinos, Bufalinos, Caprinos*). En *Equinos*, *Porcinos* u *Ovinos* esta rama no aparece en el menú.
@@ -143,14 +143,14 @@ Al seleccionar "Machos", el sistema habilita las siguientes **9 opciones de filt
   8. *Raciones Totalmente Mezcladas (TMR):* Dietas unificadas formuladas integralmente.
   9. *Estabulación:* Animales en confinamiento total en corrales o establos.
   10. *Otros:* Cualquier otro esquema alimenticio no categorizado.
-- **Desencadenador Posterior:** Filtra a todos los animales (machos y hembras) que tengan asignada esa alimentación y pasa a la **selección de columnas genéricas** (entre 2 y 5 parámetros, o hasta 11 con PRO), incluyendo variables de peso, ganancia diaria de peso (GDP), edad, lote y sexo del animal.
+- **Desencadenador Posterior:** Filtra a todos los animales (machos y hembras) que tengan asignada esa alimentación y pasa a la **selección de columnas genéricas** (entre 2 y 5 parámetros, o hasta 11 con PRO), incluyendo variables de peso (peso de ingreso, último peso, peso al nacer, peso al destete), ganancia diaria de peso (GDP), edad, lote, sexo y estado reproductivo (el cual refleja la condición reproductiva para cualquier hembra y se presenta en blanco para ejemplares machos).
 
 #### 5. Rama de Nutrición y Consumos Directos
 - **Consumo de Leche en Crías:** Abre selector de rangos predefinidos (*Hoy, Última semana, Este mes, Último mes*) y consolida los litros de leche suministrados a terneros o infantes.
 - **Consumo de Concentrado:** Abre selector de fechas y consolida los kilos de alimento concentrado suministrados por animal y lote.
 
 #### 6. Rama de Animales por Lote y por Propietario (Generales)
-- **Animales por Lote (General):** Despliega los lotes de la finca y permite generar un reporte consolidado mixto (machos y hembras) con selección de columnas genéricas más sexo del animal.
+- **Animales por Lote (General):** Despliega los lotes de la finca y permite generar un reporte consolidado mixto (machos y hembras) con selección de columnas genéricas de peso (incluyendo peso de ingreso), sexo del animal y estado reproductivo (con valor zootécnico para hembras y en blanco para machos).
 - **Animales por Propietario (General):** Despliega los socios registrados y genera el consolidado mixto de animales asociados a ese dueño con selección de columnas.
 
 #### 7. Rama de Pesajes y Crecimiento
@@ -192,6 +192,8 @@ Al seleccionar "Machos", el sistema habilita las siguientes **9 opciones de filt
 | "No me aparece la opción de Listado de ordeños por día en el menú" | La finca tiene activa una especie no lechera (ej. Equinos, Porcinos u Ovinos) en la configuración superior de la app. | "Las opciones de ordeño solo se habilitan para especies lecheras (Bovinos, Bufalinos y Caprinos). Verifica en la barra superior de la app que tengas seleccionada la especie correspondiente." | Si la especie seleccionada es lechera y la opción continúa sin figurar en el menú. |
 | "Al filtrar por Raza la lista me aparece vacía y no me deja continuar" | Ningún animal del inventario activo en el servidor tiene asignada una raza en su ficha individual. | "El filtro de razas consulta las razas registradas en los animales de tu finca. Si la lista está vacía, debes ingresar a la ficha de tus animales y asignarles su raza correspondiente." | Si los animales ya tienen raza asignada y sincronizada, pero la lista continúa vacía. |
 | "El reporte de hembras en lactancia no incluye a animales que estoy ordeñando" | Las hembras no tienen registrado su evento de parto previo en el sistema, por lo que su estado no es 'Lactante'. | "Para que una hembra califique como lactante en los reportes, el sistema requiere que tenga registrado su evento de parto. Registra el parto correspondiente para actualizar su estado reproductivo." | Si el parto ya está registrado en la ficha del animal pero no es tomado por el reporte. |
+| "En el reporte de lote la columna de estado reproductivo aparece vacía en algunos animales" | El animal evaluado es un ejemplar macho y el sistema deliberadamente omite la condición ginecológica en machos. | "El estado reproductivo aplica para ejemplares hembras (mostrando si están vacías, preñadas o pendientes). Para los machos el sistema deja la casilla en blanco intencionalmente para mantener la coherencia del informe." | Si el animal evaluado es hembra con estado confirmado pero la celda aparece vacía tras sincronizar. |
+| "El peso de ingreso coincide exactamente con el último peso en mi reporte" | El animal cuenta con un único pesaje registrado en su historial en la finca, por lo que su primer y último peso son idénticos. | "El peso de ingreso toma el primer pesaje histórico y el último peso toma el pesaje más reciente. Si el animal solo tiene un pesaje registrado, ambos valores coincidirán hasta que registres un nuevo pesaje." | Si el animal tiene múltiples pesajes con fechas distintas pero el reporte muestra el mismo valor en ambas columnas. |
 | "El reporte de ordeño o pesajes sale con datos desactualizados o en ceros" | Las mediciones se ingresaron en el teléfono sin conexión y no han sincronizado a la base central. | "El motor de reportes procesa los datos alojados en la nube. Conecta tu teléfono a internet para que la sincronización en segundo plano actualice las mediciones antes de generar el informe." | Si tras verificar que los datos están sincronizados en el servidor el reporte persiste sin datos. |
 | "El reporte de animales vendidos no muestra el peso o el precio de algunos ejemplares" | En el registro de venta del animal no se ingresó el peso de báscula o el precio unitario pactado. | "El reporte presenta el peso y precio ingresados en el comprobante de venta. Si se comercializó sin registrar pesaje o valor, el sistema deja la casilla en blanco. Puedes editar la venta en la app para ingresar estos datos." | Si el peso y precio están registrados en el comprobante de venta sincronizado pero no aparecen en el reporte. |
 | "El peso promedio o el peso total en el reporte de ventas sale en cero" | Ninguno de los animales comercializados en la consulta cuenta con un pesaje registrado en su comprobante de venta. | "El sistema calcula el peso promedio y el peso total únicamente con los animales que tienen pesaje registrado. Si ninguno fue pesado al venderse, el total y promedio reflejan cero." | Si los animales vendidos tienen pesajes confirmados en el servidor pero el cálculo permanece en cero. |
