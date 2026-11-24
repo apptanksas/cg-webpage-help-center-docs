@@ -101,14 +101,15 @@ Presione la cabecera "Identificación" para desplegar los códigos complementari
 5. **"Raza" y Cruces Raciales:**
     - Para raza pura o predominante: Seleccione la raza en el menú desplegable "Raza".
     - Para animales mestizos o cruzados: Presione el botón con icono de cruce racial ubicado junto al selector. Se abrirá la ventana "Seleccionar cruce de razas":
-      - Seleccione la primera raza en "Raza" e ingrese su porcentaje en "Porcentaje" (1 al 100%).
-      - Seleccione la segunda raza en "Cruce de razas". El sistema autocompleta el porcentaje restante para sumar 100%.
-      - Presione "Listo" para guardar la composición racial del ejemplar.
+    - Seleccione la primera raza en "Raza" e ingrese su porcentaje en "Porcentaje" (1 al 100%).
+    - Seleccione la segunda raza en "Cruce de razas". El sistema autocompleta el porcentaje restante para sumar 100%.
+    - Presione "Listo" para guardar la composición racial del ejemplar.
 6. **"Propósito":** Seleccione la orientación productiva del animal en la finca ("Carne", "Leche", "Doble propósito" o "Trabajo").
 7. **"¿Está en la finca?":** Marque la casilla de verificación si el animal se encuentra físicamente en el predio o desmárquela si está en tránsito, pastoreo externo o préstamo.
 
 #### 6. Sección "Pesajes"
 Indica los pesos corporales según la unidad oficial de la finca (kg o lb):
+
 1. **"Peso nacimiento":** Ingrese el peso registrado al momento del parto (disponible siempre).
 2. **"Peso destete":** Ingrese el peso al destete (se habilitará únicamente si la etapa del animal calculada por edad y especie es destetado o superior).
 3. **"Peso al año":** Ingrese el peso a los doce meses de edad (se habilitará únicamente si el animal cuenta con al menos 1 año de edad cumplido según su fecha de nacimiento).

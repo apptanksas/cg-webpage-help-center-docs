@@ -64,10 +64,10 @@ Si la finca seleccionada no tiene registradas sus coordenadas geográficas en el
 1. **Mensaje informativo:** El sistema presenta el mensaje "No tenemos la ubicación exacta de tu finca. Por favor, indícanos cómo deseas obtener la ubicación para poder continuar con el reporte de robo de animales." bajo el encabezado "¿Cómo quieres obtener la ubicación de tu finca?".
 2. **Opción A - Ingreso de dirección:**
     - En la sección "Ingresa la dirección de tu finca", escriba en el campo "Dirección" la ubicación o referencia física del predio.
-     - Presione el botón "Obtener ubicación". El sistema calculará automáticamente las coordenadas satelitales correspondientes a la dirección ingresada.
+    - Presione el botón "Obtener ubicación". El sistema calculará automáticamente las coordenadas satelitales correspondientes a la dirección ingresada.
 3. **Opción B - Captura satelital por GPS:**
     - Presione el botón "Obtener la ubicación desde el GPS".
-     - Si los permisos de ubicación no han sido concedidos, el dispositivo solicitará autorizarlos. Asimismo, si la antena satelital está apagada, la aplicación solicitará activar el GPS del teléfono.
+    - Si los permisos de ubicación no han sido concedidos, el dispositivo solicitará autorizarlos. Asimismo, si la antena satelital está apagada, la aplicación solicitará activar el GPS del teléfono.
 4. **Verificación de coordenadas:**
     - En el recuadro inferior identificado con "Ubicación:", compruebe las coordenadas de latitud y longitud obtenidas. Al presionar sobre este recuadro, el productor puede abrir el punto geográfico en la aplicación de mapas externa para confirmar su exactitud.
 5. **Guardar ubicación:**
@@ -81,14 +81,14 @@ Una vez validada la ubicación de la finca, la barra superior muestra el título
 2. **"Descripción del robo":** Campo de texto multilínea para detallar las circunstancias de los hechos (fecha y hora aproximada del suceso, potrero o corral afectado, huellas, vehículos observados, cortes de cerca o señales particulares).
 3. **Selección de los animales:**
     - Presione el botón "Seleccionar animales" acompañado del icono (+).
-     - Se despliega el selector múltiple con los animales vivos y presentes en la finca que coinciden con la especie seleccionada.
-     - Marque los ejemplares afectados buscando por arete, código o nombre, y confirme la selección.
+    - Se despliega el selector múltiple con los animales vivos y presentes en la finca que coinciden con la especie seleccionada.
+    - Marque los ejemplares afectados buscando por arete, código o nombre, y confirme la selección.
 4. **Tabla de "Animales robados":**
     - Los ejemplares seleccionados se muestran en la tabla bajo el título "Animales robados".
-     - Cada fila detalla la identificación de cada ejemplar e incluye un icono de eliminación en el extremo derecho. Al presionar dicho icono, el animal se remueve de la lista del reporte sin alterar su registro en la finca.
+    - Cada fila detalla la identificación de cada ejemplar e incluye un icono de eliminación en el extremo derecho. Al presionar dicho icono, el animal se remueve de la lista del reporte sin alterar su registro en la finca.
 5. **Enviar formulario:**
     - En la parte inferior, presione el botón "Crear".
-     - Si no hay animales en la lista, el sistema bloquea el envío y muestra la advertencia "No hay animales seleccionados".
+    - Si no hay animales en la lista, el sistema bloquea el envío y muestra la advertencia "No hay animales seleccionados".
 
 #### 3. Confirmación con Términos y Condiciones
 

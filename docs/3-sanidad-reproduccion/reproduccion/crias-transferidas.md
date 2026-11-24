@@ -56,7 +56,7 @@ La información se presenta ordenada en cuatro columnas zootécnicas:
 - **Regresar al resumen reproductivo:** Presione la flecha de retroceso ubicada en la barra de navegación superior.
 
 - **Pantalla de llegada tras salir:**
-  - Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo de la vaca donante.
+    - Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo de la vaca donante.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

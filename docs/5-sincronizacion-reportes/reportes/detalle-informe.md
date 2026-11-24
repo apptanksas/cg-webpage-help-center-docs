@@ -81,7 +81,7 @@ Adicionalmente, la tabla de resultados se encuentra vinculada con el inventario 
 1. En la esquina de la tabla de datos, presione el botón **Exportar**.
 2. Se desplegará la ventana modal con el título **Exportar** y las dos alternativas disponibles:
     - **Exportar como CSV:** Presione este botón para compilar de inmediato la tabla en un archivo de texto separado por comas y abrir el menú de aplicaciones del dispositivo (WhatsApp, correo electrónico, Drive, entre otros).
-     - **Exportar como Excel:** Si cuenta con internet, presione este botón para descargar el libro de cálculo estructurado. La aplicación mostrará un indicador de carga momentáneo y desplegará el menú del teléfono para compartir el archivo.
+    - **Exportar como Excel:** Si cuenta con internet, presione este botón para descargar el libro de cálculo estructurado. La aplicación mostrará un indicador de carga momentáneo y desplegará el menú del teléfono para compartir el archivo.
 3. Si desea cancelar o salir de la ventana de exportación, presione el botón **Cerrar**.
 
 **Pantalla de llegada tras guardar o exportar:** La aplicación permanece en el detalle del informe tras compartir el archivo mediante la app externa elegida.

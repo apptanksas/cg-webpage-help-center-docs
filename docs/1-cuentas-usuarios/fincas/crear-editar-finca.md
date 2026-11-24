@@ -55,14 +55,14 @@ En el flujo de modificación o edición, el asistente precarga toda la informaci
 - **Reglas del Paso 3 (Configuración de Especies Pecuarias y Etapas Zootécnicas):**
     - Selección mínima obligatoria: La finca debe mantener al menos una especie pecuaria seleccionada: Bovinos, Equinos, Bufalinos, Caprinos, Ovinos o Porcinos. Si se desmarcan todas, el sistema no permitirá continuar y emitirá la alerta: "Debes seleccionar al menos un tipo de animal".
     - Parámetros zootécnicos y tiempos de transición por especie: Cada especie seleccionada permite configurar de forma independiente:
-        - "Tiempo de destete": Número entero en días estimado para la etapa de lactancia.
-        - "Tiempo de transición a [Etapa Juvenil]": Número entero en días para el paso a la etapa juvenil (ejemplo: Novillo / Novilla en bovinos, Potro / Potranca en equinos, etc.).
-        - "Tiempo de transición a [Etapa Adulta]": Número entero en días para el paso a la etapa adulta (ejemplo: Toro / Vaca en bovinos, Caballo / Yegua en equinos, etc.).
-        - "Tiempo de secado": Número entero en días previo al parto, configurable exclusivamente en especies lecheras u ordeñables (Bovinos, Bufalinos, Caprinos y Ovinos).
-        - "Tipo de edad" / Unidad de edad: Selección obligatoria entre "Días", "Meses" o "Años" para visualizar la edad de los ejemplares de esa especie.
+    - "Tiempo de destete": Número entero en días estimado para la etapa de lactancia.
+    - "Tiempo de transición a [Etapa Juvenil]": Número entero en días para el paso a la etapa juvenil (ejemplo: Novillo / Novilla en bovinos, Potro / Potranca en equinos, etc.).
+    - "Tiempo de transición a [Etapa Adulta]": Número entero en días para el paso a la etapa adulta (ejemplo: Toro / Vaca en bovinos, Caballo / Yegua en equinos, etc.).
+    - "Tiempo de secado": Número entero en días previo al parto, configurable exclusivamente en especies lecheras u ordeñables (Bovinos, Bufalinos, Caprinos y Ovinos).
+    - "Tipo de edad" / Unidad de edad: Selección obligatoria entre "Días", "Meses" o "Años" para visualizar la edad de los ejemplares de esa especie.
     - Validaciones obligatorias de tiempos de transición:
-        - "El tiempo de transición a la etapa juvenil no puede ser menor al tiempo de destete": Si el valor de la etapa juvenil es inferior al tiempo de destete, el sistema bloquea el avance.
-        - "El tiempo de transición a la etapa adulta no puede ser menor al tiempo de transición a la etapa juvenil": Si el valor de la etapa adulta es inferior al de la etapa juvenil, el sistema bloquea el avance.
+    - "El tiempo de transición a la etapa juvenil no puede ser menor al tiempo de destete": Si el valor de la etapa juvenil es inferior al tiempo de destete, el sistema bloquea el avance.
+    - "El tiempo de transición a la etapa adulta no puede ser menor al tiempo de transición a la etapa juvenil": Si el valor de la etapa adulta es inferior al de la etapa juvenil, el sistema bloquea el avance.
     - Botón de acción inferior: En modo creación, el botón inferior muestra el texto "SIGUIENTE" para avanzar al paso final. En modo edición, el botón cambia su etiqueta a "GUARDAR" para procesar directamente la actualización.
 - **Reglas del Paso 4 (Procesamiento y Confirmación):**
     - En modo creación, tras avanzar del paso 3 se despliega la pantalla de finalización ("Creando finca"), guarda la explotación en el servidor y redirige al usuario al panel de inicio principal.

@@ -43,12 +43,12 @@ Permite reasignar y transferir uno o múltiples animales de la finca hacia un nu
 3. **Seleccionar lote de destino:** Presione el campo obligatorio **Seleccionar lote de destino** y elija de la lista el lote al cual desea mover los animales.
 4. **Agregar animales:** Presione el botón **Seleccionar animales** (con ícono de suma). Se desplegará la lista de animales disponibles:
     - Marque las casillas de los animales que desea cambiar de lote.
-     - Si desea retirar un animal ya seleccionado, puede desmarcarlo en el selector o presionar el ícono de eliminar (papelera o cruz) que aparece en su fila dentro de la tabla de la pantalla principal.
-     - En la tabla de resumen podrá comprobar el **Código** de cada animal y su **Lote actual** (o la indicación **Ninguno** si no tenía lote previo).
+    - Si desea retirar un animal ya seleccionado, puede desmarcarlo en el selector o presionar el ícono de eliminar (papelera o cruz) que aparece en su fila dentro de la tabla de la pantalla principal.
+    - En la tabla de resumen podrá comprobar el **Código** de cada animal y su **Lote actual** (o la indicación **Ninguno** si no tenía lote previo).
 5. **Comprobar la dirección del traslado:** Debajo de la tabla observará una flecha indicadora y el nombre del lote de destino hacia el cual se moverá el grupo de ganado.
 6. **Guardar y confirmar:**
     - Presione el botón **Trasladar animales**.
-     - En el cuadro de diálogo de confirmación que pregunta *"¿Estas seguro de trasladar los animales seleccionados al lote [Nombre del Lote]?"*, presione **Confirmar** para procesar la reasignación.
+    - En el cuadro de diálogo de confirmación que pregunta *"¿Estas seguro de trasladar los animales seleccionados al lote [Nombre del Lote]?"*, presione **Confirmar** para procesar la reasignación.
 
 **Pantalla de llegada tras guardar:** Tras procesar el movimiento, el sistema muestra el mensaje emergente de éxito *"Animales transferidos exitosamente"* y redirige al usuario automáticamente a la pantalla anterior.
 

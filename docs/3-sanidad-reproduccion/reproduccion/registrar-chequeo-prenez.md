@@ -47,8 +47,8 @@ En los casos en que se dictamina que la hembra está **Preñada** pero no existe
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Opción 1 (Desde la tabla de chequeos):** En la barra inferior toque **Animales** > Seleccione la hembra > En la cuadrícula de módulos toque **Reproducción** > Desplácese a la sección **Chequeo** > Presione la flecha hacia la derecha para abrir la tabla > Presione el botón flotante (+) para un nuevo chequeo, o toque una fila existente para editar.
-  - **Opción 2 (Desde el menú reproductivo rápido):** En la barra inferior toque **Animales** > Seleccione la hembra > En la cuadrícula de módulos toque **Reproducción** > En el menú de opciones toque **Chequeo**.
+    - **Opción 1 (Desde la tabla de chequeos):** En la barra inferior toque **Animales** > Seleccione la hembra > En la cuadrícula de módulos toque **Reproducción** > Desplácese a la sección **Chequeo** > Presione la flecha hacia la derecha para abrir la tabla > Presione el botón flotante (+) para un nuevo chequeo, o toque una fila existente para editar.
+    - **Opción 2 (Desde el menú reproductivo rápido):** En la barra inferior toque **Animales** > Seleccione la hembra > En la cuadrícula de módulos toque **Reproducción** > En el menú de opciones toque **Chequeo**.
 
 #### Barra Superior y Cinta de Identificación
 - **Barra de navegación:** Exhibe el título dinámico según la operación: **Nuevo Chequeo** al registrar una nueva evaluación, o **Editar Chequeo** al modificar un registro previo. Incorpora el botón de cierre (icono de cruz **X**) a la izquierda para cancelar y regresar a la pantalla anterior.

@@ -42,6 +42,7 @@ Pantalla informativa e institucional de Control Ganadero que centraliza los cana
 
 #### 1. Canales de Contacto Directo y Asistencia
 Tarjetas interactivas con acceso inmediato a los canales oficiales:
+
 - **Centro de ayuda:** Muestra el enlace al portal de guías y preguntas frecuentes (`https://help.controlganadero.app`). Al presionar, abre la base de conocimientos oficial en el navegador del teléfono.
 - **Contáctanos:** Muestra la dirección oficial `info@controlganadero.app`. Al presionar sobre la tarjeta, abre automáticamente la aplicación de correo predeterminada del teléfono con el destinatario listo para redactar una consulta.
 - **Sitio web:** Muestra la dirección `https://controlganadero.app`. Al presionar, abre la página oficial en el navegador del teléfono.
@@ -49,6 +50,7 @@ Tarjetas interactivas con acceso inmediato a los canales oficiales:
 
 #### 2. Nuestras Redes Sociales y Tutoriales
 Sección delimitada que agrupa los accesos a las comunidades oficiales y material formativo:
+
 - **Instagram:** Redirige al perfil oficial de Control Ganadero en Instagram (`@controlganadero`).
 - **TikTok:** Enlaza a la cuenta oficial en TikTok (`@controlganadero`) con videos explicativos y novedades del campo.
 - **Youtube - Tutoriales:** Enlace directo al canal oficial de YouTube con guías paso a paso, seminarios y tutoriales de uso de cada herramienta.
@@ -56,11 +58,13 @@ Sección delimitada que agrupa los accesos a las comunidades oficiales y materia
 
 #### 3. Nuestras Políticas
 Accesos directos a los marcos normativos y de tratamiento de datos:
+
 - **Términos y condiciones:** Abre en el navegador las condiciones de uso de la plataforma.
 - **Política de privacidad:** Abre en el navegador las políticas de tratamiento y protección de datos personales.
 
 #### 4. Acerca de la Aplicación (Ficha Técnica)
 Tarjeta técnica con los parámetros de diagnóstico del aplicativo en el dispositivo:
+
 - **Version:** Muestra el número de versión instalada (por ejemplo, 2026.10.1). Dato indispensable al reportar incidencias técnicas.
 - **Platform:** Indica el sistema operativo del dispositivo móvil (Android o iOS).
 - **Locale:** Muestra el código de idioma y país activo en la aplicación (por ejemplo, es).

@@ -30,21 +30,21 @@ Pantalla de consulta y gestión donde el productor visualiza el historial de den
 
 ### Reglas de Negocio y Restricciones
 - **Disponibilidad de la funcionalidad (Bandera de funcionalidad):**
-  - La herramienta de reporte y consulta de robo de animales está condicionada a la activación del servicio de seguridad contra robo de animales en la aplicación.
-  - Si la funcionalidad se encuentra desactivada, el sistema interrumpe el acceso y redirige automáticamente hacia la pantalla principal.
+    - La herramienta de reporte y consulta de robo de animales está condicionada a la activación del servicio de seguridad contra robo de animales en la aplicación.
+    - Si la funcionalidad se encuentra desactivada, el sistema interrumpe el acceso y redirige automáticamente hacia la pantalla principal.
 - **Permisos requeridos por rol en la finca:**
-  - Para visualizar la opción en el menú de acciones rápidas y gestionar las denuncias, el usuario debe tener asignado el permiso de creación de reporte de robo de animales en la finca activa.
+    - Para visualizar la opción en el menú de acciones rápidas y gestionar las denuncias, el usuario debe tener asignado el permiso de creación de reporte de robo de animales en la finca activa.
 - **Configuración de seguridad previa obligatoria:**
-  - Para consultar el listado o registrar un reporte, la finca debe contar previamente con su configuración de reporte de robo establecida (datos de contacto del propietario y red de contactos de emergencia). Si dicha configuración no existe, el sistema solicita completarla antes de acceder a la lista.
+    - Para consultar el listado o registrar un reporte, la finca debe contar previamente con su configuración de reporte de robo establecida (datos de contacto del propietario y red de contactos de emergencia). Si dicha configuración no existe, el sistema solicita completarla antes de acceder a la lista.
 - **Redirección automática ante lista vacía (Verificado con tests):**
-  - Si la finca activa no posee reportes de robo registrados en el sistema, la aplicación redirige de manera automática al formulario de creación de reporte de robo, permitiendo al productor registrar de inmediato el suceso sin pasar por una lista en blanco.
+    - Si la finca activa no posee reportes de robo registrados en el sistema, la aplicación redirige de manera automática al formulario de creación de reporte de robo, permitiendo al productor registrar de inmediato el suceso sin pasar por una lista en blanco.
 - **Restricción operativa sobre animales reportados:**
-  - Los animales incluidos dentro de un reporte de robo activo quedan identificados en el sistema como sustraídos, bloqueándose operativamente en la finca para evitar traslados, ventas o registros productivos cotidianos mientras el reporte permanezca vigente.
+    - Los animales incluidos dentro de un reporte de robo activo quedan identificados en el sistema como sustraídos, bloqueándose operativamente en la finca para evitar traslados, ventas o registros productivos cotidianos mientras el reporte permanezca vigente.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta principal:** Barra inferior de navegación > Presionar el botón central de menú rápido (+) > Seleccionar la opción "Reportar robo de animales" > Si la finca ya tiene configuración guardada y cuenta con denuncias activas, se abre el listado.
-  - **Ruta tras guardar configuración:** Si se ingresó a configurar los contactos de emergencia y la finca ya tiene denuncias previas, el sistema navega directamente a este listado.
+    - **Ruta principal:** Barra inferior de navegación > Presionar el botón central de menú rápido (+) > Seleccionar la opción "Reportar robo de animales" > Si la finca ya tiene configuración guardada y cuenta con denuncias activas, se abre el listado.
+    - **Ruta tras guardar configuración:** Si se ingresó a configurar los contactos de emergencia y la finca ya tiene denuncias previas, el sistema navega directamente a este listado.
 
 #### 1. Encabezado y Acción de Nuevo Reporte
 1. En la barra superior, confirme el título "Mis reportes de robo de animales".
@@ -58,9 +58,9 @@ En el cuerpo de la pantalla se despliega el listado de tarjetas correspondientes
 1. **Fecha del incidente:** Junto al icono de calendario, visualice la fecha en la que se registró o sucedió el robo.
 2. **Coordenadas de ubicación:** Junto al icono de localización geográfica, observe las coordenadas de latitud y longitud donde ocurrió el suceso (formateadas con 4 decimales).
 3. **Insignia de animales reportados:** En el recuadro destacado a la derecha de la tarjeta, visualice:
-   - La etiqueta "Reportado".
-   - La cantidad total de ejemplares incluidos en la denuncia en color de alerta.
-   - El término "Animales".
+    - La etiqueta "Reportado".
+    - La cantidad total de ejemplares incluidos en la denuncia en color de alerta.
+    - El término "Animales".
 
 #### 3. Apertura y Difusión del Enlace Público
 1. Presione sobre cualquier tarjeta de reporte en el listado.

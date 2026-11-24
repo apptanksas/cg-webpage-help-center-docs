@@ -36,9 +36,9 @@ Permite a los usuarios con sesión activa actualizar su clave de acceso de maner
 2. En la pantalla de información de su cuenta, desplácese hasta la sección de acciones de cuenta.
 3. Presione la opción **Cambiar contraseña**.
 4. En el formulario de actualización, complete los tres campos requeridos:
-      - **Contraseña actual:** Escriba la clave vigente con la que accede a la aplicación.
-     - **Nueva contraseña:** Escriba su nueva clave de seguridad (mínimo 8 caracteres).
-     - **Confirmar nueva contraseña:** Vuelva a escribir la nueva clave para verificar que coincida exactamente.
+    - **Contraseña actual:** Escriba la clave vigente con la que accede a la aplicación.
+    - **Nueva contraseña:** Escriba su nueva clave de seguridad (mínimo 8 caracteres).
+    - **Confirmar nueva contraseña:** Vuelva a escribir la nueva clave para verificar que coincida exactamente.
 5. Presione el botón **Actualizar contraseña**.
 6. La aplicación guardará los cambios y mostrará la confirmación de contraseña actualizada.
 

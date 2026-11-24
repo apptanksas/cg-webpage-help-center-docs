@@ -27,19 +27,19 @@ Permite a los usuarios consultar el estado de los permisos del sistema operativo
 - **¿Funciona sin conexión a internet (Modo Offline)?:** Sí.
 - **Comportamiento de sincronización:** La consulta y solicitud de permisos es una operación que se realiza localmente en el dispositivo interactuando directamente con el sistema operativo (Android o iOS), sin necesidad de conexión a internet.
 
-### Lista de Permisos y Utilidad en la Finca
+#### Lista de Permisos y Utilidad en la Finca
 La pantalla lista individualmente cada permiso con su estado actual ("Permiso otorgado" o "Permiso denegado"):
 
 1. **Notificaciones Push:**
-      - Permite recibir alertas en tiempo real sobre tareas pendientes, recordatorios de vacunación, fechas estimadas de partos, celos y avisos del sistema.
+    - Permite recibir alertas en tiempo real sobre tareas pendientes, recordatorios de vacunación, fechas estimadas de partos, celos y avisos del sistema.
 2. **Estado del teléfono:**
-      - Permite verificar el identificador del dispositivo para garantizar la seguridad de la sesión y la sincronización correcta de los datos de la finca.
+    - Permite verificar el identificador del dispositivo para garantizar la seguridad de la sesión y la sincronización correcta de los datos de la finca.
 3. **Ubicación:**
-      - Necesaria para georreferenciar la finca, delimitar potreros y capturar las coordenadas satelitales del animal durante la lectura de microchips RFID, además de permitir la búsqueda y vinculación de dispositivos Bluetooth cercanos en el sistema operativo.
+    - Necesaria para georreferenciar la finca, delimitar potreros y capturar las coordenadas satelitales del animal durante la lectura de microchips RFID, además de permitir la búsqueda y vinculación de dispositivos Bluetooth cercanos en el sistema operativo.
 4. **Bluetooth:**
-      - Indispensable para la conexión inalámbrica y lectura en vivo de básculas ganaderas electrónicas y bastones lectores de chips/aretes RFID.
+    - Indispensable para la conexión inalámbrica y lectura en vivo de básculas ganaderas electrónicas y bastones lectores de chips/aretes RFID.
 5. **Cámara:**
-      - Necesaria para fotografiar animales en su registro individual o ficha técnica y escanear códigos visuales y QR en campo.
+    - Necesaria para fotografiar animales en su registro individual o ficha técnica y escanear códigos visuales y QR en campo.
 
 ### Reglas de Negocio y Restricciones
 - Al ingresar a la pantalla, la aplicación consulta automáticamente el estado en tiempo real de cada uno de los 5 permisos en el teléfono.

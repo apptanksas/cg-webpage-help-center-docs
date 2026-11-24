@@ -31,7 +31,7 @@ Una vez completadas las preguntas del asistente, la orden de generación se env�
 - **¿Funciona sin conexión a internet (Modo Offline)?:** No. Este módulo requiere conexión a internet activa obligatoria tanto para consultar el catálogo de opciones analíticas disponibles como para enviar la solicitud de procesamiento del informe. Si el dispositivo no detecta red, el sistema restringe el acceso a la pantalla o despliega un aviso de bloqueo por requerimiento de conectividad.
 - **Comportamiento de sincronización:** La generación de informes es una operación centralizada en los servicios en la nube de la plataforma. Al presionar el botón de creación final, la solicitud viaja al servidor; la aplicación confirma de inmediato el encolado con el aviso "El informe se está generando y podrá acceder a él cuando termine." y retorna a la lista de informes de la finca, donde se actualizará el estado de la tarea una vez concluido el cómputo de los datos.
 
-### Tipos de Informes Disponibles y Requerimientos de Parámetros
+#### Tipos de Informes Disponibles y Requerimientos de Parámetros
 
 El asistente clasifica los informes según la estructura de datos que se consulta y el nivel de configuración requerido:
 

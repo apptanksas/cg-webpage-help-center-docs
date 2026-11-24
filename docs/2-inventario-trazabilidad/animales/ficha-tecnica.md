@@ -29,31 +29,31 @@ Pantalla de consulta exhaustiva y ficha biológica que reúne la información de
 
 ### Reglas de Negocio y Restricciones
 - **Permisos requeridos por rol en la finca:**
-  - **Edición del animal:** Para modificar la información general del animal desde el botón de edición rápida (icono de lápiz) y para cargar nuevos documentos mediante el botón "Agregar documento" se requiere el permiso de actualización de animales en la finca activa.
-  - **Solo lectura:** Los usuarios sin permisos de edición pueden visualizar los datos y abrir documentos ya existentes, pero no tienen disponible el botón "Agregar documento" ni las opciones de eliminación de archivos.
+    - **Edición del animal:** Para modificar la información general del animal desde el botón de edición rápida (icono de lápiz) y para cargar nuevos documentos mediante el botón "Agregar documento" se requiere el permiso de actualización de animales en la finca activa.
+    - **Solo lectura:** Los usuarios sin permisos de edición pueden visualizar los datos y abrir documentos ya existentes, pero no tienen disponible el botón "Agregar documento" ni las opciones de eliminación de archivos.
 - **Bloqueo operativo por estado del animal (Animal bloqueado):**
-  - Si el animal se encuentra bloqueado (por ejemplo, con registro de fallecimiento activo, marcado como vendido o en un traslado en curso), el botón flotante de edición rápida (icono de lápiz) sobre la portada se oculta automáticamente para preservar la trazabilidad histórica del ejemplar.
+    - Si el animal se encuentra bloqueado (por ejemplo, con registro de fallecimiento activo, marcado como vendido o en un traslado en curso), el botón flotante de edición rápida (icono de lápiz) sobre la portada se oculta automáticamente para preservar la trazabilidad histórica del ejemplar.
 - **Comportamiento genealógico (Padres):**
-  - La sección "Padres" se muestra únicamente si el animal cuenta con al menos un progenitor registrado (padre o madre). Al presionar el chip interactivo de cualquiera de los padres, la aplicación abre la pantalla de resumen del progenitor correspondiente.
+    - La sección "Padres" se muestra únicamente si el animal cuenta con al menos un progenitor registrado (padre o madre). Al presionar el chip interactivo de cualquiera de los padres, la aplicación abre la pantalla de resumen del progenitor correspondiente.
 - **Historial y verificación de ubicaciones:**
-  - El sistema muestra las últimas 5 ubicaciones registradas del ejemplar, ordenadas cronológicamente de la más reciente a la más antigua.
-  - Cada registro incluye la fecha relativa del evento, las coordenadas geográficas, el nombre del usuario verificador (con insignia de verificación) y el método utilizado (lectura por báscula, bastón electrónico o lector Bluetooth). Al presionar sobre un registro de ubicación, la aplicación abre la coordenada satelital en Google Maps.
+    - El sistema muestra las últimas 5 ubicaciones registradas del ejemplar, ordenadas cronológicamente de la más reciente a la más antigua.
+    - Cada registro incluye la fecha relativa del evento, las coordenadas geográficas, el nombre del usuario verificador (con insignia de verificación) y el método utilizado (lectura por báscula, bastón electrónico o lector Bluetooth). Al presionar sobre un registro de ubicación, la aplicación abre la coordenada satelital en Google Maps.
 - **Información de compra comercial:**
-  - La tarjeta "Información de compra" se despliega únicamente si el ejemplar cuenta con un registro de adquisición o compra vinculado a la finca. Al presionar sobre ella, la aplicación redirige al listado consolidado de compras de ganado de la finca según la especie del ejemplar.
+    - La tarjeta "Información de compra" se despliega únicamente si el ejemplar cuenta con un registro de adquisición o compra vinculado a la finca. Al presionar sobre ella, la aplicación redirige al listado consolidado de compras de ganado de la finca según la especie del ejemplar.
 - **Gestión de documentos y certificados adjuntos:**
-  - Formatos admitidos: Archivos en formato PDF e imágenes en formato PNG, JPG o JPEG.
-  - Tipos de documentos y límites máximos por animal:
+    - Formatos admitidos: Archivos en formato PDF e imágenes en formato PNG, JPG o JPEG.
+    - Tipos de documentos y límites máximos por animal:
     - "Certificado de raza pura": Máximo 1 documento.
     - "Certificado de propiedad": Máximo 1 documento.
     - "Certificado sanitario": Hasta 20 documentos (permite asignar nombre personalizado).
     - "Certificado de vacunación": Hasta 50 documentos (permite asignar nombre personalizado).
     - "Documento personalizado": Hasta 50 documentos (permite asignar nombre personalizado).
-  - Si un tipo de documento ha alcanzado el límite máximo permitido para ese ejemplar, no aparecerá en la lista de opciones al agregar un nuevo archivo.
-  - Los documentos pendientes de subida muestran la etiqueta "Pendiente".
+    - Si un tipo de documento ha alcanzado el límite máximo permitido para ese ejemplar, no aparecerá en la lista de opciones al agregar un nuevo archivo.
+    - Los documentos pendientes de subida muestran la etiqueta "Pendiente".
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Desde el resumen del animal):** En la barra inferior toque "Animales" > Seleccione un animal de la lista para ingresar a su "Resumen del Animal" > En la cuadrícula de módulos funcionales presione la tarjeta "Datos generales".
+    - **Ruta 1 (Desde el resumen del animal):** En la barra inferior toque "Animales" > Seleccione un animal de la lista para ingresar a su "Resumen del Animal" > En la cuadrícula de módulos funcionales presione la tarjeta "Datos generales".
 
 #### Cabecera y Foto de Portada
 1. En la parte superior se despliega la barra con la flecha de regreso, el código y nombre del animal, y la foto de portada (o silueta zootécnica por defecto).
@@ -117,8 +117,8 @@ Permite administrar los certificados y archivos asociados al animal:
 * Si presiona "Eliminar", el sistema solicita confirmación mediante la alerta "¿Estas seguro de eliminar este documento?"; toque el botón de confirmación para eliminarlo definitivamente.
 
 - **Pantalla de llegada tras guardar o salir:**
-  - Al presionar la flecha de regreso en la barra superior, retorna al resumen del animal.
-  - Al presionar el botón de edición rápida (icono de lápiz), la aplicación abre la pantalla de edición del animal.
+    - Al presionar la flecha de regreso en la barra superior, retorna al resumen del animal.
+    - Al presionar el botón de edición rápida (icono de lápiz), la aplicación abre la pantalla de edición del animal.
 
 #### Variaciones por especie
 - **Aplica para todas las especies:** La consulta de identificadores electrónicos, genealogía, compras, ubicaciones y documentos opera de la misma manera en bovinos, equinos, bufalinos, caprinos, ovinos y porcinos.

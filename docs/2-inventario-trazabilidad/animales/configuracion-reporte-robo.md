@@ -71,8 +71,8 @@ En la parte superior del formulario se ubica el bloque **Información del propie
 2. **Número de identificación:** Campo para ingresar el documento de identidad oficial, cédula o registro tributario del propietario.
 3. **Indicativo de país y Número de teléfono:**
     - En el selector de la izquierda, verifique o elija el indicativo internacional de su país.
-     - En el campo de la derecha, ingrese el número móvil local.
-     - **Validación del número:** Si el teléfono está verificado, se visualizará un icono de verificación en color de éxito. Si requiere confirmación, se exhibe un icono de advertencia; al pulsarlo, se desplegará el diálogo emergente para validar el teléfono mediante código.
+    - En el campo de la derecha, ingrese el número móvil local.
+    - **Validación del número:** Si el teléfono está verificado, se visualizará un icono de verificación en color de éxito. Si requiere confirmación, se exhibe un icono de advertencia; al pulsarlo, se desplegará el diálogo emergente para validar el teléfono mediante código.
 
 #### Diligenciamiento de la Sección Contactos a Reportar
 
@@ -80,23 +80,23 @@ En el segundo bloque de la pantalla se gestionan las personas y entidades de eme
 
 1. **Tarjetas de referencia y ejemplos:** La pantalla presenta tarjetas orientativas con ejemplos de contactos clave para la red de apoyo:
     - **Policía:** Reporte Oficial.
-     - **Vecinos:** Alerta Cercana.
-     - **Familia:** Soporte Personal.
+    - **Vecinos:** Alerta Cercana.
+    - **Familia:** Soporte Personal.
 2. **Listado de contactos registrados:**
     - Si ya se han agregado contactos, se muestran bajo el título **Contactos registrados**.
-     - Cada contacto muestra su nombre, su número telefónico formateado y un botón circular con icono de eliminación. Al presionar dicho icono, el contacto se elimina inmediatamente de la lista.
+    - Cada contacto muestra su nombre, su número telefónico formateado y un botón circular con icono de eliminación. Al presionar dicho icono, el contacto se elimina inmediatamente de la lista.
 3. **Agregar un nuevo contacto:**
     - En el campo **Nombre**, escriba el nombre o entidad del contacto (por ejemplo: "Comando de Policía Rural" o "Vecino Potrero Norte").
-     - Seleccione el indicativo de país y escriba el número en el campo **Número de teléfono móvil**.
-     - Presione el botón **Agregar**. El botón solo se habilitará si el nombre y el teléfono son válidos y si la lista contiene menos de 5 contactos.
-     - Al tocarlo, el contacto se añade al listado superior y los campos de captura se limpian para permitir un nuevo ingreso.
+    - Seleccione el indicativo de país y escriba el número en el campo **Número de teléfono móvil**.
+    - Presione el botón **Agregar**. El botón solo se habilitará si el nombre y el teléfono son válidos y si la lista contiene menos de 5 contactos.
+    - Al tocarlo, el contacto se añade al listado superior y los campos de captura se limpian para permitir un nuevo ingreso.
 
 #### Guardado y Continuación
 1. Una vez completada la información del propietario y registrados los contactos necesarios, presione el botón **Continuar**.
 2. Si el número de teléfono del propietario no estaba verificado, la aplicación abrirá automáticamente el diálogo emergente para completar la validación telefónica antes de transmitir los datos.
 3. Al procesar el guardado con éxito:
     - Si la finca posee reportes de robo vigentes, la aplicación avanza al listado de reportes activos.
-     - Si no existen reportes activos, la aplicación avanza de inmediato al formulario de registro de animales robados.
+    - Si no existen reportes activos, la aplicación avanza de inmediato al formulario de registro de animales robados.
 
 **Pantalla de llegada tras guardar:** Lista de reportes de robo de animales (si existen denuncias activas) o el formulario de creación de reporte de robo.
 

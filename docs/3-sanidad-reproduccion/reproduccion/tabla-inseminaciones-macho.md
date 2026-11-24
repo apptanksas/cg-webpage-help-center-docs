@@ -57,7 +57,7 @@ La información se presenta ordenada en una tabla con diseño cuadrado y tres co
 - **Regresar a la pantalla previa:** Presione la flecha de retroceso ubicada en la barra superior.
 
 - **Pantalla de llegada tras salir:**
-  - Al presionar la flecha de retroceso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo del reproductor macho.
+    - Al presionar la flecha de retroceso en la barra superior, la aplicación retorna a la pantalla de resumen reproductivo del reproductor macho.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

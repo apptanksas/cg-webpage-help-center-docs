@@ -27,7 +27,7 @@ Es el centro de control operativo y pantalla principal de Control Ganadero tras 
 - **¿Funciona sin conexión a internet (Modo Offline)?:** Sí.
 - **Comportamiento de sincronización:** Todo el panel principal opera de manera nativa con los datos almacenados localmente en el dispositivo. En la parte inferior se muestra de forma permanente una cinta con el estado de red actual del teléfono (conectado, sin conexión o sincronizando).
 
-### Estructura de la Pantalla y Componentes de Navegación
+#### Estructura de la Pantalla y Componentes de Navegación
 
 #### 1. Barra Superior (TopBar)
 - **Título dinámico y Nombre de la Finca:** Muestra el nombre de la sección activa según la pestaña seleccionada en la barra inferior ("Finca", "Animales", "Producción" o "Alertas") y el nombre oficial de la finca activa.
@@ -41,6 +41,7 @@ Es el centro de control operativo y pantalla principal de Control Ganadero tras 
 
 #### 2. Barra de Navegación Inferior (BottomBar)
 Permite alternar entre los 4 módulos esenciales de la finca:
+
 1. **Finca:** Resumen general de la explotación, potreros, colaboradores y métricas clave.
 2. **Animales:** Listado completo del inventario ganadero, filtros por categoría/lote y hojas de vida.
 3. **Producción:** Registros de control lechero, pesajes de carne y evolución de peso.
@@ -50,9 +51,10 @@ Debajo de las pestañas se ubica la **Cinta de Estado de Red**, que informa visu
 
 #### 3. Botón Flotante de Acción Rápida (FAB)
 En la esquina inferior se despliega un botón contextual que cambia según la pestaña activa:
+
 - Permite crear eventos, registrar pesajes o añadir animales rápidamente con un solo toque, validando previamente que el usuario cuente con los permisos de rol correspondientes en la finca.
 
-### Reglas de Negocio y Restricciones de Estado
+### Reglas de Negocio y Restricciones
 - **Validación de Inicio y Alertas de la App:**
     - Al ingresar al panel principal, el sistema sincroniza automáticamente las notificaciones y recordatorios programados de la finca.
     - El sistema evalúa el historial de uso para desplegar, en el momento oportuno, una invitación para calificar la aplicación móvil en la tienda oficial.
@@ -65,8 +67,8 @@ En la esquina inferior se despliega un botón contextual que cambia según la pe
 - **Invitación de Calificación de la Aplicación:**
     - Cuando el usuario cumple un periodo continuo de uso satisfactorio, la aplicación despliega una ventana con la mascota oficial preguntando: *"¿Te gusta Control Ganadero?"*.
     - Ofrece dos alternativas:
-      - **Calificar ahora:** Registra la confirmación y abre directamente la tienda de aplicaciones del teléfono (Google Play Store o App Store) para dejar una reseña.
-      - **Recordar más tarde:** Pospone la invitación para no interrumpir las labores del ganadero en ese momento.
+    - **Calificar ahora:** Registra la confirmación y abre directamente la tienda de aplicaciones del teléfono (Google Play Store o App Store) para dejar una reseña.
+    - **Recordar más tarde:** Pospone la invitación para no interrumpir las labores del ganadero en ese momento.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Se accede automáticamente tras iniciar sesión con una finca activa o al seleccionar una finca desde la lista de predios.

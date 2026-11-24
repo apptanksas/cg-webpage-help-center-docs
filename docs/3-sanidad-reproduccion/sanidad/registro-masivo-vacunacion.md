@@ -50,7 +50,7 @@ Herramienta de captura sanitaria colectiva que permite asentar la aplicación de
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - Pantalla principal de la finca > Botón flotante central con ícono de casa y suma (+) > Menú de opciones rápidas > Presionar "Vacunación masiva".
+    - Pantalla principal de la finca > Botón flotante central con ícono de casa y suma (+) > Menú de opciones rápidas > Presionar "Vacunación masiva".
 
 #### Diligenciamiento y Guardado de la Jornada
 1. En la barra superior confirme el título "Vacunación masiva" junto al botón de flecha para regresar.

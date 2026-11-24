@@ -52,8 +52,8 @@ Asimismo, la pantalla sirve como punto de partida para solicitar nuevos reportes
 #### 1. Consulta del Historial y Especie Activa
 1. Al ingresar a la pantalla, verifique en la barra superior el título **Informes**.
 2. Si su finca gestiona múltiples especies (por ejemplo, vacas y caballos), observe el icono ubicado en la esquina superior derecha:
-   - Presione el icono para abrir la ventana modal **Seleccionar tipo de animal**.
-   - Pulse sobre la especie que desea consultar (bovinos, bufalinos, equinos, etc.). La pantalla se actualizará de inmediato para mostrar los reportes asociados a dicha especie.
+    - Presione el icono para abrir la ventana modal **Seleccionar tipo de animal**.
+    - Pulse sobre la especie que desea consultar (bovinos, bufalinos, equinos, etc.). La pantalla se actualizará de inmediato para mostrar los reportes asociados a dicha especie.
 
 #### 2. Generación de un Nuevo Reporte
 1. En la tarjeta superior con el título **Generar nuevo informe**, revise la etiqueta **Último informe** para conocer cuándo se procesó la consulta más reciente.
@@ -63,14 +63,14 @@ Asimismo, la pantalla sirve como punto de partida para solicitar nuevos reportes
 #### 3. Monitoreo y Apertura de Informes en el Listado
 1. Desplácese verticalmente por la lista bajo el encabezado **Historial de informes**, donde podrá observar el número total de registros disponibles.
 2. Cada tarjeta de informe presenta:
-   - **Fecha:** Día y hora en que se solicitó el reporte.
-   - **Nombre:** Nombre descriptivo del informe generado (ejemplo: *Hembras - Estado reproductivo* o *Listado de ordeños por día*).
-   - **Filtros:** Resumen de las condiciones y variables zootécnicas configuradas.
-   - **Estado:** Indicador que señala si el informe está **Generando...**, **Completado** o en **Error**.
+    - **Fecha:** Día y hora en que se solicitó el reporte.
+    - **Nombre:** Nombre descriptivo del informe generado (ejemplo: *Hembras - Estado reproductivo* o *Listado de ordeños por día*).
+    - **Filtros:** Resumen de las condiciones y variables zootécnicas configuradas.
+    - **Estado:** Indicador que señala si el informe está **Generando...**, **Completado** o en **Error**.
 3. **Acciones según el estado del informe:**
-   - Si el informe está **Completado**, presione el botón **Ver** o toque la tarjeta para ingresar a la tabla de resultados, métricas estadísticas y opciones de exportación en Excel o CSV.
-   - Si el informe dice **Generando...**, espere unos instantes en la pantalla. La aplicación consultará automáticamente al servidor y lo redirigirá a los resultados tan pronto esté listo.
-   - Si el informe muestra **Error**, la información no pudo procesarse en el servidor; deslice a la parte superior y pulse **Iniciar** para volver a solicitarlo.
+    - Si el informe está **Completado**, presione el botón **Ver** o toque la tarjeta para ingresar a la tabla de resultados, métricas estadísticas y opciones de exportación en Excel o CSV.
+    - Si el informe dice **Generando...**, espere unos instantes en la pantalla. La aplicación consultará automáticamente al servidor y lo redirigirá a los resultados tan pronto esté listo.
+    - Si el informe muestra **Error**, la información no pudo procesarse en el servidor; deslice a la parte superior y pulse **Iniciar** para volver a solicitarlo.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

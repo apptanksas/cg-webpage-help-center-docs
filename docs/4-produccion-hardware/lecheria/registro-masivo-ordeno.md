@@ -65,23 +65,23 @@ Pantalla de captura lechera asistida por pasos que permite registrar la producci
 2. Si dispone de un bastón o lector de microchip Bluetooth, puede verificar el botón con icono de antena en la barra superior para comprobar la vinculación del dispositivo lector.
 3. En la primera vista del asistente configure:
     - **"Fecha":** Confirme la fecha de la jornada de pesaje. Sugiere la fecha de hoy; si asienta un control anterior, presione el campo para desplegar el selector de fecha.
-     - **"Período del día":** Seleccione en el menú desplegable el turno del pesaje: "Mañana", "Tarde" o "Mañana y Tarde".
-     - **"Hato" (Opcional):** Si agrupa sus animales por lotes lecheros, presione el campo para seleccionar el hato correspondiente.
-     - **"Potrero" (Opcional):** Si desea registrar la pradera donde pastaron las vacas antes del ordeño, seleccione el potrero correspondiente.
+    - **"Período del día":** Seleccione en el menú desplegable el turno del pesaje: "Mañana", "Tarde" o "Mañana y Tarde".
+    - **"Hato" (Opcional):** Si agrupa sus animales por lotes lecheros, presione el campo para seleccionar el hato correspondiente.
+    - **"Potrero" (Opcional):** Si desea registrar la pradera donde pastaron las vacas antes del ordeño, seleccione el potrero correspondiente.
 4. Deslice la pantalla hacia la izquierda o avance para ingresar a la vista de pesaje individual de animales.
 
 #### Paso 2: Registrar la producción individual de las hembras
 1. En el encabezado "Producción del animal", seleccione la hembra a registrar:
-   - **Selección manual:** Presione el campo "Seleccionar animal". Se abrirá el selector con las hembras lecheras adultas activas que aún no han sido pesadas en la sesión. Busque y elija el animal por arete o nombre.
-   - **Lectura por bastón electrónico:** Acerque el lector Bluetooth al arete electrónico o microchip del animal. El sistema reconocerá automáticamente a la hembra y la seleccionará en el formulario.
+    - **Selección manual:** Presione el campo "Seleccionar animal". Se abrirá el selector con las hembras lecheras adultas activas que aún no han sido pesadas en la sesión. Busque y elija el animal por arete o nombre.
+    - **Lectura por bastón electrónico:** Acerque el lector Bluetooth al arete electrónico o microchip del animal. El sistema reconocerá automáticamente a la hembra y la seleccionará en el formulario.
 2. Debajo del animal seleccionado, complete los campos para cada período configurado:
     - **"Concentrado":** Ingrese la cantidad de alimento balanceado suministrado en el comedero (acompañado de la unidad de peso de la finca).
     - **"Leche":** Ingrese la producción de leche obtenida del ordeño (acompañada de la unidad de volumen de la finca).
 3. Presione el botón "Agregar".
 4. El animal se añadirá a la tabla inferior, el formulario de animal se limpiará automáticamente, y los resúmenes en pantalla se actualizarán:
     - **"Cantidad de animales":** Número total de hembras registradas en la jornada.
-     - **"Concentrado":** Total acumulado de alimento balanceado consumido por el grupo.
-     - **"Total de leche":** Total acumulado de leche producida en la sesión.
+    - **"Concentrado":** Total acumulado de alimento balanceado consumido por el grupo.
+    - **"Total de leche":** Total acumulado de leche producida en la sesión.
 5. Continúe seleccionando o escaneando las siguientes hembras y presionando "Agregar" consecutivamente.
 
 #### Paso 3: Revisión y Retiro de Registros en la Tabla

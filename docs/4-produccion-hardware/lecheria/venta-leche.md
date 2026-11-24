@@ -40,11 +40,11 @@ Permite registrar y gestionar de manera integral las salidas y comercialización
     - Debe existir al menos un comprador asignado en la venta.
     - Se pueden añadir múltiples compradores mediante la opción de agregar comprador para registrar entregas divididas en una misma jornada.
     - Cada comprador exige:
-      - **Comprador:** Selección obligatoria de un comprador predeterminado del sistema o un comprador personalizado registrado previamente en la finca.
-      - **Cantidad vendida:** Volumen de leche entregado a ese comprador. Debe ser un número mayor a cero expresado en la unidad de medida de la finca.
-      - **Precio por unidad:** Valor acordado por cada unidad de leche (litro, galón, etc.). Debe ser un valor numérico mayor a cero.
-      - **Moneda:** Divisa en la que se pacta la transacción con ese comprador (por ejemplo, pesos colombianos, dólares, pesos mexicanos, etc.). Se precargan las monedas asociadas al país de la finca o del usuario.
-      - **Subtotal por comprador:** Se calcula automáticamente multiplicando la cantidad vendida por el precio unitario en la moneda seleccionada.
+    - **Comprador:** Selección obligatoria de un comprador predeterminado del sistema o un comprador personalizado registrado previamente en la finca.
+    - **Cantidad vendida:** Volumen de leche entregado a ese comprador. Debe ser un número mayor a cero expresado en la unidad de medida de la finca.
+    - **Precio por unidad:** Valor acordado por cada unidad de leche (litro, galón, etc.). Debe ser un valor numérico mayor a cero.
+    - **Moneda:** Divisa en la que se pacta la transacción con ese comprador (por ejemplo, pesos colombianos, dólares, pesos mexicanos, etc.). Se precargan las monedas asociadas al país de la finca o del usuario.
+    - **Subtotal por comprador:** Se calcula automáticamente multiplicando la cantidad vendida por el precio unitario en la moneda seleccionada.
     - Si se añaden dos o más compradores, cada registro secundario cuenta con una opción para eliminarlo si fue agregado por error (el primer comprador no puede eliminarse para asegurar al menos una entrada comercial).
 - **Consolidación y totales de la venta:**
     - **Cantidad total vendida:** Suma matemática automática del volumen de leche asignado a todos los compradores.
@@ -66,22 +66,22 @@ Permite registrar y gestionar de manera integral las salidas y comercialización
 #### 2. Gestión de compradores y precios
 1. **Comprador principal:**
     - En el campo **Comprador**, presione el selector para elegir de la lista a la empresa recolectora, quesería, intermediario o cliente particular que compró la leche.
-     - En **Cantidad vendida**, ingrese el volumen entregado a dicho comprador en la unidad de medida indicada.
-     - En **Precio por unidad**, digite el valor monetario acordado por cada litro o galón.
-     - En **Moneda**, confirme la divisa de la transacción (o cámbiela seleccionando otra opción del menú desplegable si la venta se pactó en otra moneda).
-     - Observe cómo el campo **Subtotal** se actualiza automáticamente con el monto correspondiente a este comprador.
+    - En **Cantidad vendida**, ingrese el volumen entregado a dicho comprador en la unidad de medida indicada.
+    - En **Precio por unidad**, digite el valor monetario acordado por cada litro o galón.
+    - En **Moneda**, confirme la divisa de la transacción (o cámbiela seleccionando otra opción del menú desplegable si la venta se pactó en otra moneda).
+    - Observe cómo el campo **Subtotal** se actualiza automáticamente con el monto correspondiente a este comprador.
 2. **Agregar compradores adicionales (si aplica):**
     - Si la leche de esa jornada se distribuyó entre varios compradores, presione el botón con el ícono (+) ubicado en el encabezado de la sección **Compradores**.
-     - Se desplegará un nuevo bloque de comprador. Seleccione el segundo comprador, indique su cantidad entregada, su precio por unidad y su moneda.
-     - Si agregó un comprador adicional por equivocación, presione el ícono de la equis (X) en la esquina superior del bloque para retirarlo.
+    - Se desplegará un nuevo bloque de comprador. Seleccione el segundo comprador, indique su cantidad entregada, su precio por unidad y su moneda.
+    - Si agregó un comprador adicional por equivocación, presione el ícono de la equis (X) en la esquina superior del bloque para retirarlo.
 
 #### 3. Verificación de totales y guardado
 1. **Revisión de la información de venta:**
     - En la sección **Información de la venta**, verifique la **Cantidad total** de leche comercializada y el valor monetario global recaudado.
 2. **Guardar el registro:**
     - Presione el botón **Registrar** (o **Actualizar** si se encuentra modificando una venta previa) ubicado al final de la pantalla.
-     - La aplicación mostrará una confirmación en pantalla ("Venta de leche creada correctamente" o "Venta de leche actualizada correctamente").
-     - **Pantalla de llegada tras guardar:** El sistema cierra el formulario y regresa a la pantalla anterior (la tabla de ventas de leche o el panel principal de producción).
+    - La aplicación mostrará una confirmación en pantalla ("Venta de leche creada correctamente" o "Venta de leche actualizada correctamente").
+    - **Pantalla de llegada tras guardar:** El sistema cierra el formulario y regresa a la pantalla anterior (la tabla de ventas de leche o el panel principal de producción).
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

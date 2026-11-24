@@ -29,8 +29,8 @@ Permite registrar y gestionar de manera individual la aplicación de vacunas y b
 
 ### Reglas de Negocio y Restricciones
 - **Campos obligatorios:**
-  - **Fecha:** Día en que se suministró la dosis biológica. Por defecto toma la fecha actual del sistema. El sistema valida que la fecha no sea anterior a la fecha de nacimiento registrada para el animal ni posterior al día presente.
-  - **Vacuna:** Selección obligatoria del biológico administrado mediante una hoja de opciones desplegable. Incluye catálogo veterinario estandarizado:
+    - **Fecha:** Día en que se suministró la dosis biológica. Por defecto toma la fecha actual del sistema. El sistema valida que la fecha no sea anterior a la fecha de nacimiento registrada para el animal ni posterior al día presente.
+    - **Vacuna:** Selección obligatoria del biológico administrado mediante una hoja de opciones desplegable. Incluye catálogo veterinario estandarizado:
     - Fiebre Aftosa
     - Brucelosis
     - Tuberculosis
@@ -51,13 +51,13 @@ Permite registrar y gestionar de manera individual la aplicación de vacunas y b
     - Vacuna Bacteriana
     - Otra Vacuna
 - **Campos opcionales:**
-  - **Dosis aplicada:** Campo numérico decimal para especificar la cantidad exacta inoculada al ejemplar.
-  - **Medida de dosis:** Menú desplegable con las unidades de dosificación veterinaria: "Mililitros" (ml) y "Miligramos" (mg).
-  - **Notas y observaciones:** Espacio de texto multilínea para consignar datos complementarios, tales como el laboratorio fabricante, número de lote de la vacuna o vía de inoculación (subcutánea, intramuscular).
+    - **Dosis aplicada:** Campo numérico decimal para especificar la cantidad exacta inoculada al ejemplar.
+    - **Medida de dosis:** Menú desplegable con las unidades de dosificación veterinaria: "Mililitros" (ml) y "Miligramos" (mg).
+    - **Notas y observaciones:** Espacio de texto multilínea para consignar datos complementarios, tales como el laboratorio fabricante, número de lote de la vacuna o vía de inoculación (subcutánea, intramuscular).
 - **Permisos de usuario requeridos:**
-  - Para registrar una nueva dosis se requiere el permiso de creación de vacunas.
-  - Para modificar una dosis previa se requiere el permiso de actualización de vacunas.
-  - Para remover una dosis registrada se requiere el permiso de eliminación de vacunas. Si el usuario no tiene los privilegios asignados en la finca, el sistema restringe el guardado.
+    - Para registrar una nueva dosis se requiere el permiso de creación de vacunas.
+    - Para modificar una dosis previa se requiere el permiso de actualización de vacunas.
+    - Para remover una dosis registrada se requiere el permiso de eliminación de vacunas. Si el usuario no tiene los privilegios asignados en la finca, el sistema restringe el guardado.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**

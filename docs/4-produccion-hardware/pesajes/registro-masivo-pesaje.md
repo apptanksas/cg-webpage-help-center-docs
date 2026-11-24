@@ -68,26 +68,26 @@ Herramienta de pesaje masivo y continuo diseñada para registrar el peso corpora
 1. En la barra superior confirme el título "Pesaje con bascula" junto al botón de flecha para volver.
 2. En la sección "Conectar dispositivos", vincule sus equipos inalámbricos (opcional):
     - Presione "Lector de chip" para emparejar el bastón RFID por Bluetooth.
-     - Presione "Báscula" para conectar el indicador de peso electrónico. Al conectarse, observará la notificación "Bascula conectada" y la etiqueta cambiará a "Conectado".
+    - Presione "Báscula" para conectar el indicador de peso electrónico. Al conectarse, observará la notificación "Bascula conectada" y la etiqueta cambiará a "Conectado".
 3. En el campo "Tipo de alimentación", seleccione el régimen alimenticio del lote si difiere de "Pastoreo".
 4. Si requiere trabajar con un subgrupo particular del ganado, despliegue "Aplicar filtro de animales":
     - Seleccione el "Tipo de animal" (si la finca maneja múltiples especies).
-     - Presione "Seleccionar filtro de animales" y delimite por potrero, lote o categoría.
+    - Presione "Seleccionar filtro de animales" y delimite por potrero, lote o categoría.
 
 #### 2. Identificación del Animal y Captura del Peso
 1. En la sección "Registrar peso", identifique el ejemplar:
     - Toque "Seleccionar animal" para escogerlo de la lista, o escanee su orejera electrónica con el bastón lector RFID conectado.
 2. Obtenga el peso corporal:
     - Si la báscula Bluetooth está conectada, coloque al animal sobre la plataforma y espere a que el visor digital muestre la lectura estabilizada.
-     - Si realiza captura manual, digite el peso en el campo "Peso" (en la unidad configurada para la finca: kilogramos o libras).
+    - Si realiza captura manual, digite el peso en el campo "Peso" (en la unidad configurada para la finca: kilogramos o libras).
 3. Presione el botón "Agregar" (se habilita únicamente cuando hay un animal seleccionado y el peso es mayor a cero).
 4. El sistema emite la notificación "Peso registrado exitosamente", añade el registro a la tabla, actualiza los contadores acumulados y limpia el formulario para el siguiente animal.
 
 #### 3. Revisión de Totales y Cierre de la Sesión
 1. Debajo del botón de adición, revise los paneles de resumen:
     - "Cantidad de animales": Número de animales procesados en la sesión.
-     - "Peso total": Sumatoria de kilos o libras registrados en el lote.
-     - "Ganancia de peso total": Balance neto de ganancia o pérdida respecto a los pesajes anteriores.
+    - "Peso total": Sumatoria de kilos o libras registrados en el lote.
+    - "Ganancia de peso total": Balance neto de ganancia o pérdida respecto a los pesajes anteriores.
 2. En la tabla de datos inferior verifique las columnas "Animal", "Peso" y "Ganancia". Si necesita retirar un pesaje equivocado, presione el ícono de eliminar fila en la tarjeta correspondiente.
 3. Al terminar de pesar a todos los animales, presione el botón "Finalizar".
 4. En la ventana emergente confirme la pregunta: "¿Quieres finalizar el proceso de registro pesos?".

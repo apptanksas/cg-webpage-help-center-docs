@@ -39,9 +39,9 @@ Permite a los productores, administradores de finca y colaboradores ingresar de 
 4. Presione el botón **Ingresar**.
 5. Observe la barra de porcentaje mientras la aplicación autentica sus datos y descarga la información actualizada de su finca.
 
-**Pantalla de llegada tras guardar:** Panel principal de la finca activa (**Inicio**). Si el usuario no tiene fincas registradas o asignadas, la aplicación lo redirige a la pantalla de **Acceso a la Finca**.
+- **Pantalla de llegada tras guardar:** Panel principal de la finca activa (**Inicio**). Si el usuario no tiene fincas registradas o asignadas, la aplicación lo redirige a la pantalla de **Acceso a la Finca**.
 
-### Secciones Complementarias en la Pantalla
+#### Secciones Complementarias en la Pantalla
 - **¿Olvidó su clave?:** Sobre el botón de ingreso se encuentra la opción **Olvidé mi contraseña**, que da acceso directo a la recuperación de clave por correo electrónico.
 - **¿No tiene cuenta o es nuevo trabajador?:** En la parte inferior, la sección de ayuda responde a la pregunta *"¿No tienes cuenta o eres un trabajador de una finca?"* y ofrece el botón **Registrarme** y el enlace a **Más información**.
 

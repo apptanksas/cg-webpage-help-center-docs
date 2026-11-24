@@ -50,8 +50,8 @@ Módulo reproductivo especializado que permite asentar la interrupción involunt
 4. **Guardar el registro:** Presione el botón **Registrar** ubicado al final del formulario. Durante el proceso de guardado, el botón se bloquea temporalmente para evitar registros duplicados.
 
 - **Pantalla de llegada tras guardar o salir:**
-  - Al presionar el botón de cierre (**X**), se cancela la operación y se regresa a la pantalla reproductiva de origen.
-  - Al completar el registro con éxito, el sistema emite el mensaje de confirmación (*"Aborto creado exitosamente"* o *"Aborto actualizado exitosamente"*) y redirige de forma automática al resumen de **Reproducción** de la hembra con los indicadores actualizados.
+    - Al presionar el botón de cierre (**X**), se cancela la operación y se regresa a la pantalla reproductiva de origen.
+    - Al completar el registro con éxito, el sistema emite el mensaje de confirmación (*"Aborto creado exitosamente"* o *"Aborto actualizado exitosamente"*) y redirige de forma automática al resumen de **Reproducción** de la hembra con los indicadores actualizados.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

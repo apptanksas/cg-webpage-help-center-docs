@@ -62,18 +62,18 @@ Herramienta de pesaje individual que permite registrar, modificar o suprimir una
 #### 1. Verificación del Encabezado e Identificación
 1. En la barra superior confirme el título de la pantalla:
     - "Registrar peso" al ingresar una nueva medición.
-     - "Editar peso" al consultar o modificar un registro existente.
+    - "Editar peso" al consultar o modificar un registro existente.
 2. Mientras la báscula Bluetooth no esté vinculada, observe en la parte superior la cinta informativa con la identificación, arete y datos del ejemplar.
 3. **Conexión de báscula Bluetooth (Opcional):**
     - En la esquina superior derecha de la barra superior, presione el botón con el icono de Bluetooth.
-     - En el diálogo emergente con la lista de dispositivos emparejados, seleccione la báscula ganadera correspondiente.
-     - Al establecer el enlace, la aplicación emite el aviso "Bascula conectada", el botón de Bluetooth se resalta y el campo de texto se reemplaza por el visor digital de pesaje en tiempo real.
+    - En el diálogo emergente con la lista de dispositivos emparejados, seleccione la báscula ganadera correspondiente.
+    - Al establecer el enlace, la aplicación emite el aviso "Bascula conectada", el botón de Bluetooth se resalta y el campo de texto se reemplaza por el visor digital de pesaje en tiempo real.
 
 #### 2. Diligenciamiento de los Datos del Pesaje
 1. En el campo de fecha, presione el selector interactivo para confirmar o modificar el día del pesaje (restringido entre la fecha de nacimiento y la fecha actual).
 2. En el campo "Peso":
     - **En captura manual:** Digite el valor del peso en formato numérico decimal según la unidad oficial de la finca (kg o lb).
-     - **Con báscula Bluetooth:** Espere a que el animal permanezca quieto sobre la plataforma y el visor digital indique que el peso está estabilizado.
+    - **Con báscula Bluetooth:** Espere a que el animal permanezca quieto sobre la plataforma y el visor digital indique que el peso está estabilizado.
 3. En el selector "Tipo de alimentación", presione la casilla para desplegar el menú de opciones y elija el régimen nutricional si difiere de "Pastoreo".
 4. En el campo "Notas / Observación" (opcional), ingrese los apuntes complementarios que considere pertinentes.
 
@@ -82,9 +82,9 @@ Herramienta de pesaje individual que permite registrar, modificar o suprimir una
 2. **Para actualizar un pesaje modificado:** Presione el botón "Guardar". La aplicación actualiza el registro, despliega la confirmación "Peso actualizado exitosamente" y vuelve a la pantalla previa.
 3. **Para eliminar un registro (Modo Edición):**
     - Presione el botón "Eliminar" (visible si el pesaje no corresponde a un peso de compra).
-     - En la ventana de confirmación responda afirmativamente ante la pregunta "¿Estas seguro de eliminar este registro?".
-     - El sistema suprime la medición, emite el mensaje "Peso eliminado exitosamente" y regresa a la vista anterior.
-     - **Pantalla de llegada tras guardar:** El usuario retorna de forma automática a la pantalla desde la cual inició la acción (resumen de producción, tabla de pesajes o gráfica), reflejando los nuevos datos de forma inmediata.
+    - En la ventana de confirmación responda afirmativamente ante la pregunta "¿Estas seguro de eliminar este registro?".
+    - El sistema suprime la medición, emite el mensaje "Peso eliminado exitosamente" y regresa a la vista anterior.
+    - **Pantalla de llegada tras guardar:** El usuario retorna de forma automática a la pantalla desde la cual inició la acción (resumen de producción, tabla de pesajes o gráfica), reflejando los nuevos datos de forma inmediata.
 
 #### Variaciones por especie
 Aplica igual para todas las especies. El formulario, los selectores de dieta y el comportamiento de la báscula operan de manera idéntica para bovinos, bufalinos, equinos, caprinos, ovinos y porcinos.

@@ -36,14 +36,15 @@ Permite realizar jornadas de conteo físico y verificación presencial de animal
 - **Compatibilidad de métodos de verificación:**
     - Al cargar los animales según el filtro seleccionado, el sistema excluye automáticamente aquellos ejemplares que no tengan registrado el identificador correspondiente al método elegido (por ejemplo, animales sin chip en lecturas Bluetooth).
 
-### Métodos de Verificación Disponibles
+#### Métodos de Verificación Disponibles
 Al configurar la sesión de conteo, el usuario elige el método de captura:
+
 1. **Manual:** Verificación táctil tocando directamente sobre la tarjeta de cada animal en la lista de control.
 2. **Chip:** Captura inalámbrica continua conectando el bastón lector Bluetooth; al leer el microchip del bovino en la manga, se marca automáticamente como verificado.
 3. **Arete NFC:** Lectura por proximidad acercando el sensor del teléfono al arete electrónico del animal.
 4. **Código de barras / QR:** Escaneo mediante la cámara del teléfono apuntando al código impreso en la chapeta.
 
-### Estructura de la Pantalla y Componentes de Control
+#### Estructura de la Pantalla y Componentes de Control
 
 #### 1. Barra Superior (TopBar)
 - Título oficial: *"Inventario de animales"*.
@@ -54,12 +55,14 @@ Al configurar la sesión de conteo, el usuario elige el método de captura:
 
 #### 2. Configuración Inicial del Conteo (Antes de Iniciar)
 Muestra tres selectores obligatorios:
+
 - **Método de verificación:** Selector para elegir Manual, Chip, Arete NFC o Código de barras.
 - **Tipo de animal:** Selector de especie (ej. Bovino).
 - **Seleccionar animales:** Selector de filtro para delimitar el conteo (todos los animales de la finca, un lote específico o potrero).
 
 #### 3. Panel de Contadores y Último Animal Verificado
 Barra de métricas en tiempo real (con fijación automática en el borde superior al desplazarse por listas largas):
+
 - **Animales totales:** Cantidad total de ejemplares esperados en la sesión.
 - **Pendientes:** Cantidad de animales que aún no han sido verificados (con icono de alerta).
 - **Verificados:** Cantidad de animales confirmados físicamente (con icono de visto bueno).
@@ -67,26 +70,28 @@ Barra de métricas en tiempo real (con fijación automática en el borde superio
 
 #### 4. Lista de Control
 Listado interactivo de todos los animales convocados a la auditoría:
+
 - Cada tarjeta muestra el número de arete, sexo y el estado actual (**Pendiente** o **Verificado**, con el icono del método usado).
 - **Un toque:** Si el método es manual, marca el animal como verificado. Si ya estaba verificado, permite desmarcarlo para corregir errores.
 - **Doble toque:** Abre la ficha técnica completa del ejemplar para consultar su historial médico o genealógico sin abandonar la sesión de inventario.
 
 #### 5. Botones de Acción de la Sesión
 Ubicados al final de la lista una vez iniciada la auditoría:
+
 - **Descartar:** Abre un diálogo de confirmación (*"¿Deseas descartar el inventario actual?"*) para cancelar la sesión sin guardar cambios en el historial.
 - **Finalizar:** Cierra y asienta formalmente la auditoría en la finca.
-  - Si todos los animales fueron verificados: confirmación directa de cierre exitoso.
-  - Si quedan animales pendientes: advertencia indicando la cantidad exacta de ejemplares no encontrados (ej. *"Tienes [X] animales pendientes. ¿Deseas finalizar el inventario de todas formas?"*).
+    - Si todos los animales fueron verificados: confirmación directa de cierre exitoso.
+    - Si quedan animales pendientes: advertencia indicando la cantidad exacta de ejemplares no encontrados (ej. *"Tienes [X] animales pendientes. ¿Deseas finalizar el inventario de todas formas?"*).
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - **Ruta 1 (Iniciar nuevo inventario):** En el panel principal, presione el botón flotante central (+) en la barra inferior > En el menú de acciones rápidas, seleccione **Inventario de animales**.
-  - **Ruta 2 (Reanudar inventario en curso):** En la barra superior del panel principal de la finca, presione el **icono de advertencia** junto al título.
+    - **Ruta 1 (Iniciar nuevo inventario):** En el panel principal, presione el botón flotante central (+) en la barra inferior > En el menú de acciones rápidas, seleccione **Inventario de animales**.
+    - **Ruta 2 (Reanudar inventario en curso):** En la barra superior del panel principal de la finca, presione el **icono de advertencia** junto al título.
 1. En la pantalla de inventario, seleccione el **Método de verificación**, el **Tipo de animal** y el filtro de **Seleccionar animales** (por ejemplo, un lote particular).
 2. Presione el botón **Iniciar inventario**. A partir de este momento la sesión queda asegurada en el teléfono.
 3. Realice el conteo en campo:
-   - Si eligió Manual: toque la tarjeta del animal en pantalla a medida que pase por la manga.
-   - Si eligió Chip o NFC: acerque el lector o el teléfono al animal para registrar la lectura automática.
+    - Si eligió Manual: toque la tarjeta del animal en pantalla a medida que pase por la manga.
+    - Si eligió Chip o NFC: acerque el lector o el teléfono al animal para registrar la lectura automática.
 4. Observe la actualización de los contadores de verificados y pendientes en la barra superior.
 5. Al concluir la jornada, presione el botón **Finalizar**.
 6. Si quedaron animales sin verificar, revise la lista de faltantes y presione confirmar para asentar el inventario.

@@ -40,20 +40,20 @@ Pantalla de captura sanitaria que permite registrar diagnósticos de mastitis y 
     - El animal debe estar vivo y físicamente presente en la finca activa (excluye vendidos, fallecidos, trasladados o ausentes).
     - Se excluyen estrictamente los animales de especie equina.
 - **Validaciones zootécnicas y de formulario:**
-  - **Fecha del control:** Por defecto sugiere el día actual. No admite fechas posteriores al día de hoy ni anteriores a la fecha de nacimiento del animal.
-  - **Severidad por pezón o cuarto mamario:** Es posible evaluar de 1 a 4 cuartos mamarios de manera independiente. Cada pezón admite los siguientes niveles de severidad:
-      - "Oculta (Subclínica)"
-      - "Leve"
-      - "Moderada"
-      - "Grave"
-      - "Extrema (Gangrenosa)"
-      - "Destruida y Perdida"
-      - Los pezones sanos o no afectados pueden permanecer sin selección (valor nulo).
-  - **Tratamiento médico:**
-      - La opción "Poner en tratamiento" es opcional.
-      - Si se activa la casilla, los campos "Días de tratamiento" y "Descripción del tratamiento" son obligatorios. Si alguno se deja vacío, el sistema bloquea el guardado alertando: "Datos de tratamiento requeridos".
-      - El número de días de tratamiento debe ser un número entero válido entre 1 y 365 días.
-      - Al guardarse el tratamiento, el sistema genera automáticamente un registro vinculado en el historial de tratamientos del animal con fecha de fin calculada a partir de los días indicados.
+    - **Fecha del control:** Por defecto sugiere el día actual. No admite fechas posteriores al día de hoy ni anteriores a la fecha de nacimiento del animal.
+    - **Severidad por pezón o cuarto mamario:** Es posible evaluar de 1 a 4 cuartos mamarios de manera independiente. Cada pezón admite los siguientes niveles de severidad:
+    - "Oculta (Subclínica)"
+    - "Leve"
+    - "Moderada"
+    - "Grave"
+    - "Extrema (Gangrenosa)"
+    - "Destruida y Perdida"
+    - Los pezones sanos o no afectados pueden permanecer sin selección (valor nulo).
+    - **Tratamiento médico:**
+    - La opción "Poner en tratamiento" es opcional.
+    - Si se activa la casilla, los campos "Días de tratamiento" y "Descripción del tratamiento" son obligatorios. Si alguno se deja vacío, el sistema bloquea el guardado alertando: "Datos de tratamiento requeridos".
+    - El número de días de tratamiento debe ser un número entero válido entre 1 y 365 días.
+    - Al guardarse el tratamiento, el sistema genera automáticamente un registro vinculado en el historial de tratamientos del animal con fecha de fin calculada a partir de los días indicados.
 - **Comportamiento del flujo en lote:**
     - Tras presionar "Guardar", el sistema persiste el registro, limpia el formulario y deselecciona el animal para permitir el registro ágil de la siguiente hembra.
     - La tabla inferior se actualiza de inmediato mediante el bus de eventos de la aplicación, mostrando el código del animal, fecha, cuartos afectados y días de tratamiento.
@@ -70,16 +70,16 @@ Pantalla de captura sanitaria que permite registrar diagnósticos de mastitis y 
 #### 2. Fecha y Evaluación de Cuartos Mamarios
 1. **"Fecha":** Compruebe la fecha de evaluación. El sistema sugiere la fecha de hoy. Si el diagnóstico se realizó en días pasados, toque el campo para desplegar el calendario y elija la fecha correspondiente.
 2. **"Ubres infectadas":** Encontrará el esquema de evaluación con cuatro pezones o cuartos mamarios numerados:
-   - "Ubre 1" (frontal izquierdo) y "Ubre 3" (posterior izquierdo).
-   - "Ubre 2" (frontal derecho) y "Ubre 4" (posterior derecho).
+    - "Ubre 1" (frontal izquierdo) y "Ubre 3" (posterior izquierdo).
+    - "Ubre 2" (frontal derecho) y "Ubre 4" (posterior derecho).
 3. Toque el menú desplegable del cuarto mamario afectado y seleccione el nivel de afectación: "Oculta (Subclínica)", "Leve", "Moderada", "Grave", "Extrema (Gangrenosa)" o "Destruida y Perdida". Los cuartos sanos se mantienen sin selección.
 
 #### 3. Notas y Tratamiento Médico Opcional
 1. **"Notas":** Ingrese observaciones zootécnicas o veterinarias de campo (aspecto de la leche, grumos, sensibilidad o indicaciones especiales).
 2. **"Poner en tratamiento":** Si la hembra requiere medicación o terapia intramamaria, marque la casilla de verificación.
 3. Al activarla, se desplegarán los campos obligatorios de tratamiento:
-   - **"Días de tratamiento":** Ingrese la duración del tratamiento en días (rango admitido: de 1 a 365 días).
-   - **"Descripción del tratamiento":** Ingrese el antibiótico, antiinflamatorio o producto veterinario administrado.
+    - **"Días de tratamiento":** Ingrese la duración del tratamiento en días (rango admitido: de 1 a 365 días).
+    - **"Descripción del tratamiento":** Ingrese el antibiótico, antiinflamatorio o producto veterinario administrado.
 
 #### 4. Guardar Registro y Continuidad en Lote
 1. En la parte inferior del formulario presione el botón "Guardar".

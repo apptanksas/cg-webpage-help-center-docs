@@ -48,30 +48,30 @@ Módulo operativo que permite transferir ejemplares de forma masiva o individual
     - En el menú desplegable **Finca de destino**, verifique o seleccione la finca propia a la cual desea enviar los animales.
 2. **Sección colapsable "Aplicar filtros animales" (Opcional):**
     - Presione sobre la sección desplegable **Aplicar filtros animales** para abrir los criterios zootécnicos de búsqueda si desea ubicar rápidamente un grupo específico de ejemplares.
-     - **Tipo de animal:** Si la finca maneja más de una especie (por ejemplo, bovinos, bufalinos, ovinos o caprinos), seleccione la especie deseada en el selector desplegable.
-     - **Filtros avanzados de animales:** Seleccione criterios adicionales como potrero, lote, categoría o estado reproductivo para acotar el listado de selección.
+    - **Tipo de animal:** Si la finca maneja más de una especie (por ejemplo, bovinos, bufalinos, ovinos o caprinos), seleccione la especie deseada en el selector desplegable.
+    - **Filtros avanzados de animales:** Seleccione criterios adicionales como potrero, lote, categoría o estado reproductivo para acotar el listado de selección.
 
 #### Selección y Gestión de Animales a Trasladar
 1. **Contador de animales seleccionados:**
     - En la parte superior de la pantalla se muestra el indicador **Total de animales seleccionados**, el cual inicia en 0 y se actualiza dinámicamente con la cantidad de ejemplares agregados.
 2. **Agregar animales al traslado:**
     - Presione el botón **Seleccionar animales**.
-     - Se abrirá un cuadro de diálogo con el selector múltiple de animales, mostrando los ejemplares vivos presentes en la finca activa (y filtrados según los criterios configurados previamente).
-     - Marque las casillas de los animales que desea trasladar y presione el botón de confirmación del selector.
-     - Los animales elegidos se añadirán inmediatamente a la tabla inferior y se sumarán al contador superior.
+    - Se abrirá un cuadro de diálogo con el selector múltiple de animales, mostrando los ejemplares vivos presentes en la finca activa (y filtrados según los criterios configurados previamente).
+    - Marque las casillas de los animales que desea trasladar y presione el botón de confirmación del selector.
+    - Los animales elegidos se añadirán inmediatamente a la tabla inferior y se sumarán al contador superior.
 3. **Revisión y remoción en la tabla de animales:**
     - En la tabla inferior se visualiza la información básica de cada animal incorporado (identificador, arete o código).
-     - Para remover un animal que se agregó por error, presione el icono de eliminación (X o papelera) ubicado al final de la fila correspondiente al animal. El ejemplar se retirará de la lista y el contador disminuirá de inmediato.
+    - Para remover un animal que se agregó por error, presione el icono de eliminación (X o papelera) ubicado al final de la fila correspondiente al animal. El ejemplar se retirará de la lista y el contador disminuirá de inmediato.
 
 #### Ejecución y Confirmación del Traslado
 1. Una vez elegida la finca de destino y habiendo agregado al menos 1 animal a la tabla, presione el botón **Trasladar**.
 2. **Cuadro de diálogo de confirmación:**
     - Aparecerá un cuadro emergente en pantalla con la pregunta: "¿Estas seguro de trasladar estos animales a la finca [Nombre de la Finca Destino]?".
-     - Si los datos son correctos, confirme la operación en el diálogo.
+    - Si los datos son correctos, confirme la operación en el diálogo.
 3. **Finalización del proceso:**
     - El sistema procesará la transferencia a través de internet.
-     - Al completarse, se exhibirá el mensaje de éxito **Animales transferidos exitosamente**.
-     - La pantalla se cerrará automáticamente regresando a la vista previa.
+    - Al completarse, se exhibirá el mensaje de éxito **Animales transferidos exitosamente**.
+    - La pantalla se cerrará automáticamente regresando a la vista previa.
 
 **Pantalla de llegada tras guardar:** Pantalla anterior (menú principal o panel de la finca activa).
 

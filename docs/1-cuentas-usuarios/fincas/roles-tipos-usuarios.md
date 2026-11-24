@@ -32,33 +32,33 @@ Proporciona al ganadero y propietario de la finca una guía informativa clara y 
     - La pantalla informativa está accesible para cualquier usuario que consulte la sección de miembros del equipo de la finca, permitiendo conocer las funciones operativas de cada perfil.
 - **Perfiles predeterminados en la finca y desglose normativo:**
     - **Propietario:**
-      - Descripción: Cuenta con acceso total a todas las funciones y registros de la aplicación.
-      - Permisos: Leer, crear, editar y eliminar cualquier registro de la aplicación; administrar animales y fincas; invitar, administrar y eliminar usuarios; compartir informes y hojas de vida de los animales; crear, editar y eliminar eventos o tareas; gestionar permisos y trabajadores.
-      - Restricciones: Ninguna.
+    - Descripción: Cuenta con acceso total a todas las funciones y registros de la aplicación.
+    - Permisos: Leer, crear, editar y eliminar cualquier registro de la aplicación; administrar animales y fincas; invitar, administrar y eliminar usuarios; compartir informes y hojas de vida de los animales; crear, editar y eliminar eventos o tareas; gestionar permisos y trabajadores.
+    - Restricciones: Ninguna.
     - **Administrador:**
-      - Descripción: Encargado de supervisar y administrar la operación diaria de la finca.
-      - Permisos: Leer, crear, editar y eliminar registros de la aplicación; administrar información operativa y productiva; crear, editar y eliminar eventos o tareas.
-      - Restricciones: No puede administrar trabajadores de la finca.
+    - Descripción: Encargado de supervisar y administrar la operación diaria de la finca.
+    - Permisos: Leer, crear, editar y eliminar registros de la aplicación; administrar información operativa y productiva; crear, editar y eliminar eventos o tareas.
+    - Restricciones: No puede administrar trabajadores de la finca.
     - **Veterinario:**
-      - Descripción: Responsable del seguimiento sanitario y reproductivo de los animales. Puede registrar datos y actualizar datos.
-      - Permisos: Leer registros de la aplicación; crear y editar registros veterinarios y reproductivos; actualizar tratamientos, diagnósticos y estados de salud; crear eventos o tareas relacionadas con controles veterinarios.
-      - Restricciones: No puede eliminar registros ni administrar usuarios.
+    - Descripción: Responsable del seguimiento sanitario y reproductivo de los animales. Puede registrar datos y actualizar datos.
+    - Permisos: Leer registros de la aplicación; crear y editar registros veterinarios y reproductivos; actualizar tratamientos, diagnósticos y estados de salud; crear eventos o tareas relacionadas con controles veterinarios.
+    - Restricciones: No puede eliminar registros ni administrar usuarios.
     - **Zootecnista:**
-      - Descripción: Responsable de la gestión zootécnica, nutricional, productiva y de mejoramiento genético en la finca.
-      - Permisos: Leer registros de la aplicación; registrar y actualizar pesajes, producciones, genealogías y eventos reproductivos.
-      - Restricciones: No puede eliminar registros estructurales ni administrar usuarios.
+    - Descripción: Responsable de la gestión zootécnica, nutricional, productiva y de mejoramiento genético en la finca.
+    - Permisos: Leer registros de la aplicación; registrar y actualizar pesajes, producciones, genealogías y eventos reproductivos.
+    - Restricciones: No puede eliminar registros estructurales ni administrar usuarios.
     - **Empleado:**
-      - Descripción: Responsable del registro de actividades e información productiva. Solo puede registrar datos, pero no puede editar ni eliminar.
-      - Permisos: Leer registros autorizados de la aplicación; crear nuevos registros y actividades; crear eventos o tareas.
-      - Restricciones: No puede editar ni eliminar registros existentes; no puede administrar usuarios ni configuraciones.
+    - Descripción: Responsable del registro de actividades e información productiva. Solo puede registrar datos, pero no puede editar ni eliminar.
+    - Permisos: Leer registros autorizados de la aplicación; crear nuevos registros y actividades; crear eventos o tareas.
+    - Restricciones: No puede editar ni eliminar registros existentes; no puede administrar usuarios ni configuraciones.
     - **Inversionista:**
-      - Descripción: Usuario vinculado para supervisar el rendimiento y la evolución del inventario y la producción.
-      - Permisos: Consulta y lectura de métricas de producción, inventarios y reportes.
-      - Restricciones: No puede crear, editar ni eliminar registros operativos.
+    - Descripción: Usuario vinculado para supervisar el rendimiento y la evolución del inventario y la producción.
+    - Permisos: Consulta y lectura de métricas de producción, inventarios y reportes.
+    - Restricciones: No puede crear, editar ni eliminar registros operativos.
     - **Visitante:**
-      - Descripción: Usuario con acceso únicamente de consulta y lectura temporal.
-      - Permisos: Solo puede leer la información autorizada de la finca.
-      - Restricciones: No puede crear, editar ni eliminar registros.
+    - Descripción: Usuario con acceso únicamente de consulta y lectura temporal.
+    - Permisos: Solo puede leer la información autorizada de la finca.
+    - Restricciones: No puede crear, editar ni eliminar registros.
 - **Navegación e inmutabilidad:**
     - La pantalla no contiene campos editables ni botones de confirmación que alteren la base de datos; su propósito es instruir sobre las políticas de seguridad y perfiles de la plataforma pecuaria.
 

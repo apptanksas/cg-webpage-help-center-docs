@@ -38,7 +38,7 @@ Es la primera pantalla visible al abrir Control Ganadero. Se encarga de iniciali
 - **Diagnóstico modular independiente:** La herramienta evalúa 5 componentes del sistema (Conexión a internet, Servicio central, Autenticación, Almacenamiento local y Sincronización), permitiendo reparar fallas de manera individual sin reiniciar los demás componentes.
 - **Opción para forzar ingreso sin red:** El solucionador dispone de la casilla "Ignorar estado de red", la cual permite al usuario forzar la entrada directa a sus registros locales en zonas rurales donde la conectividad sea intermitente o nula.
 
-### Etapas de Inicio y Estados Visibles
+#### Etapas de Inicio y Estados Visibles
 
 Durante la carga normal, la pantalla muestra el logotipo de Control Ganadero, un indicador de progreso y el estado actual del proceso:
 
@@ -49,7 +49,7 @@ Durante la carga normal, la pantalla muestra el logotipo de Control Ganadero, un
 
 En la parte inferior de la pantalla se muestra siempre la versión instalada de la aplicación y un indicador con el estado de red actual del teléfono.
 
-### Solucionador de Problemas (Diagnóstico y Reparación)
+#### Solucionador de Problemas (Diagnóstico y Reparación)
 Si el proceso de inicio se detiene por falta de conexión o por un conflicto en los datos, la pantalla reemplaza el indicador de carga por un icono de alerta y habilita el botón "Solucionador de problemas".
 
 Al presionar este botón, se abre la ventana de diagnóstico "Solucionador de problemas", que audita paso a paso los 5 componentes vitales del sistema:
@@ -70,13 +70,13 @@ Cada comprobación muestra su estado ("Correcto" con icono verde o "Error" con i
 2. Observe el avance de la barra de progreso mientras se ejecutan los pasos de inicio.
 3. Si el arranque es exitoso:
     - Si ya tenía una sesión activa: ingresa directamente al panel principal de su finca (**Inicio**).
-     - Si no tenía sesión activa: ingresa a la pantalla de **Bienvenida inicial**.
+    - Si no tenía sesión activa: ingresa a la pantalla de **Bienvenida inicial**.
 4. Si se presenta un fallo de red o detención del arranque:
     - Aparecerá un icono de advertencia y el mensaje correspondiente al paso fallido (por ejemplo: "No se puede conectar a internet").
-     - Presione el botón "Solucionador de problemas".
-     - En la lista de comprobaciones, ubique el componente que presenta error y presione "Reparar".
-     - Si el problema es de señal intermitente, active la opción "Ignorar estado de red".
-     - Al finalizar, presione "Cerrar" para que la aplicación reintente el inicio automáticamente.
+    - Presione el botón "Solucionador de problemas".
+    - En la lista de comprobaciones, ubique el componente que presenta error y presione "Reparar".
+    - Si el problema es de señal intermitente, active la opción "Ignorar estado de red".
+    - Al finalizar, presione "Cerrar" para que la aplicación reintente el inicio automáticamente.
 
 **Pantalla de llegada tras guardar:** Panel principal de la finca (**Inicio**) o pantalla de **Bienvenida**.
 

@@ -42,14 +42,14 @@ Permite a productores agropecuarios, administradores, mayordomos y médicos vete
 
 1. En la pantalla de bienvenida o inicio de sesión, presione la opción **Registrarse**.
 2. En el formulario de registro, complete los campos en orden:
-   - En la casilla **Email**, escriba su correo electrónico.
-   - En la casilla **Nombre**, escriba su nombre de pila.
-   - En la casilla **Apellidos**, escriba sus apellidos.
-   - En la casilla **Contraseña**, escriba su clave personal.
-   - En el selector de país, elija su país de residencia.
-   - En la casilla **Teléfono**, escriba su número celular.
-   - En el selector de región, elija su departamento o estado.
-   - En el selector de ciudad, elija su municipio o localidad.
+    - En la casilla **Email**, escriba su correo electrónico.
+    - En la casilla **Nombre**, escriba su nombre de pila.
+    - En la casilla **Apellidos**, escriba sus apellidos.
+    - En la casilla **Contraseña**, escriba su clave personal.
+    - En el selector de país, elija su país de residencia.
+    - En la casilla **Teléfono**, escriba su número celular.
+    - En el selector de región, elija su departamento o estado.
+    - En el selector de ciudad, elija su municipio o localidad.
 3. Si usted es el propietario de la finca, active el interruptor **¿Eres dueño de una finca?**. Si es trabajador o colaborador invitado, déjelo desactivado.
 4. Si desea consultar los términos legales, presione el enlace **términos y condiciones**.
 5. Presione el botón **Registrarse**.
@@ -57,7 +57,7 @@ Permite a productores agropecuarios, administradores, mayordomos y médicos vete
 
 **Pantalla de llegada tras guardar:** Si activó "¿Eres dueño de una finca?", la app lo redirige a la pantalla para crear su predio (**Crea tu finca**); si lo dejó desactivado, lo redirige a la pantalla de **Acceso a la Finca** a la espera de su invitación.
 
-### Secciones Complementarias en la Pantalla
+#### Secciones Complementarias en la Pantalla
 - **Información para trabajadores invitados:** En la parte inferior, la sección de ayuda responde a la pregunta *"¿Eres un trabajador de una finca?"* con el texto *"Si tu finca no te ha invitado, debes esperar a que el propietario lo haga. Cuando el sistema reconozca tu correo, tendrás acceso. Puedes comprobarlo haciendo clic en 'verificar acceso'."*, e incluye el enlace **Más información**.
 
 ### Matriz de Errores y Soluciones

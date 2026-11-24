@@ -35,24 +35,24 @@ Pantalla de bienvenida y presentación interactiva que se visualiza al abrir la 
 - **Vías exclusivas de salida:** La pantalla dispone de dos únicos puntos de salida claramente diferenciados en la parte inferior: el botón "INICIAR SESIÓN" (que redirige al formulario de ingreso para usuarios con cuenta existente) y el botón "REGISTRARME" (que redirige al formulario de registro de nueva cuenta).
 - **Persistencia de sesión:** Una vez que el usuario inicia sesión o completa su registro exitosamente, el sistema no vuelve a desplegar este tutorial en futuros arranques de la aplicación, a menos que el usuario cierre sesión explícitamente o reinstale la aplicación.
 
-### Las 5 Diapositivas Informativas
+#### Las 5 Diapositivas Informativas
 El tutorial cuenta con un carrusel deslizable con indicador de puntos interactivo que resume las capacidades del sistema:
 
 1. **Bienvenido a Control Ganadero:**
-      - *Subtítulo:* "Controla tus fincas desde un solo lugar"
-     - *Detalle:* Visualiza resúmenes generales de inventario, producción, reproducción y eventos clave de cada una de tus propiedades ganaderas de manera centralizada.
+    - *Subtítulo:* "Controla tus fincas desde un solo lugar"
+    - *Detalle:* Visualiza resúmenes generales de inventario, producción, reproducción y eventos clave de cada una de tus propiedades ganaderas de manera centralizada.
 2. **Información detallada de cada animal:**
-      - *Subtítulo:* "Accede fácilmente a la ficha técnica de cada ejemplar"
-     - *Detalle:* Consulta datos generales, historial veterinario, pesajes, genealogía y estado reproductivo de cada animal desde tu teléfono móvil.
+    - *Subtítulo:* "Accede fácilmente a la ficha técnica de cada ejemplar"
+    - *Detalle:* Consulta datos generales, historial veterinario, pesajes, genealogía y estado reproductivo de cada animal desde tu teléfono móvil.
 3. **Optimiza la producción y reproducción:**
-      - *Subtítulo:* "Monitorea gráficos de rendimiento de leche y pesajes"
-     - *Detalle:* Lleva un control total de partos, inseminaciones, pesajes de leche y evolución de peso para tomar mejores decisiones en tu finca.
+    - *Subtítulo:* "Monitorea gráficos de rendimiento de leche y pesajes"
+    - *Detalle:* Lleva un control total de partos, inseminaciones, pesajes de leche y evolución de peso para tomar mejores decisiones en tu finca.
 4. **Organiza las tareas de tu equipo:**
-      - *Subtítulo:* "Programa eventos en el calendario integrado"
-     - *Detalle:* Asigna actividades diarias como chequeos veterinarios, vacunaciones y rotación de potreros para mantener a tu equipo sincronizado.
+    - *Subtítulo:* "Programa eventos en el calendario integrado"
+    - *Detalle:* Asigna actividades diarias como chequeos veterinarios, vacunaciones y rotación de potreros para mantener a tu equipo sincronizado.
 5. **Trabaja sin internet y sin preocupaciones:**
-      - *Subtítulo:* "Registra datos directamente en el potrero, incluso sin cobertura"
-     - *Detalle:* Tu información se mantendrá segura en tu teléfono y se sincronizará automáticamente tan pronto recuperes conexión a internet.
+    - *Subtítulo:* "Registra datos directamente en el potrero, incluso sin cobertura"
+    - *Detalle:* Tu información se mantendrá segura en tu teléfono y se sincronizará automáticamente tan pronto recuperes conexión a internet.
 
 ### Flujo Paso a Paso para el Usuario
 

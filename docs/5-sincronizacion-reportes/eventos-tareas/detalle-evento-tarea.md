@@ -21,6 +21,7 @@ intenciones_y_sinonimos:
 Pantalla de detalle que centraliza la visualización técnica y operativa tanto de **Eventos informativos** como de **Tareas de manejo** programadas en la finca ganadera. Permite a administradores y operarios consultar las instrucciones de trabajo, fechas de ejecución, frecuencia de repetición, animales vinculados o colaboradores asignados, y registrar observaciones de campo.
 
 La experiencia visual y operativa se adapta automáticamente según el tipo de actividad consultada:
+
 - **En Eventos informativos:** Funciona como una ficha de consulta de hitos o recordatorios clave de la finca (como aniversarios, visitas técnicas o fechas límite), manteniendo una visualización limpia sin requerir cumplimiento ni avances de estados.
 - **En Tareas operativas:** Funciona como un centro de gestión de labores de campo, permitiendo avanzar o retroceder el ciclo de vida de la actividad (marcar como pendiente, en progreso o completada), registrar notas de cumplimiento y auditar quién culminó la labor y en qué fecha.
 
@@ -38,10 +39,10 @@ La experiencia visual y operativa se adapta automáticamente según el tipo de a
 - **Restricción de tareas pasadas (Fecha vencida):** Los botones de acción para cambiar el estado de una tarea no se muestran si la fecha programada de la labor es anterior al día actual.
 - **Comportamiento ante Proyecciones Futuras:**
     - Si la actividad visualizada corresponde a una ocurrencia proyectada por recurrencia en el futuro (y no a una entrada creada o editada individualmente), se muestra un mensaje informativo de advertencia contextual:
-      - Para eventos: *"Este es un evento proyectado en el futuro..."*.
-      - Para tareas: *"Esta es una tarea proyectada en el futuro..."*.
-      - Las ocurrencias proyectadas (sean eventos o tareas) no presentan el botón circular de edición con ícono de lápiz en la cabecera para preservar la integridad de la serie recurrente original.
-      - En tareas proyectadas a futuro, los botones de acción de cambio de estado se ocultan por completo hasta que llegue la fecha o se individualice la labor.
+    - Para eventos: *"Este es un evento proyectado en el futuro..."*.
+    - Para tareas: *"Esta es una tarea proyectada en el futuro..."*.
+    - Las ocurrencias proyectadas (sean eventos o tareas) no presentan el botón circular de edición con ícono de lápiz en la cabecera para preservar la integridad de la serie recurrente original.
+    - En tareas proyectadas a futuro, los botones de acción de cambio de estado se ocultan por completo hasta que llegue la fecha o se individualice la labor.
 - **Registro de auditoría al completar:** Al marcar una tarea como completada, el sistema captura automáticamente la fecha exacta del día y asocia el nombre del usuario que realizó la acción, mostrando además el título con formato tachado para denotar visualmente su culminación.
 - **Enlace directo al animal:** Si el evento o la tarea está asociado a un bovino específico de la finca, su código o nombre se presenta como un enlace interactivo para navegar de inmediato a su ficha individual.
 - **Independencia del Centro de Notificaciones:** Los eventos y tareas creados en el calendario de la finca no generan registros locales automáticos en la pestaña de notificaciones de la aplicación. Su consulta y seguimiento se efectúan directamente a través de las rutas oficiales de acceso.
@@ -54,8 +55,8 @@ La experiencia visual y operativa se adapta automáticamente según el tipo de a
 
 1. Al ingresar a la pantalla, identifique el tipo de actividad y su estado en la cabecera superior:
     - **Color de cabecera:** Si consulta un evento, el fondo es del color corporativo principal de la aplicación. Si consulta una tarea, el color cambia según el estado (azul para pendiente, naranja para en progreso, verde para completada).
-     - **Título de la actividad:** Muestra el nombre asignado al evento o la tarea. Si se trata de una tarea completada, el título se mostrará con una línea tachada.
-     - **Fecha y tiempo relativo:** Se visualiza el ícono de calendario junto a la fecha completa en formato legible (día de la semana, día del mes, mes y año) y el cálculo de tiempo relativo (por ejemplo, *"hoy"*, *"en 3 días"* o *"hace 2 días"*).
+    - **Título de la actividad:** Muestra el nombre asignado al evento o la tarea. Si se trata de una tarea completada, el título se mostrará con una línea tachada.
+    - **Fecha y tiempo relativo:** Se visualiza el ícono de calendario junto a la fecha completa en formato legible (día de la semana, día del mes, mes y año) y el cálculo de tiempo relativo (por ejemplo, *"hoy"*, *"en 3 días"* o *"hace 2 días"*).
 
 #### 1. Modificación de la Actividad
 - Si la actividad no es una proyección recurrente futura, en la esquina inferior de la cabecera se ubica el botón circular de edición con el ícono de lápiz.

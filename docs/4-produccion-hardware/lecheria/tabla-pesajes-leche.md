@@ -58,23 +58,23 @@ Módulo de consulta detallada que presenta el registro cronológico de todas las
 1. En la barra superior confirme la identificación del animal (arete y nombre).
 2. En el encabezado "Producción de leche", revise los indicadores consolidados de la hembra:
     - **"Promedio diario":** Rendimiento medio por día de pesaje.
-     - **"Producción máxima":** Volumen máximo obtenido en un día.
-     - **"Producción total":** Acumulado global de leche del animal.
-     - **"Días de lactancia":** Total de días registrados con pesaje.
-     - *(Si registra múltiples ciclos)* Revise el conteo en "Periodo de lactancia" y el "Promedio por lactancia".
+    - **"Producción máxima":** Volumen máximo obtenido en un día.
+    - **"Producción total":** Acumulado global de leche del animal.
+    - **"Días de lactancia":** Total de días registrados con pesaje.
+    - *(Si registra múltiples ciclos)* Revise el conteo en "Periodo de lactancia" y el "Promedio por lactancia".
 
 #### 2. Consulta y Navegación por Períodos de Lactancia
 1. **Si el animal cuenta con más de una lactancia:**
     - Toque la pestaña correspondiente ("Lactancia 1", "Lactancia 2", etc.) en la barra superior o deslice la pantalla horizontalmente para cambiar de período.
-     - Deslice verticalmente para explorar las mediciones del ciclo seleccionado.
-     - Al final de la tabla, consulte el resumen exclusivo de ese ciclo con el "Total", los "Días de lactancia", el "Promedio diario" y la "Producción máxima".
+    - Deslice verticalmente para explorar las mediciones del ciclo seleccionado.
+    - Al final de la tabla, consulte el resumen exclusivo de ese ciclo con el "Total", los "Días de lactancia", el "Promedio diario" y la "Producción máxima".
 2. **Si el animal cuenta con una sola lactancia:**
     - La tabla se presenta en una vista continua con la totalidad de fechas y mediciones registradas.
 
 #### 3. Consulta y Edición de un Pesaje Registrado
 1. En la tabla, ubique la fecha correspondiente y presione sobre la fila:
-   - Si el día registra un único turno de pesaje, la aplicación abrirá directamente el formulario de edición.
-   - Si el día contiene mediciones en turnos divididos (por ejemplo, mañana y tarde), se desplegará una ventana emergente con la lista de turnos; presione el turno que desea corregir.
+    - Si el día registra un único turno de pesaje, la aplicación abrirá directamente el formulario de edición.
+    - Si el día contiene mediciones en turnos divididos (por ejemplo, mañana y tarde), se desplegará una ventana emergente con la lista de turnos; presione el turno que desea corregir.
 2. En el formulario de edición, modifique la cantidad de leche o el concentrado suministrado y guarde los cambios.
 3. Al guardar, el sistema actualizará de inmediato la fila y los totales en la tabla.
 

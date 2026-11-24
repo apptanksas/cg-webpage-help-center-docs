@@ -66,14 +66,14 @@ Módulo de consulta y seguimiento que consolida en un panel único el desempeño
 4. **Para examinar el historial completo de lactancias:** Presione el icono de flecha hacia la derecha situado junto a "Producción de leche".
 5. **Para revisar o corregir un pesaje reciente:**
     - Presione sobre la fila correspondiente en la tabla preliminar de los últimos 5 registros.
-     - En la ventana emergente, verifique los datos del turno ("Animal", "Fecha", "Periodo", "Total").
-     - Si requiere modificar la medición, toque sobre el turno específico dentro de la ventana para abrir el formulario de edición.
+    - En la ventana emergente, verifique los datos del turno ("Animal", "Fecha", "Periodo", "Total").
+    - Si requiere modificar la medición, toque sobre el turno específico dentro de la ventana para abrir el formulario de edición.
 
 #### 3. Consulta y Seguimiento del Peso Corporal
 1. Si el animal cuenta con pesajes registrados, visualice el bloque "Evolución de peso".
 2. Consulte los dos indicadores principales:
     - **"Actual":** Peso más reciente capturado para el animal.
-     - **"Ganancia diaria":** Incremento o variación media de peso por jornada.
+    - **"Ganancia diaria":** Incremento o variación media de peso por jornada.
 3. **Para consultar la curva de ganancia de peso:** Si el animal tiene 2 o más mediciones en fechas distintas, presione el botón "Vista gráfica".
 4. **Para revisar la tabla completa de pesajes corporales:** Presione el icono de flecha hacia la derecha junto a "Evolución de peso".
 5. **Para editar una medición de peso reciente:** Presione sobre la fila deseada en la tabla preliminar para abrir el formulario de actualización.
@@ -81,7 +81,7 @@ Módulo de consulta y seguimiento que consolida en un panel único el desempeño
 #### 4. Registro Rápido de Nuevos Pesajes
 1. En la parte inferior de la pantalla (o en el centro si la pantalla se encuentra sin datos), utilice los botones de acción rápida:
     - Presione **"AGREGAR PESO"** para abrir el formulario y registrar un nuevo pesaje corporal.
-     - Presione **"AGREGAR LECHE"** (disponible en hembras lecheras activas) para abrir el formulario de pesaje de leche.
+    - Presione **"AGREGAR LECHE"** (disponible en hembras lecheras activas) para abrir el formulario de pesaje de leche.
 
 **Pantalla de llegada tras salir:** Al presionar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen del animal.
 

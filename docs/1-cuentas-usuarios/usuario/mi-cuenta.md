@@ -26,50 +26,6 @@ Centro de administración del usuario que reúne la información personal básic
 - **¿Funciona sin conexión a internet (Modo Offline)?:** Sí.
 - **Comportamiento de sincronización:** La información básica, el resumen de cuotas locales y las preferencias se pueden consultar en cualquier momento desde la memoria local. La renovación o cancelación de suscripciones, la compra de cupos de trazabilidad, la subida de volcados de datos locales y la solicitud de eliminación de cuenta requieren conexión activa a internet.
 
-### Secciones y Componentes de la Pantalla
-
-#### 1. Encabezado de Usuario
-- Muestra el nombre completo del usuario y su tipo de membresía: "Premium" (para cuentas con suscripción activa) o "Gratis".
-
-#### 2. Información Básica
-Presenta la ficha de datos del usuario:
-- "Nombre" y "Apellidos".
-- "País" y "Zona horaria".
-- "Email" registrado (si hay un cambio de correo pendiente de confirmación, se muestra un aviso superior de alerta).
-
-#### 3. Acerca de tu Suscripción
-Muestra el estado contractual de la cuenta:
-- "Estado": Activa, inactiva o cancelada.
-- "Renovación automática": Indica si está activa ("Sí" / "No").
-- "Fecha de inicio" y "Fecha de finalización" (o "Vitalicia" si aplica).
-- "Días restantes" para la renovación o vencimiento.
-- Botón de acción contextual:
-    - Si la suscripción está vencida: botón "Renovar suscripción".
-    - Si la suscripción está vigente: botón "Cancelar suscripción" (abre el cliente de correo con el asunto predeterminado para gestionar la baja comercial).
-
-#### 4. Cuota de Trazabilidad Animal
-Panel informativo que supervisa la disponibilidad de cupos de identificación electrónica (aretes RFID, microchips y códigos QR) asignados a la cuenta del usuario:
-- "Capacidad utilizada": Barra porcentual y gráfica de uso de cupos de trazabilidad.
-- "Disponibilidad" / "Agotado": Indicador del estado de cupos libres.
-- "Con trazabilidad": Cantidad de animales con identificación electrónica vinculada actualmente.
-- "Cupos": Número total de cupos contratados o disponibles en la cuenta.
-- Botón "Aumentar cupo": Redirige a la pantalla de adquisición y compra de paquetes de trazabilidad animal.
-
-#### 5. Acciones de Cuenta
-Botones de navegación directa:
-- "Cambiar contraseña": Redirige a la pantalla para actualizar la clave de acceso.
-- "Editar Perfil": Redirige a la pantalla para modificar nombre, apellidos o correo.
-- "Eliminar cuenta": Abre un diálogo de confirmación con las advertencias legales de eliminación irreversible de datos. Al confirmar, genera un correo estructurado a soporte técnico con los datos del usuario.
-
-#### 6. Preferencias y Diagnóstico
-Interruptores de configuración operativa y utilidades de soporte:
-- "Permisos de la app": Acceso a la pantalla para revisar y gestionar permisos del teléfono (Bluetooth, Ubicación, Cámara).
-- "Ignorar estado de red": Interruptor para forzar a la aplicación a operar sin depender del detector de conectividad del sistema.
-- "Modo sin conexión": Interruptor para activar o desactivar manualmente el modo offline en el dispositivo.
-- "Herramientas de diagnóstico": Diálogo técnico para soporte avanzado que permite:
-    - "Volcado de datos locales": Genera y sube una copia de la base de datos local a los servidores de soporte técnico para resolver incidencias de sincronización. Permite incluir datos sensibles mediante confirmación de contraseña.
-    - "Descargar y aplicar parche": Permite descargar y aplicar correcciones remotas de datos enviadas por el equipo de ingeniería.
-
 ### Reglas de Negocio y Restricciones
 - La pantalla agrupa las secciones visuales verificadas en el código: Encabezado con tipo de membresía, Información Básica, Acerca de tu Suscripción, Cuota de Trazabilidad Animal, Acciones de Cuenta, Preferencias y Herramientas de Diagnóstico.
 - **Membresía:** Identifica si el usuario es "Premium" o "Gratis". Si la membresía está vencida, habilita el botón de renovación; si está vigente, permite solicitar la cancelación.
@@ -79,6 +35,51 @@ Interruptores de configuración operativa y utilidades de soporte:
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:** Menú lateral principal > Opción "Mi cuenta".
 
+#### 1. Encabezado de Usuario e Información Básica
+- Muestra el nombre completo del usuario y su tipo de membresía: "Premium" (para cuentas con suscripción activa) o "Gratis".
+- Presenta la ficha de datos del usuario:
+    - "Nombre" y "Apellidos".
+    - "País" y "Zona horaria".
+    - "Email" registrado (si hay un cambio de correo pendiente de confirmación, se muestra un aviso superior de alerta).
+
+#### 2. Acerca de tu Suscripción
+Muestra el estado contractual de la cuenta:
+
+- "Estado": Activa, inactiva o cancelada.
+- "Renovación automática": Indica si está activa ("Sí" / "No").
+- "Fecha de inicio" y "Fecha de finalización" (o "Vitalicia" si aplica).
+- "Días restantes" para la renovación o vencimiento.
+- Botón de acción contextual:
+    - Si la suscripción está vencida: botón "Renovar suscripción".
+    - Si la suscripción está vigente: botón "Cancelar suscripción" (abre el cliente de correo con el asunto predeterminado para gestionar la baja comercial).
+
+#### 3. Cuota de Trazabilidad Animal
+Panel informativo que supervisa la disponibilidad de cupos de identificación electrónica (aretes RFID, microchips y códigos QR) asignados a la cuenta del usuario:
+
+- "Capacidad utilizada": Barra porcentual y gráfica de uso de cupos de trazabilidad.
+- "Disponibilidad" / "Agotado": Indicador del estado de cupos libres.
+- "Con trazabilidad": Cantidad de animales con identificación electrónica vinculada actualmente.
+- "Cupos": Número total de cupos contratados o disponibles en la cuenta.
+- Botón "Aumentar cupo": Redirige a la pantalla de adquisición y compra de paquetes de trazabilidad animal.
+
+#### 4. Acciones de Cuenta
+Botones de navegación directa:
+
+- "Cambiar contraseña": Redirige a la pantalla para actualizar la clave de acceso.
+- "Editar Perfil": Redirige a la pantalla para modificar nombre, apellidos o correo.
+- "Eliminar cuenta": Abre un diálogo de confirmación con las advertencias legales de eliminación irreversible de datos. Al confirmar, genera un correo estructurado a soporte técnico con los datos del usuario.
+
+#### 5. Preferencias y Diagnóstico
+Interruptores de configuración operativa y utilidades de soporte:
+
+- "Permisos de la app": Acceso a la pantalla para revisar y gestionar permisos del teléfono (Bluetooth, Ubicación, Cámara).
+- "Ignorar estado de red": Interruptor para forzar a la aplicación a operar sin depender del detector de conectividad del sistema.
+- "Modo sin conexión": Interruptor para activar o desactivar manualmente el modo offline en el dispositivo.
+- "Herramientas de diagnóstico": Diálogo técnico para soporte avanzado que permite:
+    - "Volcado de datos locales": Genera y sube una copia de la base de datos local a los servidores de soporte técnico para resolver incidencias de sincronización. Permite incluir datos sensibles mediante confirmación de contraseña.
+    - "Descargar y aplicar parche": Permite descargar y aplicar correcciones remotas de datos enviadas por el equipo de ingeniería.
+
+#### 6. Pasos Operativos para el Usuario
 1. En la pantalla principal de su finca, abra el menú lateral de navegación y presione la opción "Mi cuenta".
 2. Revise su información personal, el estado de su membresía y el consumo en "Cuota de trazabilidad animal".
 3. Para ampliar su cupo de identificación electrónica, presione el botón "Aumentar cupo".

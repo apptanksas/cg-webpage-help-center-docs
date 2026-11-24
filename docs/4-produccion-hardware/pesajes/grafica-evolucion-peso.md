@@ -58,14 +58,14 @@ Herramienta visual que grafica la curva de crecimiento y evolución de peso corp
 #### 2. Interpretación de la Información en Pantalla
 1. **Identificación del animal:** En la barra superior confirme los datos del ejemplar (nombre, código o arete y fotografía si está disponible).
 2. **Encabezado con métricas clave:**
-   - En la parte superior de color destacado, observe:
-     - El peso más reciente bajo la etiqueta "Actual %1$s" (por ejemplo: "Actual 420.5 kg").
-     - El incremento promedio diario bajo la etiqueta "Ganancia diaria" (por ejemplo: "0.65 kg/día").
-     - El régimen nutricional asignado bajo la etiqueta "Dieta" (por ejemplo: "Pastoreo + Concentrado" o "---" si no se registró).
+    - En la parte superior de color destacado, observe:
+    - El peso más reciente bajo la etiqueta "Actual %1$s" (por ejemplo: "Actual 420.5 kg").
+    - El incremento promedio diario bajo la etiqueta "Ganancia diaria" (por ejemplo: "0.65 kg/día").
+    - El régimen nutricional asignado bajo la etiqueta "Dieta" (por ejemplo: "Pastoreo + Concentrado" o "---" si no se registró).
 3. **Curva gráfica de peso:**
-   - En el cuerpo de la pantalla, explore el gráfico lineal de evolución.
-   - El eje horizontal refleja la cronología de fechas y el eje vertical la escala de peso según la unidad configurada en la finca.
-   - Cada punto representa una pesada real, y la línea punteada o extendida proyecta la tendencia esperada hacia el día de hoy.
+    - En el cuerpo de la pantalla, explore el gráfico lineal de evolución.
+    - El eje horizontal refleja la cronología de fechas y el eje vertical la escala de peso según la unidad configurada en la finca.
+    - Cada punto representa una pesada real, y la línea punteada o extendida proyecta la tendencia esperada hacia el día de hoy.
 
 #### 3. Registro de Nuevo Pesaje desde la Gráfica (Opcional)
 1. Si el animal está activo y desea incorporar una nueva medición, presione el botón flotante circular con el icono de báscula en la esquina inferior derecha.

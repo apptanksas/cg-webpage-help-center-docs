@@ -45,7 +45,7 @@ Permite visualizar en detalle la información completa de un aviso o notificaci�
 1. En la barra superior de la pantalla observará el encabezado **Notificación**, el cual cuenta permanentemente con un botón de flecha hacia atrás en la esquina superior izquierda.
 2. En el área central de la pantalla se despliega una tarjeta con:
     - El título principal del comunicado en texto destacado.
-     - El mensaje descriptivo con el detalle completo del aviso o alerta pecuaria.
+    - El mensaje descriptivo con el detalle completo del aviso o alerta pecuaria.
 
 #### 2. Ejecución de acciones disponibles (si aplica)
 1. Si el comunicado incluye opciones interactivas, se mostrará el título **Acciones disponibles**.

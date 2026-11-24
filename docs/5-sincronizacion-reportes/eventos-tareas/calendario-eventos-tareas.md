@@ -57,6 +57,7 @@ El calendario integra un cálculo automático de proyecciones futuras para aquel
 
 #### 1. Uso del Calendario Desplegable Mensual
 En la parte superior de la pantalla se ubica el calendario interactivo:
+
 - **Ocultar o mostrar el calendario:** Presione sobre la barra de título superior que indica el mes y el año. Al pulsarla, el calendario se despliega o se repliega con una animación vertical, permitiendo liberar espacio para visualizar más actividades en la lista.
 - **Navegación entre meses:** Deslice el calendario horizontalmente hacia la izquierda o hacia la derecha para avanzar o retroceder de mes.
 - **Indicador de carga de actividades:** Cada número de día en el calendario que tenga eventos o tareas programadas muestra debajo una barra blanca proporcional a la cantidad de actividades del día.
@@ -64,6 +65,7 @@ En la parte superior de la pantalla se ubica el calendario interactivo:
 
 #### 2. Consulta y Exploración de la Lista de Actividades
 Debajo del calendario se despliega la lista cronológica organizada por días:
+
 - **Columna de fecha (lado izquierdo):** Agrupa las actividades mostrando en texto grande el número del día y debajo las tres primeras letras del día de la semana (por ejemplo, *"09 VIE"*).
     - Si coincide con la fecha de hoy, tanto el número como las siglas del día de la semana se destacan en color rojo vivo.
     - Para evitar repeticiones visuales innecesarias, la fecha solo se imprime una vez al inicio del grupo de actividades de ese día. Si tras un evento o tarea existen más labores en esa misma jornada, se listan debajo compartiendo la misma fecha sin duplicar el texto a la izquierda.

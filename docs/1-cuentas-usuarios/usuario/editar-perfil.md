@@ -44,14 +44,14 @@ Permite a los usuarios actualizar sus datos básicos de identificación (nombre 
 2. En la pantalla de su cuenta, localice la sección de acciones y presione la opción **Editar perfil**.
 3. En el formulario, modifique los campos que requiera:
     - **Nombre:** Escriba su nombre de pila.
-     - **Apellidos:** Escriba sus apellidos.
-     - **Email:** Ingrese su nueva dirección de correo electrónico (si desea cambiarla).
+    - **Apellidos:** Escriba sus apellidos.
+    - **Email:** Ingrese su nueva dirección de correo electrónico (si desea cambiarla).
 4. Presione el botón **Guardar**.
 5. En el cuadro de diálogo **Confirmar Identidad**, escriba su contraseña actual en la casilla correspondiente.
 6. Presione **Confirmar**.
 7. Verifique el resultado según los datos modificados:
     - Si cambió su nombre o apellido: verá el mensaje *"Perfil actualizado"*. Presione **Aceptar** para regresar a su cuenta.
-     - Si cambió su correo electrónico: verá el mensaje *"Correo de confirmación enviado"*. Presione **Aceptar**, abra su bandeja de entrada de correo (o carpeta de spam) antes de 30 minutos y presione el enlace recibido para confirmar el cambio.
+    - Si cambió su correo electrónico: verá el mensaje *"Correo de confirmación enviado"*. Presione **Aceptar**, abra su bandeja de entrada de correo (o carpeta de spam) antes de 30 minutos y presione el enlace recibido para confirmar el cambio.
    
 **Pantalla de llegada tras guardar:** Pantalla de **Mi cuenta** (regresa a la vista general de la cuenta al presionar Aceptar en el diálogo final).
 

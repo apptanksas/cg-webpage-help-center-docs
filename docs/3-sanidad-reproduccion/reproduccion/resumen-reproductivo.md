@@ -72,11 +72,12 @@ Si la vaca cuenta con registros, el cuerpo de la pantalla muestra hasta cuatro b
 
 #### Tablas Resumen en Machos
 En toros reproductores, el cuerpo de la pantalla exhibe dos bloques:
+
 1. **Hijos:** Tabla resumen con las crías directas engendradas por el macho. Al tocar sobre cualquier fila se accede a la hoja de vida del hijo, y la flecha de cabecera abre la tabla completa de descendencia.
 2. **Fecundaciones:** Tabla resumen con los servicios de monta o inseminaciones realizadas con material genético de este toro. Permite editar el registro y acceder a la tabla completa mediante la flecha lateral.
 
 - **Pantalla de llegada tras salir:**
-  - Al pulsar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen general del animal.
+    - Al pulsar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen general del animal.
 
 ### Matriz de Errores y Soluciones
 | Mensaje en la App / Síntoma | Causa Real | Respuesta Sugerida por el Agente | Criterio de Escalamiento Humano |

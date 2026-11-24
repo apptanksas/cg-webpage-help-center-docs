@@ -44,8 +44,8 @@ Pantalla central de consulta y administración técnica para la finca activa sel
     - **Sensibilidad al nombre ingresado:** Si el texto ingresado no coincide de manera exacta con el nombre de la finca, el sistema bloqueará la operación y mostrará el mensaje de error: "El nombre de la finca ingresado no es correcto".
     - **Eliminación en cascada irreversible:** Al confirmarse la eliminación, el sistema borra de forma secuencial y definitiva todos los registros vinculados a la finca: eventos del calendario, tareas programadas, registros de ventas de leche, ventas de animales, compras de animales y todo el inventario de animales (tanto los que se encontraban activos dentro de la finca como aquellos marcados fuera de ella).
     - **Comportamiento posterior a la eliminación:**
-      - Si el usuario dispone de otras fincas registradas en su cuenta, el sistema selecciona automáticamente la siguiente finca disponible y redirige al panel de inicio principal.
-      - Si la finca eliminada era la única explotación asociada a la cuenta del usuario, la aplicación lo redirige a la pantalla de bienvenida inicial para que pueda registrar un nuevo predio.
+    - Si el usuario dispone de otras fincas registradas en su cuenta, el sistema selecciona automáticamente la siguiente finca disponible y redirige al panel de inicio principal.
+    - Si la finca eliminada era la única explotación asociada a la cuenta del usuario, la aplicación lo redirige a la pantalla de bienvenida inicial para que pueda registrar un nuevo predio.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**

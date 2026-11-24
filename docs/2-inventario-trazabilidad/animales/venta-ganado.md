@@ -53,20 +53,20 @@ Adicionalmente, si el comprador también es usuario de Control Ganadero, la pant
 1. En la barra superior, verifique el título **Venta de ganado** (o **Editar venta** si está modificando un registro previo).
 2. Configure las fechas iniciales:
     - **Fecha de venta:** Día en que se pactó la transacción comercial.
-     - **Fecha de despacho:** Día programado para la entrega o salida física de los animales del predio.
+    - **Fecha de despacho:** Día programado para la entrega o salida física de los animales del predio.
 3. Despliegue las secciones colapsables opcionales según requiera registrar información detallada:
-   - **Comprador:** Ingrese el **Nombre/Empresa** y el **Teléfono** de contacto.
-     - **Información de destino:** Seleccione el **País**, **Región / Departamento** y **Ciudad**, e ingrese la **Nombre finca/Dirección** de entrega.
-     - **Información de transporte:** Ingrese la **Empresa transportadora**, el **Número de transporte** (guía con un máximo de 50 caracteres), la **Placa del vehículo**, el **Nombre del chofer** y el **Teléfono del chofer**.
+    - **Comprador:** Ingrese el **Nombre/Empresa** y el **Teléfono** de contacto.
+    - **Información de destino:** Seleccione el **País**, **Región / Departamento** y **Ciudad**, e ingrese la **Nombre finca/Dirección** de entrega.
+    - **Información de transporte:** Ingrese la **Empresa transportadora**, el **Número de transporte** (guía con un máximo de 50 caracteres), la **Placa del vehículo**, el **Nombre del chofer** y el **Teléfono del chofer**.
 4. En el bloque **Datos generales**:
-   - **Tipo de animal:** Seleccione la especie ganadera que comercializa (bovinos, equinos, etc.). Si está editando una venta previamente guardada, este campo no puede alterarse.
-   - **Moneda:** Elija el tipo de divisa en que se liquida la venta.
-   - **Precio por unidad:** Digite el precio unitario por cada kilogramo o libra de peso según la unidad configurada en su predio.
-   - **Notas y observaciones:** Escriba notas adicionales o acuerdos comerciales relevantes.
+    - **Tipo de animal:** Seleccione la especie ganadera que comercializa (bovinos, equinos, etc.). Si está editando una venta previamente guardada, este campo no puede alterarse.
+    - **Moneda:** Elija el tipo de divisa en que se liquida la venta.
+    - **Precio por unidad:** Digite el precio unitario por cada kilogramo o libra de peso según la unidad configurada en su predio.
+    - **Notas y observaciones:** Escriba notas adicionales o acuerdos comerciales relevantes.
 5. *(Opcional)* Si el comprador utilizará Control Ganadero para recibir el ganado:
-   - Active el interruptor **¿Quieres trasladar los animales a otro usuario de Control Ganadero?**.
-   - En el campo **Correo electrónico**, digite la dirección de correo con la que el comprador está registrado en la app.
-   - Presione el botón **Validar**. Una vez confirmado el usuario, elija la finca destino en el campo desplegable **Seleccionar finca**.
+    - Active el interruptor **¿Quieres trasladar los animales a otro usuario de Control Ganadero?**.
+    - En el campo **Correo electrónico**, digite la dirección de correo con la que el comprador está registrado en la app.
+    - Presione el botón **Validar**. Una vez confirmado el usuario, elija la finca destino en el campo desplegable **Seleccionar finca**.
 6. Deslice hacia el segundo paso del asistente o presione avanzar.
 
 #### Paso 2: Selección de Animales y Asignación de Precios
@@ -74,15 +74,15 @@ Adicionalmente, si el comprador también es usuario de Control Ganadero, la pant
 2. Presione el botón **Seleccionar animales**.
 3. En la ventana modal de selección múltiple, marque las casillas de los animales que integran el lote vendido y confirme la selección.
 4. Revise el resumen superior:
-   - **Cantidad de animales:** Muestra el número total de cabezas seleccionadas.
-   - **Total:** Monto económico consolidado en la moneda elegida.
+    - **Cantidad de animales:** Muestra el número total de cabezas seleccionadas.
+    - **Total:** Monto económico consolidado en la moneda elegida.
 5. En la tabla de animales vendidos, revise las columnas:
-   - **Código:** Arete o código identificador del animal.
-   - **Peso:** Último pesaje oficial del ejemplar en la finca.
-   - **Precio:** Valor monetario computado para dicho animal.
+    - **Código:** Arete o código identificador del animal.
+    - **Peso:** Último pesaje oficial del ejemplar en la finca.
+    - **Precio:** Valor monetario computado para dicho animal.
 6. **Ajuste de precio individual (opcional):**
-   - Si acordó un precio fijo para un ejemplar en particular (independiente de su peso), mantenga presionado el registro del animal en la tabla.
-   - En la ventana modal **Precio personalizado**, digite el valor acordado y presione confirmar. El total general de la venta se actualizará al instante.
+    - Si acordó un precio fijo para un ejemplar en particular (independiente de su peso), mantenga presionado el registro del animal en la tabla.
+    - En la ventana modal **Precio personalizado**, digite el valor acordado y presione confirmar. El total general de la venta se actualizará al instante.
 7. **Eliminar animales del lote:** Si agregó un animal por error, presione el icono de eliminar (papelera roja) al final de su fila en la tabla.
 8. Presione el botón **Registrar** al pie de la pantalla para guardar la venta.
 

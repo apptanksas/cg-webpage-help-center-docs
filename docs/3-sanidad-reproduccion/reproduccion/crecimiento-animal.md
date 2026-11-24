@@ -54,13 +54,14 @@ Pantalla de seguimiento zootécnico diseñada para visualizar la evolución del 
 
 #### 3. Cuadrícula de Etapas del Ciclo de Vida
 El cuerpo de la pantalla presenta cuatro tarjetas organizadas en pares según la edad del animal:
+
 1. **Cría / Infante (Etapa 1):** Muestra el icono de la cría, el nombre zootécnico del estado y la fecha de nacimiento registrada.
 2. **Destetado (Etapa 2):** Exhibe el icono zootécnico de animal destetado, el nombre oficial de la etapa y la fecha en que cumplió o cumplirá el destete según los días configurados en la finca.
 3. **Crecimiento / Juvenil (Etapa 3):** Muestra el icono juvenil de la especie (ej. novillo/novilla, potro/potranca), el nombre de la etapa y la fecha proyectada de transición a la juventud zootécnica según el tiempo de transición juvenil de la finca.
 4. **Adulto (Etapa 4):** Exhibe el icono adulto (toro/vaca, caballo/yegua), el nombre de la fase y la fecha proyectada en que el animal alcanza su madurez zootécnica según el tiempo de transición adulta de la finca.
 
 - **Pantalla de llegada tras salir:**
-  - Al pulsar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen y hoja de vida del animal.
+    - Al pulsar la flecha de regreso en la barra superior, la aplicación retorna a la pantalla de resumen y hoja de vida del animal.
 
 #### Variaciones por especie
 - Las denominaciones de las etapas juveniles y adultas varían según la especie del animal (por ejemplo: novillo/novilla y toro/vaca en bovinos; potro/potranca y caballo/yegua en equinos; lechón/cerda en porcinos).

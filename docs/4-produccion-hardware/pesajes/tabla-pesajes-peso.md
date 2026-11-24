@@ -30,13 +30,13 @@ Permite consultar el historial cronológico y detallado de todas las mediciones 
     - **Ganancia diaria:** Calcula el promedio diario general de ganancia o pérdida de peso del animal a lo largo de su historial registrado. Requiere un mínimo de mediciones para calcular la tasa de crecimiento diario.
     - **Dieta:** Refleja el tipo de alimentación asignado en el pesaje más reciente (por ejemplo: Pastoreo, Estabulado, Semiestabulado, Suplementado u Otro). Si no se seleccionó dieta, muestra el símbolo sin información (-).
 - **Columnas de la tabla de pesajes:**
-        - **Fecha:** Muestra la fecha en la que se tomó el pesaje, adaptada a la zona horaria del usuario.
+    - **Fecha:** Muestra la fecha en la que se tomó el pesaje, adaptada a la zona horaria del usuario.
     - **Peso:** Refleja la cantidad numérica del peso registrado junto a su unidad de medida (kg o lb).
     - **Ganancia:** Muestra el incremento o decremento de peso obtenido respecto al pesaje cronológicamente anterior. Para el pesaje inicial o más antiguo, al no existir una medición previa de comparación, se muestra sin valor (-).
     - **G. diaria (Ganancia diaria):** Muestra el promedio diario de ganancia de peso acumulado hasta esa fecha específica. En el primer registro del animal no se calcula valor (-).
     - **Dieta:** Presenta el tipo de régimen alimenticio documentado en esa fecha.
 - **Interacción y edición de pesajes:**
-  - Al presionar cualquier fila de la tabla, la aplicación abre directamente el formulario de registro y edición de pesaje con los datos cargados para su consulta o modificación.
+    - Al presionar cualquier fila de la tabla, la aplicación abre directamente el formulario de registro y edición de pesaje con los datos cargados para su consulta o modificación.
 - **Botón flotante para nuevo pesaje:**
     - Si el animal se encuentra activo en la finca y no está bloqueado (no vendido, ni fallecido, ni trasladado), se presenta un botón flotante circular con el ícono de balanza y **(+)** para registrar un nuevo pesaje corporal.
     - Si el animal está bloqueado o dado de baja, el botón flotante permanece oculto.
@@ -49,17 +49,17 @@ Permite consultar el historial cronológico y detallado de todas las mediciones 
     - En la parte superior de la pantalla, verifique el nombre y el sexo del animal en consulta.
 2. **Lectura de indicadores de evolución (Encabezado superior):**
     - Revise las métricas consolidadas del animal:
-      - **Actual:** Peso corporal registrado en la última medición.
-      - **Última ganancia:** Kilos o libras ganados o perdidos frente a la pesada anterior.
-      - **Ganancia diaria:** Tasa promedio diaria de ganancia de peso.
-      - **Dieta:** Tipo de régimen alimenticio activo en el último pesaje.
+    - **Actual:** Peso corporal registrado en la última medición.
+    - **Última ganancia:** Kilos o libras ganados o perdidos frente a la pesada anterior.
+    - **Ganancia diaria:** Tasa promedio diaria de ganancia de peso.
+    - **Dieta:** Tipo de régimen alimenticio activo en el último pesaje.
 3. **Consulta de registros en la tabla:**
     - Explore las filas de la tabla ordenadas de forma cronológica descendente (los pesajes más recientes arriba).
-     - Revise las columnas de **Fecha**, **Peso**, **Ganancia**, **G. diaria** y **Dieta**.
+    - Revise las columnas de **Fecha**, **Peso**, **Ganancia**, **G. diaria** y **Dieta**.
 4. **Edición o corrección de un pesaje:**
     - Presione directamente sobre la fila del pesaje que requiere corregir.
-     - El sistema abrirá el formulario de edición de pesaje con los datos de esa medición.
-     - Modifique el peso, la fecha, la dieta o las observaciones pertinentes y presione **Actualizar** para guardar los cambios.
+    - El sistema abrirá el formulario de edición de pesaje con los datos de esa medición.
+    - Modifique el peso, la fecha, la dieta o las observaciones pertinentes y presione **Actualizar** para guardar los cambios.
 5. **Registro de un nuevo pesaje:**
     - Si desea ingresar una nueva medición sin salir de la consulta, presione el botón flotante circular con el ícono de balanza y **(+)**.
 

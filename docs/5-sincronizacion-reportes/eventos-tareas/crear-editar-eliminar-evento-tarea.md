@@ -53,16 +53,16 @@ Desde este módulo es posible definir nombres, descripciones detalladas, program
 - **Reglas de eliminación de actividades periódicas:**
     - Si una actividad no tiene repeticiones (es única), se elimina directamente tras presionar el botón de supresión.
     - Si la actividad forma parte de una serie recurrente con más de una ocurrencia registrada, el sistema despliega un diálogo de confirmación que permite al usuario elegir entre:
-      1. **Solo este evento / Solo esta tarea:** Suprime únicamente la fecha seleccionada, manteniendo intactas las demás actividades de la serie.
-      2. **Todos los eventos de la serie / Todas las tareas de la serie:** Elimina de manera definitiva la actividad actual y todas las demás ocurrencias vinculadas a la misma configuración.
+    1. **Solo este evento / Solo esta tarea:** Suprime únicamente la fecha seleccionada, manteniendo intactas las demás actividades de la serie.
+    2. **Todos los eventos de la serie / Todas las tareas de la serie:** Elimina de manera definitiva la actividad actual y todas las demás ocurrencias vinculadas a la misma configuración.
 
 ### Flujo Paso a Paso para el Usuario
 - **Ruta de acceso en la aplicación:**
-  - *Ruta para Crear (Desde el Calendario de Actividades):* Menú lateral principal > **Eventos y Tareas** > Pulsar el botón flotante circular con ícono de calendario en la esquina inferior derecha.
-  - *Ruta para Crear (Desde el Panel Principal de la Finca):* Pantalla de inicio de la finca > Bloque superior de calendario interactivo de tareas > Pulsar sobre el día deseado > Pulsar el botón flotante circular con ícono de calendario en la esquina inferior derecha.
-  - *Ruta para Crear (Desde el Menú Rápido Central):* Barra de navegación inferior de inicio > Botón flotante central con ícono de suma (**+**) > Opción **Crear Evento/Tarea**.
-  - *Ruta para Modificar o Eliminar (Desde el Calendario o Inicio):* Menú lateral principal > **Eventos y Tareas** (o desde el bloque de calendario en Inicio) > Pulsar sobre la actividad para abrir su pantalla de detalle > Tocar el botón de edición con ícono de lápiz en la esquina superior derecha.
-  - *Ruta para Modificar o Eliminar (Desde la Ficha del Animal):* Menú inferior de la pantalla principal > **Animales** > Seleccionar ejemplar > Tarjeta de **Datos veterinarios** > Opción eventos y tareas > Pulsar sobre la actividad deseada > En la pantalla de detalle tocar el botón de edición con ícono de lápiz en la esquina superior derecha.
+    - *Ruta para Crear (Desde el Calendario de Actividades):* Menú lateral principal > **Eventos y Tareas** > Pulsar el botón flotante circular con ícono de calendario en la esquina inferior derecha.
+    - *Ruta para Crear (Desde el Panel Principal de la Finca):* Pantalla de inicio de la finca > Bloque superior de calendario interactivo de tareas > Pulsar sobre el día deseado > Pulsar el botón flotante circular con ícono de calendario en la esquina inferior derecha.
+    - *Ruta para Crear (Desde el Menú Rápido Central):* Barra de navegación inferior de inicio > Botón flotante central con ícono de suma (**+**) > Opción **Crear Evento/Tarea**.
+    - *Ruta para Modificar o Eliminar (Desde el Calendario o Inicio):* Menú lateral principal > **Eventos y Tareas** (o desde el bloque de calendario en Inicio) > Pulsar sobre la actividad para abrir su pantalla de detalle > Tocar el botón de edición con ícono de lápiz en la esquina superior derecha.
+    - *Ruta para Modificar o Eliminar (Desde la Ficha del Animal):* Menú inferior de la pantalla principal > **Animales** > Seleccionar ejemplar > Tarjeta de **Datos veterinarios** > Opción eventos y tareas > Pulsar sobre la actividad deseada > En la pantalla de detalle tocar el botón de edición con ícono de lápiz en la esquina superior derecha.
 
 #### 1. Configuración del Tipo de Actividad (Solo al Crear)
 - Al ingresar en modo de creación, la pantalla presenta en la parte superior el interruptor **Crear como tarea**.
@@ -90,13 +90,13 @@ Desde este módulo es posible definir nombres, descripciones detalladas, program
 - **Actualizar actividad:** En modo edición, tras modificar los campos deseados, presione el botón de guardado. Los cambios se actualizarán de inmediato mostrando el aviso de confirmación.
 - **Eliminar actividad (Paso a paso para suprimir un evento o tarea):**
     1. Localice la actividad en el calendario o panel de inicio y púlsela para abrir su pantalla de **Detalle**.
-     2. En la barra superior del detalle, presione el botón de edición (ícono de lápiz) para ingresar a este formulario en modo de edición.
-     3. Deslícese hasta el final del formulario y presione el botón rojo **Eliminar**.
-     4. Si la actividad es única (sin repeticiones), se suprimirá de inmediato.
-     5. Si la actividad forma parte de una serie recurrente con múltiples fechas, el sistema desplegará una ventana de confirmación:
-        - Presione **Solo este evento** / **Solo esta tarea** para borrar únicamente la fecha seleccionada.
-        - Presione **Todos los eventos de la serie** / **Todas las tareas de la serie** para eliminar toda la secuencia programada.
-        - Presione **Cancelar** si prefiere conservar la actividad sin cambios.
+    2. En la barra superior del detalle, presione el botón de edición (ícono de lápiz) para ingresar a este formulario en modo de edición.
+    3. Deslícese hasta el final del formulario y presione el botón rojo **Eliminar**.
+    4. Si la actividad es única (sin repeticiones), se suprimirá de inmediato.
+    5. Si la actividad forma parte de una serie recurrente con múltiples fechas, el sistema desplegará una ventana de confirmación:
+    - Presione **Solo este evento** / **Solo esta tarea** para borrar únicamente la fecha seleccionada.
+    - Presione **Todos los eventos de la serie** / **Todas las tareas de la serie** para eliminar toda la secuencia programada.
+    - Presione **Cancelar** si prefiere conservar la actividad sin cambios.
 
 - **Pantalla de llegada tras guardar o eliminar:** La aplicación cierra el formulario y redirige al usuario a la pantalla anterior (habitualmente el calendario mensual o el panel de inicio de la finca), actualizando al instante el listado de actividades programadas.
 
